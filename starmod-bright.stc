@@ -1,0 +1,283 @@
+
+
+# Orbit and masses from Branham (2017), MNRAS 464 (1), p.1095-1101
+#   "A three-dimensional orbit for the binary star Alpha Andromedae"
+#   https://academic.oup.com/mnras/article/464/1/1095/2268699
+#   https://scixplorer.org/abs/2017MNRAS.464.1095B/abstract
+# SpectralType, AppMag (V-band), BoloCorrection, and Temperature from Piccotti et al. (2020), MNRAS 492 (2), p.2709-2721
+#   "A study of the physical properties of SB2s with both the visual and spectroscopic orbits"
+#   https://academic.oup.com/mnras/article/492/2/2709/5695748
+#   https://scixplorer.org/abs/2020MNRAS.492.2709P/abstract
+Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+2905A"  # Traditional star name
+{
+    RA         2.096534
+    Dec       29.090828
+    Distance  97.015764
+}
+
+# Rotation period from Kochukhov et al. (2021), MNRAS 506 (4), pp.5328-5344
+#   “TESS survey of rotational and pulsational variability of mercury–manganese stars”
+#   https://academic.oup.com/mnras/article/506/4/5328/6325560
+#   https://scixplorer.org/abs/2021MNRAS.506.5328K/abstract
+"Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:CCDM J00083+2905Aa" 
+{
+    SpectralType	"B8IV"                                             
+    AppMag	2.221
+    BoloCorrection	-0.60
+    Temperature	11950
+
+    OrbitBarycenter "ALF And"
+    EllipticalOrbit {
+        Epoch          2447763.097745
+        Period<d>           96.69342
+        SemiMajorAxis        0.2496    # 0.732751 au, mass ratio: (3.630 ± 0.201):(1.875 ± 0.096)
+        Eccentricity         0.525855
+        Inclination         39.093
+        AscendingNode      200.782
+        ArgOfPericenter    145.854
+    }
+    UniformRotation                    # Assume alignment with orbital plane
+    {
+        Period<d>	2.38337 # ± 0.00017
+        Inclination	39.093
+        AscendingNode	200.782
+    }
+}
+
+"Alpheratz B:Sirrah B:ALF And B:21 And B:DEL Peg B:ADS 94 Ab:CCDM J00083+2905Ab" 
+{
+    SpectralType	"A7V"
+    AppMag	4.211
+    BoloCorrection	0.02
+    Temperature	7935
+
+    OrbitBarycenter "ALF And"
+    EllipticalOrbit {
+        Epoch          2447763.097745
+        Period<d>           96.69342
+        SemiMajorAxis        0.4832    # 0.732751 au, mass ratio: (3.630 ± 0.201):(1.875 ± 0.096)
+        Eccentricity         0.525855
+        Inclination         39.093
+        AscendingNode      200.782
+        ArgOfPericenter    325.854
+    }
+}
+
+# Dimensions and rotational parameters from Che et al. (2011), ApJ 732 (2), 68
+#   "Colder and Hotter: Interferometric Imaging of β Cassiopeiae and α Leonis"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
+#   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
+Modify 746 # Caph / BET Cas
+{
+    #SemiAxes<rS>	[ 3.79 3.79 3.06 ]
+    Radius<rS>	3.79 # equatorial radius
+    SemiAxes	[ 1 0.807 1 ] # equatorial radius 24% greater than polar
+
+    UniformRotation
+    {
+        Period<d>       0.893 # from rotation rate
+        Inclination   125.88 # inclination (i) = 19.9 deg
+        AscendingNode 287.38 # orientation (alpha) = -7.09 deg
+    }
+}
+
+# 2081 ALF Phe / Ankaa
+
+# 3179 ALF Cas / Schedar
+
+# 3419 BET Cet / Diphda
+
+# 4427 GAM Cas / Tiansi
+
+# 5447 BET And / Mirach
+
+# Dimensions and rotational parameters from Domiciano de Souza et al. (2014), A&A 569, (A10)
+#   "The environment of the fast rotating star Achernar. III. Photospheric parameters revealed by the VLTI"
+#   https://www.aanda.org/articles/aa/full_html/2014/09/aa24144-14/aa24144-14.html
+#   https://scixplorer.org/abs/2014A%26A...569A..10D/abstract
+Modify 7588 # Achernar / ALF Eri
+{
+	#SemiAxes<rS>	[ 9.16 9.16 6.78 ]
+	Radius<rS>	9.16 # equatorial radius
+	SemiAxes	[ 1 0.7396 1 ] # equatorial radius 35.2% greater than polar
+
+	UniformRotation
+	{
+		Period         37.25
+		Inclination    68.76 # inclination (i) = 60.6 deg
+		AscendingNode 323.15 # orientation (alpha) = 216.9 deg
+	}
+}
+
+# 9640 GAM And / Almach
+
+# 11767 ALF UMi / Polaris
+
+# 14576 BET Per / Algol
+
+# 15863 ALF Per / Mirfak
+
+# 21421 ALF Tau / Aldebaran
+
+# 24436 BET Ori / Rigel
+
+# 24608 ALF Aur / Capella
+
+# 25336 GAM Ori / Bellatrix
+
+# 25428 BET Tau / Elnath
+
+# 25930 DEL Ori / Mintaka
+
+# 26311 EPS Ori / Alnilam
+
+# 26727 ZET Ori / Alnitak
+
+# 27366 KAP Ori / Saiph
+
+# 27989 ALF Ori / Betelgeuse
+
+# 28360 BET Aur / Menkalinan
+
+# 30324 BET CMa / Mirzam
+
+# 30438 ALF Car / Canopus
+
+# 31681 GAM Gem / Alhena
+
+# 33579 EPS CMa / Adhara
+
+# 34444 DEL CMa / Wezen
+
+# 35904 ETA CMa / Aludra
+
+# 36850 ALF Gem / Castor
+
+# 37826 BET Gem / Pollux
+
+# 39429 ZET Pup / Naos
+
+# 39953 GAM Vel
+
+# 41037 EPS Car / Avior
+
+# 42913 DEL Vel / Alsephina
+
+# 44816 LAM Vel / Suhail
+
+# 45238 BET Car / Miaplacidus
+
+# 45556 IOT Car / Aspidiske
+
+# 45941 KAP Vel / Markeb
+
+# 46390 ALF Hya / Alphard
+
+# Dimensions and rotational parameters from Hadjara et al. (2018), 480 (1) 1263
+#   "Differential interferometry of the rapid rotator Regulus"
+#   https://academic.oup.com/mnras/article/480/1/1263/5063670
+#   https://scixplorer.org/abs/2018MNRAS.480.1263H/abstract
+Modify 49669 # Regulus / ALF Leo
+{
+	#SemiAxes	
+	Radius<rS>	2894100
+	SemiAxes	[ 1 0.76 1 ] # equatorial radius 35% greater than polar
+
+	UniformRotation
+	{
+		Period         14.63
+		Inclination   122.54 # inclination (i) = 86.3 deg
+		AscendingNode 145.74 # orientation (alpha) = 258 deg
+	}
+}
+
+# 50583 GAM Leo / Algieba
+
+# 53910 BET UMa / Merak
+
+# 54061 ALF UMa / Dubhe
+
+# 57632 BET Leo / Denebola
+
+# 58001 GAM UMa / Phecda
+
+# 60718 ALF Cru / Acrux
+
+# 61084 GAM Cru / Gacrux
+
+# 61932 GAM Cen / Muhlifain
+
+# 62434 BET Cru / Mimosa
+
+# 62956 EPS UMa / Alioth
+
+# 65378 ZET UMa / Mizar
+
+# 65474 ALF Vir / Spica
+
+# 66657 EPS Cen
+
+# 67301 ETA UMa / Alkaid
+
+# 68702 BET Cen / Hadar
+
+# 68933 TET Cen / Menkent
+
+# 69673 ALF Boo / Arcturus
+
+# 71352 ETA Cen
+
+# 71860 ALF Lup / Uridim
+
+# 72105 EPS Boo / Izar
+
+# 72607 BET UMi / Kochab
+
+# 76267 ALF CrB / Alphecca
+
+# 78401 DEL Sco / Dschubba
+
+# 78820 BET Sco / Acrab
+# 78821 BET Sco / Acrab
+
+# 80763 ALF Sco / Antares
+
+# 82273 ALF TrA / Atria
+
+# 82396 EPS Sco / Larawag
+
+# 84012 ETA Oph / Sabik
+
+# 85927 LAM Sco / Shaula
+
+# 86032 ALF Oph / Rasalhague
+
+# 86228 TET Sco / Sargas
+
+# 86670 KAP Sco / Girtab
+
+# 87833 GAM Dra / Eltanin
+
+# 90185 EPS Sgr / Kaus Australis
+
+# 92855 SIG Sgr / Nunki
+
+# 100453 GAM Cyg / Sadr
+
+# 100751 ALF Pav / Peacock
+
+# 102098 ALF Cyg / Deneb
+
+# 102488 EPS Cyg / Aljanah
+
+# 105199 ALF Cep / Alderamin
+
+# 107315 EPS Peg / Enif
+
+# 109268 ALF Gru / Alnair
+
+# 112122 BET Gru / Tiaki
+
+# 113881 BET Peg / Scheat
+
+# 113963 ALF Peg / Markab
