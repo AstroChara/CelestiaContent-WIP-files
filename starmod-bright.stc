@@ -1,10 +1,13 @@
 
 
+# Radius and Temperature from Ryabchikova et al. (1999), A&A 351, p.963-972
+#   "Orbital elements and abundance analyses of the double-lined spectroscopic binary alpha Andromedae"
+#   https://scixplorer.org/abs/1999A%26A...351..963R/abstract
 # Orbit and masses from Branham (2017), MNRAS 464 (1), p.1095-1101
 #   "A three-dimensional orbit for the binary star Alpha Andromedae"
 #   https://academic.oup.com/mnras/article/464/1/1095/2268699
 #   https://scixplorer.org/abs/2017MNRAS.464.1095B/abstract
-# SpectralType, AppMag (V-band), BoloCorrection, and Temperature from Piccotti et al. (2020), MNRAS 492 (2), p.2709-2721
+# SpectralType, AppMag (V-band), and BoloCorrection from Piccotti et al. (2020), MNRAS 492 (2), p.2709-2721
 #   "A study of the physical properties of SB2s with both the visual and spectroscopic orbits"
 #   https://academic.oup.com/mnras/article/492/2/2709/5695748
 #   https://scixplorer.org/abs/2020MNRAS.492.2709P/abstract
@@ -21,10 +24,11 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 #   https://scixplorer.org/abs/2021MNRAS.506.5328K/abstract
 "Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:CCDM J00083+2905Aa" 
 {
+    Radius<rS>	2.7
     SpectralType	"B8IV"                                             
     AppMag	2.221
     BoloCorrection	-0.60
-    Temperature	11950
+    Temperature	13800
 
     OrbitBarycenter "ALF And"
     EllipticalOrbit {
@@ -46,10 +50,11 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 
 "Alpheratz B:Sirrah B:ALF And B:21 And B:DEL Peg B:ADS 94 Ab:CCDM J00083+2905Ab" 
 {
+    Radius<rS>	1.65
     SpectralType	"A7V"
     AppMag	4.211
     BoloCorrection	0.02
-    Temperature	7935
+    Temperature	8500
 
     OrbitBarycenter "ALF And"
     EllipticalOrbit {
