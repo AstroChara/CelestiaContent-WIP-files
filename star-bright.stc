@@ -478,6 +478,10 @@ Modify 49669
 # SpectralType from Schnerr et al. (2008), A&A 483 (3), pp.857-867
 #   "Magnetic field measurements and wind-line variability of OB-type stars"
 #   https://scixplorer.org/abs/2008A%26A...483..857S/abstract
+# AscendingNode from Bailey et al. (2019), Nature Astronomy 3, p.636-641
+#   "Polarized reflected light from the Spica binary system"
+#   https://arxiv.org/abs/1904.01195
+#   https://scixplorer.org/abs/2019NatAs...3..636B/abstract
 Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 {
 	RA 201.29824737
@@ -487,25 +491,25 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 "Spica A:Azimech A:ALF Vir A:67 Vir A:CCDM J13252-1109Aa"
 {
-	Radius<rS> 7.95                    # fractional equatorial radius = 0.282 (of semi-major axis)
-	SemiAxes [ 1 0.887 1 ]             # fractional polar radius = 0.250
+	Radius<rS> 7.95                     # fractional equatorial radius = 0.282 (of semi-major axis)
+	SemiAxes [ 1 0.887 1 ]              # fractional polar radius = 0.250
 	SpectralType "B1III/IV"
-	AbsMag -3.36                       # from luminosity and temperature
+	AbsMag -3.36                        # from luminosity and temperature
 	Temperature 25300
 
 	OrbitBarycenter "ALF Vir"
-	EllipticalOrbit {                  # fully specified orientation
+	EllipticalOrbit {                   # fully specified orientation
 		Epoch          2454189.40
 		Period<d>            4.0145
-		SemiMajorAxis<rS>   10.91      # 28.20 rSun, mass ratio = (11.43 ± 1.15):(7.21 ± 0.75)
+		SemiMajorAxis<rS>   10.91       # 28.20 rSun, mass ratio = 0.6307 ± 0.023
 		Eccentricity         0.133
 		Inclination         34.1
 		AscendingNode      324.4
 		ArgOfPericenter     37
 	}
-    UniformRotation                    # assume alignment with orbital plane
+    UniformRotation                     # assume alignment with orbital plane
     {
-        Period              52.1       # v sin i = 165.3 ± 4.5 km/s
+        Period              52.1        # v sin i = 165.3 ± 4.5 km/s
         Inclination         34.1
         AscendingNode      324.4
     }
@@ -513,25 +517,25 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 "Spica B:Azimech B:ALF Vir B:67 Vir B:CCDM J13252-1109Ab"
 {
-	Radius<rS> 3.78                    # fractional equatorial radius = 0.134 (of semi-major axis)
-	SemiAxes [ 1 0.985 1 ]             # fractional polar radius = 0.132
+	Radius<rS> 3.78                     # fractional equatorial radius = 0.134 (of semi-major axis)
+	SemiAxes [ 1 0.985 1 ]              # fractional polar radius = 0.132
 	SpectralType "B2V"
-	AbsMag -1.47                       # from luminosity and temperature
+	AbsMag -1.47                        # from luminosity and temperature
 	Temperature 20900
 
 	OrbitBarycenter "ALF Vir"
-	EllipticalOrbit {                  # fully specified orientation
+	EllipticalOrbit {                   # fully specified orientation
 		Epoch          2454189.40
 		Period<d>            4.0145
-		SemiMajorAxis<rS>   17.29      # 28.20 rSun, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
+		SemiMajorAxis<rS>   17.29       # 28.20 rSun, mass ratio = 0.6307 ± 0.023
 		Eccentricity         0.133
 		Inclination         34.1
 		AscendingNode      324.4
 		ArgOfPericenter    217
 	}
-    UniformRotation                    # assume alignment with orbital plane
+    UniformRotation                     # assume alignment with orbital plane
     {
-        Period              69.6       # v sin i = 58.8 ± 1.5 km/s
+        Period              69.6        # v sin i = 58.8 ± 1.5 km/s
         Inclination         34.1
         AscendingNode      324.4
     }
