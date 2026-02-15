@@ -146,6 +146,16 @@ Modify 7588
 # 25336 GAM Ori / Bellatrix
 
 # 25428 BET Tau / Elnath
+# Radius from Baines et al. (2025), AJ 169 (6), id.293
+# Temperature from Gordon et al. (2019), AJ 873 (1), article id. 91
+#   "Angular Sizes, Radii, and Effective Temperatures of B-type Stars from Optical Interferometry with the CHARA Array"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ab04b2
+#   https://scixplorer.org/abs/2019ApJ...873...91G/abstract
+Modify 25428
+{
+	Radius<rS> 4.79
+	Temperature 14000
+}
 
 # 25930 DEL Ori / Mintaka
 
@@ -401,14 +411,14 @@ Modify 69673
 
 # 76267 ALF CrB / Alphecca
 # TODO: Update everything
-Barycenter 76267 "Alphecca:Alphekkai:Gemma:ALF CrB:5 CrB"
+Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 {
 	RA 233.67195000
 	Dec 26.71469278
 	Distance 75.050
 }
 
-"Alphecca A:Alphekkai A:Gemma A:ALF CrB A:5 CrB A"
+"Alphecca A:Gemma A:ALF CrB A:5 CrB A"
 {
 	Radius 2115000
 	SpectralType "A0V"
@@ -426,7 +436,7 @@ Barycenter 76267 "Alphecca:Alphekkai:Gemma:ALF CrB:5 CrB"
 	}
 }
 
-"Alphecca B:Alphekkai B:Gemma B:ALF CrB B:5 CrB B"
+"Alphecca B:Gemma B:ALF CrB B:5 CrB B"
 {
 	Radius 626100
 	SpectralType "G5V"
