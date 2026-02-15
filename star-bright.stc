@@ -110,7 +110,7 @@ Modify 746
 # 5447 BET And / Mirach
 
 # 7588 ALF Eri / Achernar
-# Kervella et al. (2022), A&A 667, A111
+# Kervella et al. (2022), A&A 667, id.A111
 #   "The binary system of the spinning-top Be star Achernar"
 #   https://www.aanda.org/articles/aa/full_html/2022/11/aa44009-22/aa44009-22.html
 #   https://scixplorer.org/abs/2022A%26A...667A.111K/abstract
@@ -121,7 +121,7 @@ Barycenter 7588
     Distance 139.443
 }
 
-# Dimensions and rotation from Domiciano de Souza et al. (2014), A&A 569, (A10)
+# Dimensions and rotation from Domiciano de Souza et al. (2014), A&A 569, id.A10
 #   "The environment of the fast rotating star Achernar.
 #   III. Photospheric parameters revealed by the VLTI"
 #   https://www.aanda.org/articles/aa/full_html/2014/09/aa24144-14/aa24144-14.html
@@ -135,7 +135,7 @@ Barycenter 7588
     Temperature 15539
 
     OrbitBarycenter "ALF Eri"
-    EllipticalOrbit # Fully specified orientation
+    EllipticalOrbit                     # fully specified orientation
     {
         Period               7.0389
         SemiMajorAxis        1.85       # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
@@ -145,7 +145,6 @@ Barycenter 7588
         ArgOfPericenter    120.63
         MeanAnomaly        272.07
     }
-
     UniformRotation
     {
         Period        37.25
@@ -162,7 +161,7 @@ Barycenter 7588
     Temperature 9064
 
     OrbitBarycenter "ALF Eri"
-    EllipticalOrbit # Fully specified orientation
+    EllipticalOrbit                     # fully specified orientation
     {
         Period               7.0389
         SemiMajorAxis        5.50       # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
@@ -187,6 +186,117 @@ Barycenter 7588
 # 24436 BET Ori / Rigel
 
 # 24608 ALF Aur / Capella
+# TODO: Review coordinates/parallaxes
+# Torres et al. (2015), ApJ 807 (1), id.26
+#   "Capella (α Aurigae) Revisited: New Binary Orbit, Physical Properties, and Evolutionary State"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/807/1/26
+#   https://scixplorer.org/abs/2015ApJ...807...26T/abstract
+Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
+{
+	# Coordinates from the Hipparcos catalog (1997) propagated to epoch J2016,
+	# using the barycenter position corrections and (corrected) proper motions
+	RA 79.17281563
+	Dec 45.99609237
+	Distance 42.919
+}
+
+"Capella Aa:Alhajot Aa:ALF Aur Aa:13 Aur Aa:Gliese 194 A:ADS 3841 A"
+{
+	Radius<rS> 11.98
+	SpectralType "G8III"
+	AbsMag 0.296
+	BoloCorrection -0.304
+	Temperature 4970
+
+	OrbitBarycenter "ALF Aur"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2448147.6
+		Period<d>          104.02128
+		SemiMajorAxis        0.36504    # 0.74272 au, mass ratio = 0.96653 ± 0.00062
+		Eccentricity         0.00089
+		Inclination         99.178
+		AscendingNode      200.909
+		ArgOfPericenter     23.7
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period<d>          104
+		Inclination         99.178
+		AscendingNode      200.909
+	}
+}
+
+"Capella Ab:Alhajot Ab:ALF Aur Ab:13 Aur Ab:Gliese 194 B:ADS 3841 P"
+{
+	Radius<rS> 8.83
+	SpectralType "G0III"
+	AbsMag 0.167
+	BoloCorrection -0.089
+	Temperature 5730
+
+	OrbitBarycenter "ALF Aur"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2448147.6
+		Period<d>          104.02128
+		SemiMajorAxis        0.37768    # 0.74272 au, mass ratio = 0.96653 ± 0.00062
+		Eccentricity         0.00089
+		Inclination         99.178
+		AscendingNode      200.909
+		ArgOfPericenter    203.7
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period<d>            8.5
+		Inclination         99.178
+		AscendingNode      200.909
+	}
+}
+
+# SpectralType and AppMag from WDS
+Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
+{
+	RA 79.35006555                      # mass ratio 0.57:0.53
+	Dec 45.83733609
+	Distance 43.5                       # from weighted Gaia DR3 parallaxes
+}
+
+"Capella H:ALF Aur H:13 Aur H:Gliese 195 A:LTT 11622:ADS 3841 H"
+{
+	SpectralType "M2.5V"
+	AppMag 9.99
+
+	OrbitBarycenter "ALF Aur HL"
+	EllipticalOrbit
+	{
+		Period             300
+		SemiMajorAxis       22.5        # 3.5 arcsec, mass ratio = 0.57:0.53
+		Eccentricity         0.75
+		Inclination        155
+		AscendingNode       38
+		ArgOfPericenter    326
+		MeanAnomaly         96
+	}
+}
+
+"Capella L:ALF Aur L:13 Aur L:Gliese 195 B:ADS 3841 L"
+{
+	SpectralType "M5"
+	AppMag 13.5
+
+	OrbitBarycenter "ALF Aur HL"
+	EllipticalOrbit
+	{
+		Period             300
+		SemiMajorAxis       24.2        # 3.5 arcsec, mass ratio 0.57:0.53
+		Eccentricity         0.75
+		Inclination        155
+		AscendingNode       38
+		ArgOfPericenter    146
+		MeanAnomaly         96
+	}
+}
 
 # 25336 GAM Ori / Bellatrix
 
