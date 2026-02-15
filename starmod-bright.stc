@@ -1,5 +1,6 @@
 
-
+# 677 ALF And / Alpheratz
+# TODO: Update barycentre position
 # Radius and Temperature from Ryabchikova et al. (1999), A&A 351, p.963-972
 #   "Orbital elements and abundance analyses of the double-lined spectroscopic binary alpha Andromedae"
 #   https://scixplorer.org/abs/1999A%26A...351..963R/abstract
@@ -13,9 +14,9 @@
 #   https://scixplorer.org/abs/2020MNRAS.492.2709P/abstract
 Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+2905A"  # Traditional star name
 {
-    RA         2.096534
-    Dec       29.090828
-    Distance  97.015764
+    RA 2.096534
+    Dec 29.090828
+    Distance 97.015764
 }
 
 # Rotation period from Kochukhov et al. (2021), MNRAS 506 (4), pp.5328-5344
@@ -24,43 +25,43 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 #   https://scixplorer.org/abs/2021MNRAS.506.5328K/abstract
 "Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:CCDM J00083+2905Aa" 
 {
-    Radius<rS>	2.7
-    SpectralType	"B8IV"                                             
-    AppMag	2.221
-    BoloCorrection	-0.60
-    Temperature	13800
+    Radius<rS> 2.7
+    SpectralType "B8IV"                                             
+    AppMag 2.221
+    BoloCorrection -0.60
+    Temperature 13800
 
     OrbitBarycenter "ALF And"
     EllipticalOrbit {
         Epoch          2447763.097745
         Period<d>           96.69342
-        SemiMajorAxis        0.2496    # 0.732751 au, mass ratio: (3.630 ± 0.201):(1.875 ± 0.096)
+        SemiMajorAxis        0.2496    # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
         Eccentricity         0.525855
         Inclination         39.093
         AscendingNode      200.782
         ArgOfPericenter    145.854
     }
-    UniformRotation                    # Assume alignment with orbital plane
+    UniformRotation                    # assume alignment with orbital plane
     {
-        Period<d>	2.38337 # ± 0.00017
-        Inclination	39.093
-        AscendingNode	200.782
+        Period<d>            2.38337   # ± 0.00017
+        Inclination         39.093
+        AscendingNode      200.782
     }
 }
 
 "Alpheratz B:Sirrah B:ALF And B:21 And B:DEL Peg B:ADS 94 Ab:CCDM J00083+2905Ab" 
 {
-    Radius<rS>	1.65
-    SpectralType	"A7V"
-    AppMag	4.211
-    BoloCorrection	0.02
-    Temperature	8500
+    Radius<rS> 1.65
+    SpectralType "A7V"
+    AppMag 4.211
+    BoloCorrection 0.02
+    Temperature 8500
 
     OrbitBarycenter "ALF And"
     EllipticalOrbit {
         Epoch          2447763.097745
         Period<d>           96.69342
-        SemiMajorAxis        0.4832    # 0.732751 au, mass ratio: (3.630 ± 0.201):(1.875 ± 0.096)
+        SemiMajorAxis        0.4832    # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
         Eccentricity         0.525855
         Inclination         39.093
         AscendingNode      200.782
@@ -68,21 +69,23 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
     }
 }
 
+# 746 BET Cas / Caph
+# TODO: Update rotation orientation
 # Dimensions and rotational parameters from Che et al. (2011), ApJ 732 (2), 68
 #   "Colder and Hotter: Interferometric Imaging of β Cassiopeiae and α Leonis"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
 #   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
-Modify 746 # Caph / BET Cas
+Modify 746
 {
-    #SemiAxes<rS>	[ 3.79 3.79 3.06 ]
-    Radius<rS>	3.79 # equatorial radius
-    SemiAxes	[ 1 0.807 1 ] # equatorial radius 24% greater than polar
+    #SemiAxes<rS> [ 3.79 3.79 3.06 ]
+    Radius<rS> 3.79                    # equatorial radius
+    SemiAxes [ 1 0.807 1 ]             # equatorial radius 24% greater than polar
 
     UniformRotation
     {
-        Period<d>       0.893 # from rotation rate
-        Inclination   125.88 # inclination (i) = 19.9 deg
-        AscendingNode 287.38 # orientation (alpha) = -7.09 deg
+        Period<d>            0.893     # from rotation rate
+        Inclination        125.88      # inclination (i) = 19.9 deg
+        AscendingNode      287.38      # orientation (alpha) = -7.09 deg
     }
 }
 
@@ -96,21 +99,23 @@ Modify 746 # Caph / BET Cas
 
 # 5447 BET And / Mirach
 
+# 7588 ALF Eri / Achernar
+# TODO: Update rotation orientation | Add the rest of the star system
 # Dimensions and rotational parameters from Domiciano de Souza et al. (2014), A&A 569, (A10)
 #   "The environment of the fast rotating star Achernar. III. Photospheric parameters revealed by the VLTI"
 #   https://www.aanda.org/articles/aa/full_html/2014/09/aa24144-14/aa24144-14.html
 #   https://scixplorer.org/abs/2014A%26A...569A..10D/abstract
-Modify 7588 # Achernar / ALF Eri
+Modify 7588
 {
-	#SemiAxes<rS>	[ 9.16 9.16 6.78 ]
-	Radius<rS>	9.16 # equatorial radius
-	SemiAxes	[ 1 0.7396 1 ] # equatorial radius 35.2% greater than polar
+	#SemiAxes<rS> [ 9.16 9.16 6.78 ]
+	Radius<rS> 9.16                    # equatorial radius
+	SemiAxes [ 1 0.740 1 ]             # equatorial radius 35.2% greater than polar
 
 	UniformRotation
 	{
-		Period         37.25
-		Inclination    68.76 # inclination (i) = 60.6 deg
-		AscendingNode 323.15 # orientation (alpha) = 216.9 deg
+		Period              37.25
+		Inclination         68.76      # inclination (i) = 60.6 deg
+		AscendingNode      323.15      # orientation (alpha) = 216.9 deg
 	}
 }
 
@@ -178,21 +183,22 @@ Modify 7588 # Achernar / ALF Eri
 
 # 46390 ALF Hya / Alphard
 
+# 49669 ALF Leo / Regulus
+# TODO: Update rotation orientation | Add the rest of the star system
 # Dimensions and rotational parameters from Hadjara et al. (2018), 480 (1) 1263
 #   "Differential interferometry of the rapid rotator Regulus"
 #   https://academic.oup.com/mnras/article/480/1/1263/5063670
 #   https://scixplorer.org/abs/2018MNRAS.480.1263H/abstract
-Modify 49669 # Regulus / ALF Leo
+Modify 49669
 {
-	#SemiAxes	
-	Radius<rS>	2894100
-	SemiAxes	[ 1 0.76 1 ] # equatorial radius 35% greater than polar
+	Radius<rS> 4.16                    # equatorial radius
+	SemiAxes [ 1 0.741 1 ]             # equatorial radius 35% greater than polar
 
 	UniformRotation
 	{
-		Period         14.63
-		Inclination   122.54 # inclination (i) = 86.3 deg
-		AscendingNode 145.74 # orientation (alpha) = 258 deg
+		Period              14.63
+		Inclination        122.54      # inclination (i) = 86.3 deg
+		AscendingNode      145.74      # orientation (alpha) = 258 deg
 	}
 }
 
@@ -219,6 +225,72 @@ Modify 49669 # Regulus / ALF Leo
 # 65378 ZET UMa / Mizar
 
 # 65474 ALF Vir / Spica
+# TODO: Update barycentre position | Update designations | Update orbit
+# Tkachenko et al. (2016), MNRAS 458 (2), p.1964-1976
+#   "Stellar modelling of Spica, a high-mass spectroscopic binary with a β Cep variable primary component"
+#   https://academic.oup.com/mnras/article/458/2/1964/2588998
+#   https://scixplorer.org/abs/2016MNRAS.458.1964T/abstract
+# SpectralType from Schnerr et al. (2008), A&A 483 (3), pp.857-867
+#   "Magnetic field measurements and wind-line variability of OB-type stars"
+#   https://scixplorer.org/abs/2008A%26A...483..857S/abstract
+Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
+{
+	RA 201.29824737
+	Dec -11.16131947
+	Distance 249.745
+}
+
+"Spica A:Azimech A:ALF Vir A:67 Vir A:CCDM J13252-1109Aa"
+{
+	Radius<rS> 7.47
+	SemiAxes [ 1 0.887 1 ]
+	SpectralType "B1III/IV"
+	AbsMag -3.36                       # from luminosity and temperature
+	Temperature 25300
+
+	OrbitBarycenter "ALF Vir"
+	EllipticalOrbit {                  # fully specified orientation
+		Epoch          2454189.40
+		Period<d>            4.0145
+		SemiMajorAxis<rS>   10.91      # 28.20 rSun, mass ratio = (11.43 ± 1.15):(7.21 ± 0.75)
+		Eccentricity         0.133
+		Inclination         34.1
+		AscendingNode      324.4
+		ArgOfPericenter     37
+	}
+    UniformRotation                    # assume alignment with orbital plane
+    {
+        Period              48.9       # v sin i = 165.3 ± 4.5 km/s
+        Inclination         34.1
+        AscendingNode      324.4
+    }
+}
+
+"Spica B:Azimech B:ALF Vir B:67 Vir B:CCDM J13252-1109Ab"
+{
+	Radius<rS> 3.74
+	SemiAxes [ 1 0.985 1 ]
+	SpectralType "B2V"
+	AbsMag -1.47                       # from luminosity and temperature
+	Temperature 20900
+
+	OrbitBarycenter "ALF Vir"
+	EllipticalOrbit {                  # fully specified orientation
+		Epoch          2454189.40
+		Period<d>            4.0145
+		SemiMajorAxis<rS>   17.29      # 28.20 rSun, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
+		Eccentricity         0.133
+		Inclination         34.1
+		AscendingNode      324.4
+		ArgOfPericenter    217
+	}
+    UniformRotation                    # assume alignment with orbital plane
+    {
+        Period              68.9       # v sin i = 58.8 ± 1.5 km/s
+        Inclination         34.1
+        AscendingNode      324.4
+    }
+}
 
 # 66657 EPS Cen
 
@@ -239,6 +311,49 @@ Modify 49669 # Regulus / ALF Leo
 # 72607 BET UMi / Kochab
 
 # 76267 ALF CrB / Alphecca
+# TODO: Update everything
+Barycenter 76267 "Alphecca:Alphekkai:Gemma:ALF CrB:5 CrB"
+{
+	RA 233.67195000
+	Dec 26.71469278
+	Distance 75.050
+}
+
+"Alphecca A:Alphekkai A:Gemma A:ALF CrB A:5 CrB A"
+{
+	Radius 2115000
+	SpectralType "A0V"
+	AbsMag 0.16
+
+	OrbitBarycenter "ALF CrB"
+	EllipticalOrbit {       # Fully specified orientation
+		Period          0.0475288
+		SemiMajorAxis   0.0403 # Mass ratio 2.58:0.92
+		Eccentricity    0.3700
+		Inclination     58.9
+		AscendingNode   82.1
+		ArgOfPericenter 344.36
+		Epoch           2436751.5195
+	}
+}
+
+"Alphecca B:Alphekkai B:Gemma B:ALF CrB B:5 CrB B"
+{
+	Radius 626100
+	SpectralType "G5V"
+	AbsMag 5.05
+
+	OrbitBarycenter "ALF CrB"
+	EllipticalOrbit {       # Fully specified orientation
+		Period          0.0475288
+		SemiMajorAxis   0.113 # Mass ratio 2.58:0.92
+		Eccentricity    0.3700
+		Inclination     58.9
+		AscendingNode   82.1
+		ArgOfPericenter 164.36
+		Epoch           2436751.5195
+	}
+}
 
 # 78401 DEL Sco / Dschubba
 
