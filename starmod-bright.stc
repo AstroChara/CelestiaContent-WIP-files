@@ -377,8 +377,8 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 "Spica A:Azimech A:ALF Vir A:67 Vir A:CCDM J13252-1109Aa"
 {
-	Radius<rS> 7.47
-	SemiAxes [ 1 0.887 1 ]
+	Radius<rS> 7.95                    # fractional equatorial radius = 0.282 (of semi-major axis)
+	SemiAxes [ 1 0.887 1 ]             # fractional polar radius = 0.250
 	SpectralType "B1III/IV"
 	AbsMag -3.36                       # from luminosity and temperature
 	Temperature 25300
@@ -403,8 +403,8 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 "Spica B:Azimech B:ALF Vir B:67 Vir B:CCDM J13252-1109Ab"
 {
-	Radius<rS> 3.74
-	SemiAxes [ 1 0.985 1 ]
+	Radius<rS> 3.78                    # fractional equatorial radius = 0.134 (of semi-major axis)
+	SemiAxes [ 1 0.985 1 ]             # fractional polar radius = 0.132
 	SpectralType "B2V"
 	AbsMag -1.47                       # from luminosity and temperature
 	Temperature 20900
