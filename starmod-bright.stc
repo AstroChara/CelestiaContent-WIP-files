@@ -36,7 +36,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 "Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:CCDM J00083+2905Aa" 
 {
     Radius<rS> 2.7
-    SpectralType "B8IV"                                             
+    SpectralType "B8IV-VHgMn"                                             
     AppMag 2.221
     BoloCorrection -0.60
     Temperature 13800
@@ -45,15 +45,15 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
     EllipticalOrbit {
         Epoch          2447763.097745
         Period<d>           96.69342
-        SemiMajorAxis        0.2496    # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
+        SemiMajorAxis        0.2496     # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
         Eccentricity         0.525855
         Inclination         39.093
         AscendingNode      200.782
         ArgOfPericenter    145.854
     }
-    UniformRotation                    # assume alignment with orbital plane
+    UniformRotation                     # assume alignment with orbital plane
     {
-        Period<d>            2.38337   # ± 0.00017
+        Period<d>            2.38337    # ± 0.00017
         Inclination         39.093
         AscendingNode      200.782
     }
@@ -71,7 +71,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
     EllipticalOrbit {
         Epoch          2447763.097745
         Period<d>           96.69342
-        SemiMajorAxis        0.4832    # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
+        SemiMajorAxis        0.4832     # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
         Eccentricity         0.525855
         Inclination         39.093
         AscendingNode      200.782
@@ -88,14 +88,14 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 Modify 746
 {
     #SemiAxes<rS> [ 3.79 3.79 3.06 ]
-    Radius<rS> 3.79                    # equatorial radius
-    SemiAxes [ 1 0.807 1 ]             # equatorial radius 24% greater than polar
+    Radius<rS> 3.79                     # equatorial radius
+    SemiAxes [ 1 0.807 1 ]              # equatorial radius 24% greater than polar
 
     UniformRotation
     {
-        Period<d>            0.893     # from rotation rate
-        Inclination        125.88      # inclination (i) = 19.9 deg
-        AscendingNode      287.38      # orientation (alpha) = -7.09 deg
+        Period<d>            0.893      # from rotation rate
+        Inclination        125.88       # inclination (i) = 19.9 deg
+        AscendingNode      287.38       # orientation (alpha) = -7.09 deg
     }
 }
 
@@ -116,9 +116,9 @@ Modify 746
 #   https://scixplorer.org/abs/2022A%26A...667A.111K/abstract
 Barycenter 7588
 {
-	RA 24.42852283
-	Dec -57.23675281
-	Distance 139.443
+    RA 24.42852283
+    Dec -57.23675281
+    Distance 139.443
 }
 
 # Dimensions and rotation from Domiciano de Souza et al. (2014), A&A 569, (A10)
@@ -128,50 +128,50 @@ Barycenter 7588
 #   https://scixplorer.org/abs/2014A%26A...569A..10D/abstract
 "Achernar A:ALF Eri A"
 {
-	OrbitBarycenter "Achernar"
+    Radius<rS> 9.16                     # equatorial
+    SemiAxes [ 1 0.740 1 ]              # equatorial radius 35.2% greater than polar
     SpectralType "B3Vpe"
     AppMag 0.46
-	Temperature 15539
-	Radius<rS> 9.16 # equatorial
-	SemiAxes [ 1 0.740 1 ] # equatorial radius 35.2% greater than polar
+    Temperature 15539
 
-	EllipticalOrbit # Fully specified orientation
-	{
-		Period          7.0389
-		SemiMajorAxis   1.85 # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
-		Eccentricity    0.7258
-		Inclination     40.56
-		AscendingNode   204.53
-		ArgOfPericenter 120.63
-		MeanAnomaly     272.07
-	}
+    OrbitBarycenter "ALF Eri"
+    EllipticalOrbit # Fully specified orientation
+    {
+        Period               7.0389
+        SemiMajorAxis        1.85       # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
+        Eccentricity         0.7258
+        Inclination         40.56
+        AscendingNode      204.53
+        ArgOfPericenter    120.63
+        MeanAnomaly        272.07
+    }
 
-	UniformRotation
-	{
-		Period        37.25
-		Inclination   68.8 # inclination (i) = 60.6 deg
-		AscendingNode 323.2 # orientation (alpha) = 216.9 deg
-	}
+    UniformRotation
+    {
+        Period        37.25
+        Inclination   68.8 # inclination (i) = 60.6 deg
+        AscendingNode 323.2 # orientation (alpha) = 216.9 deg
+    }
 }
 
 "Achernar B:ALF Eri B"
 {
-	OrbitBarycenter "Achernar"
-	SpectralType "A1V" # from mass
-	AbsMag 1.93 # from luminosity and temperature
-	Temperature 9064
-	Radius<rS> 1.70
+    Radius<rS> 1.70
+    SpectralType "A1V"                  # from mass
+    AbsMag 1.93                         # from luminosity and temperature
+    Temperature 9064
 
-	EllipticalOrbit # Fully specified orientation
-	{
-		Period          7.0389
-		SemiMajorAxis   5.50 # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
-		Eccentricity    0.7258
-		Inclination     40.56
-		AscendingNode   204.53
-		ArgOfPericenter 300.63
-		MeanAnomaly     272.07
-	}
+    OrbitBarycenter "ALF Eri"
+    EllipticalOrbit # Fully specified orientation
+    {
+        Period               7.0389
+        SemiMajorAxis        5.50       # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
+        Eccentricity         0.7258
+        Inclination         40.56
+        AscendingNode      204.53
+        ArgOfPericenter    300.63
+        MeanAnomaly        272.07
+    }
 }
 
 # 9640 GAM And / Almach
@@ -395,7 +395,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	}
     UniformRotation                    # assume alignment with orbital plane
     {
-        Period              48.9       # v sin i = 165.3 ± 4.5 km/s
+        Period              52.1       # v sin i = 165.3 ± 4.5 km/s
         Inclination         34.1
         AscendingNode      324.4
     }
@@ -421,7 +421,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	}
     UniformRotation                    # assume alignment with orbital plane
     {
-        Period              68.9       # v sin i = 58.8 ± 1.5 km/s
+        Period              69.6       # v sin i = 58.8 ± 1.5 km/s
         Inclination         34.1
         AscendingNode      324.4
     }
