@@ -306,10 +306,20 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 #   "Angular Sizes, Radii, and Effective Temperatures of B-type Stars from Optical Interferometry with the CHARA Array"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ab04b2
 #   https://scixplorer.org/abs/2019ApJ...873...91G/abstract
+# Rotation period from Strassmeier et al. (2020), A&A 644, id.A104
+#   "BRITE photometry and STELLA spectroscopy of bright stars in Auriga:
+#   Rotation, pulsation, orbits, and eclipses"
+#   https://www.aanda.org/articles/aa/full_html/2020/12/aa39310-20/aa39310-20.html
+#   https://scixplorer.org/abs/2020A%26A...644A.104S/abstract
 Modify 25428
 {
 	Radius<rS> 4.79
 	Temperature 14000
+
+	UniformRotation
+	{
+		Period<d>            2.74
+	}
 }
 
 # 25930 DEL Ori / Mintaka
