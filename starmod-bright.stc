@@ -1,4 +1,14 @@
 
+# Common papers:
+#   The names of these papers are not folded in order to make searching for them easier.
+
+# Baines et al. (2025), AJ 169 (6), id.293
+#   "Vintage NPOI: New and Updated Angular Diameters for 145 Stars"
+#   https://iopscience.iop.org/article/10.3847/1538-3881/adc930
+#   https://scixplorer.org/abs/2025AJ....169..293B/abstract
+
+
+
 # 677 ALF And / Alpheratz
 # TODO: Update barycentre position
 # Radius and Temperature from Ryabchikova et al. (1999), A&A 351, p.963-972
@@ -215,6 +225,25 @@ Modify 33579
 # 36850 ALF Gem / Castor
 
 # 37826 BET Gem / Pollux
+# Radius from Baines et al. (2025), AJ 169 (6), id.293
+# Temperature from Soubiran et al. (2024), A&A 682, id.A145
+#   "Gaia FGK benchmark stars: Fundamental Teff and log g of the third version"
+#   https://www.aanda.org/articles/aa/full_html/2024/02/aa47136-23/aa47136-23.html
+#   https://scixplorer.org/abs/2024A%26A...682A.145S/abstract
+# Rotation period from Aurière et al. (2021), A&A 646, id.A130
+#   "Pollux: A weak dynamo-driven dipolar magnetic field and implications for its probable planet"
+#   https://www.aanda.org/articles/aa/full_html/2021/02/aa39573-20/aa39573-20.html
+#   https://scixplorer.org/abs/2021A%26A...646A.130A/abstract
+Modify 37826
+{
+	Radius<rS> 8.97                    # 8.97 ± 0.03 rSun, from angular diameter
+	Temperature 4810
+
+	UniformRotation
+	{
+		Period<d>          660
+	}
+}
 
 # 39429 ZET Pup / Naos
 
@@ -447,6 +476,16 @@ Barycenter 76267 "Alphecca:Alphekkai:Gemma:ALF CrB:5 CrB"
 # 100751 ALF Pav / Peacock
 
 # 102098 ALF Cyg / Deneb
+# Radius from Baines et al. (2025), AJ 169 (6), id.293
+# Temperature from Georgy et al. (2021), A&A 650, id.A128
+#   "Blue supergiants as tests for stellar physics"
+#   https://www.aanda.org/articles/aa/full_html/2021/06/aa40105-20/aa40105-20.html
+#   https://scixplorer.org/abs/2021A%26A...650A.128G/abstract
+Modify 102098
+{
+	Radius<rS> 116.87                    # 116.87 +14.28-18.84 rSun, from angular diameter
+	Temperature 8700
+}
 
 # 102488 EPS Cyg / Aljanah
 
