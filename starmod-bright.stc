@@ -71,7 +71,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 
 # 746 BET Cas / Caph
 # TODO: Update rotation orientation
-# Dimensions and rotational parameters from Che et al. (2011), ApJ 732 (2), 68
+# Dimensions and rotation from Che et al. (2011), ApJ 732 (2), 68
 #   "Colder and Hotter: Interferometric Imaging of β Cassiopeiae and α Leonis"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
 #   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
@@ -101,7 +101,7 @@ Modify 746
 
 # 7588 ALF Eri / Achernar
 # TODO: Update rotation orientation | Add the rest of the star system
-# Dimensions and rotational parameters from Domiciano de Souza et al. (2014), A&A 569, (A10)
+# Dimensions and rotation from Domiciano de Souza et al. (2014), A&A 569, (A10)
 #   "The environment of the fast rotating star Achernar. III. Photospheric parameters revealed by the VLTI"
 #   https://www.aanda.org/articles/aa/full_html/2014/09/aa24144-14/aa24144-14.html
 #   https://scixplorer.org/abs/2014A%26A...569A..10D/abstract
@@ -150,12 +150,63 @@ Modify 7588
 # 28360 BET Aur / Menkalinan
 
 # 30324 BET CMa / Mirzam
+# Radius from Shull et al. (2025), AJ 994 (2), id.157
+#   "Ionization Sources of the Local Interstellar Clouds: Two B Stars, Three White Dwarfs, and the Local Hot Bubble"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ae10a6
+#   https://scixplorer.org/abs/2025ApJ...994..157S/abstract
+# Temperature and rotation from Fossati et al. (2015), A&A 574, id.A20
+#   "B fields in OB stars (BOB): on the detection of weak magnetic fields in the two early B-type stars β CMa and ∊ CMa. Possible lack of a "magnetic desert" in massive stars"
+#   https://www.aanda.org/articles/aa/full_html/2015/02/aa24986-14/aa24986-14.html
+#   https://scixplorer.org/abs/2015A%26A...574A..20F/abstract
+Modify 30324
+{
+	Radius<rS> 8.44                    # 8.44 ± 0.56 rSun, from angular diameter
+	Temperature 24700
+
+	UniformRotation
+	{
+		Period<d>           13.6
+		Inclination         71.3       # inclination (i) = 57.6 ± 1.7 deg
+		AscendingNode       70.1
+	}
+}
 
 # 30438 ALF Car / Canopus
+# Domiciano de Souza et al. (2021), A&A 654, id.A19
+#   "Refined fundamental parameters of Canopus from combined near-IR interferometry and spectral energy distribution"
+#   https://www.aanda.org/articles/aa/full_html/2021/10/aa40478-21/aa40478-21.html
+#   https://scixplorer.org/abs/2021A%26A...654A..19D/abstract
+Modify 30438
+{
+	Radius<rS> 73.2                    # 73.2 ± 3.9 rSun, from angular diameter
+	Temperature 7657
+}
 
 # 31681 GAM Gem / Alhena
 
 # 33579 EPS CMa / Adhara
+# Radius from Shull et al. (2025), AJ 979 (1), id.21
+#   "Epsilon Canis Majoris: The Brightest Extreme-ultraviolet Source with Surprisingly Low Interstellar Absorption"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ad9b8b
+#   https://scixplorer.org/abs/2025ApJ...979...21S/abstract
+# Temperature from Fossati et al. (2015), A&A 574, id.A20
+#   "B fields in OB stars (BOB): on the detection of weak magnetic fields in the two early B-type stars β CMa and ∊ CMa. Possible lack of a "magnetic desert" in massive stars"
+#   https://www.aanda.org/articles/aa/full_html/2015/02/aa24986-14/aa24986-14.html
+#   https://scixplorer.org/abs/2015A%26A...574A..20F/abstract
+# Rotation period from Sánchez Arias et al. (2023), Galaxies 11 (5), id.93
+#   "Unveiling the Evolutionary State of Three B Supergiant Stars: PU Gem, ϵ CMa, and η CMa"
+#   https://www.mdpi.com/2075-4434/11/5/93
+#   https://scixplorer.org/abs/2023Galax..11...93S/abstract
+Modify 33579
+{
+	Radius<rS> 10.7                    # 10.7 ± 0.7 rSun, from angular diameter
+	Temperature 22500
+
+	UniformRotation
+	{
+		Period<d>            5
+	}
+}
 
 # 34444 DEL CMa / Wezen
 
@@ -185,7 +236,7 @@ Modify 7588
 
 # 49669 ALF Leo / Regulus
 # TODO: Update rotation orientation | Add the rest of the star system
-# Dimensions and rotational parameters from Hadjara et al. (2018), 480 (1) 1263
+# Dimensions and rotation from Hadjara et al. (2018), 480 (1) 1263
 #   "Differential interferometry of the rapid rotator Regulus"
 #   https://academic.oup.com/mnras/article/480/1/1263/5063670
 #   https://scixplorer.org/abs/2018MNRAS.480.1263H/abstract
@@ -301,6 +352,15 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 # 68933 TET Cen / Menkent
 
 # 69673 ALF Boo / Arcturus
+# Ramírez et al. (2011), AJ 743 (2), article id. 135
+#   "Fundamental Parameters and Chemical Composition of Arcturus"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/743/2/135
+#   https://scixplorer.org/abs/2011ApJ...743..135R/abstract
+Modify 69673
+{
+	Radius<rS> 25.5                    # 25.5 ± 0.2 rSun, from angular diameter (literature, weighted mean)
+	Temperature 4286
+}
 
 # 71352 ETA Cen
 
