@@ -148,8 +148,8 @@ Barycenter 7588
     UniformRotation
     {
         Period        37.25
-        Inclination   68.8 # inclination (i) = 60.6 deg
-        AscendingNode 323.2 # orientation (alpha) = 216.9 deg
+        Inclination   68.8              # inclination (i) = 60.6 deg
+        AscendingNode 323.2             # orientation (alpha) = 216.9 deg
     }
 }
 
@@ -257,7 +257,7 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 # SpectralType and AppMag from WDS
 Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 {
-	RA 79.35006555                      # mass ratio 0.57:0.53
+	RA 79.35006555                      # mass ratio = 0.57:0.53
 	Dec 45.83733609
 	Distance 43.5                       # from weighted Gaia DR3 parallaxes
 }
@@ -439,22 +439,109 @@ Modify 37826
 # 46390 ALF Hya / Alphard
 
 # 49669 ALF Leo / Regulus
-# TODO: Update rotation orientation | Add the rest of the star system
-# Dimensions and rotation from Hadjara et al. (2018), 480 (1) 1263
-#   "Differential interferometry of the rapid rotator Regulus"
-#   https://academic.oup.com/mnras/article/480/1/1263/5063670
-#   https://scixplorer.org/abs/2018MNRAS.480.1263H/abstract
-Modify 49669
+# TODO: Update positions
+Barycenter "Regulus:Kabeleced:Cor Leonis:Kalb:ALF Leo:32 Leo:GJ 9316:ADS 7654 ABC"
 {
-	Radius<rS> 4.16                    # equatorial radius
-	SemiAxes [ 1 0.741 1 ]             # equatorial radius 35% greater than polar
+	RA 152.08388483                      # mass ratio = ((3.7 ± 1.4):(0.31 ± 0.10)):(0.8:0.2)
+	Dec 11.97320806
+	Distance 79.032                      # from weighted Gaia DR3 parallaxes of B and C components
+}
 
+# Gies et al. (2020), ApJ 902 (1), id.25
+#   "Spectroscopic Detection of the Pre-White Dwarf Companion of Regulus"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/abb372
+#   https://scixplorer.org/abs/2020ApJ...902...25G/abstract
+Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:GJ 9316 A:ADS 7654 A"
+{
+	RA 152.09183242
+	Dec 11.96723362
+	Distance 79.032
+}
+
+# Dimensions, AppMag (V-band) and rotation from Che et al. (2011), ApJ 732 (2), 68
+#   "Colder and Hotter: Interferometric Imaging of β Cassiopeiae and α Leonis"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
+#   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
+"Regulus Aa:Kabeleced Aa:Cor Leonis Aa:Kalb Aa:ALF Leo Aa:32 Leo Aa:GJ 9316 Aa"
+{
+	Radius<rS> 4.21                     # equatorial
+	SemiAxes [ 1 0.765 1 ]              # equatorial radius 31% greater than polar
+	SpectralType "B8IVn"
+	AppMag 1.391
+	Temperature 12200
+
+	OrbitBarycenter "ALF Leo A"
+	EllipticalOrbit                     # assume alignment with rotation axis
+	{
+		Epoch          2457481.2
+		Period<d>           40.102
+		SemiMajorAxis        0.028      # mass ratio = (3.7 ± 1.4):(0.31 ± 0.10)
+		Inclination        122.54
+		AscendingNode      145.74
+		ArgOfPericenter    268.19
+	}
 	UniformRotation
 	{
-		Period              14.63
-		Inclination        122.54      # inclination (i) = 86.3 deg
-		AscendingNode      145.74      # orientation (alpha) = 258 deg
+		Period              14.6        # from rotation rate
+		Inclination        122.5        # inclination (i) = 86.3 deg
+		AscendingNode      145.7        # orientation (alpha) = 258 deg
 	}
+
+}
+
+"Regulus Ab:Kabeleced Ab:Cor Leonis Ab:Kalb Ab:ALF Leo Ab:32 Leo Ab:GJ 9316 Ab"
+{
+	Radius<rS> 0.061
+	SpectralType "D"
+	AppMag 9.5
+	Temperature 20000
+
+	OrbitBarycenter "ALF Leo A"
+	EllipticalOrbit                     # assume alignment with rotation axis
+	{
+		Epoch          2457481.2
+		Period<d>           40.102
+		SemiMajorAxis        0.335      # mass ratio = (3.7 ± 1.4):(0.31 ± 0.10)
+		Inclination        122.54
+		AscendingNode      145.74
+		ArgOfPericenter     88.19
+	}
+	UniformRotation                     # assume tidal locking
+	{
+		Period<d>           40.102
+		Inclination        122.5
+		AscendingNode      145.7
+	}
+}
+
+# SpectralType and masses from Rappaport et al. (2009), ApJ 698 (1), id.666
+#   "The Past and Future History of Regulus"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/698/1/666
+#   https://scixplorer.org/abs/2009ApJ...698..666R/abstract
+# AppMag from WDS
+Barycenter "Regulus BC:Kabeleced BC:Cor Leonis BC:Kalb BC:ALF Leo BC:32 Leo BC:GJ 9316 BC:ADS 7654 BC"
+{
+	RA 152.05224475                     # mass ratio = 0.8:0.2
+	Dec 11.99698803
+	Distance 79.032
+}
+
+1001340833 "Regulus B:Kabeleced B:Cor Leonis B:Kalb B:ALF Leo B:32 Leo B:GJ 9316 B:ADS 7654 B"
+{
+	RA 152.05212685
+	Dec 11.99699714
+	Distance 79.032
+	SpectralType "K2V"
+	AppMag 8.24
+}
+
+"Regulus C:Kabeleced C:Cor Leonis C:Kalb C:ALF Leo C:32 Leo C:GJ 9316 C:ADS 7654 C"
+{
+	RA 152.05271632
+	Dec 11.99695158
+	Distance 79.032
+	SpectralType "M4V"
+	AppMag 13.2
 }
 
 # 50583 GAM Leo / Algieba
