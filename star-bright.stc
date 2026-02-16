@@ -561,6 +561,89 @@ Barycenter "Regulus BC:Kabeleced BC:Cor Leonis BC:Kalb BC:ALF Leo BC:32 Leo BC:G
 # 61932 GAM Cen / Muhlifain
 
 # 62434 BET Cru / Mimosa
+# Gratton et al. (2023), A&A 678, id.A93
+#   "Multiples among B stars in the Scorpius-Centaurus association"
+#   https://www.aanda.org/articles/aa/full_html/2023/10/aa46806-23/aa46806-23.html
+#   https://scixplorer.org/abs/2023A%26A...678A..93G/abstract
+# Orbit (except inclination and node) from Aerts et al. (1998), A&A 329, p.137-146
+#   "Evidence for binarity and multiperiodicity in the beta Cephei star beta Crucis"
+#   https://scixplorer.org/abs/1998A%26A...329..137A/abstract
+Barycenter 62434
+{
+	RA 191.92990816
+	Dec -59.68884391
+	Distance 278.528
+}
+
+# Cotton et al. (2022), Nature Astronomy 6, p.154-164
+#   "Polarimetric detection of non-radial oscillation modes in the β Cephei star β Crucis"
+#   https://arxiv.org/abs/2205.11679
+#   https://scixplorer.org/abs/2022NatAs...6..154C/abstract
+"Mimosa Aa:BET Cru Aa"
+{
+	Radius<rS> 8.1                      # 7.3-8.9 Rsun
+	SpectralType "B0.5III"
+	AppMag 1.25
+	Temperature 27000
+
+	OrbitBarycenter "BET Cru"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2449879
+		Period<d>         1828.0
+		SemiMajorAxis        0.86       # mass ratio = (14.5 ± 0.5):(1.9 ± 0.07)
+		Eccentricity         0.38
+		Inclination         59.9
+		AscendingNode      355.1
+		ArgOfPericenter     86
+	}
+	UniformRotation
+	{
+		Period<d>           15          # 13-17 d
+		Inclination          9          # inclination (i) = 46 ± 2 deg
+		AscendingNode      249          # position angle of the axis = 205 ± 8 deg
+	}
+}
+
+"Mimosa Ab:BET Cru Ab"
+{
+	SpectralType "A5V"                  # from mass
+	AbsMag 2.01                         # for assumed spectral type
+
+	OrbitBarycenter "BET Cru"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2449879
+		Period<d>         1828.0
+		SemiMajorAxis        6.57       # mass ratio = (14.5 ± 0.5):(1.9 ± 0.07)
+		Eccentricity         0.38
+		Inclination         59.9
+		AscendingNode      355.1
+		ArgOfPericenter    266
+	}
+}
+
+# Designations from Cohen et al. (2008), MNRAS 386 (4), p.1855-1871
+#   "Chandra spectroscopy of the hot star β Crucis and the discovery of a pre-main-sequence companion"
+#   https://academic.oup.com/mnras/article/386/4/1855/1456919
+#   https://scixplorer.org/abs/2008MNRAS.386.1855C/abstract
+# Astrometry from Janson et al. (2021), A&A 646, id.A164
+#   "BEAST begins: sample characteristics and survey performance of the B-star Exoplanet Abundance Study"
+#   https://www.aanda.org/articles/aa/full_html/2021/02/aa39683-20/aa39683-20.html
+#   https://scixplorer.org/abs/2021A%26A...646A.164J/abstract
+# Physical properties from BHAC15 isochrones, for age = 0.0100 Gyr and mass = 0.800 Ms
+#   https://perso.ens-lyon.fr/isabelle.baraffe/BHAC15dir/BHAC15_iso.CIT2
+"BET Cru D:CXOU J124743.8-594121"
+{
+	# Separation = 4176.1 ± 3.1 mas, position angle = 121.84 ± 0.05 deg
+	RA 191.93186077
+	Dec -59.68974437
+	Distance 278.528
+	Radius<rS> 1.005
+	SpectralType "K8"                   # from temperature
+	AbsMag 7.13
+	Temperature 4041
+}
 
 # 62956 EPS UMa / Alioth
 
