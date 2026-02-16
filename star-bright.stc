@@ -476,9 +476,9 @@ Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:G
 		Epoch          2457481.2
 		Period<d>           40.102
 		SemiMajorAxis        0.028      # mass ratio = (3.7 ± 1.4):(0.31 ± 0.10)
-		Inclination        122.54
-		AscendingNode      145.74
-		ArgOfPericenter    268.19
+		Inclination        122.5
+		AscendingNode      145.7
+		ArgOfPericenter    268.2
 	}
 	UniformRotation
 	{
@@ -502,9 +502,9 @@ Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:G
 		Epoch          2457481.2
 		Period<d>           40.102
 		SemiMajorAxis        0.335      # mass ratio = (3.7 ± 1.4):(0.31 ± 0.10)
-		Inclination        122.54
-		AscendingNode      145.74
-		ArgOfPericenter     88.19
+		Inclination        122.5
+		AscendingNode      145.7
+		ArgOfPericenter     88.2
 	}
 	UniformRotation                     # assume tidal locking
 	{
