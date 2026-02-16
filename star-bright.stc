@@ -33,10 +33,10 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 #   “TESS survey of rotational and pulsational variability of mercury–manganese stars”
 #   https://academic.oup.com/mnras/article/506/4/5328/6325560
 #   https://scixplorer.org/abs/2021MNRAS.506.5328K/abstract
-"Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:CCDM J00083+2905Aa" 
+"Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:CCDM J00083+2905Aa"
 {
     Radius<rS> 2.7
-    SpectralType "B8IV-VHgMn"                                             
+    SpectralType "B8IV-VHgMn"
     AppMag 2.221
     BoloCorrection -0.60
     Temperature 13800
