@@ -88,14 +88,14 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 Modify 746
 {
 	#SemiAxes<rS> [ 3.79 3.79 3.06 ]
-	Radius<rS> 3.79                     # equatorial radius
+	Radius<rS> 3.79                     # equatorial
 	SemiAxes [ 1 0.807 1 ]              # equatorial radius 24% greater than polar
 
 	UniformRotation
 	{
 		Period<d>            0.893      # from rotation rate
-		Inclination        125.88       # inclination (i) = 19.9 deg
-		AscendingNode      287.38       # orientation (alpha) = -7.09 deg
+		Inclination        125.88       # inclination (i) = 19.9°
+		AscendingNode      287.38       # orientation (alpha) = -7.09°
 	}
 }
 
@@ -106,6 +106,23 @@ Modify 746
 # 3419 BET Cet / Diphda
 
 # 4427 GAM Cas / Tiansi
+# Dimensions and rotation from Archer et al. (2025), AJ 995 (2), id.191
+#   "Measurement of the Photosphere Oblateness of γ Cassiopeiae via Stellar Intensity Interferometry with the VERITAS Observatory"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ae0744
+#   https://scixplorer.org/abs/2025ApJ...995..191A/abstract
+Modify 4427
+{
+	#SemiAxes<rS> [ 10.9 10.9 7.9 ]
+	Radius<rS> 10.9                     # equatorial
+	SemiAxes [ 1 0.725 1 ]              # polar radius = 7.9 ± 0.4 rSun
+
+	UniformRotation
+	{
+		Period              29.4        # calculated from equatorial radius and equatorial rotational velocity (v_eq) = 450 ± 20 km/s
+		Inclination        150.8        # inclination = 60°
+		AscendingNode      194.7        # rotation pole position angle = 114.7 +6.4-5.7° (± 180° ambiguous)
+	}
+}
 
 # 5447 BET And / Mirach
 
@@ -132,7 +149,7 @@ Barycenter 7588
 	SemiAxes [ 1 0.740 1 ]              # equatorial radius 35.2% greater than polar
 	SpectralType "B3Vpe"
 	AppMag 0.46
-	Temperature 15539
+	Temperature 15539                   # effective
 
 	OrbitBarycenter "ALF Eri"
 	EllipticalOrbit                     # fully specified orientation
@@ -148,8 +165,8 @@ Barycenter 7588
 	UniformRotation
 	{
 		Period        37.25
-		Inclination   68.8              # inclination (i) = 60.6 deg
-		AscendingNode 323.2             # orientation (alpha) = 216.9 deg
+		Inclination   68.8              # inclination (i) = 60.6°
+		AscendingNode 323.2             # orientation (alpha) = 216.9°
 	}
 }
 
@@ -325,6 +342,24 @@ Modify 25428
 # 25930 DEL Ori / Mintaka
 
 # 26311 EPS Ori / Alnilam
+# Dimensions and rotation from Oplištilová et al. (2025), A&A 704, id.A204
+#   "VLTI observations of Orion Belt stars: I. ∊ Orionis"
+#   https://www.aanda.org/articles/aa/full_html/2025/12/aa56154-25/aa56154-25.html
+#   https://scixplorer.org/abs/2025A%26A...704A.204O/abstract
+Modify 26311
+{
+	#SemiAxes<rS> [ 33.61 33.61 22.29 ]
+	Radius<rS> 33.61                    # equatorial
+	SemiAxes [ 1 0.6632 1 ]             # polar radius = 22.29 ± 1.2 rSun
+	Temperature 24985                   # effective
+
+	UniformRotation
+	{
+		Period<d>            4.27
+		Inclination         49.1        # inclination = 45 ± 20°
+		AscendingNode       44.2        # rotation pole position angle = 301.6 ± 30°
+	}
+}
 
 # 26727 ZET Ori / Alnitak
 
@@ -351,7 +386,7 @@ Modify 30324
 	UniformRotation
 	{
 		Period<d>           13.6
-		Inclination         71.3       # inclination (i) = 57.6 ± 1.7 deg
+		Inclination         71.3       # inclination (i) = 57.6 ± 1.7°
 		AscendingNode       70.1
 	}
 }
@@ -468,7 +503,7 @@ Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:G
 	SemiAxes [ 1 0.765 1 ]              # equatorial radius 31% greater than polar
 	SpectralType "B8IVn"
 	AppMag 1.391
-	Temperature 12200
+	Temperature 12200                   # effective
 
 	OrbitBarycenter "ALF Leo A"
 	EllipticalOrbit                     # assume alignment with rotation axis
@@ -483,8 +518,8 @@ Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:G
 	UniformRotation
 	{
 		Period              14.6        # from rotation rate
-		Inclination        122.5        # inclination (i) = 86.3 deg
-		AscendingNode      145.7        # orientation (alpha) = 258 deg
+		Inclination        122.5        # inclination (i) = 86.3°
+		AscendingNode      145.7        # orientation (alpha) = 258°
 	}
 
 }
@@ -600,8 +635,8 @@ Barycenter 62434
 	UniformRotation
 	{
 		Period<d>           15          # 13-17 d
-		Inclination          9          # inclination (i) = 46 ± 2 deg
-		AscendingNode      249          # position angle of the axis = 205 ± 8 deg
+		Inclination          9          # inclination (i) = 46 ± 2°
+		AscendingNode      249          # position angle of the axis = 205 ± 8°
 	}
 }
 
@@ -635,7 +670,7 @@ Barycenter 62434
 #   https://perso.ens-lyon.fr/isabelle.baraffe/BHAC15dir/BHAC15_iso.CIT2
 "BET Cru D:CXOU J124743.8-594121"
 {
-	# Separation = 4176.1 ± 3.1 mas, position angle = 121.84 ± 0.05 deg
+	# Separation = 4176.1 ± 3.1 mas, position angle = 121.84 ± 0.05°
 	RA 191.93186077
 	Dec -59.68974437
 	Distance 278.528
@@ -736,7 +771,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 #   https://scixplorer.org/abs/2011ApJ...743..135R/abstract
 Modify 69673
 {
-	Radius<rS> 25.5                    # 25.5 ± 0.2 rSun, from angular diameter (literature, weighted mean)
+	Radius<rS> 25.5                     # 25.5 ± 0.2 rSun, from angular diameter (literature, weighted mean)
 	Temperature 4286
 }
 
@@ -811,12 +846,48 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 # 86032 ALF Oph / Rasalhague
 
 # 86228 TET Sco / Sargas
+# Dimensions, Temperature, and rotation from Lewis et al. (2022), MNRAS 513 (1), pp.1129-1140
+#   "A study of the F-giant star θ Scorpii A: a post-merger rapid rotator?"
+#   https://academic.oup.com/mnras/article/513/1/1129/6565806
+#   https://scixplorer.org/abs/2022MNRAS.513.1129L/abstract
+Modify 86228
+{
+	#SemiAxes<rS> [ 35.5 35.5 26.3 ]
+	Radius<rS> 35.5                     # equatorial
+	SemiAxes [ 1 0.741 1 ]              # polar radius = 26.3 ± 0.9 rSun
+	Temperature 6294                    # effective
+
+	UniformRotation
+	{
+		Period<d>           16.60
+		Inclination         12.4        # inclination = 58 +9-3°
+		AscendingNode      172.0        # rotation pole position angle = 3.3 ± 1.0° (± 180° ambiguous)
+	}
+}
 
 # 86670 KAP Sco / Girtab
 
 # 87833 GAM Dra / Eltanin
 
 # 90185 EPS Sgr / Kaus Australis
+# Dimensions, Temperature, and rotation from Bailey et al. (2024), AJ 972 (1), id.103
+#   "ϵ Sagittarii: An Extreme Rapid Rotator with a Decretion Disk"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ad630b
+#   https://scixplorer.org/abs/2024ApJ...972..103B/abstract
+Modify 90185
+{
+	#SemiAxes<rS> [ 8.80 8.80 6.01 ]
+	Radius<rS> 8.80                     # equatorial
+	SemiAxes [ 1 0.683 1 ]              # polar radius = 6.01 rSun
+	Temperature 9950                    # effective
+
+	UniformRotation
+	{
+		Period<d>            1.61
+		Inclination         41.8        # inclination = 80°
+		AscendingNode       97.8        # rotation pole position angle = 40.1°
+	}
+}
 
 # 92855 SIG Sgr / Nunki
 
@@ -832,7 +903,7 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 #   https://scixplorer.org/abs/2021A%26A...650A.128G/abstract
 Modify 102098
 {
-	Radius<rS> 116.87                    # 116.87 +14.28-18.84 rSun, from angular diameter
+	Radius<rS> 116.87                   # 116.87 +14.28-18.84 rSun, from angular diameter
 	Temperature 8700
 }
 
