@@ -358,7 +358,7 @@ Modify 25428
 # 25930 DEL Ori / Mintaka
 
 # 26311 EPS Ori / Alnilam
-# Dimensions and rotation from Oplištilová et al. (2025), A&A 704, id.A204
+# Dimensions, Temperature, and rotation from Oplištilová et al. (2025), A&A 704, id.A204
 #   "VLTI observations of Orion Belt stars: I. ∊ Orionis"
 #   https://www.aanda.org/articles/aa/full_html/2025/12/aa56154-25/aa56154-25.html
 #   https://scixplorer.org/abs/2025A%26A...704A.204O/abstract
@@ -604,6 +604,23 @@ Barycenter "Regulus BC:Kabeleced BC:Cor Leonis BC:Kalb BC:ALF Leo BC:32 Leo BC:G
 # 57632 BET Leo / Denebola
 
 # 58001 GAM UMa / Phecda
+# Dimensions and rotation from Jones et al. (2015), AJ 813 (1), article id. 58
+#   "The Ages of A-Stars. I. Interferometric Observations and Age Estimates for Stars in the Ursa Major Moving Group"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/813/1/58
+#   https://scixplorer.org/abs/2015ApJ...813...58J/abstract
+Modify 58001
+{
+	#SemiAxes<rS> [ 3.385 3.385 2.186 ]
+	Radius<rS> 3.385                    # equatorial, ELR Gravity Darkening Law
+	SemiAxes [ 1 0.6458 1 ]             # polar radius = 2.186 +0.083-0.110 rSun
+
+	UniformRotation
+	{
+		Period              10.6        # calculated from equatorial radius and equatorial rotational velocity (v_eq) = 386.3 +10.5-8.4 km/s
+		Inclination        109.5        # inclination = 28.5 +5.7-5.9°
+		AscendingNode       69.2        # rotation pole position angle = 18.4 +72.6-54.3°
+	}
+}
 
 # 60718 ALF Cru / Acrux
 
