@@ -1,4 +1,7 @@
 
+
+# This file contains all stars brighter than visual magnitude (m_V) of 2.5.
+
 # Common papers:
 #   The names of these papers are not folded in order to make searching for them easier.
 
@@ -8,6 +11,19 @@
 #   https://scixplorer.org/abs/2025AJ....169..293B/abstract
 
 
+
+# BRIGHTEST STARS (m_V <= 2.5)
+# Excluded: stars already in other files, such as stars-near.stc or extrasolar.stc. They are:
+# - 9884 ALF Ari / Hamal (extrasolar.stc)
+# - 32349 ALF CMa / Sirius (stars-near.stc)
+# - 37279 ALF CMi / Procyon (stars-near.stc)
+# - 50583 GAM Leo / Algieba (extrasolar.stc)
+# - 71681 ALF Cen B / Toliman (stars-near.stc)
+# - 71683 ALF Cen A / Rigil Kentaurus (stars-near.stc)
+# - 72607 BET UMi / Kochab (extrasolar.stc)
+# - 91262 ALF Lyr / Vega (stars-near.stc)
+# - 97649 ALF Aql / Altair (stars-near.stc)
+# - 113368 ALF PsA / Fomalhaut (stars-near.stc)
 
 # 677 ALF And / Alpheratz
 # TODO: Update barycentre position
