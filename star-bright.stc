@@ -368,6 +368,7 @@ Modify 26311
 	Radius<rS> 33.61                    # equatorial
 	SemiAxes [ 1 0.6632 1 ]             # polar radius = 22.29 rSun
 	AppMag 1.679
+	Extinction 0.155
 	Temperature 24985                   # effective
 
 	UniformRotation
@@ -379,6 +380,111 @@ Modify 26311
 }
 
 # 26727 ZET Ori / Alnitak
+# Hummel et al. (2013), A&A 554, id.A52
+#   "Dynamical mass of the O-type supergiant in ζ Orionis A"
+#   https://www.aanda.org/articles/aa/full_html/2013/06/aa21434-13/aa21434-13.html
+#   https://scixplorer.org/abs/2013A%26A...554A..52H/abstract
+# A-B orbit from Sixth Orbit Catalog (Izm2019)
+Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:CCDM J05408-0156AB"
+{
+	RA 85.18977448                      # mass ratio ((33 ± 10):(14 ± 3)):16.66
+	Dec -1.94278839
+	Distance<pc> 387
+}
+
+Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A"
+{
+	OrbitBarycenter "ZET Ori"
+	EllipticalOrbit
+	{
+		Period            5587.5182
+		SemiMajorAxis      801.56       # 7.91434 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
+		Eccentricity         0.82887
+		Inclination         44.817
+		AscendingNode       91.223
+		ArgOfPericenter    136.561
+		MeanAnomaly        307.910
+	}
+}
+
+# Radius from Gordon et al. (2018), ApJ 869 (1), id.37
+#   "Angular Sizes and Effective Temperatures of O-type Stars from Optical Interferometry with the CHARA Array"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/aaec04
+#   https://scixplorer.org/abs/2018ApJ...869...37G/abstract
+# Rotation period from Blazère et al. (2015), A&A 582, id.A110
+#   "The magnetic field of ζ Orionis A"
+#   https://www.aanda.org/articles/aa/full_html/2015/10/aa26855-15/aa26855-15.html
+#   https://scixplorer.org/abs/2015A%26A...582A.110B/abstract
+"Alnitak Aa:ZET Ori Aa:50 Ori Aa"
+{
+	Radius<rS> 22.8                     # 22.8 ± 1.3 rSun, from angular diameter (Gaia distance)
+	SpectralType "O9.5Iab"
+	AppMag 2.08
+	Extinction 0.19
+	Temperature 29500
+
+	OrbitBarycenter "ZET Ori A"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2452735.8
+		Period<d>         2688.9
+		SemiMajorAxis        4.14       # 35.9 mas, mass ratio = (33 ± 10):(14 ± 3)
+		Eccentricity         0.338
+		Inclination        155.8
+		AscendingNode      181.2
+		ArgOfPericenter    213.2
+	}
+
+	UniformRotation
+	{
+		Period<d>            6.829
+	}
+}
+
+# SpectralType, Temperature, orbit period and epoch from Martinod et al. (2018), A&A 618, id.A153
+#   "Fibered visible interferometry and adaptive optics: FRIEND at CHARA"
+#   https://www.aanda.org/articles/aa/full_html/2018/10/aa31386-17/aa31386-17.html
+#   https://scixplorer.org/abs/2018A%26A...618A.153M/abstract
+"Alnitak Ab:ZET Ori Ab:50 Ori Ab"
+{
+	Radius 13000000                     # from angular diameter = 0.45 ± 0.12 mas
+	SpectralType "B5II"
+	AppMag 4.28
+	Extinction 0.19
+	Temperature 15500
+
+	OrbitBarycenter "ZET Ori A"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2452735.8
+		Period<d>         2688.9
+		SemiMajorAxis        9.75       # 35.9 mas, mass ratio = (33 ± 10):(14 ± 3)
+		Eccentricity         0.338
+		Inclination        155.8
+		AscendingNode      181.2
+		ArgOfPericenter     33.2
+	}
+}
+
+# Mass from MSC
+2011884771 "Alnitak B:ZET Ori B:50 Ori B:ADS 4263 B:CCDM J05408-0156B:HD 37743"
+{
+	SpectralType "B0III"
+	AppMag 4.01
+	Extinction 0.19
+
+	OrbitBarycenter "ZET Ori"
+	EllipticalOrbit
+	{
+		Period            5587.5182
+		SemiMajorAxis     2261.29       # 7.91434 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
+		Eccentricity         0.82887
+		Inclination         44.817
+		AscendingNode       91.223
+		ArgOfPericenter    316.561
+		MeanAnomaly        307.910
+	}
+}
 
 # 27366 KAP Ori / Saiph
 
