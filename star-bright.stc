@@ -358,22 +358,24 @@ Modify 25428
 # 25930 DEL Ori / Mintaka
 
 # 26311 EPS Ori / Alnilam
-# Dimensions, Temperature, and rotation from Oplištilová et al. (2025), A&A 704, id.A204
+# Oplištilová et al. (2025), A&A 704, id.A204
 #   "VLTI observations of Orion Belt stars: I. ∊ Orionis"
 #   https://www.aanda.org/articles/aa/full_html/2025/12/aa56154-25/aa56154-25.html
 #   https://scixplorer.org/abs/2025A%26A...704A.204O/abstract
 Modify 26311
 {
+	Distance<pc> 384
 	#SemiAxes<rS> [ 33.61 33.61 22.29 ]
 	Radius<rS> 33.61                    # equatorial
 	SemiAxes [ 1 0.6632 1 ]             # polar radius = 22.29 ± 1.2 rSun
+	AppMag 1.679
 	Temperature 24985                   # effective
 
 	UniformRotation
 	{
 		Period<d>            4.27
-		Inclination         49.1        # inclination = 45 ± 20°
-		AscendingNode       44.2        # rotation pole position angle = 301.6 ± 30°
+		Inclination        103.8        # inclination = 45 ± 20°
+		AscendingNode       17.6        # equator ascending node = 301.6 ± 30°
 	}
 }
 
