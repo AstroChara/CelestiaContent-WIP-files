@@ -587,15 +587,22 @@ Modify 37826
 #   https://academic.oup.com/mnras/article/484/4/5350/5304989
 #   https://scixplorer.org/abs/2019MNRAS.484.5350H/abstract
 #   Table 1, column 4 (M = 25 mSun)
+# Rotation period from Ramiaramanantsoa et al. (2018), MNRAS 473 (4), p.5532-5569
+#   "BRITE-Constellation high-precision time-dependent photometry of the early O-type supergiant
+#   ζ Puppis unveils the photospheric drivers of its small- and large-scale wind structures"
+#   https://academic.oup.com/mnras/article/473/4/5532/4553528
+#   https://scixplorer.org/abs/2018MNRAS.473.5532R/abstract
 Modify 39429
 {
 	#SemiAxes<rS> [ 13.72 13.72 11.25 ]
 	Radius<rS> 13.72                    # ± 0.49; equatorial
 	SemiAxes [ 1 0.8200 1 ]             # polar radius = 11.25 ± 0.19 rSun
+	AppMag 2.25
+	Extinction 0.12
 
 	UniformRotation
 	{
-		Period<d>            1.78
+		Period<d>            1.78063    # ± 0.00025
 		Inclination         12.3        # inclination = 33.2 ± 1.8°
 		AscendingNode      135.9
 	}
