@@ -10,6 +10,11 @@
 #   https://iopscience.iop.org/article/10.3847/1538-3881/adc930
 #   https://scixplorer.org/abs/2025AJ....169..293B/abstract
 
+# Che et al. (2011), ApJ 732 (2), 68
+#   "Colder and Hotter: Interferometric Imaging of β Cassiopeiae and α Leonis"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
+#   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
+
 
 
 # BRIGHTEST STARS (m_V <= 2.5)
@@ -98,13 +103,11 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 # 746 BET Cas / Caph
 # TODO: Update rotation orientation
 # Dimensions and rotation from Che et al. (2011), ApJ 732 (2), 68
-#   "Colder and Hotter: Interferometric Imaging of β Cassiopeiae and α Leonis"
-#   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
-#   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
+#   Table 3, Modified von Zeipel Model (β-free)
 Modify 746
 {
 	#SemiAxes<rS> [ 3.79 3.79 3.06 ]
-	Radius<rS> 3.79                     # +0.10−0.09; equatorial, Modified von Zeipel Model (β-free)
+	Radius<rS> 3.79                     # +0.10−0.09; equatorial
 	SemiAxes [ 1 0.807 1 ]              # polar radius = 3.06 +0.08−0.07 rSun
 
 	UniformRotation
@@ -579,6 +582,15 @@ Modify 37826
 }
 
 # 39429 ZET Pup / Naos
+# Howarth and van Leeuwen (2019), MNRAS 484 (4), p.5350-5361
+#   "The distance, rotation, and physical parameters of ζ Pup"
+#   https://academic.oup.com/mnras/article/484/4/5350/5304989
+#   https://scixplorer.org/abs/2019MNRAS.484.5350H/abstract
+#   Table 1, column 4 (M = 25 mSun)
+Modify 39429
+{
+	Radius<rS>
+}
 
 # 39953 GAM Vel
 
@@ -617,13 +629,11 @@ Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:G
 }
 
 # Dimensions, AppMag (V-band) and rotation from Che et al. (2011), ApJ 732 (2), 68
-#   "Colder and Hotter: Interferometric Imaging of β Cassiopeiae and α Leonis"
-#   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
-#   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
+#   Table 4, Modified von Zeipel Model (β-free)
 "Regulus Aa:Kabeleced Aa:Cor Leonis Aa:Kalb Aa:ALF Leo Aa:32 Leo Aa:GJ 9316 Aa"
 {
 	#SemiAxes<rS> [ 4.21 4.21 3.22 ]
-	Radius<rS> 4.21                     # +0.07−0.06; equatorial, Modified von Zeipel Model (β-free)
+	Radius<rS> 4.21                     # +0.07−0.06; equatorial
 	SemiAxes [ 1 0.765 1 ]              # polar radius = 3.22 +0.05−0.04 rSun
 	SpectralType "B8IVn"
 	AppMag 1.391
@@ -727,10 +737,11 @@ Modify 53910
 #   "The Ages of A-Stars. I. Interferometric Observations and Age Estimates for Stars in the Ursa Major Moving Group"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/813/1/58
 #   https://scixplorer.org/abs/2015ApJ...813...58J/abstract
+#   Table 5 (ELR Gravity Darkening Law)
 Modify 58001
 {
 	#SemiAxes<rS> [ 3.385 3.385 2.186 ]
-	Radius<rS> 3.385                    # +0.204-0.257; equatorial, ELR Gravity Darkening Law
+	Radius<rS> 3.385                    # +0.204-0.257; equatorial
 	SemiAxes [ 1 0.6458 1 ]             # polar radius = 2.186 +0.083-0.110 rSun
 
 	UniformRotation
@@ -859,7 +870,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 "Spica A:Azimech A:ALF Vir A:67 Vir A:CCDM J13252-1109Aa"
 {
-	Radius<rS> 7.95                     # fractional equatorial radius = 0.282 ± 0.09 (of semi-major axis)
+	Radius<rS> 7.95                     # fractional equatorial radius (of semi-major axis) = 0.282 ± 0.09
 	SemiAxes [ 1 0.887 1 ]              # fractional polar radius = 0.250 ± 0.08
 	SpectralType "B1III/IV"
 	AbsMag -3.36                        # from luminosity and temperature
@@ -885,7 +896,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 "Spica B:Azimech B:ALF Vir B:67 Vir B:CCDM J13252-1109Ab"
 {
-	Radius<rS> 3.78                     # fractional equatorial radius = 0.134 ± 0.04 (of semi-major axis)
+	Radius<rS> 3.78                     # fractional equatorial radius (of semi-major axis) = 0.134 ± 0.04
 	SemiAxes [ 1 0.985 1 ]              # fractional polar radius = 0.132 ± 0.05
 	SpectralType "B2V"
 	AbsMag -1.47                        # from luminosity and temperature
@@ -1085,6 +1096,7 @@ Modify 102098
 #   "Imaging and Modeling Rapidly Rotating Stars: α Cephei and α Ophiuchi"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/701/1/209
 #   https://scixplorer.org/abs/2009ApJ...701..209Z/abstract
+#   Table 3, Nonstandard (β-free)
 # Rotation period from van Belle et al. (2006), AJ 637 (1), pp. 494-505
 #   "First Results from the CHARA Array. III. Oblateness, Rotational Velocity, and Gravity Darkening of Alderamin"
 #   https://iopscience.iop.org/article/10.1086/498334
@@ -1092,7 +1104,7 @@ Modify 102098
 Modify 105199
 {
 	#SemiAxes<rS> [ 2.740 2.740 2.162 ]
-	Radius<rS> 2.740                    # ± 0.044; equatorial, "Nonstandard (β-free)" model
+	Radius<rS> 2.740                    # ± 0.044; equatorial
 	SemiAxes [ 1 0.7891 1 ]             # polar radius = 2.162 ± 0.036 rSun
 	Temperature 7510                    # ± 160; effective
 
