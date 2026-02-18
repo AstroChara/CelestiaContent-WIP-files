@@ -61,7 +61,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	EllipticalOrbit {
 		Epoch          2447763.097745
 		Period<d>           96.69342
-		SemiMajorAxis        0.2496     # 0.732751 au, mass ratio = 3.630:1.875
+		SemiMajorAxis        0.2496     # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
 		Eccentricity         0.525855
 		Inclination         39.093
 		AscendingNode      200.782
@@ -69,7 +69,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	}
 	UniformRotation                     # assume alignment with orbital plane
 	{
-		Period<d>            2.38337
+		Period<d>            2.38337    # ± 0.00017
 		Inclination         39.093
 		AscendingNode      200.782
 	}
@@ -87,7 +87,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	EllipticalOrbit {
 		Epoch          2447763.097745
 		Period<d>           96.69342
-		SemiMajorAxis        0.4832     # 0.732751 au, mass ratio = 3.630:1.875
+		SemiMajorAxis        0.4832     # 0.732751 au, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
 		Eccentricity         0.525855
 		Inclination         39.093
 		AscendingNode      200.782
@@ -130,13 +130,13 @@ Modify 4427
 {
 	#SemiAxes<rS> [ 10.9 10.9 7.9 ]
 	Radius<rS> 10.9                     # equatorial
-	SemiAxes [ 1 0.725 1 ]              # polar radius = 7.9 rSun
+	SemiAxes [ 1 0.725 1 ]              # polar radius = 7.9 ± 0.4 rSun
 
 	UniformRotation
 	{
-		Period              29.4        # from equatorial radius and equatorial rotational velocity (v_eq) = 450 km/s
+		Period              29.4        # calculated from equatorial radius and equatorial rotational velocity (v_eq) = 450 ± 20 km/s
 		Inclination        150.8        # inclination = 60°
-		AscendingNode      194.7        # rotation pole position angle = 114.7° (± 180° ambiguous)
+		AscendingNode      194.7        # rotation pole position angle = 114.7 +6.4-5.7° (± 180° ambiguous)
 	}
 }
 
@@ -170,7 +170,7 @@ Barycenter 7588
 	EllipticalOrbit                     # fully specified orientation
 	{
 		Period               7.0389
-		SemiMajorAxis        1.85       # 7.35 au, mass ratio = 5.99:2.02
+		SemiMajorAxis        1.85       # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
 		Eccentricity         0.7258
 		Inclination         40.56
 		AscendingNode      204.53
@@ -179,9 +179,9 @@ Barycenter 7588
 	}
 	UniformRotation
 	{
-		Period        37.25
-		Inclination   68.8              # inclination = 60.6°
-		AscendingNode 323.2             # rotation pole position angle = 216.9°
+		Period              37.25
+		Inclination         68.8        # inclination (i) = 60.6°
+		AscendingNode      323.2        # rotation pole position angle = 216.9°
 	}
 }
 
@@ -196,7 +196,7 @@ Barycenter 7588
 	EllipticalOrbit                     # fully specified orientation
 	{
 		Period               7.0389
-		SemiMajorAxis        5.50       # 7.35 au, mass ratio = 5.99:2.02
+		SemiMajorAxis        5.50       # 7.35 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
 		Eccentricity         0.7258
 		Inclination         40.56
 		AscendingNode      204.53
@@ -245,7 +245,7 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 	{
 		Epoch          2448147.6
 		Period<d>          104.02128
-		SemiMajorAxis        0.36504    # 0.74272 au, mass ratio = 0.96653
+		SemiMajorAxis        0.36504    # 0.74272 au, mass ratio = 0.96653 ± 0.00062
 		Eccentricity         0.00089
 		Inclination         99.178
 		AscendingNode      200.909
@@ -272,7 +272,7 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 	{
 		Epoch          2448147.6
 		Period<d>          104.02128
-		SemiMajorAxis        0.37768    # 0.74272 au, mass ratio = 0.96653
+		SemiMajorAxis        0.37768    # 0.74272 au, mass ratio = 0.96653 ± 0.00062
 		Eccentricity         0.00089
 		Inclination         99.178
 		AscendingNode      200.909
@@ -366,7 +366,7 @@ Modify 26311
 	Distance<pc> 384
 	#SemiAxes<rS> [ 33.61 33.61 22.29 ]
 	Radius<rS> 33.61                    # equatorial
-	SemiAxes [ 1 0.6632 1 ]             # polar radius = 22.29 rSun
+	SemiAxes [ 1 0.6632 1 ]             # polar radius = 22.29 ± 1.2 rSun
 	AppMag 1.679
 	Extinction 0.155
 	Temperature 24985                   # effective
@@ -375,7 +375,7 @@ Modify 26311
 	{
 		Period<d>            4.27
 		Inclination        103.8        # inclination = 45 ± 20°
-		AscendingNode       17.6        # equator ascending node = 301.6°
+		AscendingNode       17.6        # equator ascending node = 301.6 ± 30°
 	}
 }
 
@@ -434,7 +434,6 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 		AscendingNode      181.2
 		ArgOfPericenter    213.2
 	}
-
 	UniformRotation
 	{
 		Period<d>            6.829
@@ -503,13 +502,13 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 #   https://scixplorer.org/abs/2015A%26A...574A..20F/abstract
 Modify 30324
 {
-	Radius<rS> 8.44                    # from angular diameter
+	Radius<rS> 8.44                    # 8.44 ± 0.56 rSun, from angular diameter
 	Temperature 24700
 
 	UniformRotation
 	{
 		Period<d>           13.6
-		Inclination         71.3       # inclination (i) = 57.6°
+		Inclination         71.3       # inclination (i) = 57.6 ± 1.7°
 		AscendingNode       70.1
 	}
 }
@@ -521,7 +520,7 @@ Modify 30324
 #   https://scixplorer.org/abs/2021A%26A...654A..19D/abstract
 Modify 30438
 {
-	Radius<rS> 73.2                    # from angular diameter
+	Radius<rS> 73.2                    # 73.2 ± 3.9 rSun, from angular diameter
 	Temperature 7657
 }
 
@@ -542,7 +541,7 @@ Modify 30438
 #   https://scixplorer.org/abs/2023Galax..11...93S/abstract
 Modify 33579
 {
-	Radius<rS> 10.7                    # from angular diameter
+	Radius<rS> 10.7                    # 10.7 ± 0.7 rSun, from angular diameter
 	Temperature 22500
 
 	UniformRotation
@@ -569,7 +568,7 @@ Modify 33579
 #   https://scixplorer.org/abs/2021A%26A...646A.130A/abstract
 Modify 37826
 {
-	Radius<rS> 8.97                    # from angular diameter
+	Radius<rS> 8.97                    # 8.97 ± 0.03 rSun, from angular diameter
 	Temperature 4810
 
 	UniformRotation
@@ -714,7 +713,7 @@ Barycenter "Regulus BC:Kabeleced BC:Cor Leonis BC:Kalb BC:ALF Leo BC:32 Leo BC:G
 #   https://scixplorer.org/abs/2024ApJ...966...28A/abstract
 Modify 53910
 {
-	Radius<rS> 2.81                     # from angular diameter
+	Radius<rS> 2.81                     # 2.81 ± 0.11 ± 0.13 rSun, from angular diameter
 	Temperature 9700
 }
 
@@ -731,12 +730,12 @@ Modify 58001
 {
 	#SemiAxes<rS> [ 3.385 3.385 2.186 ]
 	Radius<rS> 3.385                    # equatorial, ELR Gravity Darkening Law
-	SemiAxes [ 1 0.6458 1 ]             # polar radius = 2.186 rSun
+	SemiAxes [ 1 0.6458 1 ]             # polar radius = 2.186 +0.083-0.110 rSun
 
 	UniformRotation
 	{
-		Period              10.6        # calculated from equatorial radius and equatorial rotational velocity (v_eq) = 386.3 km/s
-		Inclination        109.5        # inclination = 28.5°
+		Period              10.6        # calculated from equatorial radius and equatorial rotational velocity (v_eq) = 386.3 +10.5-8.4 km/s
+		Inclination        109.5        # inclination = 28.5 +5.7-5.9°
 		AscendingNode       69.2        # rotation pole position angle = 18.4 +72.6-54.3°
 	}
 }
@@ -778,7 +777,7 @@ Barycenter 62434
 	{
 		Epoch          2449879
 		Period<d>         1828.0
-		SemiMajorAxis        0.86       # mass ratio = 14.5:1.9
+		SemiMajorAxis        0.86       # mass ratio = (14.5 ± 0.5):(1.9 ± 0.07)
 		Eccentricity         0.38
 		Inclination         59.9
 		AscendingNode      355.1
@@ -787,8 +786,8 @@ Barycenter 62434
 	UniformRotation
 	{
 		Period<d>           15          # 13-17 d
-		Inclination          9          # inclination = 46°
-		AscendingNode      249          # position angle of the axis = 205°
+		Inclination          9          # inclination = 46 ± 2°
+		AscendingNode      249          # rotation pole position angle = 205 ± 8° (± 180° ambiguous)
 	}
 }
 
@@ -802,7 +801,7 @@ Barycenter 62434
 	{
 		Epoch          2449879
 		Period<d>         1828.0
-		SemiMajorAxis        6.57       # mass ratio = 14.5:1.9
+		SemiMajorAxis        6.57       # mass ratio = (14.5 ± 0.5):(1.9 ± 0.07)
 		Eccentricity         0.38
 		Inclination         59.9
 		AscendingNode      355.1
@@ -869,7 +868,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	EllipticalOrbit {                   # fully specified orientation
 		Epoch          2454189.40
 		Period<d>            4.0145
-		SemiMajorAxis<rS>   10.91       # 28.20 rSun, mass ratio = 0.6307
+		SemiMajorAxis<rS>   10.91       # 28.20 rSun, mass ratio = 0.6307 ± 0.023
 		Eccentricity         0.133
 		Inclination         34.1
 		AscendingNode      324.4
@@ -877,7 +876,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	}
 	UniformRotation                     # assume alignment with orbital plane
 	{
-		Period              52.1        # v sin i = 165.3 km/s
+		Period              52.1        # v sin i = 165.3 ± 4.5 km/s
 		Inclination         34.1
 		AscendingNode      324.4
 	}
@@ -895,7 +894,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	EllipticalOrbit {                   # fully specified orientation
 		Epoch          2454189.40
 		Period<d>            4.0145
-		SemiMajorAxis<rS>   17.29       # 28.20 rSun, mass ratio = 0.6307
+		SemiMajorAxis<rS>   17.29       # 28.20 rSun, mass ratio = 0.6307 ± 0.023
 		Eccentricity         0.133
 		Inclination         34.1
 		AscendingNode      324.4
@@ -903,7 +902,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	}
 	UniformRotation                     # assume alignment with orbital plane
 	{
-		Period              69.6        # v sin i = 58.8 km/s
+		Period              69.6        # v sin i = 58.8 ± 1.5 km/s
 		Inclination         34.1
 		AscendingNode      324.4
 	}
@@ -924,7 +923,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 #   https://scixplorer.org/abs/2011ApJ...743..135R/abstract
 Modify 69673
 {
-	Radius<rS> 25.5                     # from angular diameter (literature, weighted mean)
+	Radius<rS> 25.5                     # 25.5 ± 0.2 rSun, from angular diameter (literature, weighted mean)
 	Temperature 4286
 }
 
@@ -1005,14 +1004,14 @@ Modify 86032
 {
 	#SemiAxes<rS> [ 2.858 2.858 2.388 ]
 	Radius<rS> 2.858                    # equatorial
-	SemiAxes [ 1 0.8355 1 ]             # polar radius = 2.388 rSun
+	SemiAxes [ 1 0.8355 1 ]             # polar radius = 2.388 ± 0.013 rSun
 	Temperature 8336                    # effective
 
 	UniformRotation
 	{
-		Period<d>            0.606      # from rotation rate = 1.65 cycles/day
-		Inclination         65.1        # inclination = 87.5°
-		AscendingNode      239.2        # rotation pole position angle = −53.5°
+		Period<d>            0.606      # from rotation rate = 1.65 ± 0.04 cycles/day
+		Inclination         65.1        # inclination = 87.5 ± 0.6°
+		AscendingNode      239.2        # rotation pole position angle = −53.5 ± 1.7°
 	}
 }
 
@@ -1025,14 +1024,14 @@ Modify 86228
 {
 	#SemiAxes<rS> [ 35.5 35.5 26.3 ]
 	Radius<rS> 35.5                     # equatorial
-	SemiAxes [ 1 0.741 1 ]              # polar radius = 26.3 rSun
+	SemiAxes [ 1 0.741 1 ]              # polar radius = 26.3 ± 0.9 rSun
 	Temperature 6294                    # effective
 
 	UniformRotation
 	{
 		Period<d>           16.60
-		Inclination         12.4        # inclination = 58°
-		AscendingNode      172.0        # rotation pole position angle = 3.3° (± 180° ambiguous)
+		Inclination         12.4        # inclination = 58 +9-3°
+		AscendingNode      172.0        # rotation pole position angle = 3.3 ± 1.0° (± 180° ambiguous)
 	}
 }
 
@@ -1074,7 +1073,7 @@ Modify 90185
 #   https://scixplorer.org/abs/2021A%26A...650A.128G/abstract
 Modify 102098
 {
-	Radius<rS> 116.87                   # 116.87 rSun, from angular diameter
+	Radius<rS> 116.87                   # 116.87 +14.28-18.84 rSun, from angular diameter
 	Temperature 8700
 }
 
@@ -1093,14 +1092,14 @@ Modify 105199
 {
 	#SemiAxes<rS> [ 2.740 2.740 2.162 ]
 	Radius<rS> 2.740                    # equatorial, "Nonstandard (β-free)" model
-	SemiAxes [ 1 0.7891 1 ]             # polar radius = 2.162 rSun
+	SemiAxes [ 1 0.7891 1 ]             # polar radius = 2.162 ± 0.036 rSun
 	Temperature 7510                    # effective
 
 	UniformRotation
 	{
 		Period              12.11
-		Inclination        132.90       # inclination = 55.70°
-		AscendingNode       28.56       # rotation pole position angle = −178.84°
+		Inclination        132.90       # inclination = 55.70 ± 6.23°
+		AscendingNode       28.56       # rotation pole position angle = −178.84 ± 4.28°
 	}
 }
 
