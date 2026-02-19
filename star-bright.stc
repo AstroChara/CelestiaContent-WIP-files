@@ -426,7 +426,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 #   "Angular Sizes and Effective Temperatures of O-type Stars from Optical Interferometry with the CHARA Array"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/aaec04
 #   https://scixplorer.org/abs/2018ApJ...869...37G/abstract
-# Rotation period from Blazère et al. (2015), A&A 582, id.A110
+# Rotation from Blazère et al. (2015), A&A 582, id.A110
 #   "The magnetic field of ζ Orionis A"
 #   https://www.aanda.org/articles/aa/full_html/2015/10/aa26855-15/aa26855-15.html
 #   https://scixplorer.org/abs/2015A%26A...582A.110B/abstract
@@ -452,6 +452,8 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 	UniformRotation
 	{
 		Period<d>            6.829
+		Inclination         83.81       # inclination = 79.89° from magnetospheric model
+		AscendingNode       76.40
 	}
 }
 
