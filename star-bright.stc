@@ -217,6 +217,17 @@ Barycenter 7588
 # 15863 ALF Per / Mirfak
 
 # 21421 ALF Tau / Aldebaran
+# Rotation period from Hatzes et al. (2015), A&A 580, id.A31
+#   "Long-lived, long-period radial velocity variations in Aldebaran: A planetary companion and stellar activity"
+#   https://www.aanda.org/articles/aa/full_html/2015/08/aa25519-14/aa25519-14.html
+#   https://scixplorer.org/abs/2015A%26A...580A..31H/abstract
+Modify 21421
+{
+	UniformRotation
+	{
+		Period<d>          520
+	}
+}
 
 # 24436 BET Ori / Rigel
 
