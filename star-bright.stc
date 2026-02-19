@@ -876,6 +876,19 @@ Barycenter 62434
 }
 
 # 62956 EPS UMa / Alioth
+# Rotation from Shulyak et al. (2010), A&A 524, id.A66
+#   "Modelling the light variability of the Ap star ɛ Ursae Majoris"
+#   https://www.aanda.org/articles/aa/full_html/2010/16/aa15094-10/aa15094-10.html
+#   https://scixplorer.org/abs/2010A%26A...524A..66S/abstract
+Modify 62956
+{
+	UniformRotation
+	{
+		Period<d>            5.088631   # ± 0.000018
+		Inclination        148          # inclination = 45° (assumed by paper)
+		AscendingNode      156
+	}
+}
 
 # 65378 ZET UMa / Mizar
 
