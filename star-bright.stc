@@ -393,7 +393,7 @@ Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:CCDM J05408-0156AB"
 {
 	RA 85.18977448                      # mass ratio ((33 ± 10):(14 ± 3)):16.66
 	Dec -1.94278839
-	Distance<pc> 387                    # ± 54
+	Distance 1260.410                   # from Gaia DR3 parallax of C component
 }
 
 Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A"
@@ -402,7 +402,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 	EllipticalOrbit
 	{
 		Period            5587.5182
-		SemiMajorAxis      801.56       # 7.91434 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
+		SemiMajorAxis      800.40       # 7.91434 ± 4.67231 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
 		Eccentricity         0.82887
 		Inclination         44.817
 		AscendingNode       91.223
@@ -432,7 +432,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 	{
 		Epoch          2452735.8
 		Period<d>         2688.9
-		SemiMajorAxis        4.14       # 35.9 mas, mass ratio = (33 ± 10):(14 ± 3)
+		SemiMajorAxis        4.13       # 35.9 ± 0.2 mas, mass ratio = (33 ± 10):(14 ± 3)
 		Eccentricity         0.338
 		Inclination        155.8
 		AscendingNode      181.2
@@ -461,7 +461,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 	{
 		Epoch          2452735.8
 		Period<d>         2688.9
-		SemiMajorAxis        9.75       # 35.9 mas, mass ratio = (33 ± 10):(14 ± 3)
+		SemiMajorAxis        9.74       # 35.9 ± 0.2 mas, mass ratio = (33 ± 10):(14 ± 3)
 		Eccentricity         0.338
 		Inclination        155.8
 		AscendingNode      181.2
@@ -480,13 +480,28 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 	EllipticalOrbit
 	{
 		Period            5587.5182
-		SemiMajorAxis     2261.29       # 7.91434 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
+		SemiMajorAxis     2258.04       # 7.91434 ± 4.67231 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
 		Eccentricity         0.82887
 		Inclination         44.817
 		AscendingNode       91.223
 		ArgOfPericenter    316.561
 		MeanAnomaly        307.910
 	}
+}
+
+# SpectralType and AppMag (V-band) from Oplištilová et al. (2023), A&A 672, id.A31
+#   "Spectrum of the secondary component and new orbital elements of the massive triple star δ Ori A"
+#   https://www.aanda.org/articles/aa/full_html/2023/04/aa45272-22/aa45272-22.html
+#   https://scixplorer.org/abs/2023A%26A...672A..31O/abstract
+1012074771 "Alnitak C:ZET Ori C:50 Ori C:ADS 4263 C:CCDM J05408-0156C"
+{
+	RA 85.19237166
+	Dec -1.92677061
+	Distance 1260.410                   # parallax = 2.5877 ± 0.0387 mas
+
+	SpectralType "A"
+	AppMag 9.54
+	Extinction 0.19
 }
 
 # 27366 KAP Ori / Saiph
