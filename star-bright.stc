@@ -163,6 +163,7 @@ Barycenter 7588
 #   https://scixplorer.org/abs/2014A%26A...569A..10D/abstract
 "Achernar A:ALF Eri A"
 {
+	#SemiAxes<rS> [ 9.16 9.16 6.78 ]
 	Radius<rS> 9.16                     # +0.23-0.23; equatorial
 	SemiAxes [ 1 0.740 1 ]              # equatorial radius 35.2% greater than polar
 	SpectralType "B3Vpe"
@@ -172,13 +173,13 @@ Barycenter 7588
 	OrbitBarycenter "ALF Eri"
 	EllipticalOrbit                     # fully specified orientation
 	{
+		Epoch          2454743.94
 		Period               7.0389
 		SemiMajorAxis        1.85       # 7.35 ± 0.18 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
 		Eccentricity         0.7258
 		Inclination         40.56
 		AscendingNode      204.53
 		ArgOfPericenter    120.63
-		MeanAnomaly        272.07
 	}
 	UniformRotation
 	{
@@ -191,20 +192,20 @@ Barycenter 7588
 "Achernar B:ALF Eri B"
 {
 	Radius<rS> 1.70                     # ± 0.08
-	SpectralType "A1V"                  # from mass
-	AbsMag 1.93                         # from luminosity and temperature
+	SpectralType "A2V"                  # A1V-A3V
+	AppMag 5.09                         # from flux in the V filter
 	Temperature 9064                    # ± 624
 
 	OrbitBarycenter "ALF Eri"
 	EllipticalOrbit                     # fully specified orientation
 	{
+		Epoch          2454743.94
 		Period               7.0389
 		SemiMajorAxis        5.50       # 7.35 ± 0.18 au, mass ratio = (5.99 ± 0.60):(2.02 ± 0.11)
 		Eccentricity         0.7258
 		Inclination         40.56
 		AscendingNode      204.53
 		ArgOfPericenter    300.63
-		MeanAnomaly        272.07
 	}
 }
 
