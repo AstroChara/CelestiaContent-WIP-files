@@ -1064,6 +1064,121 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 # 84012 ETA Oph / Sabik
 
 # 85927 LAM Sco / Shaula
+# Tango et al. (2006), MNRAS 370 (2), p.884-890
+#   "Orbital elements, masses and distance of λ Scorpii A and B determined with the
+#   Sydney University Stellar Interferometer and high-resolution spectroscopy"
+#   https://academic.oup.com/mnras/article/370/2/884/968867
+#   https://scixplorer.org/abs/2006MNRAS.370..884T/abstract
+# Radius and inner orbit period from Handler and Schwarzenberg-Czerny (2013), A&A 557, id.A1
+#   "Time-resolved multicolour photometry of bright B-type variable stars in Scorpius"
+#   https://www.aanda.org/articles/aa/full_html/2013/09/aa21886-13/aa21886-13.html
+#   https://scixplorer.org/abs/2013A%26A...557A...1H/abstract
+Barycenter 85927
+{
+	RA 263.40211965
+	Dec -37.10396044
+	Distance<pc> 112                    # ± 5
+}
+
+# Inner orbit from Southworth and Bowman (2022), MNRAS 513 (3), p.3191-3209
+#   "High-mass pulsators in eclipsing binaries observed using TESS"
+#   https://academic.oup.com/mnras/article/513/3/3191/6563711
+#   https://scixplorer.org/abs/2022MNRAS.513.3191S/abstract
+Barycenter "Shaula A:LAM Sco A:35 Sco A"
+{
+	OrbitBarycenter "LAM Sco"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2451562.8
+		Period<d>         1052.8
+		SemiMajorAxis        2.20       # 49.3 ± 0.3 mas, mass ratio = ((10.4 ± 1.3):(1.8 ± 0.1)):(8.1 ± 1.0)
+		Eccentricity         0.121
+		Inclination        153.4
+		AscendingNode      171.5
+		ArgOfPericenter    251.8
+	}
+}
+
+# Rotational velocity from Uytterhoeven et al. (2004), A&A 427, p.593-605
+#   "Interpretation of the variability of the β Cephei star λ Scorpii. II. The line-profile diagnostics"
+#   https://www.aanda.org/articles/aa/abs/2004/44/aa1224/aa1224.html
+#   https://scixplorer.org/abs/2004A%26A...427..593U/abstract
+"Shaula Aa:LAM Sco Aa:35 Sco Aa"
+{
+	Radius<rS> 5.2                      # ± 1.7, from mass and temperature (using Tango et al. 2006 parameters)
+	SpectralType "B1.5IV"
+	AppMag 2.09                         # from m_V = 1.62 and V-band magnitude difference =  0.66 ± 0.10
+	Temperature 25000                   # ± 1000
+
+	OrbitBarycenter "LAM Sco A"
+	EllipticalOrbit
+	{
+		Epoch          2458634.974
+		Period<d>            5.95189
+		SemiMajorAxis        0.022      # mass ratio = (10.4 ± 1.3):(1.8 ± 0.1)
+		Eccentricity         0.047
+		Inclination        156.2
+		AscendingNode      171.2        # assume same plane-of-sky value as the outer orbit
+		ArgOfPericenter    132
+		MeanAnomaly        131
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period              50          # v sin i ~ 125 km/s
+		Inclination        156.2
+		AscendingNode      171.2
+	}
+}
+
+# Radius, SpectralType, Temperature and mass from Bruntt and Buzasi (2006), Mem. Soc. Ast. It. 77, p.278
+#   "High-precision photometry with the WIRE satellite"
+#   https://scixplorer.org/abs/2006MmSAI..77..278B/abstract
+"Shaula Ab:LAM Sco Ab:35 Sco Ab"
+{
+	Radius<rS> 1.7                      # ± 0.1
+	SpectralType "A"
+	AbsMag 1.5                          # from luminosity and temperature
+	Temperature 10500                   # ± 500
+
+	OrbitBarycenter "LAM Sco A"
+	EllipticalOrbit
+	{
+		Epoch          2458634.974
+		Period<d>            5.95189
+		SemiMajorAxis        0.126      # mass ratio = (10.4 ± 1.3):(1.8 ± 0.1)
+		Eccentricity         0.047
+		Inclination        156.2
+		AscendingNode      171.2        # assume same plane-of-sky value as the outer orbit
+		ArgOfPericenter    312
+		MeanAnomaly        131
+	}
+	UniformRotation                     # assume tidal locking
+	{
+		Period<d>            5.95189
+		Inclination        156.2
+		AscendingNode      171.2
+	}
+}
+
+"Shaula B:LAM Sco B:35 Sco B"
+{
+	Radius<rS> 5.3                      # ± 1.3, from mass and temperature (using Tango et al. 2006 parameters)
+	SpectralType "B2IV"
+	AppMag 2.75                         # from m_V = 1.62 and V-band magnitude difference =  0.66 ± 0.10
+	Temperature 21000                   # ± 1000
+
+	OrbitBarycenter "LAM Sco"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2451562.8
+		Period<d>         1052.8
+		SemiMajorAxis        3.32       # 49.3 ± 0.3 mas, mass ratio = ((10.4 ± 1.3):(1.8 ± 0.1)):(8.1 ± 1.0)
+		Eccentricity         0.121
+		Inclination        153.4
+		AscendingNode      171.5
+		ArgOfPericenter     71.8
+	}
+}
 
 # 86032 ALF Oph / Rasalhague
 # Dimensions, Temperature, and rotation from Monnier et al. (2010), AJ 725 (1), pp. 1192-1201
