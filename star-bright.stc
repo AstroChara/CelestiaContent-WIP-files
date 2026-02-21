@@ -915,7 +915,10 @@ Modify 62956
 # SpectralType from Schnerr et al. (2008), A&A 483 (3), pp.857-867
 #   "Magnetic field measurements and wind-line variability of OB-type stars"
 #   https://scixplorer.org/abs/2008A%26A...483..857S/abstract
-# AscendingNode from Bailey et al. (2019), Nature Astronomy 3, p.636-641
+# AppMag (V-band) from Herbison-Evans et al. (1971), MNRAS 151 (2), p.161-176
+#   "A Study of α Virginis with an Intensity Interferometer"
+#   https://scixplorer.org/abs/1971MNRAS.151..161H/abstract
+# Ascending node from Bailey et al. (2019), Nature Astronomy 3, p.636-641
 #   "Polarized reflected light from the Spica binary system"
 #   https://arxiv.org/abs/1904.01195
 #   https://scixplorer.org/abs/2019NatAs...3..636B/abstract
@@ -931,7 +934,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	Radius<rS> 7.95                     # fractional equatorial radius (of semi-major axis) = 0.282 ± 0.09
 	SemiAxes [ 1 0.887 1 ]              # fractional polar radius = 0.250 ± 0.08
 	SpectralType "B1III/IV"
-	AbsMag -3.36                        # from luminosity and temperature
+	AppMag 1.13
 	Temperature 25300                   # ± 500
 
 	OrbitBarycenter "ALF Vir"
@@ -957,7 +960,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	Radius<rS> 3.78                     # fractional equatorial radius (of semi-major axis) = 0.134 ± 0.04
 	SemiAxes [ 1 0.985 1 ]              # fractional polar radius = 0.132 ± 0.05
 	SpectralType "B2V"
-	AbsMag -1.47                        # from luminosity and temperature
+	AppMag 3.13                         # ΔV = 2.0 ± 0.2
 	Temperature 20900                   # ± 800
 
 	OrbitBarycenter "ALF Vir"
