@@ -1204,15 +1204,22 @@ Modify 86032
 }
 
 # 86228 TET Sco / Sargas
-# Dimensions, Temperature, and rotation from Lewis et al. (2022), MNRAS 513 (1), pp.1129-1140
+# Lewis et al. (2022), MNRAS 513 (1), pp.1129-1140
 #   "A study of the F-giant star θ Scorpii A: a post-merger rapid rotator?"
 #   https://academic.oup.com/mnras/article/513/1/1129/6565806
 #   https://scixplorer.org/abs/2022MNRAS.513.1129L/abstract
-Modify 86228
+86228 "Sargas A:TET Sco A"
 {
+	RA 264.32974139
+	Dec -42.99784186
+	Distance<pc> 101.0                  # parallax = 9.90 ± 0.26 mas
+
 	#SemiAxes<rS> [ 35.5 35.5 26.3 ]
 	Radius<rS> 35.5                     # +1.5−2.3; equatorial
 	SemiAxes [ 1 0.741 1 ]              # polar radius = 26.3 ± 0.9 rSun
+	SpectralType "F1III"
+	AppMag 1.92
+	Extinction 0.0155                   # E(B-V) = 0.005
 	Temperature 6294                    # +224−111; effective
 
 	UniformRotation
@@ -1223,20 +1230,43 @@ Modify 86228
 	}
 }
 
+2076797892 "Sargas B:TET Sco B"
+{
+	# Separation = 0.538 ± 0.003 arcsec, position angle = 274.3 ± 0.13° (Hipparcos)
+	RA 264.32953763
+	Dec -42.99783065
+	Distance<pc> 101.0
+
+	SpectralType "A3III"
+	Extinction 0.0155                   # E(B-V) = 0.005
+	AppMag 5.26
+}
+
 # 86670 KAP Sco / Girtab
 
 # 87833 GAM Dra / Eltanin
 
 # 90185 EPS Sgr / Kaus Australis
-# Dimensions, Temperature, and rotation from Bailey et al. (2024), AJ 972 (1), id.103
+# Bailey et al. (2024), AJ 972 (1), id.103
 #   "ϵ Sagittarii: An Extreme Rapid Rotator with a Decretion Disk"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ad630b
 #   https://scixplorer.org/abs/2024ApJ...972..103B/abstract
-Modify 90185
+# SpectralType from Eggleton and Tokovinin (2008), MNRAS 389, pp.869-879
+#   "A catalogue of multiplicity among bright stellar systems"
+#   https://academic.oup.com/mnras/article/389/2/869/974100
+#   https://scixplorer.org/abs/2008MNRAS.389..869E/abstract
+90185 "Kaus Australis A:EPS Sgr A:20 Sgr A"
 {
+	RA 276.04278105
+	Dec -34.38516849
+	Distance<pc> 43.94                  # parallax = 22.76 ± 0.24 mas
+
 	#SemiAxes<rS> [ 8.80 8.80 6.01 ]
 	Radius<rS> 8.80                     # equatorial
 	SemiAxes [ 1 0.683 1 ]              # polar radius = 6.01 rSun
+	SpectralType "B9.5III"
+	AppMag 1.85
+	Extinction 0.0248                   # E(B-V) = 0.008
 	Temperature 9950                    # effective
 
 	UniformRotation
@@ -1245,6 +1275,24 @@ Modify 90185
 		Inclination         41.8        # inclination = 80°
 		AscendingNode       97.8        # rotation pole position angle = 40.1°
 	}
+}
+
+# Temperature and luminosity from Hubrig et al. (2001), A&A 372, pp.152-164
+#   "Search for low-mass PMS companions around X-ray selected late B stars"
+#   https://www.aanda.org/articles/aa/abs/2001/22/aa10291/aa10291.html
+#   https://scixplorer.org/abs/2001A%26A...372..152H/abstract
+"Kaus Australis B:EPS Sgr B:20 Sgr B"
+{
+	# Separation = 2.06 ± 0.01 arcsec, position angle = 142 ± 1° (1992-06-18)
+	RA 276.04320794
+	Dec -34.38561941
+	Distance<pc> 43.94
+
+	Radius<rS> 0.93                     # from temperature and luminosity = 10^(-0.05) lSun
+	SpectralType "K6.5"
+	AppMag 7.7
+	Extinction 0.0248                   # E(B-V) = 0.008
+	Temperature 5808
 }
 
 # 92855 SIG Sgr / Nunki
