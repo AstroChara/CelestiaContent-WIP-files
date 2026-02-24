@@ -1059,6 +1059,68 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 # 78821 BET Sco / Acrab
 
 # 80763 ALF Sco / Antares
+# TODO: Check orbit (Antares B might be at wrong position; ensure its PA is correct and it is behind Antares A)
+#       Update other parameters (placeholders are marked with "# temp")
+# Distance from Maíz Apellániz et al. (2008)
+#   "Accurate distances to nearby massive stars with the new reduction of the Hipparcos raw data"
+#   https://arxiv.org/abs/0804.2553
+# Orbit from Pavlovic and Todorovic (2005), Serbian Astronomical Journal 170, p. 73-78
+#   "Orbits of Seven Edge-On Visual Double Stars"
+#   https://scixplorer.org/abs/2005SerAJ.170...73P/abstract
+Barycenter 80763
+{
+	RA 247.35185531                     # J2016 from SIMBAD
+	Dec -26.43210617
+	Distance<pc> 187                    # +44−30
+}
+
+# Radius and Temperature from Ohnaka et al. (2013), A&A 555, id.A24
+#   "High spectral resolution imaging of the dynamical atmosphere of the red supergiant Antares in the CO first overtone lines with VLTI/AMBER"
+#   https://www.aanda.org/articles/aa/full_html/2013/07/aa21063-13/aa21063-13.html
+#   https://scixplorer.org/abs/2013A%26A...555A..24O/abstract
+"Antares A:ALF Sco A:HD 148478"
+{
+	Radius<rS> 680
+	SpectralType "M1.5Iab"
+	AppMag 1.1                          # 0.6–1.6 # temp
+	Temperature 3660                    # ± 120
+
+	OrbitBarycenter "ALF Sco"
+	EllipticalOrbit
+	{
+		Epoch          2186252.968      # Julian year? 1273.670 ± 64.033
+		Period            1217.536      # ± 81.521
+		SemiMajorAxis      178          # 2.92750 ± 0.03447 mas, mass ratio = (15 ± 5):(7.2)
+		Eccentricity         0.07860    # ± 0.04429
+		Inclination          9.087      # inclination = 80.750 ± 0.072°
+		AscendingNode      218.347      # Ω = 90.990 ± 1.788°
+		ArgOfPericenter    300.479      # ω = 0.010 ± 5.226°
+	}
+}
+
+# SpectralType from Baade and Reimers (2007), A&A 474 (1), October IV 2007, pp.229-237
+#   "Multi-component absorption lines in the HST spectra of α Scorpii B"
+#   https://www.aanda.org/articles/aa/abs/2007/40/aa7308-07/aa7308-07.html
+#   https://scixplorer.org/abs/2007A%26A...474..229B/abstract
+"Antares B:ALF Sco B:HD 148479"
+{
+	Radius<rS> 5.2 # temp
+	SpectralType "B2.5V"
+	AppMag 5.5 # temp
+	Temperature 18500 # temp
+
+	OrbitBarycenter "ALF Sco"
+	EllipticalOrbit
+	{
+		Epoch          2186252.968      # Julian year? 1273.670 ± 64.033
+		Period            1217.536      # ± 81.521
+		SemiMajorAxis      370          # 2.92750 ± 0.03447 mas, mass ratio = (15 ± 5):(7.2)
+		Eccentricity         0.07860    # ± 0.04429
+		Inclination          9.087      # inclination = 80.750 ± 0.072°
+		AscendingNode      218.347      # Ω = 90.990 ± 1.788°
+		ArgOfPericenter    120.479      # ω = 0.010 ± 5.226°
+	}
+}
 
 # 82273 ALF TrA / Atria
 
