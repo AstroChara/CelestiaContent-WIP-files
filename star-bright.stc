@@ -914,6 +914,7 @@ Modify 62956
 #   https://scixplorer.org/abs/2016MNRAS.458.1964T/abstract
 # SpectralType from Schnerr et al. (2008), A&A 483 (3), pp.857-867
 #   "Magnetic field measurements and wind-line variability of OB-type stars"
+#   https://www.aanda.org/articles/aa/abs/2008/21/aa7740-07/aa7740-07.html
 #   https://scixplorer.org/abs/2008A%26A...483..857S/abstract
 # AppMag (V-band) from Herbison-Evans et al. (1971), MNRAS 151 (2), p.161-176
 #   "A Study of α Virginis with an Intensity Interferometer"
