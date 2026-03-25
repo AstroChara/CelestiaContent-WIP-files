@@ -1359,6 +1359,60 @@ Modify 86032
 }
 
 # 92855 SIG Sgr / Nunki
+# TODO: Get better AppMag/AbsMag for these two stars
+# Distance and orbit from Waisberg and Katz (2026)
+#   "Confirming Nunki as the closest core collapse progenitor candidate to the Sun"
+#   https://arxiv.org/abs/2603.17011
+# Masses, radii, and temperatures from Waisberg et al. (2025), Research Notes of the AAS 9 (4), id.71
+#   "Hidden Companions to Intermediate-mass Stars. XXVI. Uncovering Nunki = Sigma Sagittarii as a 6.5 M⊙ + 6.3 M⊙, 0.60 au Binary"
+#   https://iopscience.iop.org/article/10.3847/2515-5172/adc739
+#   https://scixplorer.org/abs/2025RNAAS...9...71W/abstract
+Barycenter 92855
+{
+	RA 283.81643546
+	Dec -26.29696158
+	Distance<pc> 67
+}
+
+"Nunki A:SIG Sgr A:34 Sgr A"
+{
+	Radius<rS> 4.1                      # from isochrone
+	SpectralType "B2.5V"
+	AbsMag -1.50                        # https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+	Temperature 18900
+
+	OrbitBarycenter "SIG Sgr"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2448588.6
+		Period<d>          134.779
+		SemiMajorAxis        0.62       # 1.26 ± 0.05 au, mass ratio = (6.5 ± 0.2):(6.3 ± 0.2)
+		Eccentricity         0.492
+		Inclination         71.4
+		AscendingNode      205.2
+		ArgOfPericenter     35.3
+	}
+}
+
+"Nunki B:SIG Sgr B:34 Sgr B"
+{
+	Radius<rS> 3.9                      # from isochrone
+	SpectralType "B2.5V"
+	AbsMag -1.50                        # https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+	Temperature 18600
+
+	OrbitBarycenter "SIG Sgr"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2448588.6
+		Period<d>          134.779
+		SemiMajorAxis        0.64       # 1.26 ± 0.05 au, mass ratio = (6.5 ± 0.2):(6.3 ± 0.2)
+		Eccentricity         0.492
+		Inclination         71.4
+		AscendingNode      205.2
+		ArgOfPericenter    215.3
+	}
+}
 
 # 100453 GAM Cyg / Sadr
 
