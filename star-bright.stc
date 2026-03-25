@@ -1060,8 +1060,7 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 # 78821 BET Sco / Acrab
 
 # 80763 ALF Sco / Antares
-# TODO: Check orbit (Antares B might be at wrong position; ensure its PA is correct and it is behind Antares A)
-#       Update other parameters (placeholders are marked with "# temp")
+# TODO: Update other parameters (placeholders are marked with "# temp")
 # Distance from Maíz Apellániz et al. (2008)
 #   "Accurate distances to nearby massive stars with the new reduction of the Hipparcos raw data"
 #   https://arxiv.org/abs/0804.2553
