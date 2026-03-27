@@ -1444,7 +1444,7 @@ Barycenter 102488
 {
 	RA 311.5547623857529
 	Dec 33.9717007269737
-	Distance 75.540                     # Gaia DR2 parallax = 43.1769 ± 0.9384 mas
+	Distance 71.551                     # from Gaia DR3 parallax of C component
 }
 
 # Radius and temperature from Baines et al. (2021), AJ 162 (5), id.198
@@ -1473,7 +1473,7 @@ Barycenter 102488
 	}
 	UniformRotation
 	{
-		Period<y>            1.52
+		Period<d>          291.1        # ± 0.1, assuming that the 291-day signal arises from stellar rotation
 	}
 }
 
