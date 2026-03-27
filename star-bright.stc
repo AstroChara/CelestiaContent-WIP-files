@@ -1466,9 +1466,9 @@ Barycenter 102488
 		Period<d>        19611.5
 		SemiMajorAxis        3.1        # 15.8 ± 0.2 au, mass ratio = (1.103 ± 0.042 mS):(278 ± 7 mJ)
 		Eccentricity         0.9295
-		Inclination         74.70
-		AscendingNode      309.12
-		ArgOfPericenter    237.25
+		Inclination          1.15
+		AscendingNode        0
+		ArgOfPericenter    333.05
 		MeanAnomaly        160.8
 	}
 	UniformRotation
@@ -1490,9 +1490,9 @@ Barycenter 102488
 		Period<d>        19611.5
 		SemiMajorAxis       12.7        # 15.8 ± 0.2 au, mass ratio = (1.103 ± 0.042 mS):(278 ± 7 mJ)
 		Eccentricity         0.9295
-		Inclination         74.70
-		AscendingNode      309.12
-		ArgOfPericenter     57.25
+		Inclination          1.15
+		AscendingNode        0
+		ArgOfPericenter    153.05
 		MeanAnomaly        160.8
 	}
 }
