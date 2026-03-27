@@ -5,6 +5,11 @@
 # Common papers:
 #   The names of these papers are not folded in order to make searching for them easier.
 
+# Baines et al. (2021), AJ 162 (5), id.198
+#   "Angular Diameters and Fundamental Parameters of Forty-four Stars from the Navy Precision Optical Interferometer"
+#   https://iopscience.iop.org/article/10.3847/1538-3881/ac2431
+#   https://scixplorer.org/abs/2021AJ....162..198B/abstract
+
 # Baines et al. (2025), AJ 169 (6), id.293
 #   "Vintage NPOI: New and Updated Angular Diameters for 145 Stars"
 #   https://iopscience.iop.org/article/10.3847/1538-3881/adc930
@@ -1398,7 +1403,7 @@ Barycenter 92855
 	Radius<rS> 3.9                      # from isochrone
 	SpectralType "B2.5V"
 	AppMag 2.892                        # total system m_V = 2.067 ± 0.005 from Tycho-2 catalogue
-	Temperature 18600
+	Temperature 18600                   # "The secondary is cooler than the primary by only about 300 K."
 
 	OrbitBarycenter "SIG Sgr"
 	EllipticalOrbit
@@ -1430,6 +1435,81 @@ Modify 102098
 }
 
 # 102488 EPS Cyg / Aljanah
+# TODO: Given the lack of inclination and ascending node, decide what orbital orientation to use.
+# Orbit from Heeren et al. (2021), A&A (647), id.A160
+#   "Precise radial velocities of giant stars. XV. Mysterious nearly periodic radial velocity variations in the eccentric binary ε Cygni"
+#   https://www.aanda.org/articles/aa/full_html/2021/03/aa40087-20/aa40087-20.html
+#   https://scixplorer.org/abs/2021A%26A...647A.160H/abstract
+Barycenter 102488
+{
+	RA 311.5547623857529
+	Dec 33.9717007269737
+	Distance 75.540                     # Gaia DR2 parallax = 43.1769 ± 0.9384 mas
+}
+
+# Radius and temperature from Baines et al. (2021), AJ 162 (5), id.198
+# Rotation period from Gray (2015), AJ 810 (2), id.117
+#   "A Spectroscopic Analysis of the K0 III Binary ε Cygni"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/810/2/117
+#   https://scixplorer.org/abs/2015ApJ...810..117G/abstract
+"Aljanah Aa:EPS Cyg Aa:53 Cyg Aa:GJ 9707 Aa"
+{
+	Radius<rS> 12.41                    # +0.29-0.30
+	SpectralType "K0III"
+	AppMag 2.480
+	Temperature 4659                    # ± 35
+	
+	OrbitBarycenter "EPS Cyg"
+	EllipticalOrbit
+	{
+		Epoch          2446945.9465
+		Period<d>        19611.5
+		SemiMajorAxis        3.1        # 15.8 ± 0.2 au, mass ratio = (1.103 ± 0.042 mS):(278 ± 7 mJ)
+		Eccentricity         0.9295
+		Inclination         74.70
+		AscendingNode      309.12
+		ArgOfPericenter    237.25
+		MeanAnomaly        160.8
+	}
+	UniformRotation
+	{
+		Period<y>            1.52
+	}
+}
+
+# Assume minimum mass = true mass
+"Aljanah Ab:EPS Cyg Ab:53 Cyg Ab:GJ 9707 Ab"
+{
+	SpectralType "M3.5V"                # Mamajek
+	AbsMag 12.10                        # Mamajek
+	
+	OrbitBarycenter "EPS Cyg"
+	EllipticalOrbit
+	{
+		Epoch          2446945.9465
+		Period<d>        19611.5
+		SemiMajorAxis       12.7        # 15.8 ± 0.2 au, mass ratio = (1.103 ± 0.042 mS):(278 ± 7 mJ)
+		Eccentricity         0.9295
+		Inclination         74.70
+		AscendingNode      309.12
+		ArgOfPericenter     57.25
+		MeanAnomaly        160.8
+	}
+}
+
+# SpectralType from Montes et al. (2018), MNRAS 479 (1), p.1332-1382
+#   "Calibrating the metallicity of M dwarfs in wide physical binaries with F-, G-, and K-primaries - I: High-resolution spectroscopy with HERMES: stellar parameters, abundances, and kinematics"
+#   https://academic.oup.com/mnras/article/479/1/1332/4998874
+#   https://scixplorer.org/abs/2018MNRAS.479.1332M/abstract
+"EPS Cyg C:GJ 9707 C"
+{
+	RA 311.5286095417428
+	Dec 33.9698710014759
+	Distance 71.551                     # Gaia DR3 parallax = 45.5839 ± 0.0163 mas
+
+	SpectralType "M4V"
+	AppMag 14.29                        # SIMBAD
+}
 
 # 105199 ALF Cep / Alderamin
 # Dimensions, Temperature, and rotation orientation from Zhao et al. (2009), AJ 701 (1), pp. 209-224
