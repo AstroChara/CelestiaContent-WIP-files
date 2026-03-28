@@ -1062,7 +1062,207 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 # 78401 DEL Sco / Dschubba
 
 # 78820 BET Sco / Acrab
+# A-B and C-E orbits from Tokovinin et al. (2024), AJ 168 (1), id.28
+#   "Speckle Interferometry at SOAR Telescope in 2023"
+#   https://iopscience.iop.org/article/10.3847/1538-3881/ad4d56
+#   https://scixplorer.org/abs/2024AJ....168...28T/abstract
+# Distance, parameters of A and AppMag (V-band) of B from Holmgren et al. (1997), A&A 322, p.565-575
+#   "Search for forced oscillations in binaries.
+#   II. β Scorpii A. New physical parameters and a search for line profile variability."
+#   https://scixplorer.org/abs/1997A%26A...322..565H/abstract
+# Extinction, BoloCorrection and individual stellar parameters of C and Ea from Catanzaro (2010), A&A 509, id.A21
+#   "First spectroscopic analysis of β Scorpii C and β Scorpii E.
+#   Discovery of a new HgMn star in the multiple system β Scorpii"
+#   https://www.aanda.org/articles/aa/full_html/2010/01/aa13332-09/aa13332-09.html
+#   https://scixplorer.org/abs/2010A%26A...509A..21C/abstract
+Barycenter 78820 "Acrab:Graffias:Akrab:BET1 Sco:BET Sco AB:8 Sco AB:ADS 9913 AB:CCDM J16054-1948AB"
+{
+	RA 241.3592753634
+	Dec -19.8055596272
+	Distance<pc> 143                    # ± 3
+}
+
+Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:CCDM J16054-1948A"
+{
+	OrbitBarycenter "BET1 Sco"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2471451.125
+		Period             220.0
+		SemiMajorAxis       26.7        # 0.851 ± 0.032 arcsec, mass ratio ((13.5 ± 0.9):(9.6 ± 0.4)):6.5
+		Eccentricity         0.685
+		Inclination        155.5
+		AscendingNode       97.1
+		ArgOfPericenter    183.3
+	}
+}
+
+"Acrab Aa:Graffias Aa:Akrab Aa:BET Sco Aa:8 Sco Aa"
+{
+	Radius<rS> 6.8                      # ± 0.4, from angular diameter
+	SpectralType "B0.5IV-V"
+	AppMag 2.91                         # scaled by the observed combined magnitude
+	Extinction 0.55                     # ± 0.03
+	BoloCorrection -2.7                 # ± 0.2
+	Temperature 28000                   # ± 2000
+
+	OrbitBarycenter "BET Sco A"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2449788.509
+		Period<d>            6.828245
+		SemiMajorAxis        0.084      # 1.42 ± 0.02 mas, mass ratio = (13.5 ± 0.9):(9.6 ± 0.4)
+		Eccentricity         0.291
+		Inclination         24.5
+		AscendingNode        4.0
+		ArgOfPericenter    201.3
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period              85          # v sin i = 90 km/s
+		Inclination         24.5
+		AscendingNode        4.0
+	}
+}
+
+"Acrab Ab:Graffias Ab:Akrab Ab:BET Sco Ab:8 Sco Ab"
+{
+	Radius<rS> 4.2                      # ± 0.3, from angular diameter
+	SpectralType "B1.5V"
+	AppMag 4.23                         # scaled by the observed combined magnitude
+	Extinction 0.55                     # ± 0.03
+	BoloCorrection -2.5                 # ± 0.2
+	Temperature 26400                   # ± 2000
+
+	OrbitBarycenter "BET Sco A"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2449788.509
+		Period<d>            6.828245
+		SemiMajorAxis        0.119      # 1.42 ± 0.02 mas, mass ratio = (13.5 ± 0.9):(9.6 ± 0.4)
+		Eccentricity         0.291
+		Inclination         24.5
+		AscendingNode        4.0
+		ArgOfPericenter     21.3
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period              35          # v sin i = 135 km/s
+		Inclination         24.5
+		AscendingNode        4.0
+	}
+}
+
+# Mass from Giannuzzi (1983), A&A 125, p.302-307
+#   "The multiple system β Sco and the age of the Upper Scorpius complex"
+#   https://scixplorer.org/abs/1983A%26A...125..302G/abstract
+#   (6-7 mSun)
+"Acrab B:Graffias B:Akrab B:BET Sco B:8 Sco B:ADS 9913 B:CCDM J16054-1948B"
+{
+	SpectralType "B"                    # from mass
+	AppMag 5.9                          # ± 0.2
+	Extinction 0.55
+
+	OrbitBarycenter "BET1 Sco"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2471451.125
+		Period             220.0
+		SemiMajorAxis       95.0        # 0.851 ± 0.032 arcsec, mass ratio ((13.5 ± 0.9):(9.6 ± 0.4)):6.5
+		Eccentricity         0.685
+		Inclination        155.5
+		AscendingNode       97.1
+		ArgOfPericenter      3.3
+	}
+}
+
 # 78821 BET Sco / Acrab
+# SpectralType, inner orbit and mass ratio from Veramendi and González (2014), A&A 563, id.A138
+#   "Spectroscopic study of early-type multiple stellar systems. I. Orbits of spectroscopic binary subsystems"
+#   https://www.aanda.org/articles/aa/full_html/2014/03/aa22840-13/aa22840-13.html
+#   https://scixplorer.org/abs/2014A%26A...563A.138V/abstract
+# AppMag (V-band) from Evans et al. (1977), AJ 82, p.495-502
+#   "Occultation study of the multiple star β Scorpii"
+#   https://scixplorer.org/abs/1977AJ.....82..495E/abstract
+Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS 9913 C:CCDM J16054-1948C"
+{
+	RA 241.36061531561
+	Dec -19.80197081548
+	Distance<pc> 143
+}
+
+"Acrab C:Graffias C:Akrab C:BET Sco C:8 Sco C"
+{
+	Radius<rS> 2.9                      # ± 0.5, from angular diameter
+	SpectralType "B2V"
+	AppMag 5.07
+	Extinction 0.58                     # ± 0.03
+	BoloCorrection -2.3                 # ± 0.2
+	Temperature 24000                   # ± 500
+
+	OrbitBarycenter "BET2 Sco"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2453736.5
+		Period              18.953
+		SemiMajorAxis        6.42       # 0.1047 ± 0.0016 arcsec, mass ratio = 0.75
+		Eccentricity         0.610
+		Inclination         46.0
+		AscendingNode      146.3
+		ArgOfPericenter     90.6
+	}
+}
+
+Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
+{
+	OrbitBarycenter "BET2 Sco"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2453736.5
+		Period              18.953
+		SemiMajorAxis        8.56       # 0.1047 ± 0.0016 arcsec, mass ratio = 0.75
+		Eccentricity         0.610
+		Inclination         46.0
+		AscendingNode      146.3
+		ArgOfPericenter    270.6
+	}
+}
+
+"Acrab Ea:Graffias Ea:Akrab Ea:BET Sco Ea:8 Sco Ea"
+{
+	Radius<rS> 2.4                      # ± 0.1, from luminosity and temperature
+	SpectralType "B8pMn"
+	AppMag 7.66                         # from total m_V = 7.17 and assumed magnitude difference = 0.60
+	Extinction 0.58                     # ± 0.03
+	BoloCorrection -0.9                 # ± 0.2
+	Temperature 13000                   # ± 800
+
+	OrbitBarycenter "BET Sco E"
+	EllipticalOrbit {
+		Epoch          2455449.17
+		Period<d>           11.07666
+		SemiMajorAxis        0.077      # mass ratio = (3.5 ± 0.2):2.65
+		Eccentricity         0.078
+		ArgOfPericenter    244.9
+	}
+}
+
+# Mass calculated from C-E mass ratio and masses of C, Ea
+"Acrab Eb:Graffias Eb:Akrab Eb:BET Sco Eb:8 Sco Eb"
+{
+	SpectralType "B9.5"                 # from mass
+	AppMag 8.26                         # from total m_V = 7.17 and assumed magnitude difference = 0.60
+	Extinction 0.58
+
+	OrbitBarycenter "BET Sco E"
+	EllipticalOrbit {
+		Epoch          2455449.17
+		Period<d>           11.07666
+		SemiMajorAxis        0.101      # mass ratio = (3.5 ± 0.2):2.65
+		Eccentricity         0.078
+		ArgOfPericenter     64.9
+	}
+}
 
 # 80763 ALF Sco / Antares
 # TODO: Update other parameters (placeholders are marked with "# temp")
