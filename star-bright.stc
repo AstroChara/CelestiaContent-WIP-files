@@ -1201,7 +1201,7 @@ Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS
 	Temperature 24000                   # ± 500
 
 	OrbitBarycenter "BET2 Sco"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit
 	{
 		Epoch          2453736.5
 		Period              18.953
@@ -1216,7 +1216,7 @@ Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS
 Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 {
 	OrbitBarycenter "BET2 Sco"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit
 	{
 		Epoch          2453736.5
 		Period              18.953
@@ -1238,12 +1238,15 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 	Temperature 13000                   # ± 800
 
 	OrbitBarycenter "BET Sco E"
-	EllipticalOrbit {
+	EllipticalOrbit
+	{
 		Epoch          2455449.17
 		Period<d>           11.07666
 		SemiMajorAxis        0.077      # mass ratio = (3.5 ± 0.2):2.65
 		Eccentricity         0.078
-		ArgOfPericenter    244.9
+		Inclination         55          # i ~ 37° from calculated m sin i and true mass
+		AscendingNode      148          # assume same plane-of-sky value as the outer orbit
+		ArgOfPericenter    100.3
 	}
 }
 
@@ -1255,12 +1258,15 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 	Extinction 0.58
 
 	OrbitBarycenter "BET Sco E"
-	EllipticalOrbit {
+	EllipticalOrbit
+	{
 		Epoch          2455449.17
 		Period<d>           11.07666
 		SemiMajorAxis        0.101      # mass ratio = (3.5 ± 0.2):2.65
 		Eccentricity         0.078
-		ArgOfPericenter     64.9
+		Inclination         55          # i ~ 37° from calculated m sin i and true mass
+		AscendingNode      148          # assume same plane-of-sky value as the outer orbit
+		ArgOfPericenter    280.3
 	}
 }
 
