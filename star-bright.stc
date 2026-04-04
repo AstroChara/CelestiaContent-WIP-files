@@ -992,6 +992,114 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 # 67301 ETA UMa / Alkaid
 
 # 68702 BET Cen / Hadar
+# Pigulski et al. (2016), A&A 588, id.A55
+#   "Massive pulsating stars observed by BRITE-Constellation. I. The triple system β Centauri (Agena)"
+#   https://www.aanda.org/articles/aa/full_html/2016/04/aa27872-15/aa27872-15.html
+#   https://scixplorer.org/abs/2016A%26A...588A..55P/abstract
+# A-B orbit from Sixth Orbit Catalog (Tok2024e)
+# Temperature from Alecian et al. (2011), A&A 536, id.L6
+#   "First HARPSpol discoveries of magnetic fields in massive stars"
+#   https://www.aanda.org/articles/aa/full_html/2011/12/aa18354-11/aa18354-11.html
+#   https://scixplorer.org/abs/2011A%26A...536L...6A/abstract
+Barycenter 68702 "Hadar:Agena:BET Cen:CCDM J14038-6022AB"
+{
+	RA 210.95547135                     # mass ratio = ((12.02 ± 0.13):(10.58 ± 0.18)):6.03
+	Dec -60.37317105
+	Distance<pc> 110.6                  # ± 0.5
+}
+
+Barycenter "Hadar A:Agena A:BET Cen A:CCDM J14038-6022A"
+{
+	OrbitBarycenter "BET Cen"
+	EllipticalOrbit
+	{
+		Epoch          2461552.85
+		Period             133.3
+		SemiMajorAxis       19.2        # 0.826 ± 0.043 arcsec, mass ratio = ((12.02 ± 0.13):(10.58 ± 0.18)):6.03
+		Eccentricity         0.8023
+		Inclination         78.7
+		AscendingNode      303.0
+		ArgOfPericenter    238.8
+	}
+}
+
+"Hadar Aa:Agena Aa:BET Cen Aa"
+{
+	SpectralType "B1III"
+	AbsMag -4.03                        # ± 0.10
+	Extinction 0.10
+	Temperature 25000
+
+	OrbitBarycenter "BET Cen A"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2451600.525305
+		Period               0.97720
+		SemiMajorAxis        1.302      # 2.782 ± 0.011 au, mass ratio = (12.02 ± 0.13):(10.58 ± 0.18)
+		Eccentricity         0.8245
+		Inclination        112.96
+		AscendingNode      134.17
+		ArgOfPericenter     53.42
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period<d>            1.7785     # from assumed rotational frequency = 0.56227/d
+		Inclination        112.96
+		AscendingNode      134.17
+	}
+}
+
+# Rotation period from Shultz et al. (2018), MNRAS 475 (4), pp.5144-5178
+#   "The magnetic early B-type stars I: magnetometry and rotation"
+#   https://academic.oup.com/mnras/article/475/4/5144/4803966
+#   https://scixplorer.org/abs/2018MNRAS.475.5144S/abstract
+#   Magnetic component is the secondary
+"Hadar Ab:Agena Ab:BET Cen Ab"
+{
+	SpectralType "B1III"
+	AbsMag -3.88                        # ± 0.10
+	Extinction 0.10
+	Temperature 25000
+
+	OrbitBarycenter "BET Cen A"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2451600.525305
+		Period               0.97720
+		SemiMajorAxis        1.480      # 2.782 ± 0.011 au, mass ratio = (12.02 ± 0.13):(10.58 ± 0.18)
+		Eccentricity         0.8245
+		Inclination        112.96
+		AscendingNode      134.17
+		ArgOfPericenter    233.42
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period<d>            2.885      # ± 0.001
+		Inclination        112.96
+		AscendingNode      134.17
+	}
+}
+
+# AppMag and mass from MSC
+#   http://www.ctio.noirlab.edu/~atokovin/stars/stars.php?cat=HIP&number=68702
+2039199005 "Hadar B:Agena B:BET Cen B:CCDM J14038-6022B"
+{
+	SpectralType "B"                    # from mass
+	AppMag 4.03
+	Extinction 0.10
+
+	OrbitBarycenter "BET Cen"
+	EllipticalOrbit
+	{
+		Epoch          2461552.85
+		Period             133.3
+		SemiMajorAxis       72.1        # 0.826 ± 0.043 arcsec, mass ratio = ((12.02 ± 0.13):(10.58 ± 0.18)):6.03
+		Eccentricity         0.8023
+		Inclination         78.7
+		AscendingNode      303.0
+		ArgOfPericenter     58.8
+	}
+}
 
 # 68933 TET Cen / Menkent
 
