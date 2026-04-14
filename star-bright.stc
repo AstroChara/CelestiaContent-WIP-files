@@ -989,7 +989,22 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 # 66657 EPS Cen
 
+# Lazzarotto et al. (2026)
+#   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
+#   https://arxiv.org/pdf/2604.11189
 # 67301 ETA UMa / Alkaid
+Modify 67301
+{
+	Radius<rS> 2.891                    # ± 0.057; equatorial
+	SemiAxes [ 1 0.921 1 ]
+
+	UniformRotation
+	{
+		Period              14.6        # equatorial; polar rotation period = 15.6 hr
+		Inclination        147.4        # inclination = 41.9 ± 8.2°
+		AscendingNode      166.0
+	}
+}
 
 # 68702 BET Cen / Hadar
 # Pigulski et al. (2016), A&A 588, id.A55
