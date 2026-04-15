@@ -20,6 +20,10 @@
 #   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
 #   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
 
+# Lazzarotto et al. (2026)
+#   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
+#   https://arxiv.org/abs/2604.11189
+
 
 
 # BRIGHTEST STARS (m_V <= 2.5)
@@ -989,10 +993,8 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 
 # 66657 EPS Cen
 
-# Lazzarotto et al. (2026)
-#   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
-#   https://arxiv.org/pdf/2604.11189
 # 67301 ETA UMa / Alkaid
+# Parameters from Lazzarotto et al. (2026)
 Modify 67301
 {
 	Radius<rS> 2.891                    # ± 0.057; equatorial
@@ -1580,22 +1582,69 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 }
 
 # 86032 ALF Oph / Rasalhague
-# Dimensions, Temperature, and rotation from Monnier et al. (2010), AJ 725 (1), pp. 1192-1201
+# Distance, orbit and masses from Gardner et al. (2021), ApJ 921 (1), id.41
+#   "Establishing α Oph as a Prototype Rotator: Precision Orbit with New Keck, CHARA, and RV Observations"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ac1172
+#   https://scixplorer.org/abs/2021ApJ...921...41G/abstract
+# Dimensions, rotation of A and Temperature of B from Lazzarotto et al. (2026)
+Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:CCDM J17349+1234AB"
+{
+	RA 263.73411480
+	Dec 12.55905265
+	Distance<pc> 14.80                  # ± 0.13
+}
+
+# AppMag (V-band) and rotation pole position angle from Monnier et al. (2010), AJ 725 (1), pp. 1192-1201
 #   "Rotationally Modulated g-modes in the Rapidly Rotating δ Scuti Star Rasalhague (α Ophiuchi)"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/725/1/1192
 #   https://scixplorer.org/abs/2010ApJ...725.1192M/abstract
-Modify 86032
+"Rasalhague A:Ras Alhague A:ALF Oph A:55 Oph A:Gliese 681 A:CCDM J17349+1234A"
 {
-	#SemiAxes<rS> [ 2.858 2.858 2.388 ]
-	Radius<rS> 2.858                    # ± 0.015; equatorial
-	SemiAxes [ 1 0.8355 1 ]             # polar radius = 2.388 ± 0.013 rSun
-	Temperature 8336                    # ± 39; effective
+	Radius<rS> 2.858                    # ± 0.009; equatorial
+	SemiAxes [ 1 0.833 1 ]              # polar radius = 2.388 ± 0.013 rSun
+	SpectralType "A5IVnn"
+	AppMag 2.086                        # ± 0.003
 
+	OrbitBarycenter "ALF Oph"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2456028.220
+		Period<d>         3139.72
+		SemiMajorAxis        1.653      # 409.8 ± 0.3 mas, mass ratio = (2.20 ± 0.06):(0.824 ± 0.023)
+		Eccentricity         0.93912
+		Inclination         28.636
+		AscendingNode      283.250
+		ArgOfPericenter    262.32
+	}
 	UniformRotation
 	{
-		Period<d>            0.606      # from rotation rate = 1.65 ± 0.04 cycles/day
-		Inclination         65.1        # inclination = 87.5 ± 0.6°
-		AscendingNode      239.2        # rotation pole position angle = −53.5 ± 1.7°
+		Period              14.33       # equatorial; polar rotation period = 14.76 hr
+		Inclination         51.1        # inclination = 68.9 ± 5.6°; used mirror angle
+		AscendingNode      261.8        # rotation pole position angle = -53.5 ± 1.7°
+	}
+}
+
+# SpectralType from Hinkley et al. (2011), ApJ 726 (2), id.104
+#   "Establishing α Oph as a Prototype Rotator: Improved Astrometric Orbit"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/726/2/104
+#   https://scixplorer.org/abs/2011ApJ...726..104H/abstract
+"Rasalhague B:Ras Alhague B:ALF Oph B:55 Oph B:Gliese 681 B:CCDM J17349+1234B"
+{
+	Radius<rS> 0.74                     # from temperature and luminosity = 0.25 lSun
+	SpectralType "K6V"                  # K5V-K7V
+	AbsMag 6.82                         # from luminosity and temperature
+	Temperature 4750
+
+	OrbitBarycenter "ALF Oph"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2456028.220
+		Period<d>         3139.72
+		SemiMajorAxis        4.412      # 409.8 ± 0.3 mas, mass ratio = (2.20 ± 0.06):(0.824 ± 0.023)
+		Eccentricity         0.93912
+		Inclination         28.636
+		AscendingNode      283.250
+		ArgOfPericenter     82.32
 	}
 }
 
