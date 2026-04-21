@@ -532,6 +532,66 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 # 27989 ALF Ori / Betelgeuse
 
 # 28360 BET Aur / Menkalinan
+# TODO: Verify if my assumption about "maximum positive velocity" is correct, and if the MeanAnomaly is accurate or not.
+# Mass and orbital parameters from Behr et al. (2011), AJ 142 (1), article id. 6
+#   "Stellar Astrophysics with a Dispersed Fourier Transform Spectrograph. II. Orbits of Double-lined Spectroscopic Binaries"
+#   https://iopscience.iop.org/article/10.1088/0004-6256/142/1/6
+#   https://ui.adsabs.harvard.edu/abs/2011AJ....142....6B/abstract
+# Inclination from Hummel et al. (1995), AJ 110, p.376
+#   "Orbits of Small Angular Scale Binaries Resolved with the Mark III Interferometer"
+#   https://ui.adsabs.harvard.edu/abs/1995AJ....110..376H/abstract
+# SemiMajorAxis from Piccotti et al. (2020), MNRAS 492 (2), p.2709-2721
+#   "A study of the physical properties of SB2s with both the visual and spectroscopic orbits"
+#   https://academic.oup.com/mnras/article/492/2/2709/5695748
+#   https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.2709P/abstract
+# Radius, Temperature, SpectralType, and AbsMag from Southworth et al. (2007), A&A 467 (3), pp.1215-1226
+#   "Eclipsing binaries observed with the WIRE satellite. II. β Aurigae and non-linear limb darkening in light curves"
+#   https://www.aanda.org/articles/aa/abs/2007/21/aa7184-07/aa7184-07.html
+#   https://ui.adsabs.harvard.edu/abs/2007A%26A...467.1215S/abstract
+Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:CCDM J05596+4457A"  # Traditional star name
+{
+	RA 89.8818244421
+	Dec 44.9474283491
+	Distance 81.113
+}
+
+"Menkalinan A:BET Aur A:34 Aur A:GJ 3375 A:ADS 4556 Aa:CCDM J05596+4457Aa" 
+{
+	Radius<rS> 2.762                    # ± 0.017
+    SpectralType "A1IV"
+    AbsMag 0.588                        # Mbol = 0.448 ± 0.094, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+	Temperature 9354
+
+    OrbitBarycenter "BET Aur"
+    EllipticalOrbit {
+		Epoch          2454537.0362     # Time of maximum positive velocity
+        Period<d>            3.96004    # ± 0.00000267
+        SemiMajorAxis        0.04053    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
+        Inclination        172.492
+        AscendingNode      179.910
+        ArgOfPericenter    319.043
+		MeanAnomaly        220.957      # assuming that "maximum positive velocity" = primary star moving away. Value is 360 - argument of periapsis
+    }
+}
+
+"Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:CCDM J05596+4457Ab" 
+{
+	Radius<rS> 2.568                    # ± 0.017
+    SpectralType "A1IV"
+    AbsMag 0.816                        # Mbol = 0.676 ± 0.095, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+	Temperature 9204
+
+    OrbitBarycenter "BET Aur"
+    EllipticalOrbit {
+		Epoch          2454537.0362     # Time of maximum positive velocity
+        Period<d>            3.96004    # ± 0.00000267
+        SemiMajorAxis        0.04161    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
+        Inclination        172.492
+        AscendingNode      179.910
+        ArgOfPericenter    139.043
+		MeanAnomaly        220.957
+    }
+}
 
 # 30324 BET CMa / Mirzam
 # Radius from Shull et al. (2025), AJ 994 (2), id.157
