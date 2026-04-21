@@ -1566,6 +1566,60 @@ Barycenter 80763
 # 82396 EPS Sco / Larawag
 
 # 84012 ETA Oph / Sabik
+# Waisberg et al. (2025), OJAp 8, id. 63
+#   "Which is the most eccentric binary known? Insights from the 2023/4 pericenter passages of Zeta Boötis and Eta Ophiuchi"
+#   https://astro.theoj.org/article/138625-which-is-the-most-eccentric-binary-known-insights-from-the-2023-4-pericenter-passages-of-zeta-bootis-and-eta-ophiuchi
+#   https://ui.adsabs.harvard.edu/abs/2025OJAp....8E..63W/abstract
+# Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
+#   "Two-colour photometry for 9473 components of close Hipparcos double and multiple stars"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
+#   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
+Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Traditional star name
+{
+	RA 257.59471400
+	Dec -15.72446589
+	Distance 88.365
+}
+
+1013336232 "Sabik A:ETA Oph A:35 Oph A:ADS 10374 A:CCDM J17104-1544Aa"
+{
+	Radius<rS> 2.5                      # +0.4−0.4
+	SpectralType "A2V"
+	AppMag 2.97                         # ± 0.01
+	Temperature 9000                    # +1250−750
+	
+	OrbitBarycenter "ETA Oph"
+	EllipticalOrbit
+	{
+		Epoch          2460503.151      # Julian year? 2024.52608 +0.00029−0.00031
+		Period              87.77       # +0.28−0.24
+		SemiMajorAxis       14.73       # 31.05 +1.41−1.35 au, mass ratio = (2.25 +0.18−0.09):(2.03 +0.02−0.02)
+		Eccentricity         0.93077    # +0.00013−0.00012
+		Inclination         55.287      # i = 96.305 +0.019−0.018°
+		AscendingNode      260.673      # Ω = 39.241 +0.011−0.011°
+		ArgOfPericenter    190.306
+	}
+}
+
+2013336232 "Sabik B:ETA Oph B:35 Oph B:ADS 10374 B:CCDM J17104-1544Ab"
+{
+	Radius<rS> 2.0                      # +0.3−0.2
+	SpectralType "A2V"
+	AppMag 3.44                         # ± 0.01
+	Temperature 8700                    # +450−450
+	
+	OrbitBarycenter "ETA Oph"
+	EllipticalOrbit
+	{
+		Epoch          2460503.151      # Julian year? 2024.52608 +0.00029−0.00031
+		Period              87.77       # +0.28−0.24
+		SemiMajorAxis       16.32       # 31.05 +1.41−1.35 au, mass ratio = (2.25 +0.18−0.09):(2.03 +0.02−0.02)
+		Eccentricity         0.93077    # +0.00013−0.00012
+		Inclination         55.287      # i = 96.305 +0.019−0.018°
+		AscendingNode      260.673      # Ω = 39.241 +0.011−0.011°
+		ArgOfPericenter     10.306      # ω = 275.90 +0.10−0.11°
+	}
+}
 
 # 85927 LAM Sco / Shaula
 # Tango et al. (2006), MNRAS 370 (2), p.884-890
