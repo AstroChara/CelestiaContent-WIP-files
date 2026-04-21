@@ -20,6 +20,11 @@
 #   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
 #   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
 
+# Fabricius and Makarov (2000), A&A 356, p.141-145
+#   "Two-colour photometry for 9473 components of close Hipparcos double and multiple stars"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
+#   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
+
 # Lazzarotto et al. (2026)
 #   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
 #   https://arxiv.org/abs/2604.11189
@@ -889,46 +894,51 @@ Modify 58001
 # 61084 GAM Cru / Gacrux
 
 # 61932 GAM Cen / Muhlifain
-Barycenter 61932 "Muhlifain:GAM Cen:CCDM J12415-4858AB"  # Traditional star name (non-WGSN)
+# Orbit, masses, and SpectralType from Argyle et al. (2015), AN 336 (4), p.378-387
+#   "Micrometric measures and orbits of southern visual double stars"
+#   https://onlinelibrary.wiley.com/doi/10.1002/asna.201412166
+#   https://ui.adsabs.harvard.edu/abs/2015AN....336..378A/abstract
+# Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
+Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name (non-WGSN)
 {
 	RA 190.37807653
-	Dec      -48.959886
-	Distance 130.154429
+	Dec -48.95984577
+	Distance 130.150
 }
 
-1027248240 "Muhlifain A:GAM Cen A:CCDM J12415-4858A"
+1027248240 "Muhlifain A:GAM Cen A:WDS J12415-4858A"
 {
-	SpectralType    "A1IV"
-	AppMag          2.84
+	SpectralType "A0IV"
+	AppMag 2.84                         # ± 0.01
 
-	OrbitBarycenter "Muhlifain"
+	OrbitBarycenter "GAM Cen"
 	EllipticalOrbit
 	{
-		Period              83.000
-		SemiMajorAxis       17.114 # mass ratio 2.92 : 2.90
-		Eccentricity         0.790
-		Inclination        126.771
-		AscendingNode      214.251
-		ArgOfPericenter     62.727
-		MeanAnomaly        298.410
+		Epoch          2426434          # Julian year? 1931.25 ± 0.07
+		Period              83.57       # ± 0.21
+		SemiMajorAxis       16.5        # 0.869 ± 0.011", total mass = 6.0, mass difference = 0.3
+		Eccentricity         0.793      # ± 0.003
+		Inclination        126.1        # i = 113.7 ± 0.7°
+		AscendingNode      214.3        # Ω = 2.6 ± 0.7°
+		ArgOfPericenter     64.4        # ω = 187.9 ± 1.5°
 	}
 }
 
-2027248240 "Muhlifain B:GAM Cen B:CCDM J12415-4858B"
+2027248240 "Muhlifain B:GAM Cen B:WDS J12415-4858B"
 {
-	SpectralType    "A1IV"   # lacking, used HIP data of the entire system!
-	AppMag          2.94
+	SpectralType "A1IV"
+	AppMag 2.94                         # ± 0.01
 
-	OrbitBarycenter "Muhlifain"
+	OrbitBarycenter "GAM Cen"
 	EllipticalOrbit
 	{
-		Period              83.000
-		SemiMajorAxis       17.286 # mass ratio 2.92 : 2.90
-		Eccentricity         0.790
-		Inclination        126.771
-		AscendingNode      214.251
-		ArgOfPericenter    242.727
-		MeanAnomaly        298.410
+		Epoch          2426434          # Julian year? 1931.25 ± 0.07
+		Period              83.57       # ± 0.21
+		SemiMajorAxis       18.2        # 0.869 ± 0.011", total mass = 6.0, mass difference = 0.3
+		Eccentricity         0.793      # ± 0.003
+		Inclination        126.1        # i = 113.7 ± 0.7°
+		AscendingNode      214.3        # Ω = 2.6 ± 0.7°
+		ArgOfPericenter    244.4        # ω = 187.9 ± 1.5°
 	}
 }
 
@@ -1619,9 +1629,6 @@ Barycenter 80763
 #   https://astro.theoj.org/article/138625-which-is-the-most-eccentric-binary-known-insights-from-the-2023-4-pericenter-passages-of-zeta-bootis-and-eta-ophiuchi
 #   https://ui.adsabs.harvard.edu/abs/2025OJAp....8E..63W/abstract
 # Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
-#   "Two-colour photometry for 9473 components of close Hipparcos double and multiple stars"
-#   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
-#   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
 Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Traditional star name
 {
 	RA 257.59471400
