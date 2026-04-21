@@ -572,6 +572,13 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:CCDM J05596+4457A
         ArgOfPericenter    319.043
 		MeanAnomaly        220.957      # assuming that "maximum positive velocity" = primary star moving away. Value is 360 - argument of periapsis
     }
+
+	UniformRotation                     # assume tidal locking
+	{
+        Period<d>            3.96004
+        Inclination        172.492
+        AscendingNode      179.910
+	}
 }
 
 "Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:CCDM J05596+4457Ab" 
@@ -591,6 +598,13 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:CCDM J05596+4457A
         ArgOfPericenter    139.043
 		MeanAnomaly        220.957
     }
+
+	UniformRotation                     # assume tidal locking
+	{
+        Period<d>            3.96004
+        Inclination        172.492
+        AscendingNode      179.910
+	}
 }
 
 # 30324 BET CMa / Mirzam
@@ -604,13 +618,13 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:CCDM J05596+4457A
 #   https://scixplorer.org/abs/2015A%26A...574A..20F/abstract
 Modify 30324
 {
-	Radius<rS> 8.44                    # ± 0.56, from angular diameter
-	Temperature 24700                  # ± 300
+	Radius<rS> 8.44                     # ± 0.56, from angular diameter
+	Temperature 24700                   # ± 300
 
 	UniformRotation
 	{
-		Period<d>           13.6       # ± 1.2
-		Inclination         71.3       # inclination = 57.6 ± 1.7°
+		Period<d>           13.6        # ± 1.2
+		Inclination         71.3        # inclination = 57.6 ± 1.7°
 		AscendingNode       70.1
 	}
 }
@@ -622,8 +636,8 @@ Modify 30324
 #   https://scixplorer.org/abs/2021A%26A...654A..19D/abstract
 Modify 30438
 {
-	Radius<rS> 73.2                    # ± 3.9, from angular diameter
-	Temperature 7657                   # ± 161
+	Radius<rS> 73.2                     # ± 3.9, from angular diameter
+	Temperature 7657                    # ± 161
 }
 
 # 31681 GAM Gem / Alhena
@@ -643,8 +657,8 @@ Modify 30438
 #   https://scixplorer.org/abs/2023Galax..11...93S/abstract
 Modify 33579
 {
-	Radius<rS> 10.7                    # ± 0.7, from angular diameter
-	Temperature 22500                  # ± 300
+	Radius<rS> 10.7                     # ± 0.7, from angular diameter
+	Temperature 22500                   # ± 300
 
 	UniformRotation
 	{
@@ -670,12 +684,12 @@ Modify 33579
 #   https://scixplorer.org/abs/2021A%26A...646A.130A/abstract
 Modify 37826
 {
-	Radius<rS> 8.97                    # ± 0.03, from angular diameter
-	Temperature 4810                   # ± 14
+	Radius<rS> 8.97                     # ± 0.03, from angular diameter
+	Temperature 4810                    # ± 14
 
 	UniformRotation
 	{
-		Period<d>          660         # ± 15
+		Period<d>          660          # ± 15
 	}
 }
 
@@ -726,9 +740,9 @@ Modify 39429
 # TODO: Update positions
 Barycenter "Regulus:Kabeleced:Cor Leonis:Kalb:ALF Leo:32 Leo:GJ 9316:ADS 7654 ABC"
 {
-	RA 152.08388483                      # mass ratio = ((3.7 ± 1.4):(0.31 ± 0.10)):(0.8:0.2)
+	RA 152.08388483                     # mass ratio = ((3.7 ± 1.4):(0.31 ± 0.10)):(0.8:0.2)
 	Dec 11.97320806
-	Distance 79.032                      # from weighted Gaia DR3 parallaxes of B and C components
+	Distance 79.032                     # from weighted Gaia DR3 parallaxes of B and C components
 }
 
 # Gies et al. (2020), ApJ 902 (1), id.25
