@@ -1209,7 +1209,36 @@ Modify 69673
 
 # 71860 ALF Lup / Uridim
 
-# 72105 EPS Boo / Izar
+# 72105 EPS Boo
+# TODO: Better sources for SpectralType and AppMag, probably?
+# Radius and Temperature of component A from Baines et al. (2021), AJ 162 (5), id.198
+72105 "Izar:EPS Boo A:36 Boo A"
+{
+	RA 221.2464861708782
+	Dec 27.0743157597989
+	Distance 235.889
+
+	Radius<rS> 37.61                    # +1.29-1.38
+	SpectralType "K0II-III"             # SIMBAD
+	AppMag 2.45                         # SIMBAD
+	Temperature 4755                    # ± 66
+}
+
+# Radius and Temperature from Stassun et al. (2019), AJ 158 (4), article id. 138
+#   "The Revised TESS Input Catalog and Candidate Target List"
+#   https://iopscience.iop.org/article/10.3847/1538-3881/ab3467
+#   https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract
+1012502019 "Pulcherrima:EPS Boo B:36 Boo B"
+{
+	RA 221.2462401094688
+	Dec 27.0750855846373
+	Distance 235.889                    # uses EPS Boo A's Gaia DR3 plx
+
+	Radius<rS> 2.747                    # ± 0.171
+	SpectralType "A0V"                  # SIMBAD
+	AppMag 4.801                        # SIMBAD
+	Temperature 9009.0                  # ± 374.6
+}
 
 # 72607 BET UMi / Kochab
 
