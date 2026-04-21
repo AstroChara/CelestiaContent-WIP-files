@@ -5,23 +5,47 @@
 #   2. It contains named stars requiring details which do not fit the theme of any other .stc file.
 # This file is most likely not exhaustive.
 
+
+
 # IAU WGSN-APPROVED STAR NAMES
 
 # WGSN-id 10133 / Blaze Star / T CrB
 Barycenter 78322 "Blaze Star:T CrB"
 
+
 # WGSN-id 10136 / Pistol Star / V4647 Sgr
 "Pistol Star:V4647 Sgr"
 
+
 # WGSN-id 10138 / Sapaki / WR 67-1
+# Zarricueta Plaza et al. (2023), A&A 675, id.A22
+#   "Sapaki: Galactic O3If* star possibly born in isolation"
+#   https://www.aanda.org/articles/aa/full_html/2023/07/aa45856-23/aa45856-23.html
+#   https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..22Z/abstract
 "Sapaki:WR 67-1:WR 67a"
 
+
 # WGSN-id 10139 / Bajamar Star / 2MASS J20555125+4352246
+# Maíz Apellániz et al. (2016), ApJS 224 (1), article id. 4
+#   "The Galactic O-Star Spectroscopic Survey (GOSSS). III. 142 Additional O-type Systems."
+#   https://iopscience.iop.org/article/10.3847/0067-0049/224/1/4
+#   https://ui.adsabs.harvard.edu/abs/2016ApJS..224....4M/abstract
 "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 
+
 # WGSN-id 10141 / Holoea / IRAS 05327+3404
+# Morata et al. (2013), AJ 146 (3), article id. 49
+#   "Millimetric and Submillimetric Observations of IRAS 05327+3404 "Holoea" in M36"
+#   https://iopscience.iop.org/article/10.1088/0004-6256/146/3/49
+#   https://ui.adsabs.harvard.edu/abs/2013AJ....146...49M/abstract
 "Holoea:IRAS 05327+3404"
 
+
 # WGSN-id 10142 / Paloma / 2MASS J05243042+4244506
+# Schwarz et al. (2007), A&A 473 (2), pp.511-521
+#   "Paloma (RX J0524+42): the missing link in magnetic CV evolution?"
+#   https://www.aanda.org/articles/aa/abs/2007/38/aa7684-07/aa7684-07.html
+#   https://ui.adsabs.harvard.edu/abs/2007A%26A...473..511S/abstract
 "Paloma:2MASS J05243042+4244506"
+
 
