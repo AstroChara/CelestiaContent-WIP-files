@@ -72,7 +72,8 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	Temperature 13800                   # ± 125
 
 	OrbitBarycenter "ALF And"
-	EllipticalOrbit {
+	EllipticalOrbit
+	{
 		Epoch          2447763.097745
 		Period<d>           96.69342
 		SemiMajorAxis        0.2496     # 23.917 ± 0.127 mas, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
@@ -98,7 +99,8 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	Temperature 8500
 
 	OrbitBarycenter "ALF And"
-	EllipticalOrbit {
+	EllipticalOrbit
+	{
 		Epoch          2447763.097745
 		Period<d>           96.69342
 		SemiMajorAxis        0.4832     # 23.917 ± 0.127 mas, mass ratio = (3.630 ± 0.201):(1.875 ± 0.096)
@@ -558,52 +560,54 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:CCDM J05596+4457A
 "Menkalinan A:BET Aur A:34 Aur A:GJ 3375 A:ADS 4556 Aa:CCDM J05596+4457Aa" 
 {
 	Radius<rS> 2.762                    # ± 0.017
-    SpectralType "A1IV"
-    AbsMag 0.588                        # Mbol = 0.448 ± 0.094, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+	SpectralType "A1IV"
+	AbsMag 0.588                        # Mbol = 0.448 ± 0.094, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
 	Temperature 9354
 
-    OrbitBarycenter "BET Aur"
-    EllipticalOrbit {
+	OrbitBarycenter "BET Aur"
+	EllipticalOrbit
+	{
 		Epoch          2454537.0362     # Time of maximum positive velocity
-        Period<d>            3.96004    # ± 0.00000267
-        SemiMajorAxis        0.04053    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
-        Inclination        172.492
-        AscendingNode      179.910
-        ArgOfPericenter    319.043
+		Period<d>            3.96004    # ± 0.00000267
+		SemiMajorAxis        0.04053    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
+		Inclination        172.492
+		AscendingNode      179.910
+		ArgOfPericenter    319.043
 		MeanAnomaly        220.957      # assuming that "maximum positive velocity" = primary star moving away. Value is 360 - argument of periapsis
-    }
+	}
 
 	UniformRotation                     # assume tidal locking
 	{
-        Period<d>            3.96004
-        Inclination        172.492
-        AscendingNode      179.910
+		Period<d>            3.96004
+		Inclination        172.492
+		AscendingNode      179.910
 	}
 }
 
 "Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:CCDM J05596+4457Ab" 
 {
 	Radius<rS> 2.568                    # ± 0.017
-    SpectralType "A1IV"
-    AbsMag 0.816                        # Mbol = 0.676 ± 0.095, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+	SpectralType "A1IV"
+	AbsMag 0.816                        # Mbol = 0.676 ± 0.095, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
 	Temperature 9204
 
-    OrbitBarycenter "BET Aur"
-    EllipticalOrbit {
+	OrbitBarycenter "BET Aur"
+	EllipticalOrbit
+	{
 		Epoch          2454537.0362     # Time of maximum positive velocity
-        Period<d>            3.96004    # ± 0.00000267
-        SemiMajorAxis        0.04161    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
-        Inclination        172.492
-        AscendingNode      179.910
-        ArgOfPericenter    139.043
+		Period<d>            3.96004    # ± 0.00000267
+		SemiMajorAxis        0.04161    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
+		Inclination        172.492
+		AscendingNode      179.910
+		ArgOfPericenter    139.043
 		MeanAnomaly        220.957
-    }
+	}
 
 	UniformRotation                     # assume tidal locking
 	{
-        Period<d>            3.96004
-        Inclination        172.492
-        AscendingNode      179.910
+		Period<d>            3.96004
+		Inclination        172.492
+		AscendingNode      179.910
 	}
 }
 
@@ -885,6 +889,48 @@ Modify 58001
 # 61084 GAM Cru / Gacrux
 
 # 61932 GAM Cen / Muhlifain
+Barycenter 61932 "Muhlifain:GAM Cen:CCDM J12415-4858AB"  # Traditional star name (non-WGSN)
+{
+	RA 190.37807653
+	Dec      -48.959886
+	Distance 130.154429
+}
+
+1027248240 "Muhlifain A:GAM Cen A:CCDM J12415-4858A"
+{
+	SpectralType    "A1IV"
+	AppMag          2.84
+
+	OrbitBarycenter "Muhlifain"
+	EllipticalOrbit
+	{
+		Period              83.000
+		SemiMajorAxis       17.114 # mass ratio 2.92 : 2.90
+		Eccentricity         0.790
+		Inclination        126.771
+		AscendingNode      214.251
+		ArgOfPericenter     62.727
+		MeanAnomaly        298.410
+	}
+}
+
+2027248240 "Muhlifain B:GAM Cen B:CCDM J12415-4858B"
+{
+	SpectralType    "A1IV"   # lacking, used HIP data of the entire system!
+	AppMag          2.94
+
+	OrbitBarycenter "Muhlifain"
+	EllipticalOrbit
+	{
+		Period              83.000
+		SemiMajorAxis       17.286 # mass ratio 2.92 : 2.90
+		Eccentricity         0.790
+		Inclination        126.771
+		AscendingNode      214.251
+		ArgOfPericenter    242.727
+		MeanAnomaly        298.410
+	}
+}
 
 # 62434 BET Cru / Mimosa
 # Gratton et al. (2023), A&A 678, id.A93
@@ -1022,7 +1068,8 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	Temperature 25300                   # ± 500
 
 	OrbitBarycenter "ALF Vir"
-	EllipticalOrbit {                   # fully specified orientation
+	EllipticalOrbit                     # fully specified orientation
+	{
 		Epoch          2454189.40
 		Period<d>            4.0145
 		SemiMajorAxis<rS>   10.91       # 28.20 ± 0.92 rSun, mass ratio = 0.6307 ± 0.023
@@ -1048,7 +1095,8 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	Temperature 20900                   # ± 800
 
 	OrbitBarycenter "ALF Vir"
-	EllipticalOrbit {                   # fully specified orientation
+	EllipticalOrbit                     # fully specified orientation
+	{
 		Epoch          2454189.40
 		Period<d>            4.0145
 		SemiMajorAxis<rS>   17.29       # 28.20 ± 0.92 rSun, mass ratio = 0.6307 ± 0.023
