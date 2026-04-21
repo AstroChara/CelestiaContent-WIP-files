@@ -912,7 +912,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	AppMag 2.84                         # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
-	EllipticalOrbit
+	EllipticalOrbit                     # fully specified orientation
 	{
 		Epoch          2426434          # Julian year? 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
@@ -930,7 +930,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	AppMag 2.94                         # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
-	EllipticalOrbit
+	EllipticalOrbit                     # fully specified orientation
 	{
 		Epoch          2426434          # Julian year? 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
@@ -1301,47 +1301,51 @@ Modify 69673
 # 72607 BET UMi / Kochab
 
 # 76267 ALF CrB / Alphecca
-# TODO: Update everything
+# TODO: Find actually good sources for orbital parameters and implement the orbit
+# SpectralType and AbsMag from Tomkin and Popper (1986), AJ 91, p. 1428-1437
+#   "Rediscussion of eclipsing binarties. XV. Alpha Coronae Borealis, a main-sequence system with components of types A and G."
+#   https://ui.adsabs.harvard.edu/abs/1986AJ.....91.1428T/abstract
+# Masses, Radius, and Temperature from Eker et al. (2014), PASA 31, id.e024
+#   "The Catalogue of Stellar Parameters from the Detached Double-Lined Eclipsing Binaries in the Milky Way"
+#   https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/catalogue-of-stellar-parameters-from-the-detached-doublelined-eclipsing-binaries-in-the-milky-way/678AD993366CA4506DD671527906FCBD
+#   https://ui.adsabs.harvard.edu/abs/2014PASA...31...24E/abstract
 Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 {
-	RA 233.67195000
-	Dec 26.71469278
-	Distance 75.050
+	RA 233.6725437590203
+	Dec 26.7142951725891
+	Distance 77.214
 }
 
 "Alphecca A:Gemma A:ALF CrB A:5 CrB A"
 {
-	Radius 2115000
+	Radius<rS> 3.059                    # ± 0.302
 	SpectralType "A0V"
-	AbsMag 0.16
+	AbsMag 0.16                         # ± 0.20
+	Temperature 9700                    # ± 200
 
 	OrbitBarycenter "ALF CrB"
-	EllipticalOrbit {       # Fully specified orientation
-		Period          0.0475288
-		SemiMajorAxis   0.0403 # Mass ratio 2.58:0.92
-		Eccentricity    0.3700
-		Inclination     58.9
-		AscendingNode   82.1
-		ArgOfPericenter 344.36
-		Epoch           2436751.5195
+	EllipticalOrbit
+	{
 	}
 }
 
 "Alphecca B:Gemma B:ALF CrB B:5 CrB B"
 {
-	Radius 626100
+	Radius<rS> 0.906                    # ± 0.040
 	SpectralType "G5V"
-	AbsMag 5.05
+	AbsMag 5.05                         # ± 0.25
+	Temperature 5800                    # ± 300
 
 	OrbitBarycenter "ALF CrB"
-	EllipticalOrbit {       # Fully specified orientation
-		Period          0.0475288
-		SemiMajorAxis   0.113 # Mass ratio 2.58:0.92
-		Eccentricity    0.3700
-		Inclination     58.9
-		AscendingNode   82.1
-		ArgOfPericenter 164.36
-		Epoch           2436751.5195
+	EllipticalOrbit
+	{
+		Epoch                 .
+		Period<d>           17.3599
+		SemiMajorAxis         .         # mass ratio = (2.581 ± 0.045):(0.922 ± 0.025)
+		Eccentricity         0.3794     # ± 0.0019
+		Inclination           .         # i = °
+		AscendingNode         .         # Ω = °
+		ArgOfPericenter       .         # ω = °
 	}
 }
 
