@@ -1,4 +1,5 @@
-
+# SPDX-FileCopyrightText: 2026 AstroChara
+# SPDX-FileCopyrightText: 2026 Pedro J. Garcia
 
 # This file contains all stars brighter than visual magnitude (m_V) of 2.5.
 
@@ -912,7 +913,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	AppMag 2.84                         # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit
 	{
 		Epoch          2426434          # Julian year? 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
@@ -930,7 +931,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	AppMag 2.94                         # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit
 	{
 		Epoch          2426434          # Julian year? 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
