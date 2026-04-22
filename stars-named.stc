@@ -1,42 +1,111 @@
 # SPDX-FileCopyrightText: 2026 AstroChara
 # SPDX-License-Identifier: GPL-2.0-or-later
 
-# This file contains stars with proper names (whether IAU WGSN-approved or not).
-# It has two functions:
-#   1. It defines named stars not defined in either stars.dat or another .stc file.
-#   2. It contains named stars requiring details which do not fit the theme of any other .stc file.
-# This file is most likely not exhaustive.
+# This file defines stars with proper names (whether IAU WGSN-approved or not)
+# not defined in either stars.dat or another .stc file.
 
 
 
 # IAU WGSN-APPROVED STAR NAMES
 
-# WGSN-id 10133 / Blaze Star / T CrB
-Barycenter 78322 "Blaze Star:T CrB"
-
-
 # WGSN-id 10136 / Pistol Star / V4647 Sgr
-"Pistol Star:V4647 Sgr"
+# Temperature and assumed distance from Najarro et al. (2009), AJ 691 (2), pp. 1816-1827
+#   "Metallicity in the Galactic Center: The Quintuplet Cluster"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/691/2/1816
+#   https://ui.adsabs.harvard.edu/abs/2009ApJ...691.1816N/abstract
+# Luminosity from Bernini-Peron et al. (2026), A&A 708, id.A206
+#   "The winds of OBA hypergiants and luminous blue variables: Dynamically consistent atmosphere models reveal multiple wind regimes
+#   https://www.aanda.org/articles/aa/full_html/2026/04/aa58762-25/aa58762-25.html
+#   https://ui.adsabs.harvard.edu/abs/2026A%26A...708A.206B/abstract
+# A binary star system, according to https://scixplorer.org/abs/2012ASPC..464..293M/abstract
+"Pistol Star:V4647 Sgr:qF 134"
+{
+	RA 266.563500
+	Dec -28.834328
+	Distance<pc> 8000
 
+	SpectralType "B"                    # actually LBV, but putting that in makes the program thinks it should be "L"
+	AbsMag -10.18                       # log(luminosity) = 6.22, Sun M_bol = 4.74
+	BoloCorrection -0.63                # linear extrapolation from BCv for B8V and B9V from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
+	Extinction 25                       # Wikipedia on 2026-04-22 claims V mag is >28; I am unable to verify this claim. I am setting extinction to arbitrary value that makes AppMag go dimmer than that anyways.
+	Temperature 11800
+}
 
 # WGSN-id 10138 / Sapaki / WR 67-1
 # Zarricueta Plaza et al. (2023), A&A 675, id.A22
 #   "Sapaki: Galactic O3If* star possibly born in isolation"
 #   https://www.aanda.org/articles/aa/full_html/2023/07/aa45856-23/aa45856-23.html
 #   https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..22Z/abstract
+# AppMag from Paegert et al. (2021)
+#   "TESS Input Catalog versions 8.1 and 8.2: Phantoms in the 8.0 Catalog and How to Handle Them"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/IV/39
+#   https://arxiv.org/abs/2108.04778
 "Sapaki:WR 67-1:WR 67a"
+{
+	RA 229.1539619012933
+	Dec -58.1663452710208
+	Distance 17397.284                  # 0.1875 ± 0.0415 mas, Gaia DR3
 
+	SpectralType "O3If*"
+	AppMag 14.903                       # ± 0.046
+	Extinction 7.87                     # ± 0.75
+}
 
 # WGSN-id 10139 / Bajamar Star / 2MASS J20555125+4352246
+# TODO: Get proper V-band extinction value A_V.
+#       The current value is approximate, and is obtained by multiplying E(4405 − 5495) with R_5495.
+#       This is noted to be inappropriate in https://www.aanda.org/articles/aa/full_html/2018/05/aa32050-17/aa32050-17.html#app, Appendix C
 # Maíz Apellániz et al. (2016), ApJS 224 (1), article id. 4
 #   "The Galactic O-Star Spectroscopic Survey (GOSSS). III. 142 Additional O-type Systems."
 #   https://iopscience.iop.org/article/10.3847/0067-0049/224/1/4
 #   https://ui.adsabs.harvard.edu/abs/2016ApJS..224....4M/abstract
-"Bajamar Star:Bajamar:2MASS J20555125+4352246"
+# Maíz Apellániz et al. (2022), A&A 657, id.A72
+#   "Escape from the Bermuda cluster: Orphanization by multiple stellar ejections"
+#   https://www.aanda.org/articles/aa/full_html/2022/01/aa42366-21/aa42366-21.html
+#   https://ui.adsabs.harvard.edu/abs/2022A%26A...657A..72M/abstract
+# AppMag from Zacharias et al. (2013), AJ 145 (2), article id. 44
+#   "The Fourth US Naval Observatory CCD Astrograph Catalog (UCAC4)"
+#   https://ui.adsabs.harvard.edu/abs/2013AJ....145...44Z/abstract
+Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
+{
+	RA 313.9635638398294
+	Dec 43.8734417437156
+	Distance 2574.254                   # 1.2670 ± 0.0302 mas; Gaia DR3
+}
 
+"Bajamar Star A:Bajamar A:2MASS J20555125+4352246 A"
+{
+	SpectralType "O3.5III"              # M = 72.96 ± 0.54 MSol; Table A.2
+	AppMag 13.267                       # 13.087 ± 0.01; Maíz Apellániz et al. (2022) suggests magnitude difference of 0.18 to account for component B
+	Extinction 10.4
+	Temperature 42750                   # ± 190; Table A.2
+
+	OrbitBarycenter "2MASS J20555125+4352246"
+	EllipticalOrbit
+	{
+		Period<d>           13.38       # assuming variability in TESS data corresponds to orbital period
+		SemiMajorAxis        0.1631     # a = 0.5220 au; total system mass = 106.0 MSol, mass ratio = 2.2 ± 0.5
+		ArgOfPericenter    180
+	}
+}
+
+"Bajamar Star B:Bajamar B:2MASS J20555125+4352246 B"
+{
+	SpectralType "O8"                   # M = 33 ± 8 MSol
+	AppMag 15.02                        # derived from magnitude difference between total system magnitude and component A's magnitude
+	Extinction 10.4                     # should be the same as component A's
+
+	OrbitBarycenter "2MASS J20555125+4352246"
+	EllipticalOrbit
+	{
+		Period<d>           13.38       # assuming variability in TESS data corresponds to orbital period
+		SemiMajorAxis        0.3589     # a = 0.5220 au; total system mass = 106.0 MSol, mass ratio = 2.2 ± 0.5
+		ArgOfPericenter      0
+	}
+}
 
 # WGSN-id 10141 / Holoea / IRAS 05327+3404
-# Morata et al. (2013), AJ 146 (3), article id. 49
+# Name from Morata et al. (2013), AJ 146 (3), article id. 49
 #   "Millimetric and Submillimetric Observations of IRAS 05327+3404 "Holoea" in M36"
 #   https://iopscience.iop.org/article/10.1088/0004-6256/146/3/49
 #   https://ui.adsabs.harvard.edu/abs/2013AJ....146...49M/abstract
@@ -44,7 +113,7 @@ Barycenter 78322 "Blaze Star:T CrB"
 
 
 # WGSN-id 10142 / Paloma / 2MASS J05243042+4244506
-# Schwarz et al. (2007), A&A 473 (2), pp.511-521
+# Name from Schwarz et al. (2007), A&A 473 (2), pp.511-521
 #   "Paloma (RX J0524+42): the missing link in magnetic CV evolution?"
 #   https://www.aanda.org/articles/aa/abs/2007/38/aa7684-07/aa7684-07.html
 #   https://ui.adsabs.harvard.edu/abs/2007A%26A...473..511S/abstract
