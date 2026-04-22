@@ -4,6 +4,12 @@
 # This file defines stars with proper names (whether IAU WGSN-approved or not)
 # not defined in either stars.dat or another .stc file.
 
+# Unless noted, distances are from:
+# Bailer-Jones et al. (2021), AJ 161 (3), id.147
+#   "Estimating Distances from Parallaxes. V. Geometric and Photogeometric Distances to 1.47 Billion Stars in Gaia Early Data Release 3"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/352
+#   https://ui.adsabs.harvard.edu/abs/2021AJ....161..147B/abstract
+
 
 
 # IAU WGSN-APPROVED STAR NAMES
@@ -22,7 +28,7 @@
 {
 	RA 266.563500
 	Dec -28.834328
-	Distance<pc> 8000
+	Distance<pc> 8000                   # assumed
 
 	SpectralType "B"                    # actually LBV, but putting that in makes the program thinks it should be "L"
 	AbsMag -10.18                       # log(luminosity) = 6.22, Sun M_bol = 4.74
@@ -44,7 +50,7 @@
 {
 	RA 229.1539619012933
 	Dec -58.1663452710208
-	Distance 17397.284                  # 0.1875 ± 0.0415 mas, Gaia DR3
+	Distance<pc> 3888.96533
 
 	SpectralType "O3If*"
 	AppMag 14.903                       # ± 0.046
@@ -70,7 +76,7 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 {
 	RA 313.9635638398294
 	Dec 43.8734417437156
-	Distance 2574.254                   # 1.2670 ± 0.0302 mas; Gaia DR3
+	Distance<pc> 761.04895
 }
 
 "Bajamar Star A:Bajamar A:2MASS J20555125+4352246 A"
@@ -109,8 +115,7 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 #   "Millimetric and Submillimetric Observations of IRAS 05327+3404 "Holoea" in M36"
 #   https://iopscience.iop.org/article/10.1088/0004-6256/146/3/49
 #   https://ui.adsabs.harvard.edu/abs/2013AJ....146...49M/abstract
-"Holoea:IRAS 05327+3404"
-
+# Skip this one since I don't think we have information about the stars themselves, let alone how to handle the gas and dust surrounding these forming stars.
 
 # WGSN-id 10142 / Paloma / 2MASS J05243042+4244506
 # Name from Schwarz et al. (2007), A&A 473 (2), pp.511-521
