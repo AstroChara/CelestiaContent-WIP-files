@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2026 AstroChara
+# SPDX-FileCopyrightText: 2026 Pedro Garcia
 # SPDX-License-Identifier: GPL-2.0-or-later
 
 # This file defines stars with proper names (whether IAU WGSN-approved or not)
@@ -15,14 +16,10 @@
 # IAU WGSN-APPROVED STAR NAMES
 
 # WGSN-id 10136 / Pistol Star / V4647 Sgr
-# Temperature and assumed distance from Najarro et al. (2009), AJ 691 (2), pp. 1816-1827
+# Temperature, luminosity and assumed distance from Najarro et al. (2009), AJ 691 (2), pp. 1816-1827
 #   "Metallicity in the Galactic Center: The Quintuplet Cluster"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/691/2/1816
 #   https://ui.adsabs.harvard.edu/abs/2009ApJ...691.1816N/abstract
-# Luminosity from Bernini-Peron et al. (2026), A&A 708, id.A206
-#   "The winds of OBA hypergiants and luminous blue variables: Dynamically consistent atmosphere models reveal multiple wind regimes
-#   https://www.aanda.org/articles/aa/full_html/2026/04/aa58762-25/aa58762-25.html
-#   https://ui.adsabs.harvard.edu/abs/2026A%26A...708A.206B/abstract
 # A binary star system, according to https://scixplorer.org/abs/2012ASPC..464..293M/abstract
 "Pistol Star:V4647 Sgr:qF 134"
 {
@@ -31,7 +28,7 @@
 	Distance<pc> 8000                   # assumed
 
 	SpectralType "B"                    # actually LBV, but putting that in makes the program thinks it should be "L"
-	AbsMag -10.18                       # log(luminosity) = 6.22, Sun M_bol = 4.74
+	AbsMag -10.14                       # luminosity = 1.6e6 lSun, Sun M_bol = 4.74
 	BoloCorrection -0.63                # linear extrapolation from BCv for B8V and B9V from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
 	Extinction 25                       # Wikipedia on 2026-04-22 claims V mag is >28; I am unable to verify this claim. I am setting extinction to arbitrary value that makes AppMag go dimmer than that anyways.
 	Temperature 11800
