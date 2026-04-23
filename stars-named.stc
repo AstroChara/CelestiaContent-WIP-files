@@ -140,7 +140,7 @@ Barycenter "Paloma:2MASS J05243042+4244506:RX J0524+42"
 {
 	Radius<m> 7.4e6                     # R = (7.4 +0.4-0.3)e8 cm
 	SpectralType "D"                    # M = 0.74 +0.04-0.05 MSol
-	AppMag 17.163                       # actually total system V-band AppMag, converted from Gaia band
+	AppMag 17.163                       # actually total system V-band AppMag, converted from G-band
 
 	OrbitBarycenter "2MASS J05243042+4244506"
 	EllipticalOrbit
