@@ -147,7 +147,7 @@ Barycenter "Paloma:2MASS J05243042+4244506:RX J0524+42"
 	{
 		Epoch          2458836.9131
 		Period<min>        157.191      # ± 0.018; Table A.1
-		SemiMajorAxis        0.001931   # a = 0.004789 au, mass ratio = 0.74:0.5(assumed)
+		SemiMajorAxis        0.001638   # a = 0.004670 au, mass ratio = 0.74:0.4(assumed)
 		LongOfPericenter    81.126964
 	}
 	UniformRotation                     # assume alignment with orbital plane
@@ -158,25 +158,25 @@ Barycenter "Paloma:2MASS J05243042+4244506:RX J0524+42"
 
 # The donor, usually M-dwarf star, fills the Roche lobe.
 #   Source: https://iopscience.iop.org/article/10.3847/0004-637X/830/2/56
-# Donor's epoch of inferior conjunction and radial velocity semiamplitude from:
-# Littlefield et al. (2023), AJ 165 (2), id.43
+# Donor's epoch of inferior conjunction from Littlefield et al. (2023), AJ 165 (2), id.43
 #   "Kepler K2 and TESS Observations of Two Magnetic Cataclysmic Variables: The New Asynchronous Polar SDSS J084617.11+245344.1 and Paloma"
 #   https://iopscience.iop.org/article/10.3847/1538-3881/aca1a5
 #   https://ui.adsabs.harvard.edu/abs/2023AJ....165...43L/abstract
-# Given that apparently virtually nothing is known about it, this is mostly a plausible-looking placeholder.
+# The velocities of the inner and outer hemispheres are 220 km/s and 310 km/s, respectively.
+# Little is known about this star so this is mostly a placeholder.
 "Paloma Secondary:Paloma Donor"
 {
-	Radius<rS> 0.5                      # placeholder
-	SpectralType "M"                    # assumed M = 0.5 MSol
-	AbsMag 9.64                         # placeholder
-	Temperature 3660                    # placeholder
+	Radius<rS> 0.4                      # placeholder
+	SpectralType "M"                    # assumed M = 0.4 MSol
+	AbsMag 10.61                        # placeholder
+	Temperature 3470                    # placeholder
 
 	OrbitBarycenter "2MASS J05243042+4244506"
 	EllipticalOrbit
 	{
 		Epoch          2458836.9131
 		Period<min>        157.191      # ± 0.018; Table A.1
-		SemiMajorAxis        0.002858   # a = 0.004789 au, mass ratio = 0.74:0.5(assumed)
+		SemiMajorAxis        0.003031   # a = 0.004670 au, mass ratio = 0.74:0.4(assumed)
 		LongOfPericenter   261.126964
 	}
 	UniformRotation                     # assume tidal locking
