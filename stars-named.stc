@@ -111,13 +111,21 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 }
 
 # WGSN-id 10141 / Holoea / IRAS 05327+3404
-# Name from Morata et al. (2013), AJ 146 (3), article id. 49
+# Morata et al. (2013), AJ 146 (3), article id. 49
 #   "Millimetric and Submillimetric Observations of IRAS 05327+3404 "Holoea" in M36"
 #   https://iopscience.iop.org/article/10.1088/0004-6256/146/3/49
 #   https://ui.adsabs.harvard.edu/abs/2013AJ....146...49M/abstract
-# Skip this one since I don't think we have information about the stars themselves, let alone how to handle the gas and dust surrounding these forming stars.
+"Holoea:IRAS 05327+3404"
+{
+	RA 
+	Dec 
+	Distance 
 
-
+	Radius<rS> 
+	SpectralType 
+	AppMag 
+	Temperature 
+}
 
 # WGSN-id 10142 / Paloma / 2MASS J05243042+4244506
 # Orbital and rotation period from Hernández-Díaz et al. (2025), A&A 703, id.A166
