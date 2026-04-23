@@ -117,14 +117,12 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 #   https://ui.adsabs.harvard.edu/abs/2013AJ....146...49M/abstract
 "Holoea:IRAS 05327+3404"
 {
-	RA 
-	Dec 
-	Distance 
+	RA 84.0248748044887
+	Dec 34.1033056182318
+	Distance<pc> 767.804871
 
-	Radius<rS> 
-	SpectralType 
-	AppMag 
-	Temperature 
+	SpectralType "K2IIIe"
+	AppMag 18.62
 }
 
 # WGSN-id 10142 / Paloma / 2MASS J05243042+4244506
