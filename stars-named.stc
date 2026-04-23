@@ -111,10 +111,10 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 }
 
 # WGSN-id 10141 / Holoea / IRAS 05327+3404
-# Morata et al. (2013), AJ 146 (3), article id. 49
-#   "Millimetric and Submillimetric Observations of IRAS 05327+3404 "Holoea" in M36"
-#   https://iopscience.iop.org/article/10.1088/0004-6256/146/3/49
-#   https://ui.adsabs.harvard.edu/abs/2013AJ....146...49M/abstract
+# Extinction from Magnier et al. (1999), A&A 346, p.441-452
+#   "The circumstellar environment of IRAS 05327+3404"
+#   https://ui.adsabs.harvard.edu/abs/1999A%26A...346..441M/abstract
+# May actually be a binary, according to Morata et al. (2013), AJ 146 (3), article id. 49
 "Holoea:IRAS 05327+3404"
 {
 	RA 84.0248748044887
@@ -123,6 +123,7 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 
 	SpectralType "K2IIIe"
 	AppMag 18.62
+	Extinction 2.3
 }
 
 # WGSN-id 10142 / Paloma / 2MASS J05243042+4244506
