@@ -128,7 +128,7 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 #   "Study of Complex Absorption and Reflection in a Unique Intermediate Polar Paloma"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ac9587
 #   https://ui.adsabs.harvard.edu/abs/2022ApJ...940..100D/abstract
-Barycenter "Paloma:2MASS J05243042+4244506:RX J0524+42"
+Barycenter "Paloma:2MASS J05243042+4244506:1RXS J052430.2+424449:RX J0524+42:TIC 369210348"
 {
 	RA 81.1269638897459
 	Dec 42.7472866562741
@@ -136,7 +136,7 @@ Barycenter "Paloma:2MASS J05243042+4244506:RX J0524+42"
 }
 
 # Cataclysmic variables consist of an accretor primary and a donor secondary.
-"Paloma Primary:Paloma Accretor"
+"Paloma A:2MASS J05243042+4244506 A:1RXS J052430.2+424449 A:RX J0524+42 A:TIC 369210348 A"
 {
 	Radius<m> 7.4e6                     # R = (7.4 +0.4-0.3)e8 cm
 	SpectralType "D"                    # M = 0.74 +0.04-0.05 MSol
@@ -164,7 +164,7 @@ Barycenter "Paloma:2MASS J05243042+4244506:RX J0524+42"
 #   https://ui.adsabs.harvard.edu/abs/2023AJ....165...43L/abstract
 # The velocities of the inner and outer hemispheres are 220 km/s and 310 km/s, respectively.
 # Little is known about this star so this is mostly a placeholder.
-"Paloma Secondary:Paloma Donor"
+"Paloma B:2MASS J05243042+4244506 B:1RXS J052430.2+424449 B:RX J0524+42 B:TIC 369210348 B"
 {
 	Radius<rS> 0.4                      # placeholder
 	SpectralType "M"                    # assumed M = 0.4 MSol
