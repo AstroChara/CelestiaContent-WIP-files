@@ -90,7 +90,7 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 	EllipticalOrbit
 	{
 		Period<d>           13.38       # assuming variability in TESS data corresponds to orbital period
-		SemiMajorAxis        0.1631     # a = 0.5220 au; total system mass = 106.0 MSol, mass ratio = 2.2 ± 0.5
+		SemiMajorAxis        0.1631     # a = 0.5220 au (calculated, total system mass = 106.0 MSol); mass ratio = 2.2 ± 0.5
 		ArgOfPericenter    180
 	}
 }
@@ -105,7 +105,7 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 	EllipticalOrbit
 	{
 		Period<d>           13.38       # assuming variability in TESS data corresponds to orbital period
-		SemiMajorAxis        0.3589     # a = 0.5220 au; total system mass = 106.0 MSol, mass ratio = 2.2 ± 0.5
+		SemiMajorAxis        0.3589     # a = 0.5220 au (calculated, total system mass = 106.0 MSol); mass ratio = 2.2 ± 0.5
 		ArgOfPericenter      0
 	}
 }
@@ -117,11 +117,70 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 #   https://ui.adsabs.harvard.edu/abs/2013AJ....146...49M/abstract
 # Skip this one since I don't think we have information about the stars themselves, let alone how to handle the gas and dust surrounding these forming stars.
 
+
+
 # WGSN-id 10142 / Paloma / 2MASS J05243042+4244506
-# Name from Schwarz et al. (2007), A&A 473 (2), pp.511-521
-#   "Paloma (RX J0524+42): the missing link in magnetic CV evolution?"
-#   https://www.aanda.org/articles/aa/abs/2007/38/aa7684-07/aa7684-07.html
-#   https://ui.adsabs.harvard.edu/abs/2007A%26A...473..511S/abstract
-"Paloma:2MASS J05243042+4244506"
+# Orbital and rotation period from Hernández-Díaz et al. (2025), A&A 703, id.A166
+#   "A systematic search for orbital periods of polars with TESS: Methods, detection limits, and results"
+#   https://www.aanda.org/articles/aa/full_html/2025/11/aa54948-25/aa54948-25.html
+#   https://ui.adsabs.harvard.edu/abs/2025A%26A...703A.166H/abstract
+# White dwarf mass and radius from Dutta and Rana (2022), AJ 940 (2), id.100
+#   "Study of Complex Absorption and Reflection in a Unique Intermediate Polar Paloma"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ac9587
+#   https://ui.adsabs.harvard.edu/abs/2022ApJ...940..100D/abstract
+Barycenter "Paloma:2MASS J05243042+4244506:RX J0524+42"
+{
+	RA 81.1269638897459
+	Dec 42.7472866562741
+	Distance<pc> 588.02594
+}
 
+# Cataclysmic variables consist of an accretor primary and a donor secondary.
+"Paloma Primary:Paloma Accretor"
+{
+	Radius<m> 7.4e6                     # R = (7.4 +0.4-0.3)e8 cm
+	SpectralType "D"                    # M = 0.74 +0.04-0.05 MSol
+	AppMag 17.163                       # actually total system V-band AppMag, converted from Gaia band
 
+	OrbitBarycenter "2MASS J05243042+4244506"
+	EllipticalOrbit
+	{
+		Epoch          2458836.9131
+		Period<min>        157.191      # ± 0.018; Table A.1
+		SemiMajorAxis        0.001931   # a = 0.004789 au, mass ratio = 0.74:0.5(assumed)
+		LongOfPericenter    81.126964
+	}
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period<min>        136.235      # ± 0.025; Table B.4
+	}
+}
+
+# The donor, usually M-dwarf star, fills the Roche lobe.
+#   Source: https://iopscience.iop.org/article/10.3847/0004-637X/830/2/56
+# Donor's epoch of inferior conjunction and radial velocity semiamplitude from:
+# Littlefield et al. (2023), AJ 165 (2), id.43
+#   "Kepler K2 and TESS Observations of Two Magnetic Cataclysmic Variables: The New Asynchronous Polar SDSS J084617.11+245344.1 and Paloma"
+#   https://iopscience.iop.org/article/10.3847/1538-3881/aca1a5
+#   https://ui.adsabs.harvard.edu/abs/2023AJ....165...43L/abstract
+# Given that apparently virtually nothing is known about it, this is mostly a plausible-looking placeholder.
+"Paloma Secondary:Paloma Donor"
+{
+	Radius<rS> 0.5                      # placeholder
+	SpectralType "M"                    # assumed M = 0.5 MSol
+	AbsMag 9.64                         # placeholder
+	Temperature 3660                    # placeholder
+
+	OrbitBarycenter "2MASS J05243042+4244506"
+	EllipticalOrbit
+	{
+		Epoch          2458836.9131
+		Period<min>        157.191      # ± 0.018; Table A.1
+		SemiMajorAxis        0.002858   # a = 0.004789 au, mass ratio = 0.74:0.5(assumed)
+		LongOfPericenter   261.126964
+	}
+	UniformRotation                     # assume tidal locking
+	{
+		Period<min>        157.191
+	}
+}
