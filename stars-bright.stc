@@ -31,6 +31,11 @@
 #   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
 #   https://arxiv.org/abs/2604.11189
 
+# TICv8: Stassun et al. (2019), AJ 158 (4), article id. 138
+#   "The Revised TESS Input Catalog and Candidate Target List"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/IV/38
+#   https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract
+
 
 
 # BRIGHTEST STARS (m_V <= 2.5)
@@ -242,10 +247,25 @@ Barycenter 7588
 #   https://scixplorer.org/abs/2015A%26A...580A..31H/abstract
 Modify 21421
 {
+	Distance 69.024                     # ALF Tau B's distance
+
 	UniformRotation
 	{
 		Period<d>          520
 	}
+}
+
+# Physical parameters from TICv8
+"Aldebaran B:ALF Tau B:TIC 673648676"
+{
+	RA 68.9888012122444
+	Dec 16.5050449520550
+	Distance 69.024
+
+	Radius<rS> 0.347                    # ± 0.039
+	SpectralType "M2.5V"
+	AppMag 13.214                       # ± 0.047
+	Temperature 3398.0                  # ± 89.5
 }
 
 # 24436 BET Ori / Rigel
