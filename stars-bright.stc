@@ -249,6 +249,127 @@ Modify 21421
 }
 
 # 24436 BET Ori / Rigel
+# TODO: Update barycentre positions
+Barycenter "Rigel:BET Ori:19 Ori:ADS 3823 ABC"
+{
+	RA 78.63417149                      # mass ratio = 23:((~3.3:~2.4):~3.38)
+	Dec -8.20232156
+	Distance 862.848
+}
+
+# Moravveji et al. (2012), ApJ 747 (2), article id. 108
+#   "Asteroseismology of the nearby SN-II Progenitor: Rigel.
+#   I. The MOST High-precision Photometry and Radial Velocity Monitoring"
+#   https://iopscience.iop.org/article/10.1088/0004-637X/747/2/108
+#   https://scixplorer.org/abs/2012ApJ...747..108M/abstract
+24436 "Rigel A:BET Ori A:19 Ori A:ADS 3823 A"
+{
+	RA 78.63447295
+	Dec -8.20163614
+	Distance 862.848
+
+	Radius<rS> 78.9                     # ± 7.4
+	SpectralType "B8Ia"
+	AppMag 0.12
+	Extinction 0.155                    # E(B-V) = 0.05
+	BoloCorrection -0.78
+	Temperature 12100                   # ± 150
+
+	UniformRotation
+	{
+		Period<d>          137          # for i = 60°
+		Inclination          5          # i > 60°
+		AscendingNode      244          # rotation axis is oriented along the north-south direction
+	}
+}
+
+# Individual stellar parameters from MSC
+#   https://www.ctio.noirlab.edu/~atokovin/stars/stars.php?cat=HIP&number=24436
+Barycenter "Rigel BC:BET Ori BC:19 Ori BC:ADS 3823 BC"
+{
+	RA 78.63340885                      # mass ratio (~3.3:~2.4):~3.38
+	Dec -8.20405555
+	Distance 862.848
+}
+
+# SpectralType and orbit from Sanford (1942), ApJ 95, p.421
+#   "The Spectrographic Orbit of the Companion to Rigel"
+#   https://scixplorer.org/abs/1942ApJ....95..421S/abstract
+Barycenter "Rigel B:BET Ori B:19 Ori B:ADS 3823 B"
+{
+	RA 78.6334024172966
+	Dec -8.2040666584455
+	Distance 862.848
+}
+
+"Rigel Ba:BET Ori Ba:19 Ori Ba"
+{
+	SpectralType "B9"
+	AppMag 7.60
+	Extinction 0.155
+
+	OrbitBarycenter "BET Ori B"
+	EllipticalOrbit
+	{
+		Epoch          2429633.196
+		Period<d>            9.860
+		SemiMajorAxis        0.067      # 0.154 au (calculated, total system mass = 5.05 mSun); mass ratio = 0.767
+		Eccentricity         0.1
+		Inclination         62          # i = 36°; from a sin i and calculated separation
+		AscendingNode       29
+		ArgOfPericenter    264          # ω = 10°
+	}
+
+	UniformRotation                     # assume tidal locking
+	{
+		Period<d>            9.860
+		Inclination         62
+		AscendingNode       29
+	}
+}
+
+"Rigel Bb:BET Ori Bb:19 Ori Bb"
+{
+	SpectralType "B9"
+	AbsMag 0.50                         # assumed from spectral type
+	Extinction 0.155
+
+	OrbitBarycenter "BET Ori B"
+	EllipticalOrbit
+	{
+		Epoch          2429633.196
+		Period<d>            9.860
+		SemiMajorAxis        0.087      # 0.154 au (calculated, total system mass = 5.05 mSun); mass ratio = 0.767
+		Eccentricity         0.1
+		Inclination         62          # i = 36°; from a sin i and calculated separation
+		AscendingNode       29
+		ArgOfPericenter     84          # ω = 10°
+	}
+
+	UniformRotation                     # assume tidal locking
+	{
+		Period<d>            9.860
+		Inclination         62
+		AscendingNode       29
+		MeridianAngle      180
+	}
+}
+
+# Position from Mason et al. (2009), AJ 137 (2), pp. 3358-3377
+#   "The High Angular Resolution Multiplicity of Massive Stars"
+#   https://iopscience.iop.org/article/10.1088/0004-6256/137/2/3358
+#   https://scixplorer.org/abs/2009AJ....137.3358M/abstract
+"Rigel C:BET Ori C:19 Ori C:ADS 3823 C"
+{
+	# Separation = 0.124 arcsec, position angle = 29.8° (2005.8662)
+	RA 78.63341971
+	Dec -8.20403677
+	Distance 862.848
+
+	SpectralType "B9V"
+	AppMag 7.60
+	Extinction 0.155
+}
 
 # 24608 ALF Aur / Capella
 # TODO: Review coordinates/parallaxes
