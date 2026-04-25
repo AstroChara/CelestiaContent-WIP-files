@@ -27,9 +27,23 @@
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
 #   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
 
+# Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
+#   "Gaia Data Release 3. Summary of the content and survey properties"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355
+#   https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract
+
 # Lazzarotto et al. (2026)
 #   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
 #   https://arxiv.org/abs/2604.11189
+
+# MSC: Tokovinin (2018), ApJS 235 (1), article id. 6
+#   "The Updated Multiple Star Catalog"
+#   https://www.ctio.noirlab.edu/~atokovin/stars/index.html
+#   https://ui.adsabs.harvard.edu/abs/2018ApJS..235....6T/abstract
+
+# ORB6:
+#   "Sixth Catalog of Orbits of Visual Binary Stars"
+#   https://www.astro.gsu.edu/wds/orb6.html
 
 # TICv8: Stassun et al. (2019), AJ 158 (4), article id. 138
 #   "The Revised TESS Input Catalog and Candidate Target List"
@@ -258,8 +272,8 @@ Modify 21421
 # Physical parameters from TICv8
 "Aldebaran B:ALF Tau B:TIC 673648676"
 {
-	RA 68.9888012122444
-	Dec 16.5050449520550
+	RA 68.98880121373
+	Dec 16.50504495132
 	Distance 69.024
 
 	Radius<rS> 0.347                    # ± 0.039
@@ -304,7 +318,6 @@ Barycenter "Rigel:BET Ori:19 Ori:ADS 3823 ABC"
 }
 
 # Individual stellar parameters from MSC
-#   https://www.ctio.noirlab.edu/~atokovin/stars/stars.php?cat=HIP&number=24436
 Barycenter "Rigel BC:BET Ori BC:19 Ori BC:ADS 3823 BC"
 {
 	RA 78.63340885                      # mass ratio (~3.3:~2.4):~3.38
@@ -559,7 +572,7 @@ Modify 26311
 #   "Dynamical mass of the O-type supergiant in ζ Orionis A"
 #   https://www.aanda.org/articles/aa/full_html/2013/06/aa21434-13/aa21434-13.html
 #   https://scixplorer.org/abs/2013A%26A...554A..52H/abstract
-# A-B orbit from Sixth Orbit Catalog (Izm2019)
+# A-B orbit from ORB6 (Izm2019)
 Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:CCDM J05408-0156AB"
 {
 	RA 85.18977448                      # mass ratio ((33 ± 10):(14 ± 3)):16.66
@@ -668,8 +681,8 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 #   https://scixplorer.org/abs/2023A%26A...672A..31O/abstract
 1012074771 "Alnitak C:ZET Ori C:50 Ori C:ADS 4263 C:CCDM J05408-0156C"
 {
-	RA 85.19237166
-	Dec -1.92677061
+	RA 85.19237166328
+	Dec -1.92677060781
 	Distance 1260.410                   # parallax = 2.5877 ± 0.0387 mas
 
 	SpectralType "A"
@@ -903,7 +916,7 @@ Barycenter "Regulus:Kabeleced:Cor Leonis:Kalb:ALF Leo:32 Leo:GJ 9316:ADS 7654 AB
 #   https://scixplorer.org/abs/2020ApJ...902...25G/abstract
 Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:GJ 9316 A:ADS 7654 A"
 {
-	RA 152.09183242
+	RA 152.09183241
 	Dec 11.96723362
 	Distance 79.032
 }
@@ -975,20 +988,23 @@ Barycenter "Regulus BC:Kabeleced BC:Cor Leonis BC:Kalb BC:ALF Leo BC:32 Leo BC:G
 	Distance 79.032
 }
 
+# Radius and Temperature from Gaia DR3
 1001340833 "Regulus B:Kabeleced B:Cor Leonis B:Kalb B:ALF Leo B:32 Leo B:GJ 9316 B:ADS 7654 B"
 {
-	RA 152.05212685
-	Dec 11.99699714
+	RA 152.05212685266
+	Dec 11.99699713801
 	Distance 79.032
 
+	Radius<rS> 0.7815                   # +0.0050-0.0012 (GSP-Phot)
 	SpectralType "K2V"
 	AppMag 8.24
+	Temperature 4968.2993               # +1.0557-2.5820 (GSP-Phot)
 }
 
 "Regulus C:Kabeleced C:Cor Leonis C:Kalb C:ALF Leo C:32 Leo C:GJ 9316 C:ADS 7654 C"
 {
-	RA 152.05271632
-	Dec 11.99695158
+	RA 152.05271632176
+	Dec 11.99695158200
 	Distance 79.032
 
 	SpectralType "M4V"
@@ -1448,7 +1464,7 @@ Modify 67301
 #   "Massive pulsating stars observed by BRITE-Constellation. I. The triple system β Centauri (Agena)"
 #   https://www.aanda.org/articles/aa/full_html/2016/04/aa27872-15/aa27872-15.html
 #   https://scixplorer.org/abs/2016A%26A...588A..55P/abstract
-# A-B orbit from Sixth Orbit Catalog (Tok2024e)
+# A-B orbit from ORB6 (Tok2024e)
 # Temperature from Alecian et al. (2011), A&A 536, id.L6
 #   "First HARPSpol discoveries of magnetic fields in massive stars"
 #   https://www.aanda.org/articles/aa/full_html/2011/12/aa18354-11/aa18354-11.html
@@ -1533,7 +1549,6 @@ Barycenter "Hadar A:Agena A:BET Cen A:CCDM J14038-6022A"
 }
 
 # AppMag and mass from MSC
-#   http://www.ctio.noirlab.edu/~atokovin/stars/stars.php?cat=HIP&number=68702
 2039199005 "Hadar B:Agena B:BET Cen B:CCDM J14038-6022B"
 {
 	SpectralType "B"                    # from mass
@@ -1572,11 +1587,12 @@ Modify 69673
 
 # 72105 EPS Boo
 # TODO: Better sources for SpectralType and AppMag, probably?
+# Positions from Gaia DR3
 # Radius and Temperature of component A from Baines et al. (2021), AJ 162 (5), id.198
 72105 "Izar:EPS Boo A:36 Boo A"
 {
-	RA 221.2464861708782
-	Dec 27.0743157597989
+	RA 221.24648617077
+	Dec 27.07431575777
 	Distance 235.889
 
 	Radius<rS> 37.61                    # +1.29-1.38
@@ -1591,8 +1607,8 @@ Modify 69673
 #   https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract
 1012502019 "Pulcherrima:EPS Boo B:36 Boo B"
 {
-	RA 221.2462401094688
-	Dec 27.0750855846373
+	RA 221.24624024277
+	Dec 27.07508559649
 	Distance 235.889                    # uses EPS Boo A's Gaia DR3 plx
 
 	Radius<rS> 2.747                    # ± 0.171
@@ -1655,6 +1671,7 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 # 78401 DEL Sco / Dschubba
 
 # 78820 BET Sco / Acrab
+# Positions from Gaia DR3
 # A-B and C-E orbits from Tokovinin et al. (2024), AJ 168 (1), id.28
 #   "Speckle Interferometry at SOAR Telescope in 2023"
 #   https://iopscience.iop.org/article/10.3847/1538-3881/ad4d56
@@ -1670,8 +1687,8 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 #   https://scixplorer.org/abs/2010A%26A...509A..21C/abstract
 Barycenter 78820 "Acrab:Graffias:Akrab:BET1 Sco:BET Sco AB:8 Sco AB:ADS 9913 AB:CCDM J16054-1948AB"
 {
-	RA 241.3592753634
-	Dec -19.8055596272
+	RA 241.35926902768
+	Dec -19.80555058043
 	Distance<pc> 143                    # ± 3
 }
 
@@ -2332,15 +2349,15 @@ Modify 102098
 }
 
 # 102488 EPS Cyg / Aljanah
-# TODO: Given the lack of inclination and ascending node, decide what orbital orientation to use.
+# Positions from Gaia DR3
 # Orbit from Heeren et al. (2021), A&A (647), id.A160
 #   "Precise radial velocities of giant stars. XV. Mysterious nearly periodic radial velocity variations in the eccentric binary ε Cygni"
 #   https://www.aanda.org/articles/aa/full_html/2021/03/aa40087-20/aa40087-20.html
 #   https://scixplorer.org/abs/2021A%26A...647A.160H/abstract
 Barycenter 102488
 {
-	RA 311.5547623857529
-	Dec 33.9717007269737
+	RA 311.55475901193
+	Dec 33.97170031236
 	Distance 71.551                     # from Gaia DR3 parallax of C component
 }
 
@@ -2390,18 +2407,22 @@ Barycenter 102488
 	}
 }
 
+# Radius and Temperature from Gaia DR3
 # SpectralType from Montes et al. (2018), MNRAS 479 (1), p.1332-1382
-#   "Calibrating the metallicity of M dwarfs in wide physical binaries with F-, G-, and K-primaries - I: High-resolution spectroscopy with HERMES: stellar parameters, abundances, and kinematics"
+#   "Calibrating the metallicity of M dwarfs in wide physical binaries with F-, G-, and K-primaries -
+#   I: High-resolution spectroscopy with HERMES: stellar parameters, abundances, and kinematics"
 #   https://academic.oup.com/mnras/article/479/1/1332/4998874
 #   https://scixplorer.org/abs/2018MNRAS.479.1332M/abstract
 "EPS Cyg C:GJ 9707 C"
 {
-	RA 311.5286095417428
-	Dec 33.9698710014759
+	RA 311.52860950906
+	Dec 33.96987103069
 	Distance 71.551                     # Gaia DR3 parallax = 45.5839 ± 0.0163 mas
 
+	Radius<rS> 0.3387                   # +0.0026-0.0007 (GSP-Phot)
 	SpectralType "M4V"
 	AppMag 14.29                        # SIMBAD
+	Temperature 3214.8390               # +3.6483-0.4799 (GSP-Phot)
 }
 
 # 105199 ALF Cep / Alderamin
