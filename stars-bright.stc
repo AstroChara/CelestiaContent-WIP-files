@@ -1033,16 +1033,13 @@ Modify 58001
 }
 
 # 60718 ALF Cru / Acrux
-# TODO:
-# - Calculate location of ALF Cru AB barycenter from locations of A and B
-
 # Waisberg and Katz (2026)
 #   "Upgrading Alpha Crucis to a seven star system. Discovery of Bb and orbital misalignment"
 #   https://arxiv.org/abs/2603.11194
 Barycenter 60718 "Acrux:ALF Cru"
 {
-	RA 186.64921144
-	Dec -63.09915890
+	RA 186.650276                       # mass ratio = 24.1:22.2
+	Dec -63.099348
 	Distance 347.109                    # ALF Cru C's distance
 }
 
