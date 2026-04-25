@@ -1035,12 +1035,11 @@ Modify 58001
 # 60718 ALF Cru / Acrux
 # TODO:
 # - Calculate location of ALF Cru AB barycenter from locations of A and B
-# - Figure AppMag/AbsMag for each component
 
 # Waisberg and Katz (2026)
 #   "Upgrading Alpha Crucis to a seven star system. Discovery of Bb and orbital misalignment"
 #   https://arxiv.org/abs/2603.11194
-Barycenter 60718 "Acrux AB:ALF Cru AB"
+Barycenter 60718 "Acrux:ALF Cru"
 {
 	RA 186.64921144
 	Dec -63.09915890
@@ -1054,13 +1053,13 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
 	Distance 347.109                    # ALF Cru C's distance
 }
 
-"Acrux Aa"
+"Acrux Aa:ALF Cru Aa"
 {
-	Radius<rS> 6.8                      # isochrone
+	Radius<rS> 6.8                      # from isochrone
 	SpectralType "B0.5IV"
-	AppMag 1.28                         # TODO
+	AppMag 1.38                         # from H-band magnitude = 2.07 ± 0.31, assuming V_T-H color of A subsystem
 	Temperature 28950
-	
+
 	OrbitBarycenter "ALF1 Cru"
 	EllipticalOrbit                     # fully specified orientation
 	{
@@ -1074,13 +1073,13 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
 	}
 }
 
-"Acrux Ab"
+"Acrux Ab:ALF Cru Ab"
 {
-	Radius<rS> 3.2                      # isochrone
-	SpectralType "B2V"                  # from mass M = 6.8 ± 0.3 MSol
-	AbsMag -1.80                        # placeholder
+	Radius<rS> 3.2                      # from isochrone
+	SpectralType "B"                    # assumed from mass M = 6.8 ± 0.3 MSol
+	AppMag 3.62                         # from H-band magnitude = 4.31 ± 0.31, assuming V_T-H color of A subsystem
 	Temperature 19750
-	
+
 	OrbitBarycenter "ALF1 Cru"
 	EllipticalOrbit                     # fully specified orientation
 	{
@@ -1094,26 +1093,26 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
 	}
 }
 
-Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B"
+Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:HD 108249"
 {
 	RA 186.651424
 	Dec -63.099556
 	Distance 347.109                    # ALF Cru C's distance
 }
 
-"Acrux Ba"
+"Acrux Ba:ALF Cru Ba"
 {
-	Radius<rS> 5.4                      # isochrone
+	Radius<rS> 5.4                      # from isochrone
 	SpectralType "B1V"
-	AppMag 1.58                         # TODO
+	AppMag 2.03                         # from H-band magnitude = 2.72 ± 0.30, assuming V_T-H color of B subsystem
 	Temperature 26950
-	
+
 	OrbitBarycenter "ALF2 Cru"
 	EllipticalOrbit                     # degenerate; 405 days period solution
 	{
 		Epoch          2458099          # +258−145
 		Period<d>          405.4        # +0.4−0.3
-		SemiMajorAxis        1.33       # 3.01 au, mass ratio = 12.4:9.8
+		SemiMajorAxis        1.33       # 28.2 +0.8−0.8 mas, mass ratio = 12.4:9.8
 		Eccentricity         0.36       # +0.45−0.07
 		Inclination         68.6        # i = 94.4 +2.6−0.3°
 		AscendingNode      262.8        # Ω = 86.0 +3.4−6.1° (or +180)
@@ -1121,19 +1120,19 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B"
 	}
 }
 
-"Acrux Bb"
+"Acrux Bb:ALF Cru Bb"
 {
-	Radius<rS> 4.4                      # isochrone
-	SpectralType "B1.5V"                # from isochrone mass M = 9.8 MSol
-	AbsMag -2.60                        # placeholder
+	Radius<rS> 4.4                      # from isochrone
+	SpectralType "B"                    # assumed from mass
+	AppMag 2.66                         # from H-band magnitude = 3.35 ± 0.30, assuming V_T-H color of B subsystem
 	Temperature 24350
-	
+
 	OrbitBarycenter "ALF2 Cru"
 	EllipticalOrbit                     # degenerate; 405 days period solution
 	{
 		Epoch          2458099          # +258−145
 		Period<d>          405.4        # +0.4−0.3
-		SemiMajorAxis        1.68       # 3.01 au, mass ratio = 12.4:9.8
+		SemiMajorAxis        1.68       # 28.2 +0.8−0.8 mas, mass ratio = 12.4:9.8
 		Eccentricity         0.36       # +0.45−0.07
 		Inclination         68.6        # i = 94.4 +2.6−0.3°
 		AscendingNode      262.8        # Ω = 86.0 +3.4−6.1° (or +180)
@@ -1141,15 +1140,61 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B"
 	}
 }
 
+# Orbit from Hernandez and de Hernandez (1979), Rev. Mexicana Astron. Astrofis. 4, p. 297-300
+#   "The orbital elements of 25 G Crucis (HD 108250)"
+#   https://scixplorer.org/abs/1979RMxAA...4..297H/abstract
 Barycenter 1034668979 "Acrux C:ALF Cru C:HD 108250:HR 4729"
 {
-	RA 186.6282900361311
-	Dec -63.1222964736397
+	RA 186.62829003965
+	Dec -63.12229647433
 	Distance 347.109
 }
 
-#"Acrux D:ALF Cru D"
+"Acrux Ca:ALF Cru Ca"
+{
+	Radius<rS> 2.5                      # from isochrone
+	SpectralType "B4V"
+	AppMag 4.799                        # ± 0.009
+	Temperature 15900
 
+	OrbitBarycenter "ALF Cru C"
+	EllipticalOrbit
+	{
+		Epoch          2438903.314      # ± 0.003
+		Period<d>            1.225155   # ± 0.000005
+		SemiMajorAxis        0.0048     # 0.0387 au (calculated), mass ratio = 4.5:0.64
+		Eccentricity         0.024      # ± 0.014
+		ArgOfPericenter     86          # ω = 314 ± 34°
+	}
+}
+
+# Assume minimum mass = true mass
+"Acrux Cb:ALF Cru Cb"
+{
+	SpectralType "K"                    # assumed from mass
+	AbsMag 8.16                         # assumed from mass
+
+	OrbitBarycenter "ALF Cru C"
+	EllipticalOrbit
+	{
+		Epoch          2438903.314      # ± 0.003
+		Period<d>            1.225155   # ± 0.000005
+		SemiMajorAxis        0.0339     # 0.0387 au (calculated), mass ratio = 4.5:0.64
+		Eccentricity         0.024      # ± 0.014
+		ArgOfPericenter    266          # ω = 314 ± 34°
+	}
+}
+
+# Position from Gaia DR3 (source_id = 6053807844566359680)
+"Acrux D:ALF Cru D"
+{
+	RA 186.62971953849
+	Dec -63.12184605983
+	Distance 347.109                    # ALF Cru C's distance
+
+	SpectralType "M0V"
+	AppMag 15.0
+}
 
 # 61084 GAM Cru / Gacrux
 
