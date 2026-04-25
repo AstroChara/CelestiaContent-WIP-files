@@ -1033,10 +1033,128 @@ Modify 58001
 }
 
 # 60718 ALF Cru / Acrux
+# TODO:
+# - Calculate location of ALF Cru AB barycenter from locations of A and B
+# - Figure AppMag/AbsMag for each component
+
+# Waisberg and Katz (2026)
+#   "Upgrading Alpha Crucis to a seven star system. Discovery of Bb and orbital misalignment"
+#   https://arxiv.org/abs/2603.11194
+Barycenter 60718 "Acrux AB:ALF Cru AB"
+{
+	RA 186.64921144
+	Dec -63.09915890
+	Distance 347.109                    # ALF Cru C's distance
+}
+
+Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
+{
+	RA 186.649219
+	Dec -63.099157
+	Distance 347.109                    # ALF Cru C's distance
+}
+
+"Acrux Aa"
+{
+	Radius<rS> 6.8                      # isochrone
+	SpectralType "B0.5IV"
+	AppMag 1.28                         # TODO
+	Temperature 28950
+	
+	OrbitBarycenter "ALF1 Cru"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2458183.1        # ± 0.4
+		Period<d>           75.7469     # ± 0.0017
+		SemiMajorAxis        0.29       # 1.01 ± 0.04 au, mass ratio = 0.40 ± 0.02
+		Eccentricity         0.369      # ± 0.015
+		Inclination         73.6        # i = 66.2 ± 1.4°
+		AscendingNode       59.8        # Ω = 225.0 ± 2.0°
+		ArgOfPericenter     10.6        # ω = 229.5 ± 2.2°
+	}
+}
+
+"Acrux Ab"
+{
+	Radius<rS> 3.2                      # isochrone
+	SpectralType "B2V"                  # from mass M = 6.8 ± 0.3 MSol
+	AbsMag -1.80                        # placeholder
+	Temperature 19750
+	
+	OrbitBarycenter "ALF1 Cru"
+	EllipticalOrbit                     # fully specified orientation
+	{
+		Epoch          2458183.1        # ± 0.4
+		Period<d>           75.7469     # ± 0.0017
+		SemiMajorAxis        0.72       # 1.01 ± 0.04 au, mass ratio = 0.40 ± 0.02
+		Eccentricity         0.369      # ± 0.015
+		Inclination         73.6        # i = 66.2 ± 1.4°
+		AscendingNode       59.8        # Ω = 225.0 ± 2.0°
+		ArgOfPericenter    190.6        # ω = 229.5 ± 2.2°
+	}
+}
+
+Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B"
+{
+	RA 186.651424
+	Dec -63.099556
+	Distance 347.109                    # ALF Cru C's distance
+}
+
+"Acrux Ba"
+{
+	Radius<rS> 5.4                      # isochrone
+	SpectralType "B1V"
+	AppMag 1.58                         # TODO
+	Temperature 26950
+	
+	OrbitBarycenter "ALF2 Cru"
+	EllipticalOrbit                     # degenerate; 405 days period solution
+	{
+		Epoch          2458099          # +258−145
+		Period<d>          405.4        # +0.4−0.3
+		SemiMajorAxis        1.33       # 3.01 au, mass ratio = 12.4:9.8
+		Eccentricity         0.36       # +0.45−0.07
+		Inclination         68.6        # i = 94.4 +2.6−0.3°
+		AscendingNode      262.8        # Ω = 86.0 +3.4−6.1° (or +180)
+		ArgOfPericenter    312.4        # ω = 105.2 +32.1−55.3° (or +180)
+	}
+}
+
+"Acrux Bb"
+{
+	Radius<rS> 4.4                      # isochrone
+	SpectralType "B1.5V"                # from isochrone mass M = 9.8 MSol
+	AbsMag -2.60                        # placeholder
+	Temperature 24350
+	
+	OrbitBarycenter "ALF2 Cru"
+	EllipticalOrbit                     # degenerate; 405 days period solution
+	{
+		Epoch          2458099          # +258−145
+		Period<d>          405.4        # +0.4−0.3
+		SemiMajorAxis        1.68       # 3.01 au, mass ratio = 12.4:9.8
+		Eccentricity         0.36       # +0.45−0.07
+		Inclination         68.6        # i = 94.4 +2.6−0.3°
+		AscendingNode      262.8        # Ω = 86.0 +3.4−6.1° (or +180)
+		ArgOfPericenter    132.4        # ω = 105.2 +32.1−55.3° (or +180)
+	}
+}
+
+Barycenter 1034668979 "Acrux C:ALF Cru C:HD 108250:HR 4729"
+{
+	RA 186.6282900361311
+	Dec -63.1222964736397
+	Distance 347.109
+}
+
+#"Acrux D:ALF Cru D"
+
 
 # 61084 GAM Cru / Gacrux
 
 # 61932 GAM Cen / Muhlifain
+# TODO: "mass difference" is wrong; find actual masses of these stars
 # Orbit, masses, and SpectralType from Argyle et al. (2015), AN 336 (4), p.378-387
 #   "Micrometric measures and orbits of southern visual double stars"
 #   https://onlinelibrary.wiley.com/doi/10.1002/asna.201412166
@@ -1057,7 +1175,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	OrbitBarycenter "GAM Cen"
 	EllipticalOrbit
 	{
-		Epoch          2426434          # Julian year? 1931.25 ± 0.07
+		Epoch          2426434          # Julian year, 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
 		SemiMajorAxis       16.5        # 0.869 ± 0.011", total mass = 6.0, mass difference = 0.3
 		Eccentricity         0.793      # ± 0.003
@@ -1075,7 +1193,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	OrbitBarycenter "GAM Cen"
 	EllipticalOrbit
 	{
-		Epoch          2426434          # Julian year? 1931.25 ± 0.07
+		Epoch          2426434          # Julian year, 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
 		SemiMajorAxis       18.2        # 0.869 ± 0.011", total mass = 6.0, mass difference = 0.3
 		Eccentricity         0.793      # ± 0.003
@@ -1732,7 +1850,7 @@ Barycenter 80763
 	OrbitBarycenter "ALF Sco"
 	EllipticalOrbit
 	{
-		Epoch          2186252.968      # Julian year? 1273.670 ± 64.033
+		Epoch          2186252.968      # Julian year, 1273.670 ± 64.033
 		Period            1217.536      # ± 81.521
 		SemiMajorAxis      178          # 2.92750 ± 0.03447 mas, mass ratio = (15 ± 5):(7.2)
 		Eccentricity         0.07860    # ± 0.04429
@@ -1756,7 +1874,7 @@ Barycenter 80763
 	OrbitBarycenter "ALF Sco"
 	EllipticalOrbit
 	{
-		Epoch          2186252.968      # Julian year? 1273.670 ± 64.033
+		Epoch          2186252.968      # Julian year, 1273.670 ± 64.033
 		Period            1217.536      # ± 81.521
 		SemiMajorAxis      370          # 2.92750 ± 0.03447 mas, mass ratio = (15 ± 5):(7.2)
 		Eccentricity         0.07860    # ± 0.04429
@@ -1793,7 +1911,7 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Tradit
 	OrbitBarycenter "ETA Oph"
 	EllipticalOrbit
 	{
-		Epoch          2460503.151      # Julian year? 2024.52608 +0.00029−0.00031
+		Epoch          2460503.151      # Julian year, 2024.52608 +0.00029−0.00031
 		Period              87.77       # +0.28−0.24
 		SemiMajorAxis       14.73       # 31.05 +1.41−1.35 au, mass ratio = (2.25 +0.18−0.09):(2.03 +0.02−0.02)
 		Eccentricity         0.93077    # +0.00013−0.00012
@@ -1813,7 +1931,7 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Tradit
 	OrbitBarycenter "ETA Oph"
 	EllipticalOrbit
 	{
-		Epoch          2460503.151      # Julian year? 2024.52608 +0.00029−0.00031
+		Epoch          2460503.151      # Julian year, 2024.52608 +0.00029−0.00031
 		Period              87.77       # +0.28−0.24
 		SemiMajorAxis       16.32       # 31.05 +1.41−1.35 au, mass ratio = (2.25 +0.18−0.09):(2.03 +0.02−0.02)
 		Eccentricity         0.93077    # +0.00013−0.00012
