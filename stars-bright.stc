@@ -481,10 +481,16 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 	Distance 43.5                       # from weighted Gaia DR3 parallaxes
 }
 
+# Radius, BoloCorrection and Temperature from Leggett et al. (1996), ApJS 104, p.117
+#   "Infrared Spectra of Low-Mass Stars: Toward a Temperature Scale for Red Dwarfs"
+#   https://ui.adsabs.harvard.edu/abs/1996ApJS..104..117L/abstract
 "Capella H:ALF Aur H:13 Aur H:Gliese 195 A:LTT 11622:ADS 3841 H"
 {
+	Radius<m> 3.73e8                    # ± 0.19; from luminosity and temperature
 	SpectralType "M2.5V"
 	AppMag 9.99
+	BoloCorrection -1.56
+	Temperature 3700                    # ± 150
 
 	OrbitBarycenter "ALF Aur HL"
 	EllipticalOrbit
