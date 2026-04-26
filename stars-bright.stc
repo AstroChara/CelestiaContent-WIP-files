@@ -78,7 +78,7 @@
 #   "A study of the physical properties of SB2s with both the visual and spectroscopic orbits"
 #   https://academic.oup.com/mnras/article/492/2/2709/5695748
 #   https://scixplorer.org/abs/2020MNRAS.492.2709P/abstract
-Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+2905A"  # Traditional star name
+Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:WDS J00084+2905A"
 {
 	RA 2.096534
 	Dec 29.090828
@@ -89,7 +89,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 #   “TESS survey of rotational and pulsational variability of mercury–manganese stars”
 #   https://academic.oup.com/mnras/article/506/4/5328/6325560
 #   https://scixplorer.org/abs/2021MNRAS.506.5328K/abstract
-"Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:CCDM J00083+2905Aa"
+"Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:WDS J00084+2905Aa"
 {
 	Radius<rS> 2.7                      # ± 0.4; from luminosity and temperature
 	SpectralType "B8IV-VHgMn"
@@ -98,7 +98,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	Temperature 13800                   # ± 125
 
 	OrbitBarycenter "ALF And"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2447763.097745
 		Period<d>           96.69342
@@ -116,7 +116,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	}
 }
 
-"Alpheratz B:Sirrah B:ALF And B:21 And B:DEL Peg B:ADS 94 Ab:CCDM J00083+2905Ab" 
+"Alpheratz B:Sirrah B:ALF And B:21 And B:DEL Peg B:ADS 94 Ab:WDS J00084+2905Ab"
 {
 	Radius<rS> 1.65                     # ± 0.3; from luminosity and temperature
 	SpectralType "A7V"
@@ -125,7 +125,7 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:CCDM J00083+290
 	Temperature 8500
 
 	OrbitBarycenter "ALF And"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2447763.097745
 		Period<d>           96.69342
@@ -162,6 +162,7 @@ Modify 746
 # 3419 BET Cet / Diphda
 
 # 4427 GAM Cas / Tiansi
+# TODO: Add star system
 # Dimensions and rotation from Archer et al. (2025), AJ 995 (2), id.191
 #   "Measurement of the Photosphere Oblateness of γ Cassiopeiae via Stellar Intensity Interferometry with the VERITAS Observatory"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ae0744
@@ -208,7 +209,7 @@ Barycenter 7588
 	Temperature 15539                   # ± 438; effective
 
 	OrbitBarycenter "ALF Eri"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2454743.94
 		Period               7.0389
@@ -234,7 +235,7 @@ Barycenter 7588
 	Temperature 9064                    # ± 624
 
 	OrbitBarycenter "ALF Eri"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2454743.94
 		Period               7.0389
@@ -342,7 +343,7 @@ Barycenter "Rigel B:BET Ori B:19 Ori B:ADS 3823 B"
 	Extinction 0.155
 
 	OrbitBarycenter "BET Ori B"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2429633.196
 		Period<d>            9.860
@@ -368,7 +369,7 @@ Barycenter "Rigel B:BET Ori B:19 Ori B:ADS 3823 B"
 	Extinction 0.155
 
 	OrbitBarycenter "BET Ori B"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2429633.196
 		Period<d>            9.860
@@ -428,7 +429,7 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 	Temperature 4970                    # ± 50
 
 	OrbitBarycenter "ALF Aur"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2448147.6
 		Period<d>          104.02128
@@ -455,7 +456,7 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 	Temperature 5730                    # ± 60
 
 	OrbitBarycenter "ALF Aur"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2448147.6
 		Period<d>          104.02128
@@ -493,7 +494,7 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 	Temperature 3700                    # ± 150
 
 	OrbitBarycenter "ALF Aur HL"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit TODO: is this true?
 	{
 		Period             300
 		SemiMajorAxis       22.5        # 3.5 arcsec, mass ratio = 0.57:0.53
@@ -511,7 +512,7 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 	AppMag 13.5
 
 	OrbitBarycenter "ALF Aur HL"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Period             300
 		SemiMajorAxis       24.2        # 3.5 arcsec, mass ratio 0.57:0.53
@@ -579,17 +580,17 @@ Modify 26311
 #   https://www.aanda.org/articles/aa/full_html/2013/06/aa21434-13/aa21434-13.html
 #   https://scixplorer.org/abs/2013A%26A...554A..52H/abstract
 # A-B orbit from ORB6 (Izm2019)
-Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:CCDM J05408-0156AB"
+Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:WDS J05407-0157AB"
 {
 	RA 85.18977448                      # mass ratio ((33 ± 10):(14 ± 3)):16.66
 	Dec -1.94278839
 	Distance 1260.410                   # from Gaia DR3 parallax of C component
 }
 
-Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A"
+Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 {
 	OrbitBarycenter "ZET Ori"
-	EllipticalOrbit
+	EllipticalOrbit                     # TODO: what kind of orbit is this?
 	{
 		Period            5587.5182
 		SemiMajorAxis      800.40       # 7.91434 ± 4.67231 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
@@ -618,7 +619,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 	Temperature 29500
 
 	OrbitBarycenter "ZET Ori A"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2452735.8
 		Period<d>         2688.9
@@ -649,7 +650,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 	Temperature 15500
 
 	OrbitBarycenter "ZET Ori A"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2452735.8
 		Period<d>         2688.9
@@ -662,7 +663,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 }
 
 # Mass from MSC
-2011884771 "Alnitak B:ZET Ori B:50 Ori B:ADS 4263 B:CCDM J05408-0156B:HD 37743"
+2011884771 "Alnitak B:ZET Ori B:50 Ori B:ADS 4263 B:HD 37743:WDS J05407-0157B"
 {
 	SpectralType "B0III"
 	AppMag 4.01
@@ -685,7 +686,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 #   "Spectrum of the secondary component and new orbital elements of the massive triple star δ Ori A"
 #   https://www.aanda.org/articles/aa/full_html/2023/04/aa45272-22/aa45272-22.html
 #   https://scixplorer.org/abs/2023A%26A...672A..31O/abstract
-1012074771 "Alnitak C:ZET Ori C:50 Ori C:ADS 4263 C:CCDM J05408-0156C"
+1012074771 "Alnitak C:ZET Ori C:50 Ori C:ADS 4263 C:WDS J05407-0157C"
 {
 	RA 85.19237166328
 	Dec -1.92677060781
@@ -717,14 +718,14 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:CCDM J05408-0156A
 #   "Eclipsing binaries observed with the WIRE satellite. II. β Aurigae and non-linear limb darkening in light curves"
 #   https://www.aanda.org/articles/aa/abs/2007/21/aa7184-07/aa7184-07.html
 #   https://ui.adsabs.harvard.edu/abs/2007A%26A...467.1215S/abstract
-Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:CCDM J05596+4457A"  # Traditional star name
+Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 {
 	RA 89.8818244421
 	Dec 44.9474283491
 	Distance 81.113
 }
 
-"Menkalinan A:BET Aur A:34 Aur A:GJ 3375 A:ADS 4556 Aa:CCDM J05596+4457Aa" 
+"Menkalinan A:BET Aur A:34 Aur A:GJ 3375 A:ADS 4556 Aa:WDS J05595+4457Aa" 
 {
 	Radius<rS> 2.762                    # ± 0.017
 	SpectralType "A1IV"
@@ -751,7 +752,7 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:CCDM J05596+4457A
 	}
 }
 
-"Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:CCDM J05596+4457Ab" 
+"Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:WDS J05595+4457Ab" 
 {
 	Radius<rS> 2.568                    # ± 0.017
 	SpectralType "A1IV"
@@ -1035,6 +1036,7 @@ Modify 53910
 # 57632 BET Leo / Denebola
 
 # 58001 GAM UMa / Phecda
+# TODO: Add star system
 # Dimensions and rotation from Jones et al. (2015), AJ 813 (1), article id. 58
 #   "The Ages of A-Stars. I. Interferometric Observations and Age Estimates for Stars in the Ursa Major Moving Group"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/813/1/58
@@ -1065,7 +1067,7 @@ Barycenter 60718 "Acrux:ALF Cru"
 	Distance 347.109                    # ALF Cru C's distance
 }
 
-Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
+Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A:26 Cru:HD 108248"
 {
 	RA 186.649219
 	Dec -63.099157
@@ -1080,7 +1082,7 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
 	Temperature 28950
 
 	OrbitBarycenter "ALF1 Cru"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2458183.1        # ± 0.4
 		Period<d>           75.7469     # ± 0.0017
@@ -1100,7 +1102,7 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
 	Temperature 19750
 
 	OrbitBarycenter "ALF1 Cru"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2458183.1        # ± 0.4
 		Period<d>           75.7469     # ± 0.0017
@@ -1112,7 +1114,7 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A"
 	}
 }
 
-Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:HD 108249"
+Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:27 Cru:HD 108249"
 {
 	RA 186.651424
 	Dec -63.099556
@@ -1127,7 +1129,7 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:HD 108249"
 	Temperature 26950
 
 	OrbitBarycenter "ALF2 Cru"
-	EllipticalOrbit                     # degenerate; 405 days period solution
+	EllipticalOrbit                     # mirror-ambiguous orbit, poorly-constrained; 405 days period solution
 	{
 		Epoch          2458099          # +258−145
 		Period<d>          405.4        # +0.4−0.3
@@ -1147,7 +1149,7 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:HD 108249"
 	Temperature 24350
 
 	OrbitBarycenter "ALF2 Cru"
-	EllipticalOrbit                     # degenerate; 405 days period solution
+	EllipticalOrbit                     # mirror-ambiguous orbit, poorly-constrained; 405 days period solution
 	{
 		Epoch          2458099          # +258−145
 		Period<d>          405.4        # +0.4−0.3
@@ -1162,7 +1164,7 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:HD 108249"
 # Orbit from Hernandez and de Hernandez (1979), Rev. Mexicana Astron. Astrofis. 4, p. 297-300
 #   "The orbital elements of 25 G Crucis (HD 108250)"
 #   https://scixplorer.org/abs/1979RMxAA...4..297H/abstract
-Barycenter 1034668979 "Acrux C:ALF Cru C:HD 108250:HR 4729"
+Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 {
 	RA 186.62829003965
 	Dec -63.12229647433
@@ -1177,7 +1179,7 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:HD 108250:HR 4729"
 	Temperature 15900
 
 	OrbitBarycenter "ALF Cru C"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2438903.314      # ± 0.003
 		Period<d>            1.225155   # ± 0.000005
@@ -1194,7 +1196,7 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:HD 108250:HR 4729"
 	AbsMag 8.16                         # assumed from mass
 
 	OrbitBarycenter "ALF Cru C"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2438903.314      # ± 0.003
 		Period<d>            1.225155   # ± 0.000005
@@ -1224,7 +1226,7 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:HD 108250:HR 4729"
 #   https://onlinelibrary.wiley.com/doi/10.1002/asna.201412166
 #   https://ui.adsabs.harvard.edu/abs/2015AN....336..378A/abstract
 # Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
-Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name (non-WGSN)
+Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"
 {
 	RA 190.37807653
 	Dec -48.95984577
@@ -1237,7 +1239,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	AppMag 2.84                         # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2426434          # Julian year, 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
@@ -1255,7 +1257,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # Traditional star name 
 	AppMag 2.94                         # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2426434          # Julian year, 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
@@ -1294,7 +1296,7 @@ Barycenter 62434
 	Temperature 27000
 
 	OrbitBarycenter "BET Cru"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2449879
 		Period<d>         1828.0
@@ -1318,7 +1320,7 @@ Barycenter 62434
 	AbsMag 2.01                         # for assumed spectral type
 
 	OrbitBarycenter "BET Cru"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2449879
 		Period<d>         1828.0
@@ -1371,7 +1373,7 @@ Modify 62956
 # 65378 ZET UMa / Mizar
 
 # 65474 ALF Vir / Spica
-# TODO: Update barycentre position | Update designations | Update orbit
+# TODO: Update barycentre position | Update orbit
 # Tkachenko et al. (2016), MNRAS 458 (2), p.1964-1976
 #   "Stellar modelling of Spica, a high-mass spectroscopic binary with a β Cep variable primary component"
 #   https://academic.oup.com/mnras/article/458/2/1964/2588998
@@ -1387,14 +1389,14 @@ Modify 62956
 #   "Polarized reflected light from the Spica binary system"
 #   https://arxiv.org/abs/1904.01195
 #   https://scixplorer.org/abs/2019NatAs...3..636B/abstract
-Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
+Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:WDS J13252-1110A"
 {
 	RA 201.29824737
 	Dec -11.16131947
 	Distance 249.745
 }
 
-"Spica A:Azimech A:ALF Vir A:67 Vir A:CCDM J13252-1109Aa"
+"Spica A:Azimech A:ALF Vir A:67 Vir A:WDS J13252-1110Aa"
 {
 	Radius<rS> 7.95                     # fractional equatorial radius (of semi-major axis) = 0.282 ± 0.09
 	SemiAxes [ 1 0.887 1 ]              # fractional polar radius = 0.250 ± 0.08
@@ -1403,7 +1405,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	Temperature 25300                   # ± 500
 
 	OrbitBarycenter "ALF Vir"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2454189.40
 		Period<d>            4.0145
@@ -1421,7 +1423,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	}
 }
 
-"Spica B:Azimech B:ALF Vir B:67 Vir B:CCDM J13252-1109Ab"
+"Spica B:Azimech B:ALF Vir B:67 Vir B:WDS J13252-1110Ab"
 {
 	Radius<rS> 3.78                     # fractional equatorial radius (of semi-major axis) = 0.134 ± 0.04
 	SemiAxes [ 1 0.985 1 ]              # fractional polar radius = 0.132 ± 0.05
@@ -1430,7 +1432,7 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:CCDM J13252-1109A"
 	Temperature 20900                   # ± 800
 
 	OrbitBarycenter "ALF Vir"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2454189.40
 		Period<d>            4.0145
@@ -1475,17 +1477,17 @@ Modify 67301
 #   "First HARPSpol discoveries of magnetic fields in massive stars"
 #   https://www.aanda.org/articles/aa/full_html/2011/12/aa18354-11/aa18354-11.html
 #   https://scixplorer.org/abs/2011A%26A...536L...6A/abstract
-Barycenter 68702 "Hadar:Agena:BET Cen:CCDM J14038-6022AB"
+Barycenter 68702 "Hadar:Agena:BET Cen:WDS J14038-6022AB"
 {
 	RA 210.95547135                     # mass ratio = ((12.02 ± 0.13):(10.58 ± 0.18)):6.03
 	Dec -60.37317105
 	Distance<pc> 110.6                  # ± 0.5
 }
 
-Barycenter "Hadar A:Agena A:BET Cen A:CCDM J14038-6022A"
+Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 {
 	OrbitBarycenter "BET Cen"
-	EllipticalOrbit
+	EllipticalOrbit                     # TODO: what kind of orbit is this?
 	{
 		Epoch          2461552.85
 		Period             133.3
@@ -1505,7 +1507,7 @@ Barycenter "Hadar A:Agena A:BET Cen A:CCDM J14038-6022A"
 	Temperature 25000
 
 	OrbitBarycenter "BET Cen A"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2451600.525305
 		Period               0.97720
@@ -1536,7 +1538,7 @@ Barycenter "Hadar A:Agena A:BET Cen A:CCDM J14038-6022A"
 	Temperature 25000
 
 	OrbitBarycenter "BET Cen A"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2451600.525305
 		Period               0.97720
@@ -1555,14 +1557,14 @@ Barycenter "Hadar A:Agena A:BET Cen A:CCDM J14038-6022A"
 }
 
 # AppMag and mass from MSC
-2039199005 "Hadar B:Agena B:BET Cen B:CCDM J14038-6022B"
+2039199005 "Hadar B:Agena B:BET Cen B:WDS J14038-6022B"
 {
 	SpectralType "B"                    # from mass
 	AppMag 4.03
 	Extinction 0.10
 
 	OrbitBarycenter "BET Cen"
-	EllipticalOrbit
+	EllipticalOrbit                     # TODO: what kind of orbit is this?
 	{
 		Epoch          2461552.85
 		Period             133.3
@@ -1676,7 +1678,7 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 
 # 78401 DEL Sco / Dschubba
 
-# 78820 BET Sco / Acrab
+# 78820 BET Sco AB / Acrab AB
 # Positions from Gaia DR3
 # A-B and C-E orbits from Tokovinin et al. (2024), AJ 168 (1), id.28
 #   "Speckle Interferometry at SOAR Telescope in 2023"
@@ -1691,17 +1693,17 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 #   Discovery of a new HgMn star in the multiple system β Scorpii"
 #   https://www.aanda.org/articles/aa/full_html/2010/01/aa13332-09/aa13332-09.html
 #   https://scixplorer.org/abs/2010A%26A...509A..21C/abstract
-Barycenter 78820 "Acrab:Graffias:Akrab:BET1 Sco:BET Sco AB:8 Sco AB:ADS 9913 AB:CCDM J16054-1948AB"
+Barycenter 78820 "Acrab:Graffias:Akrab:BET1 Sco:BET Sco AB:8 Sco AB:ADS 9913 AB:WDS J16054-1948AB"
 {
 	RA 241.35926902768
 	Dec -19.80555058043
 	Distance<pc> 143                    # ± 3
 }
 
-Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:CCDM J16054-1948A"
+Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:WDS J16054-1948A"
 {
 	OrbitBarycenter "BET1 Sco"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2471451.125
 		Period             220.0
@@ -1723,7 +1725,7 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:CCDM J16054-
 	Temperature 28000                   # ± 2000
 
 	OrbitBarycenter "BET Sco A"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2449788.509
 		Period<d>            6.828245
@@ -1751,7 +1753,7 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:CCDM J16054-
 	Temperature 26400                   # ± 2000
 
 	OrbitBarycenter "BET Sco A"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2449788.509
 		Period<d>            6.828245
@@ -1773,14 +1775,14 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:CCDM J16054-
 #   "The multiple system β Sco and the age of the Upper Scorpius complex"
 #   https://scixplorer.org/abs/1983A%26A...125..302G/abstract
 #   (6-7 mSun)
-"Acrab B:Graffias B:Akrab B:BET Sco B:8 Sco B:ADS 9913 B:CCDM J16054-1948B"
+"Acrab B:Graffias B:Akrab B:BET Sco B:8 Sco B:ADS 9913 B:WDS J16054-1948B"
 {
 	SpectralType "B"                    # from mass
 	AppMag 5.9                          # ± 0.2
 	Extinction 0.55
 
 	OrbitBarycenter "BET1 Sco"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2471451.125
 		Period             220.0
@@ -1792,7 +1794,7 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:CCDM J16054-
 	}
 }
 
-# 78821 BET Sco / Acrab
+# 78821 BET Sco CE / Acrab CE
 # SpectralType, inner orbit and mass ratio from Veramendi and González (2014), A&A 563, id.A138
 #   "Spectroscopic study of early-type multiple stellar systems. I. Orbits of spectroscopic binary subsystems"
 #   https://www.aanda.org/articles/aa/full_html/2014/03/aa22840-13/aa22840-13.html
@@ -1800,7 +1802,7 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:CCDM J16054-
 # AppMag (V-band) from Evans et al. (1977), AJ 82, p.495-502
 #   "Occultation study of the multiple star β Scorpii"
 #   https://scixplorer.org/abs/1977AJ.....82..495E/abstract
-Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS 9913 C:CCDM J16054-1948C"
+Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS 9913 C:WDS J16054-1948C"
 {
 	RA 241.36061531561
 	Dec -19.80197081548
@@ -1817,7 +1819,7 @@ Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS
 	Temperature 24000                   # ± 500
 
 	OrbitBarycenter "BET2 Sco"
-	EllipticalOrbit
+	EllipticalOrbit                     # TODO: what kind of orbit is this?
 	{
 		Epoch          2453736.5
 		Period              18.953
@@ -1832,7 +1834,7 @@ Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS
 Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 {
 	OrbitBarycenter "BET2 Sco"
-	EllipticalOrbit
+	EllipticalOrbit                     # TODO: what kind of orbit is this?
 	{
 		Epoch          2453736.5
 		Period              18.953
@@ -1854,7 +1856,7 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 	Temperature 13000                   # ± 800
 
 	OrbitBarycenter "BET Sco E"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2455449.17
 		Period<d>           11.07666
@@ -1874,7 +1876,7 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 	Extinction 0.58
 
 	OrbitBarycenter "BET Sco E"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2455449.17
 		Period<d>           11.07666
@@ -1905,7 +1907,7 @@ Barycenter 80763
 #   "High spectral resolution imaging of the dynamical atmosphere of the red supergiant Antares in the CO first overtone lines with VLTI/AMBER"
 #   https://www.aanda.org/articles/aa/full_html/2013/07/aa21063-13/aa21063-13.html
 #   https://scixplorer.org/abs/2013A%26A...555A..24O/abstract
-"Antares A:ALF Sco A:HD 148478"
+"Antares A:ALF Sco A:21 Sco A:HD 148478:WDS J16294-2626A"
 {
 	Radius<rS> 680
 	SpectralType "M1.5Iab"
@@ -1913,7 +1915,7 @@ Barycenter 80763
 	Temperature 3660                    # ± 120
 
 	OrbitBarycenter "ALF Sco"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2186252.968      # Julian year, 1273.670 ± 64.033
 		Period            1217.536      # ± 81.521
@@ -1925,11 +1927,11 @@ Barycenter 80763
 	}
 }
 
-# SpectralType from Baade and Reimers (2007), A&A 474 (1), October IV 2007, pp.229-237
+# SpectralType and radial distance relative to A from Baade and Reimers (2007), A&A 474 (1), October IV 2007, pp.229-237
 #   "Multi-component absorption lines in the HST spectra of α Scorpii B"
 #   https://www.aanda.org/articles/aa/abs/2007/40/aa7308-07/aa7308-07.html
 #   https://scixplorer.org/abs/2007A%26A...474..229B/abstract
-"Antares B:ALF Sco B:HD 148479"
+"Antares B:ALF Sco B:21 Sco B:HD 148479:WDS J16294-2626B"
 {
 	Radius<rS> 5.2 # temp
 	SpectralType "B2.5V"
@@ -1937,7 +1939,7 @@ Barycenter 80763
 	Temperature 18500 # temp
 
 	OrbitBarycenter "ALF Sco"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2186252.968      # Julian year, 1273.670 ± 64.033
 		Period            1217.536      # ± 81.521
@@ -1959,14 +1961,14 @@ Barycenter 80763
 #   https://astro.theoj.org/article/138625-which-is-the-most-eccentric-binary-known-insights-from-the-2023-4-pericenter-passages-of-zeta-bootis-and-eta-ophiuchi
 #   https://ui.adsabs.harvard.edu/abs/2025OJAp....8E..63W/abstract
 # Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
-Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Traditional star name
+Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:WDS J17104-1544A"
 {
 	RA 257.59471400
 	Dec -15.72446589
 	Distance 88.365
 }
 
-1013336232 "Sabik A:ETA Oph A:35 Oph A:ADS 10374 A:CCDM J17104-1544Aa"
+1013336232 "Sabik A:ETA Oph A:35 Oph A:ADS 10374 A:WDS J17104-1544Aa"
 {
 	Radius<rS> 2.5                      # +0.4−0.4
 	SpectralType "A2V"
@@ -1974,7 +1976,7 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Tradit
 	Temperature 9000                    # +1250−750
 	
 	OrbitBarycenter "ETA Oph"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2460503.151      # Julian year, 2024.52608 +0.00029−0.00031
 		Period              87.77       # +0.28−0.24
@@ -1986,7 +1988,7 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Tradit
 	}
 }
 
-2013336232 "Sabik B:ETA Oph B:35 Oph B:ADS 10374 B:CCDM J17104-1544Ab"
+2013336232 "Sabik B:ETA Oph B:35 Oph B:ADS 10374 B:WDS J17104-1544Ab"
 {
 	Radius<rS> 2.0                      # +0.3−0.2
 	SpectralType "A2V"
@@ -1994,7 +1996,7 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:CCDM J17104-1544A"  # Tradit
 	Temperature 8700                    # +450−450
 	
 	OrbitBarycenter "ETA Oph"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2460503.151      # Julian year, 2024.52608 +0.00029−0.00031
 		Period              87.77       # +0.28−0.24
@@ -2030,7 +2032,7 @@ Barycenter 85927
 Barycenter "Shaula A:LAM Sco A:35 Sco A"
 {
 	OrbitBarycenter "LAM Sco"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2451562.8
 		Period<d>         1052.8
@@ -2054,7 +2056,7 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 	Temperature 25000                   # ± 1000
 
 	OrbitBarycenter "LAM Sco A"
-	EllipticalOrbit
+	EllipticalOrbit                     # eclipsing binary orbit
 	{
 		Epoch          2458634.974
 		Period<d>            5.95189
@@ -2084,7 +2086,7 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 	Temperature 10500                   # ± 500
 
 	OrbitBarycenter "LAM Sco A"
-	EllipticalOrbit
+	EllipticalOrbit                     # eclipsing binary orbit
 	{
 		Epoch          2458634.974
 		Period<d>            5.95189
@@ -2111,7 +2113,7 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 	Temperature 21000                   # ± 1000
 
 	OrbitBarycenter "LAM Sco"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2451562.8
 		Period<d>         1052.8
@@ -2129,7 +2131,7 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ac1172
 #   https://scixplorer.org/abs/2021ApJ...921...41G/abstract
 # Dimensions, rotation of A and Temperature of B from Lazzarotto et al. (2026)
-Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:CCDM J17349+1234AB"
+Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+1234AB"
 {
 	RA 263.73411480
 	Dec 12.55905265
@@ -2140,7 +2142,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:CCDM J17349+1
 #   "Rotationally Modulated g-modes in the Rapidly Rotating δ Scuti Star Rasalhague (α Ophiuchi)"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/725/1/1192
 #   https://scixplorer.org/abs/2010ApJ...725.1192M/abstract
-"Rasalhague A:Ras Alhague A:ALF Oph A:55 Oph A:Gliese 681 A:CCDM J17349+1234A"
+"Rasalhague A:Ras Alhague A:ALF Oph A:55 Oph A:Gliese 681 A:WDS J17349+1234A"
 {
 	Radius<rS> 2.858                    # ± 0.009; equatorial
 	SemiAxes [ 1 0.833 1 ]              # polar radius = 2.388 ± 0.013 rSun
@@ -2148,7 +2150,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:CCDM J17349+1
 	AppMag 2.086                        # ± 0.003
 
 	OrbitBarycenter "ALF Oph"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2456028.220
 		Period<d>         3139.72
@@ -2170,7 +2172,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:CCDM J17349+1
 #   "Establishing α Oph as a Prototype Rotator: Improved Astrometric Orbit"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/726/2/104
 #   https://scixplorer.org/abs/2011ApJ...726..104H/abstract
-"Rasalhague B:Ras Alhague B:ALF Oph B:55 Oph B:Gliese 681 B:CCDM J17349+1234B"
+"Rasalhague B:Ras Alhague B:ALF Oph B:55 Oph B:Gliese 681 B:WDS J17349+1234B"
 {
 	Radius<rS> 0.74                     # from temperature and luminosity = 0.25 lSun
 	SpectralType "K6V"                  # K5V-K7V
@@ -2178,7 +2180,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:CCDM J17349+1
 	Temperature 4750
 
 	OrbitBarycenter "ALF Oph"
-	EllipticalOrbit                     # fully specified orientation
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2456028.220
 		Period<d>         3139.72
@@ -2306,7 +2308,7 @@ Barycenter 92855
 	Temperature 18900
 
 	OrbitBarycenter "SIG Sgr"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2448588.6
 		Period<d>          134.779
@@ -2326,7 +2328,7 @@ Barycenter 92855
 	Temperature 18600                   # "The secondary is cooler than the primary by only about 300 K."
 
 	OrbitBarycenter "SIG Sgr"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2448588.6
 		Period<d>          134.779
@@ -2380,7 +2382,7 @@ Barycenter 102488
 	Temperature 4659                    # ± 35
 	
 	OrbitBarycenter "EPS Cyg"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2446945.9465
 		Period<d>        19611.5
@@ -2402,7 +2404,7 @@ Barycenter 102488
 	AbsMag 12.10                        # Mamajek
 	
 	OrbitBarycenter "EPS Cyg"
-	EllipticalOrbit
+	EllipticalOrbit                     # radial velocity-only orbit
 	{
 		Epoch          2446945.9465
 		Period<d>        19611.5
