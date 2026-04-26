@@ -494,7 +494,7 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 	Temperature 3700                    # ± 150
 
 	OrbitBarycenter "ALF Aur HL"
-	EllipticalOrbit                     # mirror-ambiguous orbit TODO: is this true?
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Period             300
 		SemiMajorAxis       22.5        # 3.5 arcsec, mass ratio = 0.57:0.53
@@ -590,7 +590,7 @@ Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:WDS J05407-0157AB"
 Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 {
 	OrbitBarycenter "ZET Ori"
-	EllipticalOrbit                     # TODO: what kind of orbit is this?
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Period            5587.5182
 		SemiMajorAxis      800.40       # 7.91434 ± 4.67231 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
@@ -670,7 +670,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 	Extinction 0.19
 
 	OrbitBarycenter "ZET Ori"
-	EllipticalOrbit
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Period            5587.5182
 		SemiMajorAxis     2258.04       # 7.91434 ± 4.67231 arcsec, mass ratio ((33 ± 10):(14 ± 3)):16.66
@@ -1088,9 +1088,9 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A:26 Cru:HD 108248"
 		Period<d>           75.7469     # ± 0.0017
 		SemiMajorAxis        0.29       # 1.01 ± 0.04 au, mass ratio = 0.40 ± 0.02
 		Eccentricity         0.369      # ± 0.015
-		Inclination         73.6        # i = 66.2 ± 1.4°
-		AscendingNode       59.8        # Ω = 225.0 ± 2.0°
-		ArgOfPericenter     10.6        # ω = 229.5 ± 2.2°
+		Inclination         68.8        # i = 66.2 ± 1.4°
+		AscendingNode      210.0        # Ω = 225.0 ± 2.0°
+		ArgOfPericenter    269.7        # ω = 229.5 ± 2.2°
 	}
 }
 
@@ -1108,9 +1108,9 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A:26 Cru:HD 108248"
 		Period<d>           75.7469     # ± 0.0017
 		SemiMajorAxis        0.72       # 1.01 ± 0.04 au, mass ratio = 0.40 ± 0.02
 		Eccentricity         0.369      # ± 0.015
-		Inclination         73.6        # i = 66.2 ± 1.4°
-		AscendingNode       59.8        # Ω = 225.0 ± 2.0°
-		ArgOfPericenter    190.6        # ω = 229.5 ± 2.2°
+		Inclination         68.8        # i = 66.2 ± 1.4°
+		AscendingNode      210.0        # Ω = 225.0 ± 2.0°
+		ArgOfPericenter     89.7        # ω = 229.5 ± 2.2°
 	}
 }
 
@@ -1486,7 +1486,7 @@ Barycenter 68702 "Hadar:Agena:BET Cen:WDS J14038-6022AB"
 Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 {
 	OrbitBarycenter "BET Cen"
-	EllipticalOrbit                     # TODO: what kind of orbit is this?
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2461552.85
 		Period             133.3
@@ -1563,7 +1563,7 @@ Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 	Extinction 0.10
 
 	OrbitBarycenter "BET Cen"
-	EllipticalOrbit                     # TODO: what kind of orbit is this?
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2461552.85
 		Period             133.3
@@ -1818,7 +1818,7 @@ Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS
 	Temperature 24000                   # ± 500
 
 	OrbitBarycenter "BET2 Sco"
-	EllipticalOrbit                     # TODO: what kind of orbit is this?
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2453736.5
 		Period              18.953
@@ -1833,7 +1833,7 @@ Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS
 Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 {
 	OrbitBarycenter "BET2 Sco"
-	EllipticalOrbit                     # TODO: what kind of orbit is this?
+	EllipticalOrbit                     # mirror-ambiguous orbit
 	{
 		Epoch          2453736.5
 		Period              18.953
