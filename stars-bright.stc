@@ -1220,7 +1220,6 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 # 61084 GAM Cru / Gacrux
 
 # 61932 GAM Cen / Muhlifain
-# TODO: "mass difference" is wrong; find actual masses of these stars
 # Orbit, masses, and SpectralType from Argyle et al. (2015), AN 336 (4), p.378-387
 #   "Micrometric measures and orbits of southern visual double stars"
 #   https://onlinelibrary.wiley.com/doi/10.1002/asna.201412166
@@ -1243,7 +1242,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # traditional star name 
 	{
 		Epoch          2426434          # Julian year, 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
-		SemiMajorAxis       16.5        # 0.869 ± 0.011", total mass = 6.0, mass difference = 0.3
+		SemiMajorAxis       17.3        # 0.869 ± 0.011", total mass = 6.0, assume equal mass
 		Eccentricity         0.793      # ± 0.003
 		Inclination        126.1        # i = 113.7 ± 0.7°
 		AscendingNode      214.3        # Ω = 2.6 ± 0.7°
@@ -1261,7 +1260,7 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # traditional star name 
 	{
 		Epoch          2426434          # Julian year, 1931.25 ± 0.07
 		Period              83.57       # ± 0.21
-		SemiMajorAxis       18.2        # 0.869 ± 0.011", total mass = 6.0, mass difference = 0.3
+		SemiMajorAxis       17.3        # 0.869 ± 0.011", total mass = 6.0, assume equal mass
 		Eccentricity         0.793      # ± 0.003
 		Inclination        126.1        # i = 113.7 ± 0.7°
 		AscendingNode      214.3        # Ω = 2.6 ± 0.7°
