@@ -1226,7 +1226,7 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 #   https://onlinelibrary.wiley.com/doi/10.1002/asna.201412166
 #   https://ui.adsabs.harvard.edu/abs/2015AN....336..378A/abstract
 # Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
-Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"
+Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # traditional star name (not IAU WGSN-approved)
 {
 	RA 190.37807653
 	Dec -48.95984577
