@@ -809,7 +809,9 @@ Modify 30324
 Modify 30438
 {
 	Radius<rS> 73.2                     # ± 3.9, from angular diameter
-	Temperature 7657                    # ± 161
+	AppMag -0.74                        # SIMBAD
+	Extinction 0.26
+	Temperature 7661                    # ± 81
 }
 
 # 31681 GAM Gem / Alhena
