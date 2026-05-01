@@ -1627,10 +1627,21 @@ Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 #   "Fundamental Parameters and Chemical Composition of Arcturus"
 #   https://iopscience.iop.org/article/10.1088/0004-637X/743/2/135
 #   https://scixplorer.org/abs/2011ApJ...743..135R/abstract
+# Rotation from Gray & Brown (2006), PASP 118 (846), pp. 1112-1118
+#   "The Rotation of Arcturus and Active Longitudes on Giant Stars"
+#   https://iopscience.iop.org/article/10.1086/507077
+#   https://scixplorer.org/abs/2006PASP..118.1112G/abstract
 Modify 69673
 {
 	Radius<rS> 25.5                     # ± 0.2, from angular diameter (literature, weighted mean)
 	Temperature 4286                    # ± 30
+
+	UniformRotation
+	{
+		Period<y>            2.0        # ± 0.2
+		Inclination         66          # ± 25°
+		AscendingNode      135
+	}
 }
 
 # 71352 ETA Cen
