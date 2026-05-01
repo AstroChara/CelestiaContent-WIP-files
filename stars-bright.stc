@@ -1639,7 +1639,7 @@ Modify 69673
 	UniformRotation
 	{
 		Period<y>            2.0        # ± 0.2
-		Inclination         66          # ± 25°
+		Inclination         66          # i = ~58° ± 25°
 		AscendingNode      135
 	}
 }
