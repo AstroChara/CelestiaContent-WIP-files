@@ -700,6 +700,45 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 # 27366 KAP Ori / Saiph
 
 # 27989 ALF Ori / Betelgeuse
+# Position, Distance and Radius from MacLeod et al. (2025), ApJ 978 (1), id.50
+#   "Radial Velocity and Astrometric Evidence for a Close Companion to Betelgeuse"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ad93c8
+#   https://ui.adsabs.harvard.edu/abs/2025ApJ...978...50M/abstract
+# AppMag from Dolan et al. (2016), ApJ 819 (1), article id. 7
+#   "Evolutionary Tracks for Betelgeuse"
+#   https://iopscience.iop.org/article/10.3847/0004-637X/819/1/7
+#   https://ui.adsabs.harvard.edu/abs/2016ApJ...819....7D/abstract
+# Extinction from Levesque and Massey (2020), ApJL 891 (2), id.L37
+#   "Betelgeuse Just Is Not That Cool: Effective Temperature Alone Cannot Explain the Recent Dimming of Betelgeuse"
+#   https://iopscience.iop.org/article/10.3847/2041-8213/ab7935
+#   https://ui.adsabs.harvard.edu/abs/2020ApJ...891L..37L/abstract
+# Temperature from Mittag et al. (2023), A&A 669, id.A9
+#   "Chromospheric activity and photospheric variation of α Ori during the great dimming event in 2020"
+#   https://www.aanda.org/articles/aa/full_html/2023/01/aa44924-22/aa44924-22.html
+#   https://ui.adsabs.harvard.edu/abs/2023A%26A...669A...9M/abstract
+# Rotation from Kervella et al. (2018), A&A 609, id.A67
+#   "The close circumstellar environment of Betelgeuse. V. Rotation velocity and molecular envelope properties from ALMA"
+#   https://www.aanda.org/articles/aa/full_html/2018/01/aa31761-17/aa31761-17.html
+#   https://ui.adsabs.harvard.edu/abs/2018A%26A...609A..67K/abstract
+27989
+{
+	RA 88.79304406
+	Dec 7.40710187
+	Distance<pc> 172                    # +13-11
+
+	Radius<rS> 782                      # ± 55, from angular diameter
+	SpectralType "M2Iab"
+	AppMag 0.51                         # +0.13-0.19 (adopted mean)
+	Extinction 0.62
+	Temperature 3649                    # ± 6 ± 48 (mean)
+
+	UniformRotation
+	{
+		Period<y> 31                    # for i = 60°
+		Inclination 114.4               # i = 60° (assumed)
+		AscendingNode 44.2              # rotation pole position angle = 48.0 ± 3.5° (retrograde)
+	}
+}
 
 # 28360 BET Aur / Menkalinan
 # TODO: Verify if my assumption about "maximum positive velocity" is correct, and if the MeanAnomaly is accurate or not.
