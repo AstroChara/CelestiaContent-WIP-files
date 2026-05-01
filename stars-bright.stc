@@ -1683,51 +1683,85 @@ Modify 69673
 # 72607 BET UMi / Kochab
 
 # 76267 ALF CrB / Alphecca
-# TODO: Find actually good sources for orbital parameters and implement the orbit
-# SpectralType and AbsMag from Tomkin & Popper (1986), AJ 91, p. 1428-1437
+# Position from Gaia DR3
+# Physical parameters from Volkov (2005), Ap&SS 296 (1-4), pp. 105-108
+#   "The Unique Binary Star α Coronae Borealis"
+#   https://link.springer.com/article/10.1007/s10509-005-4393-3
+#   https://ui.adsabs.harvard.edu/abs/2005Ap%26SS.296..105V/abstract
+# SpectralType and inclination from Tomkin & Popper (1986), AJ 91, p. 1428-1437
 #   "Rediscussion of eclipsing binarties. XV. Alpha Coronae Borealis, a main-sequence system with components of types A and G."
 #   https://ui.adsabs.harvard.edu/abs/1986AJ.....91.1428T/abstract
-# Masses, Radius, and Temperature from Eker et al. (2014), PASA 31, id.e024
-#   "The Catalogue of Stellar Parameters from the Detached Double-Lined Eclipsing Binaries in the Milky Way"
-#   https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/catalogue-of-stellar-parameters-from-the-detached-doublelined-eclipsing-binaries-in-the-milky-way/678AD993366CA4506DD671527906FCBD
-#   https://ui.adsabs.harvard.edu/abs/2014PASA...31...24E/abstract
+# Orbital period, epoch and secondary rotation from Schmitt et al. (2023), A&A 676, id.A86
+#   "Apsidal motion in the α CrB binary system revealed through X-ray and optical eclipse timing"
+#   https://www.aanda.org/articles/aa/full_html/2023/08/aa45545-22/aa45545-22.html
+#   https://ui.adsabs.harvard.edu/abs/2023A%26A...676A..86S/abstract
+# Ascending node from ORB6 (HIP1997d)
+# Other orbital parameters from Schmitt et al. (2016), A&A 586, id.A104
+#   "The α CrB binary system: A new radial velocity curve, apsidal motion, and the alignment of rotation and orbit axes"
+#   https://www.aanda.org/articles/aa/full_html/2016/02/aa26662-15/aa26662-15.html
+#   https://ui.adsabs.harvard.edu/abs/2016A%26A...586A.104S/abstract
 Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 {
-	RA 233.6725437590203
-	Dec 26.7142951725891
+	RA 233.67254376294
+	Dec 26.71429517475
 	Distance 77.214
 }
 
 "Alphecca A:Gemma A:ALF CrB A:5 CrB A"
 {
-	Radius<rS> 3.059                    # ± 0.302
+	Radius<rS> 2.93                     # ± 0.05
 	SpectralType "A0V"
-	AbsMag 0.16                         # ± 0.20
-	Temperature 9700                    # ± 200
+	AbsMag 0.43                         # ± 0.01
+	BoloCorrection -0.22                # Mbol = 0.21 ± 0.02
+	Temperature 9460                    # ± 150
 
 	OrbitBarycenter "ALF CrB"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
+		Epoch          2458977.24666    # ± 0.00020; time of primary eclipse
+		Period<d>           17.35989517 # ± 0.00000074; period between primary eclipses
+		SemiMajorAxis        0.05231    # 0.19379 ± 0.00050 au (sin i); mass ratio = 0.3695 ± 0.0018
+		Eccentricity         0.3794     # ± 0.0019
+		Inclination         58.91       # i = 88.2 ± 0.1°
+		AscendingNode       82.10       # Ω = 330.40 ± 20.47°
+		ArgOfPericenter    345.68       # ω = 312.32 ± 0.43°
+		MeanAnomaly        101.20
+	}
+
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period              28.2        # v sin i = 126 ± 7 km/s
+		Inclination         58.91
+		AscendingNode       82.10
 	}
 }
 
 "Alphecca B:Gemma B:ALF CrB B:5 CrB B"
 {
-	Radius<rS> 0.906                    # ± 0.040
+	Radius<rS> 0.85                     # ± 0.03
 	SpectralType "G5V"
-	AbsMag 5.05                         # ± 0.25
-	Temperature 5800                    # ± 300
+	AbsMag 5.47                         # ± 0.04
+	BoloCorrection -0.18                # Mbol = 5.29 ± 0.04
+	Temperature 5520                    # ± 80
 
 	OrbitBarycenter "ALF CrB"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
-		Epoch                 .
-		Period<d>           17.3599
-		SemiMajorAxis         .         # mass ratio = (2.581 ± 0.045):(0.922 ± 0.025)
+		Epoch          2458977.24666    # ± 0.00020; time of primary eclipse
+		Period<d>           17.35989517 # ± 0.00000074; period between primary eclipses
+		SemiMajorAxis        0.14157    # 0.19379 ± 0.00050 au (sin i); mass ratio = 0.3695 ± 0.0018
 		Eccentricity         0.3794     # ± 0.0019
-		Inclination           .         # i = °
-		AscendingNode         .         # Ω = °
-		ArgOfPericenter       .         # ω = °
+		Inclination         58.91       # i = 88.2 ± 0.1°
+		AscendingNode       82.10       # Ω = 330.40 ± 20.47°
+		ArgOfPericenter    165.68       # ω = 312.32 ± 0.43°
+		MeanAnomaly        101.20
+	}
+
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period<d>           12.5        # 10-15 d, assumed from activity
+		Inclination         58.91
+		AscendingNode       82.10
 	}
 }
 
