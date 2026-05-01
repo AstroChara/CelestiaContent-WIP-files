@@ -22,7 +22,7 @@
 #   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
 #   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
 
-# Fabricius and Makarov (2000), A&A 356, p.141-145
+# Fabricius & Makarov (2000), A&A 356, p.141-145
 #   "Two-colour photometry for 9473 components of close Hipparcos double and multiple stars"
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
 #   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
@@ -708,7 +708,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 #   "Evolutionary Tracks for Betelgeuse"
 #   https://iopscience.iop.org/article/10.3847/0004-637X/819/1/7
 #   https://ui.adsabs.harvard.edu/abs/2016ApJ...819....7D/abstract
-# Extinction from Levesque and Massey (2020), ApJL 891 (2), id.L37
+# Extinction from Levesque & Massey (2020), ApJL 891 (2), id.L37
 #   "Betelgeuse Just Is Not That Cool: Effective Temperature Alone Cannot Explain the Recent Dimming of Betelgeuse"
 #   https://iopscience.iop.org/article/10.3847/2041-8213/ab7935
 #   https://ui.adsabs.harvard.edu/abs/2020ApJ...891L..37L/abstract
@@ -907,7 +907,7 @@ Modify 37826
 }
 
 # 39429 ZET Pup / Naos
-# Howarth and van Leeuwen (2019), MNRAS 484 (4), p.5350-5361
+# Howarth & van Leeuwen (2019), MNRAS 484 (4), p.5350-5361
 #   "The distance, rotation, and physical parameters of ζ Pup"
 #   https://academic.oup.com/mnras/article/484/4/5350/5304989
 #   https://scixplorer.org/abs/2019MNRAS.484.5350H/abstract
@@ -1098,7 +1098,7 @@ Modify 58001
 }
 
 # 60718 ALF Cru / Acrux
-# Waisberg and Katz (2026)
+# Waisberg & Katz (2026)
 #   "Upgrading Alpha Crucis to a seven star system. Discovery of Bb and orbital misalignment"
 #   https://arxiv.org/abs/2603.11194
 Barycenter 60718 "Acrux:ALF Cru"
@@ -1202,7 +1202,7 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:27 Cru:HD 108249"
 	}
 }
 
-# Orbit from Hernandez and de Hernandez (1979), Rev. Mexicana Astron. Astrofis. 4, p. 297-300
+# Orbit from Hernandez & de Hernandez (1979), Rev. Mexicana Astron. Astrofis. 4, p. 297-300
 #   "The orbital elements of 25 G Crucis (HD 108250)"
 #   https://scixplorer.org/abs/1979RMxAA...4..297H/abstract
 Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
@@ -1266,7 +1266,7 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 #   "Micrometric measures and orbits of southern visual double stars"
 #   https://onlinelibrary.wiley.com/doi/10.1002/asna.201412166
 #   https://ui.adsabs.harvard.edu/abs/2015AN....336..378A/abstract
-# Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
+# Individual AppMag from Fabricius & Makarov (2000), A&A 356, p.141-145
 # Mass ratio from Söderhjelm (1999), A&A 341, p.121-140
 #   "Visual binary orbits and masses post Hipparcos"
 #   https://ui.adsabs.harvard.edu/abs/1999A%26A...341..121S/abstract
@@ -1684,7 +1684,7 @@ Modify 69673
 
 # 76267 ALF CrB / Alphecca
 # TODO: Find actually good sources for orbital parameters and implement the orbit
-# SpectralType and AbsMag from Tomkin and Popper (1986), AJ 91, p. 1428-1437
+# SpectralType and AbsMag from Tomkin & Popper (1986), AJ 91, p. 1428-1437
 #   "Rediscussion of eclipsing binarties. XV. Alpha Coronae Borealis, a main-sequence system with components of types A and G."
 #   https://ui.adsabs.harvard.edu/abs/1986AJ.....91.1428T/abstract
 # Masses, Radius, and Temperature from Eker et al. (2014), PASA 31, id.e024
@@ -1850,7 +1850,7 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:WDS J16054-1
 }
 
 # 78821 BET Sco CE / Acrab CE
-# SpectralType, inner orbit and mass ratio from Veramendi and González (2014), A&A 563, id.A138
+# SpectralType, inner orbit and mass ratio from Veramendi & González (2014), A&A 563, id.A138
 #   "Spectroscopic study of early-type multiple stellar systems. I. Orbits of spectroscopic binary subsystems"
 #   https://www.aanda.org/articles/aa/full_html/2014/03/aa22840-13/aa22840-13.html
 #   https://scixplorer.org/abs/2014A%26A...563A.138V/abstract
@@ -1948,7 +1948,7 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 # Distance from Maíz Apellániz et al. (2008)
 #   "Accurate distances to nearby massive stars with the new reduction of the Hipparcos raw data"
 #   https://arxiv.org/abs/0804.2553
-# Orbit from Pavlovic and Todorovic (2005), Serbian Astronomical Journal 170, p. 73-78
+# Orbit from Pavlovic & Todorovic (2005), Serbian Astronomical Journal 170, p. 73-78
 #   "Orbits of Seven Edge-On Visual Double Stars"
 #   https://scixplorer.org/abs/2005SerAJ.170...73P/abstract
 Barycenter 80763
@@ -1982,7 +1982,7 @@ Barycenter 80763
 	}
 }
 
-# SpectralType and radial distance relative to A from Baade and Reimers (2007), A&A 474 (1), October IV 2007, pp.229-237
+# SpectralType and radial distance relative to A from Baade & Reimers (2007), A&A 474 (1), October IV 2007, pp.229-237
 #   "Multi-component absorption lines in the HST spectra of α Scorpii B"
 #   https://www.aanda.org/articles/aa/abs/2007/40/aa7308-07/aa7308-07.html
 #   https://scixplorer.org/abs/2007A%26A...474..229B/abstract
@@ -2015,7 +2015,7 @@ Barycenter 80763
 #   "Which is the most eccentric binary known? Insights from the 2023/4 pericenter passages of Zeta Boötis and Eta Ophiuchi"
 #   https://astro.theoj.org/article/138625-which-is-the-most-eccentric-binary-known-insights-from-the-2023-4-pericenter-passages-of-zeta-bootis-and-eta-ophiuchi
 #   https://ui.adsabs.harvard.edu/abs/2025OJAp....8E..63W/abstract
-# Individual AppMag from Fabricius and Makarov (2000), A&A 356, p.141-145
+# Individual AppMag from Fabricius & Makarov (2000), A&A 356, p.141-145
 Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:WDS J17104-1544A"
 {
 	RA 257.59471400
@@ -2069,7 +2069,7 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:WDS J17104-1544A"
 #   Sydney University Stellar Interferometer and high-resolution spectroscopy"
 #   https://academic.oup.com/mnras/article/370/2/884/968867
 #   https://scixplorer.org/abs/2006MNRAS.370..884T/abstract
-# Radius and inner orbit period from Handler and Schwarzenberg-Czerny (2013), A&A 557, id.A1
+# Radius and inner orbit period from Handler & Schwarzenberg-Czerny (2013), A&A 557, id.A1
 #   "Time-resolved multicolour photometry of bright B-type variable stars in Scorpius"
 #   https://www.aanda.org/articles/aa/full_html/2013/09/aa21886-13/aa21886-13.html
 #   https://scixplorer.org/abs/2013A%26A...557A...1H/abstract
@@ -2080,7 +2080,7 @@ Barycenter 85927
 	Distance<pc> 112                    # ± 5
 }
 
-# Inner orbit from Southworth and Bowman (2022), MNRAS 513 (3), p.3191-3209
+# Inner orbit from Southworth & Bowman (2022), MNRAS 513 (3), p.3191-3209
 #   "High-mass pulsators in eclipsing binaries observed using TESS"
 #   https://academic.oup.com/mnras/article/513/3/3191/6563711
 #   https://scixplorer.org/abs/2022MNRAS.513.3191S/abstract
@@ -2130,7 +2130,7 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 	}
 }
 
-# Radius, SpectralType, Temperature and mass from Bruntt and Buzasi (2006), Mem. Soc. Ast. It. 77, p.278
+# Radius, SpectralType, Temperature and mass from Bruntt & Buzasi (2006), Mem. Soc. Ast. It. 77, p.278
 #   "High-precision photometry with the WIRE satellite"
 #   https://scixplorer.org/abs/2006MmSAI..77..278B/abstract
 "Shaula Ab:LAM Sco Ab:35 Sco Ab"
@@ -2295,7 +2295,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 #   "ϵ Sagittarii: An Extreme Rapid Rotator with a Decretion Disk"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ad630b
 #   https://scixplorer.org/abs/2024ApJ...972..103B/abstract
-# SpectralType from Eggleton and Tokovinin (2008), MNRAS 389, pp.869-879
+# SpectralType from Eggleton & Tokovinin (2008), MNRAS 389, pp.869-879
 #   "A catalogue of multiplicity among bright stellar systems"
 #   https://academic.oup.com/mnras/article/389/2/869/974100
 #   https://scixplorer.org/abs/2008MNRAS.389..869E/abstract
@@ -2341,7 +2341,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 
 # 92855 SIG Sgr / Nunki
 # TODO: Get better AppMag/AbsMag for these two stars
-# Distance and orbit from Waisberg and Katz (2026)
+# Distance and orbit from Waisberg & Katz (2026)
 #   "Confirming Nunki as the closest core collapse progenitor candidate to the Sun"
 #   https://arxiv.org/abs/2603.17011
 # Individual stellar parameters from Waisberg et al. (2025), Research Notes of the AAS 9 (4), id.71
