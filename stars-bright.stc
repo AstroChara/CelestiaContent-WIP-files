@@ -36,6 +36,11 @@
 #   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
 #   https://arxiv.org/abs/2604.11189
 
+# Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
+#   "Halo photometry and asteroseismology for 98 of the brightest stars observed by TESS"
+#   https://academic.oup.com/mnras/article/547/4/stag413/8502134
+#   https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag413R/abstract
+
 # MSC: Tokovinin (2018), ApJS 235 (1), article id. 6
 #   "The Updated Multiple Star Catalog"
 #   https://www.ctio.noirlab.edu/~atokovin/stars/index.html
@@ -169,9 +174,6 @@ Barycenter 2081
 }
 
 # Radius and Temperature from Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
-#   "Halo photometry and asteroseismology for 98 of the brightest stars observed by TESS"
-#   https://academic.oup.com/mnras/article/547/4/stag413/8502134
-#   https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag413R/abstract
 "Ankaa A:ALF Phe A"
 {
 	Radius<rS> 13.39                    # ± 0.29
@@ -297,7 +299,7 @@ Barycenter 7588
 #   https://scixplorer.org/abs/2015A%26A...580A..31H/abstract
 Modify 21421
 {
-	Distance 69.024                     # ALF Tau B's distance
+	Distance 69.024                     # from Gaia DR3 parallax of component B
 
 	UniformRotation
 	{
@@ -619,7 +621,7 @@ Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:WDS J05407-0157AB"
 {
 	RA 85.18977448                      # mass ratio ((33 ± 10):(14 ± 3)):16.66
 	Dec -1.94278839
-	Distance 1260.410                   # from Gaia DR3 parallax of C component
+	Distance 1260.410                   # from Gaia DR3 parallax of component C
 }
 
 Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
@@ -990,7 +992,7 @@ Barycenter "Regulus:Kabeleced:Cor Leonis:Kalb:ALF Leo:32 Leo:GJ 9316:ADS 7654 AB
 {
 	RA 152.08388483                     # mass ratio = ((3.7 ± 1.4):(0.31 ± 0.10)):(0.8:0.2)
 	Dec 11.97320806
-	Distance 79.032                     # from weighted Gaia DR3 parallaxes of B and C components
+	Distance 79.032                     # from weighted Gaia DR3 parallaxes of components B and C
 }
 
 # Gies et al. (2020), ApJ 902 (1), id.25
@@ -1140,7 +1142,7 @@ Barycenter 60718 "Acrux:ALF Cru"
 {
 	RA 186.650276                       # mass ratio = 24.1:22.2
 	Dec -63.099348
-	Distance 347.109                    # ALF Cru C's distance
+	Distance 347.109                    # from Gaia DR3 parallax of component C
 }
 
 Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A:26 Cru:HD 108248"
@@ -1194,7 +1196,7 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:27 Cru:HD 108249"
 {
 	RA 186.651424
 	Dec -63.099556
-	Distance 347.109                    # ALF Cru C's distance
+	Distance 347.109                    # from Gaia DR3 parallax of component C
 }
 
 "Acrux Ba:ALF Cru Ba"
@@ -1287,7 +1289,7 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 {
 	RA 186.62971953849
 	Dec -63.12184605983
-	Distance 347.109                    # ALF Cru C's distance
+	Distance 347.109                    # from Gaia DR3 parallax of component C
 
 	SpectralType "M0V"
 	AppMag 15.0
@@ -1707,7 +1709,7 @@ Modify 69673
 {
 	RA 221.24624024277
 	Dec 27.07508559649
-	Distance 235.889                    # uses EPS Boo A's Gaia DR3 plx
+	Distance 235.889                    # from Gaia DR3 parallax of component A
 
 	Radius<rS> 2.747                    # ± 0.171
 	SpectralType "A0V"                  # SIMBAD
@@ -2078,6 +2080,36 @@ Barycenter 80763
 # 82273 ALF TrA / Atria
 
 # 82396 EPS Sco / Larawag
+# TODO: Add barycentre?
+
+# Radius and Temperature from Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
+82396 "Larawag A:EPS Sco A:26 Sco A"
+{
+	RA 252.53759534
+	Dec -34.29436623
+	Distance 64.684                     # from Gaia DR3 parallax of component B
+
+	Radius<rS> 12.91                    # ± 0.25
+	SpectralType "K1III"
+	AppMag 2.29
+	Temperature 4489                    # ± 40
+}
+
+# Radius and Temperature from Hardegree-Ullman et al. (2023), AJ 165 (6), id.267
+#   "Bioverse: A Comprehensive Assessment of the Capabilities of Extremely Large Telescopes to Probe Earth-like O2 Levels in Nearby Transiting Habitable-zone Exoplanets"
+#   https://iopscience.iop.org/article/10.3847/1538-3881/acd1ec
+#   https://ui.adsabs.harvard.edu/abs/2023AJ....165..267H/abstract
+"Larawag B:EPS Sco B:26 Sco B"
+{
+	RA 252.54143433525937
+	Dec -34.2968858125456
+	Distance 64.684
+
+	Radius<rS> 0.288                    # ± 0.019
+	SpectralType "M3"                   # from temperature
+	AppMag 13.380                       # converted from G-band
+	Temperature 3359                    # ± 112
+}
 
 # 84012 ETA Oph / Sabik
 # Waisberg et al. (2025), OJAp 8, id. 63
@@ -2490,7 +2522,7 @@ Barycenter 102488
 {
 	RA 311.55475901193
 	Dec 33.97170031236
-	Distance 71.551                     # from Gaia DR3 parallax of C component
+	Distance 71.551                     # from Gaia DR3 parallax of component C
 }
 
 # Radius and temperature from Baines et al. (2021), AJ 162 (5), id.198
