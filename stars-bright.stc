@@ -156,6 +156,41 @@ Modify 746
 }
 
 # 2081 ALF Phe / Ankaa
+# TODO: Figure out and add component B
+# Orbit from Jancart et al. (2005), A&A 442 (1), October IV 2005, pp.365-380
+#   "Astrometric orbits of SB^9 stars"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/442/365
+#   https://ui.adsabs.harvard.edu/abs/2005A%26A...442..365J/abstract
+Barycenter 2081
+{
+	RA 6.57215550145885
+	Dec -42.30782032569077
+	Distance 81.706
+}
+
+# Radius and Temperature from Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
+#   "Halo photometry and asteroseismology for 98 of the brightest stars observed by TESS"
+#   https://academic.oup.com/mnras/article/547/4/stag413/8502134
+#   https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag413R/abstract
+"Ankaa A:ALF Phe A"
+{
+	Radius<rS> 13.39                    # ± 0.29
+	SpectralType "K0.5IIIb"
+	AppMag 2.377                        # assumed to contribute virtually all of system's light
+	Temperature 4770                    # ± 250
+
+	OrbitBarycenter "ALF Phe"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2416201.8
+		Period<d>         3848.8
+		SemiMajorAxis        2.593      # 103.5 ± 8.2 mas
+		Eccentricity         0.34
+		Inclination        175.8        # i = 128.0 ± 5.4°
+		AscendingNode      307.7        # Ω = 242.8 ± 3.9°
+		ArgOfPericenter     69.3        # ω = 19.8°
+	}
+}
 
 # 3179 ALF Cas / Schedar
 
