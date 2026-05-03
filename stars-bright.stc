@@ -301,7 +301,7 @@ Barycenter 7588
 #   "Long-lived, long-period radial velocity variations in Aldebaran: A planetary companion and stellar activity"
 #   https://www.aanda.org/articles/aa/full_html/2015/08/aa25519-14/aa25519-14.html
 #   https://scixplorer.org/abs/2015A%26A...580A..31H/abstract
-21421 "Aldebaran A:ALF Tau A:GJ 9159 A"
+21421 "Aldebaran A:ALF Tau A:87 Tau A:GJ 9159 A"
 {
 	RA 68.98045690
 	Dec 16.50846265
@@ -319,7 +319,7 @@ Barycenter 7588
 }
 
 # Physical parameters from TICv8 (TIC 673648676)
-"Aldebaran B:ALF Tau B:GJ 9159 B"
+"Aldebaran B:ALF Tau B:87 Tau B:GJ 9159 B"
 {
 	RA 68.98880121373
 	Dec 16.50504495132
@@ -2096,7 +2096,7 @@ Barycenter 80763
 # TODO: Add barycentre?
 
 # Radius and Temperature from Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
-82396 "Larawag A:EPS Sco A:26 Sco A"
+82396 "Larawag A:EPS Sco A:26 Sco A:GJ 9579 A"
 {
 	RA 252.53759534
 	Dec -34.29436623
@@ -2112,7 +2112,7 @@ Barycenter 80763
 #   "Bioverse: A Comprehensive Assessment of the Capabilities of Extremely Large Telescopes to Probe Earth-like O2 Levels in Nearby Transiting Habitable-zone Exoplanets"
 #   https://iopscience.iop.org/article/10.3847/1538-3881/acd1ec
 #   https://ui.adsabs.harvard.edu/abs/2023AJ....165..267H/abstract
-"Larawag B:EPS Sco B:26 Sco B"
+"Larawag B:EPS Sco B:26 Sco B:GJ 9579 B"
 {
 	RA 252.54143433525937
 	Dec -34.2968858125456
@@ -2609,7 +2609,7 @@ Barycenter 102488
 #   I: High-resolution spectroscopy with HERMES: stellar parameters, abundances, and kinematics"
 #   https://academic.oup.com/mnras/article/479/1/1332/4998874
 #   https://scixplorer.org/abs/2018MNRAS.479.1332M/abstract
-"EPS Cyg C:GJ 9707 C"
+"EPS Cyg C:53 Cyg C:GJ 9707 C"
 {
 	RA 311.52860950906
 	Dec 33.96987103069
