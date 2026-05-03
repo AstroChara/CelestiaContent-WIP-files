@@ -2512,13 +2512,25 @@ Barycenter 92855
 #   "Mixing of CNO-cycled matter in massive stars"
 #   https://www.aanda.org/articles/aa/full_html/2010/09/aa14164-10/aa14164-10.html
 #   https://ui.adsabs.harvard.edu/abs/2010A%26A...517A..38P/abstract
+# Oblateness and rotation from Chesneau et al. (2010), A&A 521, id.A5
+#   "Time, spatial, and spectral resolution of the Hα line-formation region of Deneb and Rigel with the VEGA/CHARA interferometer"
+#   https://www.aanda.org/articles/aa/full_html/2010/13/aa14509-10/aa14509-10.html
+#   https://ui.adsabs.harvard.edu/abs/2010A%26A...521A...5C/abstract
 Modify 102098
 {
 	Radius<rS> 116.87                   # +14.28-18.84 rSun, from angular diameter
+	SemiAxes [ 1 0.92 1 ]               # 2% angular diameter variation, true oblateness = ~8%
 	AppMag 1.25
 	Extinction 0.11
 	BoloCorrection -0.11
 	Temperature 8700                    # ± 150
+
+	UniformRotation
+	{
+		Period            3548          # v sin i = 20 km/s
+		Inclination        180          # inclination = 30°
+		AscendingNode      323          # rotation pole position angle = 150°
+	}
 }
 
 # 102488 EPS Cyg / Aljanah
