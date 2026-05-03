@@ -27,11 +27,6 @@
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
 #   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
 
-# Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
-#   "Gaia Data Release 3. Summary of the content and survey properties"
-#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355
-#   https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract
-
 # Lazzarotto et al. (2026)
 #   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
 #   https://arxiv.org/abs/2604.11189
@@ -40,6 +35,11 @@
 #   "Halo photometry and asteroseismology for 98 of the brightest stars observed by TESS"
 #   https://academic.oup.com/mnras/article/547/4/stag413/8502134
 #   https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag413R/abstract
+
+# Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
+#   "Gaia Data Release 3. Summary of the content and survey properties"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355
+#   https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract
 
 # MSC: Tokovinin (2018), ApJS 235 (1), article id. 6
 #   "The Updated Multiple Star Catalog"
@@ -2502,13 +2502,20 @@ Barycenter 92855
 
 # 102098 ALF Cyg / Deneb
 # Radius from Baines et al. (2025), AJ 169 (6), id.293
-# Temperature from Georgy et al. (2021), A&A 650, id.A128
-#   "Blue supergiants as tests for stellar physics"
-#   https://www.aanda.org/articles/aa/full_html/2021/06/aa40105-20/aa40105-20.html
-#   https://scixplorer.org/abs/2021A%26A...650A.128G/abstract
+# AppMag, Extinction and BoloCorrection from Schiller and Przybilla (2008), A&A 479 (3), pp.849-858
+#   "Quantitative spectroscopy of Deneb"
+#   https://www.aanda.org/articles/aa/abs/2008/09/aa8590-07/aa8590-07.html
+#   https://ui.adsabs.harvard.edu/abs/2008A%26A...479..849S/abstract
+# Temperature from Przybilla et al. (2010), A&A 517, id.A38
+#   "Mixing of CNO-cycled matter in massive stars"
+#   https://www.aanda.org/articles/aa/full_html/2010/09/aa14164-10/aa14164-10.html
+#   https://ui.adsabs.harvard.edu/abs/2010A%26A...517A..38P/abstract
 Modify 102098
 {
-	Radius<rS> 116.87                   # 116.87 +14.28-18.84 rSun, from angular diameter
+	Radius<rS> 116.87                   # +14.28-18.84 rSun, from angular diameter
+	AppMag 1.25
+	Extinction 0.11
+	BoloCorrection -0.11
 	Temperature 8700                    # ± 150
 }
 
