@@ -293,13 +293,24 @@ Barycenter 7588
 # 15863 ALF Per / Mirfak
 
 # 21421 ALF Tau / Aldebaran
+# Radius and Temperature from Richichi & Roccatagliata (2005), A&A 433 (1), April I 2005, pp.305-312
+#   "Aldebaran's angular diameter: How well do we know it?"
+#   https://www.aanda.org/articles/aa/abs/2005/13/aa1765/aa1765.html
+#   https://ui.adsabs.harvard.edu/abs/2005A%26A...433..305R/abstract
 # Rotation period from Hatzes et al. (2015), A&A 580, id.A31
 #   "Long-lived, long-period radial velocity variations in Aldebaran: A planetary companion and stellar activity"
 #   https://www.aanda.org/articles/aa/full_html/2015/08/aa25519-14/aa25519-14.html
 #   https://scixplorer.org/abs/2015A%26A...580A..31H/abstract
-Modify 21421
+21421 "Aldebaran A:ALF Tau A:GJ 9159 A"
 {
+	RA 68.98045690
+	Dec 16.50846265
 	Distance 69.024                     # from Gaia DR3 parallax of component B
+
+	Radius<rS> 44.2                     # ± 0.9, from angular diameter
+	SpectralType "K5III"
+	AppMag 0.86                         # SIMBAD
+	Temperature 3934                    # ± 41
 
 	UniformRotation
 	{
@@ -307,8 +318,8 @@ Modify 21421
 	}
 }
 
-# Physical parameters from TICv8
-"Aldebaran B:ALF Tau B:TIC 673648676"
+# Physical parameters from TICv8 (TIC 673648676)
+"Aldebaran B:ALF Tau B:GJ 9159 B"
 {
 	RA 68.98880121373
 	Dec 16.50504495132
@@ -2504,7 +2515,7 @@ Barycenter 92855
 
 # 102098 ALF Cyg / Deneb
 # Radius from Baines et al. (2025), AJ 169 (6), id.293
-# AppMag, Extinction and BoloCorrection from Schiller and Przybilla (2008), A&A 479 (3), pp.849-858
+# AppMag, Extinction and BoloCorrection from Schiller & Przybilla (2008), A&A 479 (3), pp.849-858
 #   "Quantitative spectroscopy of Deneb"
 #   https://www.aanda.org/articles/aa/abs/2008/09/aa8590-07/aa8590-07.html
 #   https://ui.adsabs.harvard.edu/abs/2008A%26A...479..849S/abstract
