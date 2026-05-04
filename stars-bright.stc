@@ -824,13 +824,13 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 	OrbitBarycenter "BET Aur"
 	EllipticalOrbit
 	{
-		Epoch          2454537.0362     # Time of maximum positive velocity
+		Epoch          2454537.0362     # time of maximum positive velocity
 		Period<d>            3.96004    # ± 0.00000267
 		SemiMajorAxis        0.04053    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
 		Inclination        172.492
 		AscendingNode      179.910
 		ArgOfPericenter    319.043
-		MeanAnomaly        220.957      # assuming that "maximum positive velocity" = primary star moving away. Value is 360 - argument of periapsis
+		MeanAnomaly        220.957      # assuming that "maximum positive velocity" = primary star moving away. Value is 360 - longitude of periapsis
 	}
 
 	UniformRotation                     # assume tidal locking
@@ -950,7 +950,7 @@ Barycenter 36850 "Castor AB:ALF Gem:66 Gem:Gliese 278 AB"
 Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 {
 	OrbitBarycenter "ALF Gem"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2436785.248      # assume Julian year, 1959.59 ± 0.21
 		Period             459.1        # ± 2.3
@@ -962,12 +962,50 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 	}
 }
 
+"Castor Aa:ALF Gem Aa:ALF2 Gem A:66 Gem Aa:Gliese 278 Aa"
+{
+	Radius<rS> 2.089                    # ± 0.005
+	SpectralType "A1V"
+	AppMag 1.93
+	Temperature 10286
 
+	OrbitBarycenter "ALF Gem A"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2455817.7868     # ± 0.0018
+		Period<d>            9.2127496  # ± 0.0000052
+		SemiMajorAxis        0.0169     # 8.002 ± 0.014 mas, mass ratio = 0.1627 ± 0.0014
+		Eccentricity         0.48769    # ± 0.00048
+		Inclination         65.19       # i = 35.00 ± 0.24°
+		AscendingNode       22.913      # Ω = 95.100 ± 0.093°
+		ArgOfPericenter     80.381      # ω_Aa = 264.968 ± 0.085°
+	}
+}
+
+"Castor Ab:ALF Gem Ab:ALF2 Gem B:66 Gem Ab:Gliese 278 Ab"
+{
+	Radius<rS> 0.501                    # assumed from spectral type
+	SpectralType "M1Ve"
+	AbsMag 9.64                         # assumed from spectral type
+	Temperature 3660                    # assumed from spectral type
+
+	OrbitBarycenter "ALF Gem A"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2455817.7868     # ± 0.0018
+		Period<d>            9.2127496  # ± 0.0000052
+		SemiMajorAxis        0.1037     # 8.002 ± 0.014 mas, mass ratio = 0.1627 ± 0.0014
+		Eccentricity         0.48769    # ± 0.00048
+		Inclination         65.19       # i = 35.00 ± 0.24°
+		AscendingNode       22.913      # Ω = 95.100 ± 0.093°
+		ArgOfPericenter    260.381      # ω_Aa = 264.968 ± 0.085°
+	}
+}
 
 Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 {
 	OrbitBarycenter "ALF Gem"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2436785.248      # assume Julian year, 1959.59 ± 0.21
 		Period             459.1        # ± 2.3
@@ -979,7 +1017,44 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 	}
 }
 
+"Castor Ba:ALF Gem Ba:ALF1 Gem A:66 Gem Ba:Gliese 278 Ba"
+{
+	Radius<rS> 1.648                    # ± 0.011
+	SpectralType "Am"
+	AppMag 2.97
+	Temperature 8842
 
+	OrbitBarycenter "ALF Gem B"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2456705.4942     # ± 0.0012; reference time of maximum primary velocity
+		Period<d>            2.92835083 # ± 0.00000031
+		SemiMajorAxis        0.009222   # 3.4442 ± 0.0093 mas, mass ratio = 0.21606 ± 0.00084
+		Inclination         12.48       # i = 110.50 ± 0.12°
+		AscendingNode      232.86       # Ω = 106.47 ± 0.19°
+		MeanAnomaly        127.14       # value is 360 - AscendingNode
+	}
+}
+
+"Castor Bb:ALF Gem Bb:ALF1 Gem B:66 Gem Bb:Gliese 278 Bb"
+{
+	Radius<rS> 0.501                    # assumed from spectral type
+	SpectralType "M1Ve"
+	AbsMag 9.64                         # assumed from spectral type
+	Temperature 3660                    # assumed from spectral type
+
+	OrbitBarycenter "ALF Gem B"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2456705.4942     # ± 0.0012; reference time of maximum primary velocity
+		Period<d>            2.92835083 # ± 0.00000031
+		SemiMajorAxis        0.042683   # 3.4442 ± 0.0093 mas, mass ratio = 0.21606 ± 0.00084
+		Inclination         12.48       # i = 110.50 ± 0.12°
+		AscendingNode      232.86       # Ω = 106.47 ± 0.19°
+		ArgOfPericenter    180
+		MeanAnomaly        127.14
+	}
+}
 
 Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 CD"
 {
