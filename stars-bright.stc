@@ -940,14 +940,14 @@ Modify 33579
 #   https://ui.adsabs.harvard.edu/abs/2022ApJ...941....8T/abstract
 
 # AB barycenter
-Barycenter 36850
+Barycenter 36850 "Castor AB:ALF Gem:66 Gem:Gliese 278 AB"
 {
 	RA 113.65135657
 	Dec 31.88240645
 	Distance 49.153                     # 66.356 ± 0.041 mas
 }
 
-1024072457 Barycenter "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
+Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 {
 	OrbitBarycenter "ALF Gem"
 	EllipticalOrbit
@@ -964,7 +964,7 @@ Barycenter 36850
 
 
 
-2024072457 Barycenter "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
+Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 {
 	OrbitBarycenter "ALF Gem"
 	EllipticalOrbit
@@ -981,7 +981,7 @@ Barycenter 36850
 
 
 
-1019182453 Barycenter "Castor C:YY Gem:Gliese 278 CD"
+Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 CD"
 {
 	RA 113.65497694202988
 	Dec 31.869063238548993
