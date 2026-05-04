@@ -7,6 +7,25 @@
 # Common papers:
 #   The names of these papers are not folded in order to make searching for them easier.
 
+# Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
+#   "Gaia Data Release 3. Summary of the content and survey properties"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355
+#   https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract
+
+# MSC: Tokovinin (2018), ApJS 235 (1), article id. 6
+#   "The Updated Multiple Star Catalog"
+#   https://www.ctio.noirlab.edu/~atokovin/stars/index.html
+#   https://ui.adsabs.harvard.edu/abs/2018ApJS..235....6T/abstract
+
+# ORB6
+#   "Sixth Catalog of Orbits of Visual Binary Stars"
+#   https://www.astro.gsu.edu/wds/orb6.html
+
+# TICv8: Stassun et al. (2019), AJ 158 (4), article id. 138
+#   "The Revised TESS Input Catalog and Candidate Target List"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/IV/38
+#   https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract
+
 # Baines et al. (2021), AJ 162 (5), id.198
 #   "Angular Diameters and Fundamental Parameters of Forty-four Stars from the Navy Precision Optical Interferometer"
 #   https://iopscience.iop.org/article/10.3847/1538-3881/ac2431
@@ -22,16 +41,25 @@
 #   https://iopscience.iop.org/article/10.1088/0004-637X/732/2/68
 #   https://scixplorer.org/abs/2011ApJ...732...68C/abstract
 
+# Ducati (2002), VizieR On-line Data Catalog: II/237
+#   "Stellar Photometry in Johnson's 11-color system"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/II/237
+#   https://ui.adsabs.harvard.edu/abs/2002yCat.2237....0D/abstract
+
 # Fabricius & Makarov (2000), A&A 356, p.141-145
 #   "Two-colour photometry for 9473 components of close Hipparcos double and multiple stars"
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
 #   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
 
-# TODO: Not used right now
 # Fabricius et al. (2002), A&A 384, p.180-189
 #   "The Tycho double star catalogue"
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/276
 #   https://ui.adsabs.harvard.edu/abs/2002A%26A...384..180F/abstract
+
+# Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
+#   "Bright Star Catalogue, 5th Revised Ed."
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/V/50
+#   https://ui.adsabs.harvard.edu/abs/1995yCat.5050....0H/abstract
 
 # Høg et al. (2000), A&A 355, p.L27-L30
 #   "The Tycho-2 catalogue of the 2.5 million brightest stars"
@@ -46,25 +74,6 @@
 #   "Halo photometry and asteroseismology for 98 of the brightest stars observed by TESS"
 #   https://academic.oup.com/mnras/article/547/4/stag413/8502134
 #   https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag413R/abstract
-
-# Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
-#   "Gaia Data Release 3. Summary of the content and survey properties"
-#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355
-#   https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract
-
-# MSC: Tokovinin (2018), ApJS 235 (1), article id. 6
-#   "The Updated Multiple Star Catalog"
-#   https://www.ctio.noirlab.edu/~atokovin/stars/index.html
-#   https://ui.adsabs.harvard.edu/abs/2018ApJS..235....6T/abstract
-
-# ORB6:
-#   "Sixth Catalog of Orbits of Visual Binary Stars"
-#   https://www.astro.gsu.edu/wds/orb6.html
-
-# TICv8: Stassun et al. (2019), AJ 158 (4), article id. 138
-#   "The Revised TESS Input Catalog and Candidate Target List"
-#   https://cdsarc.cds.unistra.fr/viz-bin/cat/IV/38
-#   https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract
 
 
 
@@ -944,12 +953,12 @@ Modify 33579
 # 35904 ETA CMa / Aludra
 
 # 36850 ALF Gem / Castor
-# TODO: See if there are better sources for AppMag/Temperature | Add rotation?
+# TODO: See if there are better sources for Temperature
 # Torres et al. (2022), AJ 941 (1), id.8
 #   "The Orbits and Dynamical Masses of the Castor System"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ac9d8d
 #   https://ui.adsabs.harvard.edu/abs/2022ApJ...941....8T/abstract
-# AppMag of Aa and Ba from 
+# SpectralType of Aa and Ba from Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
 
 # AB barycenter
 Barycenter 36850 "Castor AB:ALF Gem:66 Gem:Gliese 278 AB"
@@ -974,11 +983,12 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 	}
 }
 
+# AppMag from Fabricius et al. (2002), A&A 384, p.180-189
 "Castor Aa:ALF Gem Aa:ALF2 Gem A:66 Gem Aa:Gliese 278 Aa"
 {
 	Radius<rS> 2.089                    # ± 0.005
 	SpectralType "A1V"
-	AppMag 1.93
+	AppMag 1.93                         # Hipparcos magnitude (Hp), appears to be close to V-band magnitude
 	Temperature 10286
 
 	OrbitBarycenter "ALF Gem A"
@@ -1029,11 +1039,12 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 	}
 }
 
+# AppMag from Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
 "Castor Ba:ALF Gem Ba:ALF1 Gem A:66 Gem Ba:Gliese 278 Ba"
 {
 	Radius<rS> 1.648                    # ± 0.011
-	SpectralType "Am"
-	AppMag 2.97
+	SpectralType "A2Vm"
+	AppMag 2.982                        # converted from G-band, assumed to dominate system AppMag.
 	Temperature 8842
 
 	OrbitBarycenter "ALF Gem B"
@@ -2230,7 +2241,6 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 }
 
 # 80763 ALF Sco / Antares
-# TODO: Update other parameters (placeholders are marked with "# temp")
 # Distance from Maíz Apellániz et al. (2008)
 #   "Accurate distances to nearby massive stars with the new reduction of the Hipparcos raw data"
 #   https://arxiv.org/abs/0804.2553
@@ -2248,11 +2258,12 @@ Barycenter 80763
 #   "High spectral resolution imaging of the dynamical atmosphere of the red supergiant Antares in the CO first overtone lines with VLTI/AMBER"
 #   https://www.aanda.org/articles/aa/full_html/2013/07/aa21063-13/aa21063-13.html
 #   https://scixplorer.org/abs/2013A%26A...555A..24O/abstract
+# AppMag from Ducati (2002), VizieR On-line Data Catalog: II/237
 "Antares A:ALF Sco A:21 Sco A:HD 148478:WDS J16294-2626A"
 {
 	Radius<rS> 680
 	SpectralType "M1.5Iab"
-	AppMag 1.1                          # 0.6–1.6 # temp
+	AppMag 0.91                         # variable star; V = 0.6–1.6
 	Temperature 3660                    # ± 120
 
 	OrbitBarycenter "ALF Sco"
@@ -2268,16 +2279,24 @@ Barycenter 80763
 	}
 }
 
+# Radius from Kudritzki & Reimers (1978), A&A 70, p. 227-239
+#   "On the absolute scale of mass-loss in red giants. II. Circumstellar absorption lines in the spectrum of alpha Sco B and mass-loss of alpha Sco A"
+#   https://ui.adsabs.harvard.edu/abs/1978A%26A....70..227K/abstract
+# Temperature from Schröder & Cuntz (2007), A&A 465 (2), April II 2007, pp.593-601
+#   "A critical test of empirical mass loss formulas applied to individual giants and supergiants"
+#   https://www.aanda.org/articles/aa/abs/2007/14/aa6633-06/aa6633-06.html
+#   https://ui.adsabs.harvard.edu/abs/2007A%26A...465..593S/abstract
 # SpectralType and radial distance relative to A from Baade & Reimers (2007), A&A 474 (1), October IV 2007, pp.229-237
 #   "Multi-component absorption lines in the HST spectra of α Scorpii B"
 #   https://www.aanda.org/articles/aa/abs/2007/40/aa7308-07/aa7308-07.html
 #   https://scixplorer.org/abs/2007A%26A...474..229B/abstract
+# AppMag from Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
 "Antares B:ALF Sco B:21 Sco B:HD 148479:WDS J16294-2626B"
 {
-	Radius<rS> 5.2 # temp
+	Radius<rS> 5.2
 	SpectralType "B2.5V"
-	AppMag 5.5 # temp
-	Temperature 18500 # temp
+	AppMag 5.2                          # V-band magnitude of component A = 0.96, magnitude difference = 4.2
+	Temperature 18500
 
 	OrbitBarycenter "ALF Sco"
 	EllipticalOrbit                     # complete orbit
