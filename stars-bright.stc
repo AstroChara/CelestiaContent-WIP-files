@@ -810,7 +810,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 }
 
 # 28360 BET Aur / Menkalinan
-# TODO: Verify if my assumption about "maximum positive velocity" is correct, and if the MeanAnomaly is accurate or not.
+# TODO: Update orbit | Verify what "maximum positive velocity" means
 # Mass and orbital parameters from Behr et al. (2011), AJ 142 (1), article id. 6
 #   "Stellar Astrophysics with a Dispersed Fourier Transform Spectrograph. II. Orbits of Double-lined Spectroscopic Binaries"
 #   https://iopscience.iop.org/article/10.1088/0004-6256/142/1/6
@@ -848,7 +848,7 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 		SemiMajorAxis        0.04053    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
 		Inclination        172.492
 		AscendingNode      179.910
-		ArgOfPericenter    319.043
+		ArgOfPericenter    139.043
 		MeanAnomaly        220.957      # assuming that "maximum positive velocity" = primary star moving away. Value is 360 - longitude of periapsis
 	}
 
@@ -875,7 +875,7 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 		SemiMajorAxis        0.04161    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
 		Inclination        172.492
 		AscendingNode      179.910
-		ArgOfPericenter    139.043
+		ArgOfPericenter    319.043
 		MeanAnomaly        220.957
 	}
 
@@ -988,7 +988,7 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 {
 	Radius<rS> 2.089                    # ± 0.005
 	SpectralType "A1V"
-	AppMag 1.93                         # Hipparcos magnitude (Hp), appears to be close to V-band magnitude
+	AppMag 1.93                         # system AppMag; Hipparcos magnitude (Hp), appears to be close to V-band magnitude
 	Temperature 10286
 
 	OrbitBarycenter "ALF Gem A"
@@ -1044,7 +1044,7 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 {
 	Radius<rS> 1.648                    # ± 0.011
 	SpectralType "A2Vm"
-	AppMag 2.982                        # converted from G-band, assumed to dominate system AppMag.
+	AppMag 2.982                        # system AppMag; converted from G-band
 	Temperature 8842
 
 	OrbitBarycenter "ALF Gem B"
@@ -2314,8 +2314,6 @@ Barycenter 80763
 # 82273 ALF TrA / Atria
 
 # 82396 EPS Sco / Larawag
-# TODO: Add barycentre?
-
 # Radius and Temperature from Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
 82396 "Larawag A:EPS Sco A:26 Sco A:GJ 9579 A"
 {
@@ -2675,7 +2673,6 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 }
 
 # 92855 SIG Sgr / Nunki
-# TODO: Get better AppMag/AbsMag for these two stars
 # Distance and orbit from Waisberg & Katz (2026)
 #   "Confirming Nunki as the closest core collapse progenitor candidate to the Sun"
 #   https://arxiv.org/abs/2603.17011
