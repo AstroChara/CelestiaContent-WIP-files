@@ -143,7 +143,6 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:WDS J00084+2905
 }
 
 # 746 BET Cas / Caph
-# TODO: Update rotation orientation
 # Dimensions and rotation from Che et al. (2011), ApJ 732 (2), 68
 #   Table 3, Modified von Zeipel Model (β-free)
 Modify 746
@@ -155,8 +154,8 @@ Modify 746
 	UniformRotation
 	{
 		Period<d>            0.893      # from rotation rate = 1.12 +0.03−0.04 cycles/day
-		Inclination        125.88       # inclination = 19.9 +1.9−1.9°
-		AscendingNode      287.38       # rotation pole position angle = −7.09 +2.24−2.40°
+		Inclination        123.6        # inclination = 19.9 +1.9−1.9°
+		AscendingNode      292.5        # rotation pole position angle = −7.09 +2.24−2.40°
 	}
 }
 
