@@ -810,22 +810,21 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 }
 
 # 28360 BET Aur / Menkalinan
-# TODO: Update orbit | Verify what "maximum positive velocity" means
-# Mass and orbital parameters from Behr et al. (2011), AJ 142 (1), article id. 6
-#   "Stellar Astrophysics with a Dispersed Fourier Transform Spectrograph. II. Orbits of Double-lined Spectroscopic Binaries"
-#   https://iopscience.iop.org/article/10.1088/0004-6256/142/1/6
-#   https://ui.adsabs.harvard.edu/abs/2011AJ....142....6B/abstract
-# Inclination from Hummel et al. (1995), AJ 110, p.376
-#   "Orbits of Small Angular Scale Binaries Resolved with the Mark III Interferometer"
-#   https://ui.adsabs.harvard.edu/abs/1995AJ....110..376H/abstract
-# SemiMajorAxis from Piccotti et al. (2020), MNRAS 492 (2), p.2709-2721
-#   "A study of the physical properties of SB2s with both the visual and spectroscopic orbits"
-#   https://academic.oup.com/mnras/article/492/2/2709/5695748
-#   https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.2709P/abstract
-# Radius, Temperature, SpectralType, and AbsMag from Southworth et al. (2007), A&A 467 (3), pp.1215-1226
+# Southworth et al. (2007), A&A 467 (3), pp.1215-1226
 #   "Eclipsing binaries observed with the WIRE satellite. II. β Aurigae and non-linear limb darkening in light curves"
 #   https://www.aanda.org/articles/aa/abs/2007/21/aa7184-07/aa7184-07.html
 #   https://ui.adsabs.harvard.edu/abs/2007A%26A...467.1215S/abstract
+# AppMag, BoloCorrection and Temperature from Nordström & Johansen (1994), A&A 291, p. 777-785
+#   "Radii and masses for β Aurigae."
+#   https://ui.adsabs.harvard.edu/abs/1994A%26A...291..777N/abstract
+# Masses from Behr et al. (2011), AJ 142 (1), article id. 6
+#   "Stellar Astrophysics with a Dispersed Fourier Transform Spectrograph. II. Orbits of Double-lined Spectroscopic Binaries"
+#   https://iopscience.iop.org/article/10.1088/0004-6256/142/1/6
+#   https://ui.adsabs.harvard.edu/abs/2011AJ....142....6B/abstract
+#   Note added in proof (formal RV errors)
+# Ascending node from Hummel et al. (1995), AJ 110, p.376
+#   "Orbits of Small Angular Scale Binaries Resolved with the Mark III Interferometer"
+#   https://ui.adsabs.harvard.edu/abs/1995AJ....110..376H/abstract
 Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 {
 	RA 89.8818244421
@@ -833,57 +832,62 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 	Distance 81.113
 }
 
-"Menkalinan A:BET Aur A:34 Aur A:GJ 3375 A:ADS 4556 Aa:WDS J05595+4457Aa" 
+"Menkalinan A:BET Aur A:34 Aur A:GJ 3375 A:ADS 4556 Aa:WDS J05595+4457Aa"
 {
 	Radius<rS> 2.762                    # ± 0.017
 	SpectralType "A1IV"
-	AbsMag 0.588                        # Mbol = 0.448 ± 0.094, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
-	Temperature 9354
+	AppMag 2.617                        # ± 0.031
+	BoloCorrection -0.15
+	Temperature 9350                    # 200
 
 	OrbitBarycenter "BET Aur"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
-		Epoch          2454537.0362     # time of maximum positive velocity
-		Period<d>            3.96004    # ± 0.00000267
-		SemiMajorAxis        0.04053    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
-		Inclination        172.492
-		AscendingNode      179.910
-		ArgOfPericenter    139.043
-		MeanAnomaly        220.957      # assuming that "maximum positive velocity" = primary star moving away. Value is 360 - longitude of periapsis
+		Epoch          2452827.195693   # ± 0.000012; time of primary minimum
+		Period<d>            3.96004673 # ± 0.00000017
+		SemiMajorAxis<rS>    8.69       # 17.60 ± 0.06 rSun, mass ratio = (2.3644 ± 0.0045):(2.3035 ± 0.0044)
+		Eccentricity         0.00183    # ± 0.00040
+		Inclination        154.37       # i = 76.80 ± 0.10
+		AscendingNode      104.62       # Ω = 115.4 ± 0.5
+		ArgOfPericenter     22.91       # ω = 90.47 ± 0.26
+		MeanAnomaly        359.53
 	}
 
 	UniformRotation                     # assume tidal locking
 	{
-		Period<d>            3.96004
-		Inclination        172.492
-		AscendingNode      179.910
+		Period<d>            3.96004673
+		Inclination        154.37
+		AscendingNode      104.62
 	}
 }
 
-"Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:WDS J05595+4457Ab" 
+"Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:WDS J05595+4457Ab"
 {
 	Radius<rS> 2.568                    # ± 0.017
 	SpectralType "A1IV"
-	AbsMag 0.816                        # Mbol = 0.676 ± 0.095, BoloCorrection = -0.14 from https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt
-	Temperature 9204
+	AppMag 2.668                        # ± 0.031
+	BoloCorrection -0.13
+	Temperature 9200                    # 200
 
 	OrbitBarycenter "BET Aur"
-	EllipticalOrbit
+	EllipticalOrbit                     # complete orbit
 	{
-		Epoch          2454537.0362     # Time of maximum positive velocity
-		Period<d>            3.96004    # ± 0.00000267
-		SemiMajorAxis        0.04161    # 0.08214 ± 0.00015 au, mass ratio = (2.3885 ± 0.0134):(2.3270 ± 0.0130)
-		Inclination        172.492
-		AscendingNode      179.910
-		ArgOfPericenter    319.043
-		MeanAnomaly        220.957
+		Epoch          2452827.195693   # ± 0.000012; time of primary minimum
+		Period<d>            3.96004673 # ± 0.00000017
+		SemiMajorAxis<rS>    8.91       # 17.60 ± 0.06 rSun, mass ratio = (2.3644 ± 0.0045):(2.3035 ± 0.0044)
+		Eccentricity         0.00183    # ± 0.00040
+		Inclination        154.37       # i = 76.80 ± 0.10
+		AscendingNode      104.62       # Ω = 115.4 ± 0.5
+		ArgOfPericenter    202.91       # ω = 90.47 ± 0.26
+		MeanAnomaly        359.53
 	}
 
 	UniformRotation                     # assume tidal locking
 	{
-		Period<d>            3.96004
-		Inclination        172.492
-		AscendingNode      179.910
+		Period<d>            3.96004673
+		Inclination        154.37
+		AscendingNode      104.62
+		MeridianAngle      180
 	}
 }
 
