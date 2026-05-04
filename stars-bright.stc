@@ -27,6 +27,17 @@
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/356/141
 #   https://ui.adsabs.harvard.edu/abs/2000A%26A...356..141F/abstract
 
+# TODO: Not used right now
+# Fabricius et al. (2002), A&A 384, p.180-189
+#   "The Tycho double star catalogue"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/276
+#   https://ui.adsabs.harvard.edu/abs/2002A%26A...384..180F/abstract
+
+# Høg et al. (2000), A&A 355, p.L27-L30
+#   "The Tycho-2 catalogue of the 2.5 million brightest stars"
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/259
+#   https://ui.adsabs.harvard.edu/abs/2000A%26A...355L..27H/abstract
+
 # Lazzarotto et al. (2026)
 #   "Fundamental properties of two rapidly rotating stars: Rasalhague and Alkaid"
 #   https://arxiv.org/abs/2604.11189
@@ -933,11 +944,12 @@ Modify 33579
 # 35904 ETA CMa / Aludra
 
 # 36850 ALF Gem / Castor
-# TODO: See if there are better AppMag/Temperature | Add rotation?
+# TODO: See if there are better sources for AppMag/Temperature | Add rotation?
 # Torres et al. (2022), AJ 941 (1), id.8
 #   "The Orbits and Dynamical Masses of the Castor System"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ac9d8d
 #   https://ui.adsabs.harvard.edu/abs/2022ApJ...941....8T/abstract
+# AppMag of Aa and Ba from 
 
 # AB barycenter
 Barycenter 36850 "Castor AB:ALF Gem:66 Gem:Gliese 278 AB"
@@ -1056,14 +1068,7 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 	}
 }
 
-Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
-{
-	RA 113.65497694202988
-	Dec 31.869063238548993
-	Distance 49.157                     # with a zero-point correction of +0.039 mas
-}
-
-# TODO: find MeanAnomaly such that the two perfectly conjunctions at Epoch
+# TODO: find MeanAnomaly such that the two stars properly line up at Epoch (value should be ~9–10 deg)
 # Torres & Ribas (2002), AJ 567 (2), pp. 1140-1165
 #   "Absolute Dimensions of the M-Type Eclipsing Binary YY Geminorum (Castor C): A Challenge to Evolutionary Models in the Lower Main Sequence"
 #   https://iopscience.iop.org/article/10.1086/338587
@@ -1073,6 +1078,13 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 #   "Magnetic Field of the Eclipsing M-dwarf Binary YY Gem"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ab06c5
 #   https://ui.adsabs.harvard.edu/abs/2019ApJ...873...69K/abstract
+Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
+{
+	RA 113.65497694202988
+	Dec 31.869063238548993
+	Distance 49.157                     # with a zero-point correction of +0.039 mas
+}
+
 "Castor Ca:YY Gem A:Gliese 278 Ca"
 {
 	Radius<rS> 0.6191                   # ± 0.0057; the mean component
@@ -1889,9 +1901,9 @@ Modify 69673
 # 71860 ALF Lup / Uridim
 
 # 72105 EPS Boo
-# TODO: Better sources for SpectralType and AppMag, probably?
 # Positions from Gaia DR3
 # Radius and Temperature of component A from Baines et al. (2021), AJ 162 (5), id.198
+# AppMag from Høg et al. (2000), A&A 355, p.L27-L30
 72105 "Izar:EPS Boo A:36 Boo A"
 {
 	RA 221.24648617077
@@ -1899,8 +1911,8 @@ Modify 69673
 	Distance 235.889
 
 	Radius<rS> 37.61                    # +1.29-1.38
-	SpectralType "K0II-III"             # SIMBAD
-	AppMag 2.45                         # SIMBAD
+	SpectralType "K0II-III"
+	AppMag 2.578                        # ± 0.009
 	Temperature 4755                    # ± 66
 }
 
@@ -1915,8 +1927,8 @@ Modify 69673
 	Distance 235.889                    # from Gaia DR3 parallax of component A
 
 	Radius<rS> 2.747                    # ± 0.171
-	SpectralType "A0V"                  # SIMBAD
-	AppMag 4.801                        # SIMBAD
+	SpectralType "A0V"
+	AppMag 4.808                        # ± 0.009
 	Temperature 9009.0                  # ± 374.6
 }
 
