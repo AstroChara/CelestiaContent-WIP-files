@@ -1057,14 +1057,61 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 	}
 }
 
-Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 CD"
+Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 {
 	RA 113.65497694202988
 	Dec 31.869063238548993
 	Distance 49.157                     # with a zero-point correction of +0.039 mas
 }
 
+# TODO: find MeanAnomaly such that the two perfectly conjunctions at Epoch
+# Torres & Ribas (2002), AJ 567 (2), pp. 1140-1165
+#   "Absolute Dimensions of the M-Type Eclipsing Binary YY Geminorum (Castor C): A Challenge to Evolutionary Models in the Lower Main Sequence"
+#   https://iopscience.iop.org/article/10.1086/338587
+#   https://ui.adsabs.harvard.edu/abs/2002ApJ...567.1140T/abstract
+#   This paper notes that the star being eclipsed during the slightly deeper eclipse event is referred to as primary, or A.
+# Epoch and semi-major axes from Kochukhov & Shulyak (2019), AJ 873 (1), article id. 69
+#   "Magnetic Field of the Eclipsing M-dwarf Binary YY Gem"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ab06c5
+#   https://ui.adsabs.harvard.edu/abs/2019ApJ...873...69K/abstract
+"Castor Ca:YY Gem A:Gliese 278 Ca"
+{
+	Radius<rS> 0.6191                   # ± 0.0057; the mean component
+	SpectralType "M1Ve"
+	AbsMag 8.950                        # ± 0.029; the mean component
+	Temperature 3820                    # ± 100; the mean component
 
+	OrbitBarycenter "YY Gem"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2449345.116643   # ± 0.000068; reference time of the minimum of the deeper eclipse
+		Period<d>            0.814282212
+		SemiMajorAxis<km>    1.36148e6  # a_A sin(i) = (1.35863 ± 0.00081)e6 km
+		Inclination         92.63       # i = 86.29 ± 0.10°
+		AscendingNode      106.944      # Ω = 7.315°
+		MeanAnomaly          7.315
+	}
+}
+
+"Castor Cb:YY Gem B:Gliese 278 Cb"
+{
+	Radius<rS> 0.6191                   # ± 0.0057; the mean component
+	SpectralType "M1Ve"
+	AbsMag 8.950                        # ± 0.029; the mean component
+	Temperature 3820                    # ± 100; the mean component
+
+	OrbitBarycenter "YY Gem"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2449345.116643   # ± 0.000068
+		Period<d>            0.814282212
+		SemiMajorAxis<km>    1.36067e6  # a_A sin(i) = (1.35782 ± 0.00072)e6 km
+		Inclination         92.63       # i = 86.29 ± 0.10°
+		AscendingNode      106.944      # Ω = 7.315°
+		ArgOfPericenter    180
+		MeanAnomaly          7.315
+	}
+}
 
 # 37826 BET Gem / Pollux
 # Radius from Baines et al. (2025), AJ 169 (6), id.293
