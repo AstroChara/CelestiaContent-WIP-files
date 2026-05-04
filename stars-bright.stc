@@ -2023,13 +2023,6 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 		ArgOfPericenter    165.68       # ω = 312.32 ± 0.43°
 		MeanAnomaly        101.20
 	}
-
-	UniformRotation                     # assume alignment with orbital plane
-	{
-		Period<d>           12.5        # 10-15 d, assumed from activity
-		Inclination         58.91
-		AscendingNode       82.10
-	}
 }
 
 # 78401 DEL Sco / Dschubba
