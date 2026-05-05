@@ -216,6 +216,29 @@ Barycenter 2081
 # 3179 ALF Cas / Schedar
 
 # 3419 BET Cet / Diphda
+# Nielsen et al. (2025), AJ 992 (1), id.126
+#   "Exploration of the Outer Envelope of the K-giant Star Beta Cet"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/adff5d
+#   https://ui.adsabs.harvard.edu/abs/2025ApJ...992..126N/abstract
+# Rotation from Tsvetkova et al. (2013), A&A 556, id.A43
+#   "Magnetic field structure in single late-type giants: β Ceti in 2010-2012"
+#   https://www.aanda.org/articles/aa/full_html/2013/08/aa21051-13/aa21051-13.html
+#   https://ui.adsabs.harvard.edu/abs/2013A%26A...556A..43T/abstract
+Modify 3419
+{
+	Radius<rS> 16.75
+	SpectralType "K0III"
+	AppMag 2.01
+	Extinction 0.07
+	Temperature 4894
+
+	UniformRotation
+	{
+		Period<d>          215
+		Inclination         67          # inclination = 60°
+		AscendingNode       12
+	}
+}
 
 # 4427 GAM Cas / Tiansi
 # TODO: Add star system
