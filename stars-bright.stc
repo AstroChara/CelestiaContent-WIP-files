@@ -235,8 +235,8 @@ Modify 3419
 	UniformRotation
 	{
 		Period<d>          215
-		Inclination         67          # inclination = 60°
-		AscendingNode       12
+		Inclination         24          # inclination = 60°
+		AscendingNode      210
 	}
 }
 
