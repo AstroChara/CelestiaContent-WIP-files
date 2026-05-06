@@ -1181,7 +1181,7 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 #   "Gaia FGK benchmark stars: Fundamental Teff and log g of the third version"
 #   https://www.aanda.org/articles/aa/full_html/2024/02/aa47136-23/aa47136-23.html
 #   https://scixplorer.org/abs/2024A%26A...682A.145S/abstract
-# Rotation period from Aurière et al. (2021), A&A 646, id.A130
+# Rotation from Aurière et al. (2021), A&A 646, id.A130
 #   "Pollux: A weak dynamo-driven dipolar magnetic field and implications for its probable planet"
 #   https://www.aanda.org/articles/aa/full_html/2021/02/aa39573-20/aa39573-20.html
 #   https://scixplorer.org/abs/2021A%26A...646A.130A/abstract
@@ -1193,6 +1193,8 @@ Modify 37826
 	UniformRotation
 	{
 		Period<d>          660          # ± 15
+		Inclination         48          # inclination = 50°
+		AscendingNode       34
 	}
 }
 
