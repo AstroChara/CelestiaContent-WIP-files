@@ -2257,9 +2257,10 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 }
 
 # 80763 ALF Sco / Antares
-# Distance from Maíz Apellániz et al. (2008)
-#   "Accurate distances to nearby massive stars with the new reduction of the Hipparcos raw data"
-#   https://arxiv.org/abs/0804.2553
+# Harper et al. (2026), AJ 1002 (1), id.80
+#   "HST-STIS Spectra of Antares (α Scorpii: M1.5 Iab)—Type II Supernova Progenitor and Betelgeuse's Chromospheric Twin"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ae581b
+#   https://ui.adsabs.harvard.edu/abs/2026ApJ..1002...80H/abstract
 # Orbit from Pavlovic & Todorovic (2005), Serbian Astronomical Journal 170, p. 73-78
 #   "Orbits of Seven Edge-On Visual Double Stars"
 #   https://scixplorer.org/abs/2005SerAJ.170...73P/abstract
@@ -2267,7 +2268,7 @@ Barycenter 80763
 {
 	RA 247.35185531                     # J2016 from SIMBAD
 	Dec -26.43210617
-	Distance<pc> 187                    # +44−30
+	Distance<pc> 170                    # +35–25
 }
 
 # Radius and Temperature from Ohnaka et al. (2013), A&A 555, id.A24
@@ -2277,9 +2278,10 @@ Barycenter 80763
 # AppMag from Ducati (2002), VizieR On-line Data Catalog: II/237
 "Antares A:ALF Sco A:21 Sco A:HD 148478:WDS J16294-2626A"
 {
-	Radius<rS> 680
+	Radius<rS> 683                      # weighted mean angular diameter of two epochs = 37.35 mas
 	SpectralType "M1.5Iab"
 	AppMag 0.91                         # variable star; V = 0.6–1.6
+	Extinction 0.47                     # E(B-V) = 0.15 ± 0.03
 	Temperature 3660                    # ± 120
 
 	OrbitBarycenter "ALF Sco"
@@ -2287,7 +2289,7 @@ Barycenter 80763
 	{
 		Epoch          2186252.968      # assume Julian year, 1273.670 ± 64.033
 		Period            1217.536      # ± 81.521
-		SemiMajorAxis      178          # 2.92750 ± 0.03447 mas, mass ratio = (15 ± 5):(7.2)
+		SemiMajorAxis      140          # 2.92750 ± 0.03447 mas, mass ratio = (17.2):(6.7 ± 0.7)
 		Eccentricity         0.07860    # ± 0.04429
 		Inclination          9.087      # inclination = 80.750 ± 0.072°
 		AscendingNode      218.347      # Ω = 90.990 ± 1.788°
@@ -2295,13 +2297,10 @@ Barycenter 80763
 	}
 }
 
-# Radius from Kudritzki & Reimers (1978), A&A 70, p. 227-239
-#   "On the absolute scale of mass-loss in red giants. II. Circumstellar absorption lines in the spectrum of alpha Sco B and mass-loss of alpha Sco A"
-#   https://ui.adsabs.harvard.edu/abs/1978A%26A....70..227K/abstract
-# Temperature from Schröder & Cuntz (2007), A&A 465 (2), April II 2007, pp.593-601
-#   "A critical test of empirical mass loss formulas applied to individual giants and supergiants"
-#   https://www.aanda.org/articles/aa/abs/2007/14/aa6633-06/aa6633-06.html
-#   https://ui.adsabs.harvard.edu/abs/2007A%26A...465..593S/abstract
+# Radius and Temperature from Braun et al. (2012), A&A 546, id.A3
+#   "A hydrodynamic study of the circumstellar envelope of α Scorpii"
+#   https://www.aanda.org/articles/aa/full_html/2012/10/aa19659-12/aa19659-12.html
+#   https://ui.adsabs.harvard.edu/abs/2012A%26A...546A...3B/abstract
 # SpectralType and radial distance relative to A from Baade & Reimers (2007), A&A 474 (1), October IV 2007, pp.229-237
 #   "Multi-component absorption lines in the HST spectra of α Scorpii B"
 #   https://www.aanda.org/articles/aa/abs/2007/40/aa7308-07/aa7308-07.html
@@ -2309,17 +2308,18 @@ Barycenter 80763
 # AppMag from Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
 "Antares B:ALF Sco B:21 Sco B:HD 148479:WDS J16294-2626B"
 {
-	Radius<rS> 5.2
+	Radius<rS> 4.8                      # ± 1.1
 	SpectralType "B2.5V"
 	AppMag 5.2                          # V-band magnitude of component A = 0.96, magnitude difference = 4.2
-	Temperature 18500
+	Extinction 0.47                     # E(B-V) = 0.15 ± 0.03
+	Temperature 18200
 
 	OrbitBarycenter "ALF Sco"
 	EllipticalOrbit                     # complete orbit
 	{
 		Epoch          2186252.968      # assume Julian year, 1273.670 ± 64.033
 		Period            1217.536      # ± 81.521
-		SemiMajorAxis      370          # 2.92750 ± 0.03447 mas, mass ratio = (15 ± 5):(7.2)
+		SemiMajorAxis      358          # 2.92750 ± 0.03447 mas, mass ratio = (17.2):(6.7 ± 0.7)
 		Eccentricity         0.07860    # ± 0.04429
 		Inclination          9.087      # inclination = 80.750 ± 0.072°
 		AscendingNode      218.347      # Ω = 90.990 ± 1.788°
