@@ -1129,15 +1129,15 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 		Epoch          2449345.116643   # ± 0.000068; reference time of the minimum of the deeper eclipse
 		Period<d>            0.814282212
 		SemiMajorAxis<km>    1.36148e6  # a_A sin(i) = (1.35863 ± 0.00081)e6 km
-		Inclination         92.63       # i = 86.29 ± 0.10°
-		AscendingNode      106.944      # Ω = 7.315°
-		MeanAnomaly          7.315
+		Inclination         99.82       # i = 86.29 ± 0.10°
+		AscendingNode      108.189
+		MeanAnomaly          9.598
 	}
 	UniformRotation                     # assume tidal locking
 	{
 		Period<d>            0.814282212
-		Inclination         92.63       # i = 86.29 ± 0.10°
-		AscendingNode      106.944      # Ω = 7.315°
+		Inclination         99.82       # i = 86.29 ± 0.10°
+		AscendingNode      108.189
 	}
 }
 
@@ -1155,16 +1155,15 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 		Epoch          2449345.116643   # ± 0.000068
 		Period<d>            0.814282212
 		SemiMajorAxis<km>    1.36067e6  # a_A sin(i) = (1.35782 ± 0.00072)e6 km
-		Inclination         92.63       # i = 86.29 ± 0.10°
-		AscendingNode      106.944      # Ω = 7.315°
-		ArgOfPericenter    180
-		MeanAnomaly          7.315
+		Inclination         99.82       # i = 86.29 ± 0.10°
+		AscendingNode      108.189
+		MeanAnomaly        189.598
 	}
 	UniformRotation                     # assume tidal locking
 	{
 		Period<d>            0.814282212
-		Inclination         92.63       # i = 86.29 ± 0.10°
-		AscendingNode      106.944      # Ω = 7.315°
+		Inclination         99.82       # i = 86.29 ± 0.10°
+		AscendingNode      108.189
 		MeridianAngle      180
 	}
 }
