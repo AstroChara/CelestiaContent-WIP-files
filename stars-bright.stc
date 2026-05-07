@@ -980,12 +980,14 @@ Modify 33579
 # 35904 ETA CMa / Aludra
 
 # 36850 ALF Gem / Castor
-# TODO: See if there are better sources for Temperature
 # Torres et al. (2022), AJ 941 (1), id.8
 #   "The Orbits and Dynamical Masses of the Castor System"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ac9d8d
 #   https://ui.adsabs.harvard.edu/abs/2022ApJ...941....8T/abstract
-# SpectralType of Aa and Ba from Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
+# SpectralType, AppMag and Temperature of Aa and Ba, parameters of C from Torres & Ribas (2002), AJ 567 (2), pp. 1140-1165
+#   "Absolute Dimensions of the M-Type Eclipsing Binary YY Geminorum (Castor C): A Challenge to Evolutionary Models in the Lower Main Sequence"
+#   https://iopscience.iop.org/article/10.1086/338587
+#   https://ui.adsabs.harvard.edu/abs/2002ApJ...567.1140T/abstract
 
 # AB barycenter
 Barycenter 36850 "Castor AB:ALF Gem:66 Gem:Gliese 278 AB"
@@ -1010,13 +1012,12 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 	}
 }
 
-# AppMag from Fabricius et al. (2002), A&A 384, p.180-189
 "Castor Aa:ALF Gem Aa:ALF2 Gem A:66 Gem Aa:Gliese 278 Aa"
 {
-	Radius<rS> 2.089                    # ± 0.005
+	Radius<rS> 2.089                    # ± 0.005, from angular diameter
 	SpectralType "A1V"
-	AppMag 1.93                         # system AppMag; Hipparcos magnitude (Hp), appears to be close to V-band magnitude
-	Temperature 10286
+	AppMag 1.93                         # ± 0.02; transformed from Hipparcos (Hp) magnitude
+	Temperature 9420                    # ± 150
 
 	OrbitBarycenter "ALF Gem A"
 	EllipticalOrbit                     # complete orbit
@@ -1033,10 +1034,8 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 
 "Castor Ab:ALF Gem Ab:ALF2 Gem B:66 Gem Ab:Gliese 278 Ab"
 {
-	Radius<rS> 0.501                    # assumed from spectral type
-	SpectralType "M1Ve"
-	AbsMag 9.64                         # assumed from spectral type
-	Temperature 3660                    # assumed from spectral type
+	SpectralType "M3V"                  # assumed from mass M_Ab = 0.3859 ± 0.0018 MSol
+	AbsMag 11.15                        # for assumed spectral type
 
 	OrbitBarycenter "ALF Gem A"
 	EllipticalOrbit                     # complete orbit
@@ -1066,13 +1065,12 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 	}
 }
 
-# AppMag from Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
 "Castor Ba:ALF Gem Ba:ALF1 Gem A:66 Gem Ba:Gliese 278 Ba"
 {
-	Radius<rS> 1.648                    # ± 0.011
-	SpectralType "A2Vm"
-	AppMag 2.982                        # system AppMag; converted from G-band
-	Temperature 8842
+	Radius<rS> 1.648                    # ± 0.011, from angular diameter
+	SpectralType "A5Vm"
+	AppMag 2.93                         # ± 0.02; transformed from Hipparcos (Hp) magnitude
+	Temperature 8240                    # ± 150
 
 	OrbitBarycenter "ALF Gem B"
 	EllipticalOrbit                     # complete orbit
@@ -1088,10 +1086,8 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 
 "Castor Bb:ALF Gem Bb:ALF1 Gem B:66 Gem Bb:Gliese 278 Bb"
 {
-	Radius<rS> 0.501                    # assumed from spectral type
-	SpectralType "M1Ve"
-	AbsMag 9.64                         # assumed from spectral type
-	Temperature 3660                    # assumed from spectral type
+	SpectralType "M3V"                  # assumed from mass M_Bb = 0.3865 ± 0.0020 MSol
+	AbsMag 11.15                        # for assumed spectral type
 
 	OrbitBarycenter "ALF Gem B"
 	EllipticalOrbit                     # complete orbit
@@ -1107,11 +1103,7 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 }
 
 # TODO: find MeanAnomaly such that the two stars properly line up at Epoch (value should be ~9–10 deg)
-# Torres & Ribas (2002), AJ 567 (2), pp. 1140-1165
-#   "Absolute Dimensions of the M-Type Eclipsing Binary YY Geminorum (Castor C): A Challenge to Evolutionary Models in the Lower Main Sequence"
-#   https://iopscience.iop.org/article/10.1086/338587
-#   https://ui.adsabs.harvard.edu/abs/2002ApJ...567.1140T/abstract
-#   This paper notes that the star being eclipsed during the slightly deeper eclipse event is referred to as primary, or A.
+# Torres & Ribas (2002) note that the star being eclipsed during the slightly deeper eclipse event is referred to as primary, or A.
 # Epoch and semi-major axes from Kochukhov & Shulyak (2019), AJ 873 (1), article id. 69
 #   "Magnetic Field of the Eclipsing M-dwarf Binary YY Gem"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/ab06c5
@@ -1128,6 +1120,7 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 	Radius<rS> 0.6191                   # ± 0.0057; the mean component
 	SpectralType "M1Ve"
 	AbsMag 8.950                        # ± 0.029; the mean component
+	BoloCorrection -1.381               # Mbol = 7.569 ± 0.020; the mean component
 	Temperature 3820                    # ± 100; the mean component
 
 	OrbitBarycenter "YY Gem"
@@ -1153,6 +1146,7 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 	Radius<rS> 0.6191                   # ± 0.0057; the mean component
 	SpectralType "M1Ve"
 	AbsMag 8.950                        # ± 0.029; the mean component
+	BoloCorrection -1.381               # Mbol = 7.569 ± 0.020; the mean component
 	Temperature 3820                    # ± 100; the mean component
 
 	OrbitBarycenter "YY Gem"
