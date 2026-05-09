@@ -641,6 +641,177 @@ Modify 25428
 }
 
 # 25930 DEL Ori / Mintaka
+# Oplištilová et al. (2023), A&A 672, id.A31
+#   "Spectrum of the secondary component and new orbital elements of the massive triple star δ Ori A"
+#   https://www.aanda.org/articles/aa/full_html/2023/04/aa45272-22/aa45272-22.html
+#   https://scixplorer.org/abs/2023A%26A...672A..31O/abstract
+#   Tables 11 and 12, three-body model
+# Positions from Gaia DR3
+Barycenter 25930 "Mintaka A:DEL Ori A:34 Ori A:WDS J05320-0018A"
+{
+	RA 83.00165624929525
+	Dec -0.2990788925812489
+	Distance 1242.750                   # from Gaia DR3 parallax of component C
+}
+
+Barycenter 1024454766 "Mintaka Aa:DEL Ori Aa:34 Ori Aa:WDS J05320-0018Aa"
+{
+	OrbitBarycenter "DEL Ori A"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2458773.188651
+		Period<d>        55453          # ± 1000.0
+		SemiMajorAxis<rS> 5015          # 20038 ± 100 rSun, mass ratio = 0.3338 ± 0.03
+		Eccentricity         0.565      # ± 0.01
+		Inclination         52.169      # i2 = 105.170 ± 1.0°
+		AscendingNode      217.941      # Ω2 = 122.735 ± 1.0°
+		ArgOfPericenter    275.805      # ω2 (longitude of periastron) = 261.255 ± 1.0°
+		MeanAnomaly        232.136      # λ2 = 133.391 ± 1.0°
+	}
+}
+
+"Mintaka Aa1:DEL Ori Aa1:34 Ori Aa1"
+{
+	Radius<rS> 13.119         # ± 1.0
+	SpectralType "O9.5II"
+	AppMag 2.55
+	Extinction 0.13
+	Temperature 31385         # ± 1000
+
+	OrbitBarycenter "DEL Ori Aa"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2458773.188651
+		Period<d>            5.732436   # sidereal
+		SemiMajorAxis<rS>   12.978      # 40.099 ± 1.0 rSun, mass ratio = 0.4785 ± 0.03
+		Eccentricity         0.081      # ± 0.02
+		Inclination        125.906      # i1 = 79.124 ± 1.0°
+		AscendingNode      297.094      # Ω1 = 224.294 ± 1.0°
+		ArgOfPericenter    309.059      # ω1 (longitude of periastron) = 43.451 ± 1.0°
+		MeanAnomaly         29.244      # λ1 = 72.695 ± 1.0°
+	}
+
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period<d>            4.572
+		Inclination        125.906
+		AscendingNode      297.094
+	}
+}
+
+"Mintaka Aa2:DEL Ori Aa2:34 Ori Aa2"
+{
+	Radius<rS> 4.168          # ± 0.5
+	SpectralType "B2V"
+	AppMag 5.5
+	Extinction 0.13
+	Temperature 24515         # ± 1000
+
+	OrbitBarycenter "DEL Ori Aa"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2458773.188651
+		Period<d>            5.732436   # sidereal
+		SemiMajorAxis<rS>   27.121      # 40.099 ± 1.0 rSun, mass ratio = 0.4785 ± 0.03
+		Eccentricity         0.081      # ± 0.02
+		Inclination        125.906      # i1 = 79.124 ± 1.0°
+		AscendingNode      297.094      # Ω1 = 224.294 ± 1.0°
+		ArgOfPericenter    129.059      # ω1 (longitude of periastron) = 43.451 ± 1.0°
+		MeanAnomaly         29.244      # λ1 = 72.695 ± 1.0°
+	}
+
+	UniformRotation                     # assume tidal locking
+	{
+		Period<d>            5.732436
+		Inclination        125.906
+		AscendingNode      297.094
+	}
+}
+
+2024454766 "Mintaka Ab:DEL Ori Ab:34 Ori Ab:WDS J05320-0018Ab"
+{
+	Radius<rS> 12.045         # ± 1.0
+	SpectralType "B0IV"
+	AppMag 3.83
+	Extinction 0.13
+	Temperature 27906         # ± 1000
+
+	OrbitBarycenter "DEL Ori A"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2458773.188651
+		Period<d>        55453          # ± 1000.0
+		SemiMajorAxis<rS> 15023         # 20038 ± 100 rSun, mass ratio = 0.3338 ± 0.03
+		Eccentricity         0.565      # ± 0.01
+		Inclination         52.169      # i2 = 105.170 ± 1.0°
+		AscendingNode      217.941      # Ω2 = 122.735 ± 1.0°
+		ArgOfPericenter     95.805      # ω2 (longitude of periastron) = 261.255 ± 1.0°
+		MeanAnomaly        232.136      # λ2 = 133.391 ± 1.0°
+	}
+
+	UniformRotation
+	{
+		Period<d>            2.090
+	}
+}
+
+# Leone et al. (2010), MNRAS 401 (4), pp. 2739-2752
+#   "The magnetic field and circumstellar environment of the helium-strong star HD 36485 = δ Ori C"
+#   https://academic.oup.com/mnras/article/401/4/2739/1135225
+#   https://ui.adsabs.harvard.edu/abs/2010MNRAS.401.2739L/abstract
+Barycenter 1024444766 "Mintaka C:DEL Ori C:DEL2 Ori:34 Ori C:WDS J05320-0018C"
+{
+	RA 83.00170015961477
+	Dec -0.2845483128275813
+	Distance 1242.750
+}
+
+"Mintaka Ca:DEL Ori Ca:DEL2 Ori A:34 Ori Ca"
+{
+	SpectralType "B3V"
+	AppMag 6.62
+	Extinction 0.13
+	Temperature 20000
+
+	OrbitBarycenter "DEL Ori C"
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
+		Epoch          2453774.88       # ± 0.27
+		Period<d>           29.96       # ± 0.02
+		SemiMajorAxis<rS>   23          # mass ratio = 2.6 ± 0.3
+		Eccentricity         0.32       # ± 0.07
+		Inclination         66          # i = ~14°
+		AscendingNode        8
+		ArgOfPericenter     82          # ω = 175 ± 4°
+	}
+
+	UniformRotation
+	{
+		Period<d>            1.47775    # ± 0.00004
+		Inclination         66          # inclination = 12 ± 3°
+		AscendingNode        5
+	}
+}
+
+"Mintaka Cb:DEL Ori Cb:DEL2 Ori B:34 Ori Cb"
+{
+	SpectralType "A0V"
+	AppMag 9.8
+	Extinction 0.13
+	Temperature 10000
+
+	OrbitBarycenter "DEL Ori C"
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
+		Epoch          2453774.88       # ± 0.27
+		Period<d>           29.96       # ± 0.02
+		SemiMajorAxis<rS>   60          # mass ratio = 2.6 ± 0.3
+		Eccentricity         0.32       # ± 0.07
+		Inclination         66          # i = ~14°
+		AscendingNode        8
+		ArgOfPericenter    262          # ω = 175 ± 4°
+	}
+}
 
 # 26311 EPS Ori / Alnilam
 # Oplištilová et al. (2025), A&A 704, id.A204
@@ -774,10 +945,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 	}
 }
 
-# SpectralType and AppMag (V-band) from Oplištilová et al. (2023), A&A 672, id.A31
-#   "Spectrum of the secondary component and new orbital elements of the massive triple star δ Ori A"
-#   https://www.aanda.org/articles/aa/full_html/2023/04/aa45272-22/aa45272-22.html
-#   https://scixplorer.org/abs/2023A%26A...672A..31O/abstract
+# AppMag from Høg et al. (2000), A&A 355, p.L27-L30
 1012074771 "Alnitak C:ZET Ori C:50 Ori C:ADS 4263 C:WDS J05407-0157C"
 {
 	RA 85.19237166328
@@ -785,7 +953,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 	Distance 1260.410                   # parallax = 2.5877 ± 0.0387 mas
 
 	SpectralType "A"
-	AppMag 9.54
+	AppMag 9.553                        # ± 0.028
 	Extinction 0.19
 }
 
