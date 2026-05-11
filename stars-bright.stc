@@ -1158,7 +1158,7 @@ Modify 33579
 #   https://ui.adsabs.harvard.edu/abs/2002ApJ...567.1140T/abstract
 
 # AB barycenter
-Barycenter 36850 "Castor AB:ALF Gem:66 Gem:Gliese 278 AB"
+Barycenter 36850 "Castor A-B:ALF Gem:66 Gem:Gliese 278 A-B"
 {
 	RA 113.65135657
 	Dec 31.88240645
@@ -1174,9 +1174,9 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 		Period             459.1        # ± 2.3
 		SemiMajorAxis       44.68       # 6.722 ± 0.021", mass ratio = 0.7891 ± 0.0094
 		Eccentricity         0.3382     # ± 0.0023
-		Inclination         56.876      # i = 115.107 ± 0.060°
-		AscendingNode      133.727      # Ω = 41.304 ± 0.085°
-		ArgOfPericenter    157.55       # ω_B = 251.84 ± 0.38°
+		Inclination        113.439      # i = 115.107 ± 0.060°
+		AscendingNode      257.089      # Ω = 41.304 ± 0.085° (+ 180°; mirrored)
+		ArgOfPericenter    137.38       # ω_B = 251.84 ± 0.38° (+ 180°; mirrored)
 	}
 }
 
@@ -1194,9 +1194,9 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 		Period<d>            9.2127496  # ± 0.0000052
 		SemiMajorAxis        0.0169     # 8.002 ± 0.014 mas, mass ratio = 0.1627 ± 0.0014
 		Eccentricity         0.48769    # ± 0.00048
-		Inclination         65.19       # i = 35.00 ± 0.24°
-		AscendingNode       22.913      # Ω = 95.100 ± 0.093°
-		ArgOfPericenter     80.381      # ω_Aa = 264.968 ± 0.085°
+		Inclination        134.97       # i = 35.00 ± 0.24°
+		AscendingNode       16.816      # Ω = 95.100 ± 0.093° (+ 180°; mirrored)
+		ArgOfPericenter     79.080      # ω_Aa = 264.968 ± 0.085° (+ 180°; mirrored)
 	}
 }
 
@@ -1212,9 +1212,9 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 		Period<d>            9.2127496  # ± 0.0000052
 		SemiMajorAxis        0.1037     # 8.002 ± 0.014 mas, mass ratio = 0.1627 ± 0.0014
 		Eccentricity         0.48769    # ± 0.00048
-		Inclination         65.19       # i = 35.00 ± 0.24°
-		AscendingNode       22.913      # Ω = 95.100 ± 0.093°
-		ArgOfPericenter    260.381      # ω_Aa = 264.968 ± 0.085°
+		Inclination        134.97       # i = 35.00 ± 0.24°
+		AscendingNode       16.816      # Ω = 95.100 ± 0.093° (+ 180°; mirrored)
+		ArgOfPericenter    259.080      # ω_Aa = 264.968 ± 0.085° (+ 180°; mirrored)
 	}
 }
 
@@ -1227,9 +1227,9 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 		Period             459.1        # ± 2.3
 		SemiMajorAxis       56.62       # 6.722 ± 0.021", mass ratio = 0.7891 ± 0.0094
 		Eccentricity         0.3382     # ± 0.0023
-		Inclination         56.876      # i = 115.107 ± 0.060°
-		AscendingNode      133.727      # Ω = 41.304 ± 0.085°
-		ArgOfPericenter    337.55       # ω_B = 251.84 ± 0.38°
+		Inclination        113.439      # i = 115.107 ± 0.060°
+		AscendingNode      257.089      # Ω = 41.304 ± 0.085° (+ 180°; mirrored)
+		ArgOfPericenter    317.38       # ω_B = 251.84 ± 0.38° (+ 180°; mirrored)
 	}
 }
 
@@ -1248,7 +1248,7 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 		SemiMajorAxis        0.009222   # 3.4442 ± 0.0093 mas, mass ratio = 0.21606 ± 0.00084
 		Inclination         12.48       # i = 110.50 ± 0.12°
 		AscendingNode      232.86       # Ω = 106.47 ± 0.19°
-		MeanAnomaly        127.14       # value is 360 - AscendingNode
+		MeanAnomaly        144.76
 	}
 }
 
@@ -1265,8 +1265,7 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 		SemiMajorAxis        0.042683   # 3.4442 ± 0.0093 mas, mass ratio = 0.21606 ± 0.00084
 		Inclination         12.48       # i = 110.50 ± 0.12°
 		AscendingNode      232.86       # Ω = 106.47 ± 0.19°
-		ArgOfPericenter    180
-		MeanAnomaly        127.14
+		MeanAnomaly        324.76
 	}
 }
 
