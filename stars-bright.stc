@@ -1246,9 +1246,9 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 		Epoch          2456705.4942     # ± 0.0012; reference time of maximum primary velocity
 		Period<d>            2.92835083 # ± 0.00000031
 		SemiMajorAxis        0.009222   # 3.4442 ± 0.0093 mas, mass ratio = 0.21606 ± 0.00084
-		Inclination         12.48       # i = 110.50 ± 0.12°
-		AscendingNode      232.86       # Ω = 106.47 ± 0.19°
-		MeanAnomaly        144.76
+		Inclination        148.61       # i = 110.50 ± 0.12°
+		AscendingNode      187.32       # Ω = 106.47 ± 0.19° (+ 180°; mirrored)
+		MeanAnomaly        346.41
 	}
 }
 
@@ -1263,9 +1263,9 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 		Epoch          2456705.4942     # ± 0.0012; reference time of maximum primary velocity
 		Period<d>            2.92835083 # ± 0.00000031
 		SemiMajorAxis        0.042683   # 3.4442 ± 0.0093 mas, mass ratio = 0.21606 ± 0.00084
-		Inclination         12.48       # i = 110.50 ± 0.12°
-		AscendingNode      232.86       # Ω = 106.47 ± 0.19°
-		MeanAnomaly        324.76
+		Inclination        148.61       # i = 110.50 ± 0.12°
+		AscendingNode      187.32       # Ω = 106.47 ± 0.19° (+ 180°; mirrored)
+		MeanAnomaly        166.41
 	}
 }
 
