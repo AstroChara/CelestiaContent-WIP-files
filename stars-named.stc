@@ -45,8 +45,8 @@
 #   https://arxiv.org/abs/2108.04778
 "Sapaki:WR 67-1:WR 67a"
 {
-	RA 229.1539619012933
-	Dec -58.1663452710208
+	RA 229.15396190453558
+	Dec -58.166345270284
 	Distance<pc> 3888.96533
 
 	SpectralType "O3If*"
@@ -71,8 +71,8 @@
 #   https://ui.adsabs.harvard.edu/abs/2013AJ....145...44Z/abstract
 Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 {
-	RA 313.9635638398294
-	Dec 43.8734417437156
+	RA 313.96356384078734
+	Dec 43.873441742405895
 	Distance<pc> 761.04895
 }
 
@@ -114,8 +114,8 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 # May actually be a binary, according to Morata et al. (2013), AJ 146 (3), article id. 49
 "Holoea:IRAS 05327+3404"
 {
-	RA 84.0248748044887
-	Dec 34.1033056182318
+	RA 84.02487480355323
+	Dec 34.103305619640196
 	Distance<pc> 767.804871
 
 	SpectralType "K2IIIe"
@@ -134,8 +134,8 @@ Barycenter "Bajamar Star:Bajamar:2MASS J20555125+4352246"
 #   https://ui.adsabs.harvard.edu/abs/2022ApJ...940..100D/abstract
 Barycenter "Paloma:2MASS J05243042+4244506:1RXS J052430.2+424449:RX J0524+42:TIC 369210348"
 {
-	RA 81.1269638897459
-	Dec 42.7472866562741
+	RA 81.12696389019696
+	Dec 42.74728665760868
 	Distance<pc> 588.02594
 }
 
@@ -188,3 +188,21 @@ Barycenter "Paloma:2MASS J05243042+4244506:1RXS J052430.2+424449:RX J0524+42:TIC
 		Period<min>        157.191
 	}
 }
+
+# WGSN-id 10146 / Butterfly Star / IRAS 04302+2247
+
+# WGSN-id 10147 / Dust-Ball / V927 Per
+
+# WGSN-id 10148 / Flying Saucer / 2MASS J16281370-2431391
+
+# WGSN-id 10149 / Necklace / IRAS 19417+1701
+
+# WGSN-id 10150 / Peony Star / WR 102ka
+
+# WGSN-id 10151 / Rosette Eye / RAFGL 961
+
+# WGSN-id 10152 / Southern Crab / WRAY 16-147
+
+# WGSN-id 10153 / Beehive Proplyd / HH 540
+
+# WGSN-id 10154 / Frosty Leo / IRAS 09371+1212
