@@ -4154,7 +4154,7 @@ Barycenter 83945 "GJ 3991:Giclas 203-47"
 {
 	RA 257.38347212
 	Dec 43.68010581
-	Distance 24.7840 # 131.5996 +/- 0.4285 mas
+	Distance 24.7840                    # 131.5996 +/- 0.4285 mas
 }
 
 # Pineda et al. (2021), ApJ 918 (1), id.40
@@ -4166,7 +4166,8 @@ Barycenter 83945 "GJ 3991:Giclas 203-47"
 	Temperature 3279
 
 	OrbitBarycenter "Giclas 203-47"
-	EllipticalOrbit {
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
 		Period<d>           14.909777   # ± 0.00001
 		SemiMajorAxis        0.070	    # estimated from mass ratio 0.35:0.5
 		Eccentricity         0.068
@@ -4182,11 +4183,12 @@ Barycenter 83945 "GJ 3991:Giclas 203-47"
 "GJ 3991 B:Giclas 203-47 B"
 {
 	SpectralType "D"
-	AbsMag 13.7 # for a 0.5-solar-mass white dwarf
+	AbsMag 13.7                         # for a 0.5-solar-mass white dwarf
 	Temperature 5286
 
 	OrbitBarycenter "Giclas 203-47"
-	EllipticalOrbit {
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
 		Period<d>           14.909777   # ± 0.00001
 		SemiMajorAxis        0.038      # estimated from mass ratio = (0.2714 +0.0066 –0.0065):0.5
 		Eccentricity         0.068
