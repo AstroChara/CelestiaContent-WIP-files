@@ -186,6 +186,11 @@
 #   https://iopscience.iop.org/article/10.3847/1538-3881/acd6a2
 #   https://ui.adsabs.harvard.edu/abs/2023AJ....166...16P/abstract
 
+# Pineda et al. (2021), ApJ 918 (1), id.40
+#   "The M-dwarf Ultraviolet Spectroscopic Sample. I. Determining Stellar Parameters for Field Stars"
+#   https://iopscience.iop.org/article/10.3847/1538-4357/ac0aea
+#   https://ui.adsabs.harvard.edu/abs/2021ApJ...918...40P/abstract
+
 # Pizzolato et al. (2003), A&A 397, p.147-157
 #   "The stellar activity-rotation relationship revisited: Dependence of saturated and non-saturated X-ray emission regimes on stellar mass for late-type dwarfs"
 #   https://www.aanda.org/articles/aa/abs/2003/01/aa2680/aa2680.html
@@ -4141,41 +4146,56 @@ Barycenter 5336 "MU Cas:30 Cas:Gliese 53"
 }
 
 # Delfosse et al. (1999), A&A 344, 897
+# Orbital period from Shariat & El-Badry (2026), PASP 138 (3), id.034202
+#   "A Global View of Post-interaction White Dwarf-main Sequence Binaries"
+#   https://iopscience.iop.org/article/10.1088/1538-3873/ae453b
+#   https://ui.adsabs.harvard.edu/abs/2026PASP..138c4202S/abstract
 Barycenter 83945 "GJ 3991:Giclas 203-47"
 {
-	RA	257.38347212
-	Dec	43.68010581
-	Distance	24.7840 # 131.5996 +/- 0.4285 mas
+	RA 257.38347212
+	Dec 43.68010581
+	Distance 24.7840 # 131.5996 +/- 0.4285 mas
 }
 
+# Pineda et al. (2021), ApJ 918 (1), id.40
 "GJ 3991 A:Giclas 203-47 A"
 {
-	OrbitBarycenter "Giclas 203-47"
+	Radius<rS> 0.286
 	SpectralType "M3.5V"
-	Radius 225000 # approx. for class
-	AppMag 11.80
+	AppMag 12.41                        # total system V-band AppMag
+	Temperature 3279
 
+	OrbitBarycenter "Giclas 203-47"
 	EllipticalOrbit {
-		Period          0.0402836	# 14.7136 d
-		SemiMajorAxis   0.065	# estimated from mass ratio 0.35:0.5
-		Eccentricity    0.068
-		ArgOfPericenter 332.0
-		MeanAnomaly     348.6
+		Period<d>           14.909777   # ± 0.00001
+		SemiMajorAxis        0.070	    # estimated from mass ratio 0.35:0.5
+		Eccentricity         0.068
+		ArgOfPericenter    332.0
+		MeanAnomaly        348.6
 	}
 }
 
+# Mass is assumed to be 0.5 solar masses (minimum mass).
+# Temperature and rotation period from O’Brien et al. (2026), MNRAS 550 (2), stag1195
+#   "Direct detections of white dwarfs in four WD+dM post-common envelope binaries within 20 pc"
+#   https://academic.oup.com/mnras/article/550/2/stag1195/8733147
 "GJ 3991 B:Giclas 203-47 B"
 {
-	OrbitBarycenter "Giclas 203-47"
 	SpectralType "D"
 	AbsMag 13.7 # for a 0.5-solar-mass white dwarf
+	Temperature 5286
 
+	OrbitBarycenter "Giclas 203-47"
 	EllipticalOrbit {
-		Period          0.0402836	# 14.7136 d
-		SemiMajorAxis   0.046	# estimated from mass ratio 0.35:0.5
-		Eccentricity    0.068
-		ArgOfPericenter 152.0
-		MeanAnomaly     348.6
+		Period<d>           14.909777   # ± 0.00001
+		SemiMajorAxis        0.038      # estimated from mass ratio = (0.2714 +0.0066 –0.0065):0.5
+		Eccentricity         0.068
+		ArgOfPericenter    152.0
+		MeanAnomaly        348.6
+	}
+	UniformRotation
+	{
+	    Period<d>          100          # approximate
 	}
 }
 
