@@ -259,10 +259,10 @@ Barycenter "Solar System Barycenter:SSB"
 	Distance	0
 }
 
-# Radius from Emilio et al. (2012), AJ 750 (2), id. 135
-#   "Measuring the Solar Radius from Space during the 2003 and 2006 Mercury Transits"
-#   https://iopscience.iop.org/article/10.1088/0004-637X/750/2/135
-#   https://ui.adsabs.harvard.edu/abs/2012ApJ...750..135E/abstract
+# Radius from Haberreiter et al. (2008), ApJ Letters 675 (1), L53
+#   "Solving the Discrepancy between the Seismic and Photospheric Solar Radius"
+#   https://iopscience.iop.org/article/10.1086/529492
+#   https://ui.adsabs.harvard.edu/abs/2008ApJ...675L..53H/abstract
 # AbsMag (V-band) from Willmer (2018), AJ 236 (2), id. 47
 #   "The Absolute Magnitude of the Sun in Several Filters"
 #   https://iopscience.iop.org/article/10.3847/1538-4365/aabfdf
@@ -272,10 +272,10 @@ Barycenter "Solar System Barycenter:SSB"
 	OrbitBarycenter	"Solar System Barycenter"
 	CustomOrbit	"vsop87-sun"
 
-	Radius	696342
+	Radius	695901
 	SpectralType	"G2V"
 	AbsMag	4.81
-	BoloCorrection	-0.08
+	BoloCorrection	-0.07
 	Temperature	5772
 
 	UniformRotation
