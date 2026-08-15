@@ -1386,6 +1386,143 @@ Modify 39429
 }
 
 # 39953 GAM Vel
+# Schmutz et al. (2026)
+#   "Revised orbital parameters of the gamma2 Velorum system"
+#   https://arxiv.org/abs/2606.27265
+# SpectralType and AbsMag from North et al. (2007), MNRAS 377 (1), pp. 415-424
+#   "γ2 Velorum: orbital solution and fundamental parameter determination with SUSI"
+#   https://academic.oup.com/mnras/article/377/1/415/1746933
+#   https://ui.adsabs.harvard.edu/abs/2007MNRAS.377..415N/abstract
+Barycenter 39953 "Regor:GAM2 Vel:GAM Vel A:WDS J08095-4720A"
+{
+	RA 122.38308575
+	Dec -47.33653997
+	Distance<pc> 336                    # ± 1
+}
+
+"Regor A:GAM2 Vel A:GAM Vel Aa"
+{
+	Radius<rS> 13.5                     # ± 1.0
+	SpectralType "O7.5II-III"
+	AbsMag -5.60                        # ± 0.10; corrected for updated extinction
+	Extinction 0.06                     # E(B-V) = 0.02 ± 0.02
+	Temperature 35000                   # ± 300
+
+	OrbitBarycenter "GAM2 Vel"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2460250.94       # MJD, 60250.44 ± 0.07
+		Period<d>           78.524      # ± 0.002
+		SemiMajorAxis        0.280      # 1.170 ± 0.004 au, mass ratio = 0.315 ± 0.022
+		Eccentricity         0.322      # ± 0.004
+		Inclination         51.8        # i = 65.0 ± 0.3°
+		AscendingNode      170.9        # Ω = 247.0 ± 0.2°
+		ArgOfPericenter     93.3        # ω = 67.5 ± 0.4°
+	}
+
+	UniformRotation                     # assume alignment with orbital plane
+	{
+		Period              68.3        # V_rot = 240 ± 20 km/s
+		Inclination         51.8
+		AscendingNode      170.9
+	}
+}
+
+"Regor B:GAM2 Vel B:GAM Vel Ab:WR 11"
+{
+	Radius<rS> 3.4                      # ± 0.5
+	SpectralType "WC8"
+	AbsMag -4.20                        # ± 0.17; corrected for updated extinction
+	Extinction 0.06                     # E(B-V) = 0.02 ± 0.02
+	Temperature 57100                   # ± 1700
+
+	OrbitBarycenter "GAM2 Vel"
+	EllipticalOrbit                     # complete orbit
+	{
+		Epoch          2460250.94       # MJD, 60250.44 ± 0.07
+		Period<d>           78.524      # ± 0.002
+		SemiMajorAxis        0.890      # 1.170 ± 0.004 au, mass ratio = 0.315 ± 0.022
+		Eccentricity         0.322      # ± 0.004
+		Inclination         51.8        # i = 65.0 ± 0.3°
+		AscendingNode      170.9        # Ω = 247.0 ± 0.2°
+		ArgOfPericenter    273.3        # ω = 67.5 ± 0.4°
+	}
+}
+
+# Position from Gaia DR3
+# Orbit (except inclination and node) from Hernández & Sahade (1980), PASP 92, p. 819-824
+#   "The spectroscopic binary γ1 Velorum"
+#   https://ui.adsabs.harvard.edu/abs/1980PASP...92..819H/abstract
+# Inclination and ascending node from Luna (1985), Rev. Mexicana Astron. Astrofis. 10, p. 267-276
+#   "Polarimetric determination of spatial orbital orientation of the binary systems γ1 and γ2 Vel"
+#   https://ui.adsabs.harvard.edu/abs/1985RMxAA..10..267L/abstract
+Barycenter 1065348140 "GAM1 Vel:GAM Vel B:WDS J08095-4720B"
+{
+	RA 122.37211545208517
+	Dec -47.3452393935982
+	Distance<pc> 336
+}
+
+# Radius and Temperature from Gaia DR3
+# AppMag and mass from Jeffries et al. (2009), MNRAS 393 (2), pp. 538-556
+#   "The stellar association around Gamma Velorum and its relationship with Vela OB2"
+#   https://academic.oup.com/mnras/article/393/2/538/981832
+#   https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..538J/abstract
+"GAM1 Vel A:GAM Vel Ba"
+{
+	Radius<rS> 9.6057                   # +0.3865-0.3854 (GSP-Phot)
+	SpectralType "B2III"
+	AppMag 4.27
+	Extinction 0.09
+	Temperature 20144.3360              # +135.615-136.816 (GSP-Phot)
+
+	OrbitBarycenter "GAM1 Vel"
+	EllipticalOrbit                     # ascending node ambiguous
+	{
+		Epoch          2437663.538      # ± 0.127
+		Period<d>            1.482575
+		SemiMajorAxis<km>    0.927e6    # a1 sin i = 0.916e6 km, mass ratio = 14:~1.5
+		Eccentricity         0.057      # ± 0.033
+		Inclination        101          # i = 81°
+		AscendingNode       17          # Ω = 80° or 170° ± 10°
+		ArgOfPericenter      1.4        # ω = 197.6 ± 31.2°
+	}
+
+	UniformRotation                     # assume tidal locking
+	{
+		Period<d>            1.482575
+		Inclination        101
+		AscendingNode       17
+	}
+}
+
+# Mass calculated from spectroscopic orbit parameters, primary mass and inclination
+"GAM1 Vel B:GAM Vel Bb"
+{
+	SpectralType "F"                    # assumed from mass
+	AbsMag 2.76                         # assumed from mass
+	Extinction 0.09
+
+	OrbitBarycenter "GAM1 Vel"
+	EllipticalOrbit                     # ascending node ambiguous
+	{
+		Epoch          2437663.538      # ± 0.127
+		Period<d>            1.482575
+		SemiMajorAxis<km>    8.568e6    # a1 sin i = 0.916e6 km, mass ratio = 14:~1.5
+		Eccentricity         0.057      # ± 0.033
+		Inclination        101          # i = 81°
+		AscendingNode       17          # Ω = 80° or 170° ± 10°
+		ArgOfPericenter    181.4        # ω = 197.6 ± 31.2°
+	}
+
+	UniformRotation                     # assume tidal locking
+	{
+		Period<d>            1.482575
+		Inclination        101
+		AscendingNode       17
+		MeridianAngle      180
+	}
+}
 
 # 41037 EPS Car / Avior
 
