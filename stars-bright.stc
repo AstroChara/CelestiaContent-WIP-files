@@ -7,6 +7,11 @@
 # Common papers:
 #   The names of these papers are not folded in order to make searching for them easier.
 
+# BSC: Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
+#   "Bright Star Catalogue, 5th Revised Ed."
+#   https://cdsarc.cds.unistra.fr/viz-bin/cat/V/50
+#   https://ui.adsabs.harvard.edu/abs/1995yCat.5050....0H/abstract
+
 # Gaia DR3: Gaia Collaboration (2023), A&A 674, id.A1
 #   "Gaia Data Release 3. Summary of the content and survey properties"
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355
@@ -19,6 +24,7 @@
 
 # ORB6
 #   "Sixth Catalog of Orbits of Visual Binary Stars"
+#   https://crf.usno.navy.mil/wds-orb6
 #   https://www.astro.gsu.edu/wds/orb6.html
 
 # TICv8: Stassun et al. (2019), AJ 158 (4), article id. 138
@@ -55,11 +61,6 @@
 #   "The Tycho double star catalogue"
 #   https://cdsarc.cds.unistra.fr/viz-bin/cat/I/276
 #   https://ui.adsabs.harvard.edu/abs/2002A%26A...384..180F/abstract
-
-# Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
-#   "Bright Star Catalogue, 5th Revised Ed."
-#   https://cdsarc.cds.unistra.fr/viz-bin/cat/V/50
-#   https://ui.adsabs.harvard.edu/abs/1995yCat.5050....0H/abstract
 
 # Høg et al. (2000), A&A 355, p.L27-L30
 #   "The Tycho-2 catalogue of the 2.5 million brightest stars"
@@ -327,6 +328,109 @@ Barycenter 7588
 }
 
 # 9640 GAM And / Almach
+# Distance from original Hipparcos reduction parallax
+# Mozurkewich et al. (2003), AJ 126 (5), pp. 2502-2520
+#   "Angular Diameters of Stars from the Mark III Optical Interferometer"
+#   https://iopscience.iop.org/article/10.1086/378596
+#   https://ui.adsabs.harvard.edu/abs/2003AJ....126.2502M
+9640 "Almach A:Almaak A:Alamak A:GAM1 And:GAM And A:57 And A:ADS 1630 A:WDS J02039+4220A"
+{
+	RA 30.97505563
+	Dec 42.32950931
+	Distance 354.904
+
+	Radius<rS> 91.42                    # from angular diameter = 7.814 ± 0.078 mas
+	SpectralType "K3IIb"
+	AppMag 2.10
+	Temperature 4253                    # ± 52
+}
+
+# Position from Gaia DR3
+# Individual stellar parameters and separation of Ba-Bb orbit from Docobo & Andrade (2006), ApJ 652 (1), pp. 681-695
+#   "A Methodology for the Description of Multiple Stellar Systems with Spectroscopic Subcomponents"
+#   https://iopscience.iop.org/article/10.1086/508053
+#   https://ui.adsabs.harvard.edu/abs/2006ApJ...652..681D
+# B-C orbit from ORB6 (Doc2017a)
+# Ba-Bb orbit from Maestre & Wright (1960), ApJ 131, p.119
+#   "A Preliminary Study of the Spectroscopic Binary Gamma Andromedae B"
+#   https://ui.adsabs.harvard.edu/abs/1960ApJ...131..119M/abstract
+# Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413 find that B is an eclipsing binary.
+Barycenter 2023112837 "Almach BC:Almaak BC:Alamak BC:GAM2 And:GAM And BC:57 And BC:ADS 1630 BC:WDS J02039+4220BC"
+{
+	RA 30.97825852213
+	Dec 42.33069921796
+	Distance 354.904
+}
+
+Barycenter "Almach B:Almaak B:Alamak B:GAM2 And A:GAM And B:57 And B:ADS 1630 B:WDS J02039+4220B"
+{
+	OrbitBarycenter "GAM And BC"
+	EllipticalOrbit                     # mirror-ambiguous orbit
+	{
+		Epoch          2434006          # assume Julian year, 1951.98
+		Period              62.63
+		SemiMajorAxis       10.8        # 0.317", mass ratio = ((3.3 ± 0.1):(2.4 ± 0.1)):2.6 ± 0.1
+		Eccentricity         0.874
+		Inclination         35.7        # i = 104.8°
+		AscendingNode      238.1        # Ω = 103.2°
+		ArgOfPericenter    226.1        # ω = 163.4°
+	}
+}
+
+"Almach Ba:Almaak Ba:Alamak Ba:GAM2 And Aa:GAM And Ba:57 And Ba"
+{
+	SpectralType "B9V"
+	AppMag 5.4                          # ± 0.3
+
+	OrbitBarycenter "GAM And B"
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
+		Epoch          2436122.18
+		Period<d>            2.67
+		SemiMajorAxis        0.029      # 0.63 ± 0.11 mas, mass ratio = (3.3 ± 0.1):(2.4 ± 0.1)
+		Eccentricity         0.292
+		Inclination         35.7        # assume coplanarity with outer orbit
+		AscendingNode      238.1        # assume coplanarity with outer orbit
+		ArgOfPericenter    237.9        # ω = 175.2°
+	}
+}
+
+"Almach Bb:Almaak Bb:Alamak Bb:GAM2 And Ab:GAM And Bb:57 And Bb"
+{
+	SpectralType "A3V"
+	AppMag 6.7                          # ± 0.4
+
+	OrbitBarycenter "GAM And B"
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
+		Epoch          2436122.18
+		Period<d>            2.67
+		SemiMajorAxis        0.040      # 0.63 ± 0.11 mas, mass ratio = (3.3 ± 0.1):(2.4 ± 0.1)
+		Eccentricity         0.292
+		Inclination         35.7        # assume coplanarity with outer orbit
+		AscendingNode      238.1        # assume coplanarity with outer orbit
+		ArgOfPericenter     57.9        # ω = 175.2°
+	}
+}
+
+# SpectralType and AppMag from BSC
+"Almach C:Almaak C:Alamak C:GAM2 And B:GAM And C:57 And C:ADS 1630 C:WDS J02039+4220C"
+{
+	SpectralType "A0V"
+	AppMag 6.3
+
+	OrbitBarycenter "GAM And BC"
+	EllipticalOrbit                     # mirror-ambiguous orbit
+	{
+		Epoch          2434006          # assume Julian year, 1951.98
+		Period              62.63
+		SemiMajorAxis       23.7        # 0.317", mass ratio = ((3.3 ± 0.1):(2.4 ± 0.1)):2.6 ± 0.1
+		Eccentricity         0.874
+		Inclination         35.7        # i = 104.8°
+		AscendingNode      238.1        # Ω = 103.2°
+		ArgOfPericenter     46.1        # ω = 163.4°
+	}
+}
 
 # 11767 ALF UMi / Polaris
 
@@ -1791,7 +1895,7 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:27 Cru:HD 108249"
 	}
 }
 
-# Orbit from Hernandez & de Hernandez (1979), Rev. Mexicana Astron. Astrofis. 4, p. 297-300
+# Orbit from Hernández & de Hernández (1979), Rev. Mexicana Astron. Astrofis. 4, p. 297-300
 #   "The orbital elements of 25 G Crucis (HD 108250)"
 #   https://scixplorer.org/abs/1979RMxAA...4..297H/abstract
 Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
@@ -2633,7 +2737,7 @@ Barycenter 80763
 #   "Multi-component absorption lines in the HST spectra of α Scorpii B"
 #   https://www.aanda.org/articles/aa/abs/2007/40/aa7308-07/aa7308-07.html
 #   https://scixplorer.org/abs/2007A%26A...474..229B/abstract
-# AppMag from Hoffleit & Warren (1995), VizieR On-line Data Catalog: V/50
+# AppMag from BSC
 "Antares B:ALF Sco B:21 Sco B:HD 148479:WDS J16294-2626B"
 {
 	Radius<rS> 4.8                      # ± 1.1
