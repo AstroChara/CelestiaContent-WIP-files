@@ -3178,6 +3178,60 @@ Barycenter 92855
 # 100453 GAM Cyg / Sadr
 
 # 100751 ALF Pav / Peacock
+# Orbit from Luyten (1936), ApJ 84, p.85
+#   "A Rediscussion of the Orbits of Seventy-Seven Spectroscopic Binaries"
+#   https://ui.adsabs.harvard.edu/abs/1936ApJ....84...85L/abstract
+# Masses and separation from Gratton et al. (2024), A&A 685, id.A119
+#   "Stellar companions and Jupiter-like planets in young associations"
+#   https://www.aanda.org/articles/aa/full_html/2024/05/aa48393-23/aa48393-23.html
+#   https://ui.adsabs.harvard.edu/abs/2024A%26A...685A.119G/abstract
+Barycenter 100751
+{
+	RA 306.41196027
+	Dec -56.73547204
+	Distance 178.814
+}
+
+# Radius and Temperature from Jerzykiewicz & Molenda-Żakowicz (2000), Acta Astronomica 50, pp.369-380
+#   "Empirical Luminosities and Radii of Early-Type Stars after Hipparcos"
+#   https://acta.astrouw.edu.pl/Vol50/n3/a_50_3_5.html
+#   https://ui.adsabs.harvard.edu/abs/2000AcA....50..369J/abstract
+# SpectralType and AppMag from BSC
+"Peacock A:ALF Pav A"
+{
+	Radius<rS> 4.83                     # log R/RSun = 0.684 ± 0.032, from angular diameter
+	SpectralType "B2IV"
+	AppMag 1.94                         # assumed to contribute virtually all of system's light
+	Temperature 17865                   # log Teff (K) = 4.252 ± 0.016
+
+	OrbitBarycenter "ALF Pav"
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
+		Epoch          2417547.68       # ± 0.010; time of ascending node passage
+		Period<d>           11.753
+		SemiMajorAxis        0.098      # 0.216 au, mass ratio = 0.838
+		Inclination         53          # i = 4.5°; from spectroscopic orbit parameters, M_A = 5.310 MSol and M_B = 4.450 MSol
+		AscendingNode      209
+		MeanAnomaly        284
+	}
+}
+
+"Peacock B:ALF Pav B"
+{
+	SpectralType "B"                    # assumed from mass
+	AbsMag -0.55                        # for assumed spectral type
+
+	OrbitBarycenter "ALF Pav"
+	EllipticalOrbit                     # radial velocity-only orbit
+	{
+		Epoch          2417547.68       # ± 0.010; time of ascending node passage
+		Period<d>           11.753
+		SemiMajorAxis        0.118      # 0.216 au, mass ratio = 0.838
+		Inclination         53          # i = 4.5°; from spectroscopic orbit parameters, M_A = 5.310 MSol and M_B = 4.450 MSol
+		AscendingNode      209
+		MeanAnomaly        104
+	}
+}
 
 # 102098 ALF Cyg / Deneb
 # Radius from Baines et al. (2025), AJ 169 (6), id.293
