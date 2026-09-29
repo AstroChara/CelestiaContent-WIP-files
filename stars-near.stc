@@ -543,14 +543,14 @@ Barycenter "Luhman 16:WISE 1049-5319:WISE J104915.57-531906.1:GJ 11551"
 #    Ground-based Astrometry"
 #   https://iopscience.iop.org/article/10.3847/1538-4357/aa6af8
 #   https://ui.adsabs.harvard.edu/abs/2017ApJ...840...70B/abstract
-Barycenter 32349 "Sirius:Dog Star:ALF CMa:9 CMa:Gliese 244:ADS 5423"
+Barycenter 32349 "Sirius:ALF CMa:9 CMa:Gliese 244:ADS 5423"
 {
 	RA	101.28715533
 	Dec	-16.71611586
 	Distance	8.608 # 378.9 +/- 1.4 mas
 }
 
-"Sirius A:Dog Star A:ALF CMa A:9 CMa A:Gliese 244 A:ADS 5423 A"
+"Sirius A:Dog Star:ALF CMa A:9 CMa A:Gliese 244 A:ADS 5423 A"
 {
 	Radius<rS>	1.7144
 	SpectralType	"A1V"
@@ -570,7 +570,7 @@ Barycenter 32349 "Sirius:Dog Star:ALF CMa:9 CMa:Gliese 244:ADS 5423"
 	InfoURL "https://en.wikipedia.org/wiki/Sirius#Sirius_A"
 }
 
-"Sirius B:Dog Star B:ALF CMa B:9 CMa B:Gliese 244 B:ADS 5423 B"
+"Sirius B:The Pup:ALF CMa B:9 CMa B:Gliese 244 B:ADS 5423 B"
 {
 	Radius<rS>	0.008098
 	SpectralType	"DA2"
