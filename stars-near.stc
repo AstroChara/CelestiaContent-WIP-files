@@ -4187,7 +4187,7 @@ Barycenter 83945 "GJ 3991:Giclas 203-47"
 "GJ 3991 B:Giclas 203-47 B"
 {
 	SpectralType "D"
-	AbsMag 14.9
+	AbsMag 14.8                         # bolometric AbsMag = 14.581
 	Temperature 5286
 
 	OrbitBarycenter "Giclas 203-47"
