@@ -4184,6 +4184,8 @@ Barycenter 83945 "GJ 3991:Giclas 203-47"
 }
 
 # Mass is assumed to be 0.6 solar masses, based on logg and white dwarf mass-radius relations.
+# Bolometric AbsMag is calculated by obtaining radius from mass and logg,
+# then combining radius and temperature to find bolometric absolute magnitude.
 "GJ 3991 B:Giclas 203-47 B"
 {
 	SpectralType "D"
