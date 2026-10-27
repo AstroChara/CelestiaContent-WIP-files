@@ -1,10 +1,10 @@
 # SPDX-FileCopyrightText: 2004-2013 Grant Hutchison
 # SPDX-FileCopyrightText: 2006 Chris Laurel
-# SPDX-FileCopyrightText: 2010,2023 Andrew Tribick
+# SPDX-FileCopyrightText: 2010, 2023 Andrew Tribick
 # SPDX-FileCopyrightText: 2019-2020 Luka Sato
 # SPDX-FileCopyrightText: 2020-2024 SevenSpheres
 # SPDX-FileCopyrightText: 2022-2024 Pedro J. Garcia
-# SPDX-FileCopyrightText: 2023-2025 AstroChara
+# SPDX-FileCopyrightText: 2023-2026 AstroChara
 # SPDX-FileCopyrightText: 2023 Levin Li
 # SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -293,7 +293,9 @@ Barycenter "Solar System Barycenter:SSB"
 	InfoURL "https://en.wikipedia.org/wiki/Sun"
 }
 
-# Radius and temperature from Rabus et al. (2019), MNRAS 484 (2), 2674-2683
+# Distance, Radius, and Temperature from Anugu et al. (2026), ApJ
+#   "Proxima Centauri's Angular Diameter Revisited"
+#   https://arxiv.org/abs/2610.33373
 # V-magnitude from Ribas et al. (2017), A&A 603, id.A58
 #   "The full spectral radiative properties of Proxima Centauri"
 #   https://www.aanda.org/articles/aa/full_html/2017/07/aa30582-17/aa30582-17.html
@@ -304,14 +306,14 @@ Barycenter "Solar System Barycenter:SSB"
 #   https://ui.adsabs.harvard.edu/abs/2017A%26A...602A..48C/abstract
 70890 # Proxima Cen
 {
-	RA	 217.39232147
+	RA	217.39232147
 	Dec	-62.67607512
-	Distance	4.2465 # 768.0665 +/- 0.0499 mas
+	Distance<pc>	1.30193             # ± 0.00008
 
-	Radius<rS>	0.154
+	Radius<rS>	0.162                   # ± 0.004
 	SpectralType	"M5.5Ve"
 	AppMag	11.083
-	Temperature	2901
+	Temperature	2833                    # ± 49
 
 	UniformRotation
 	{
