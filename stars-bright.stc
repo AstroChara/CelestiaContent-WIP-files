@@ -611,7 +611,7 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 	# using the barycenter position corrections and (corrected) proper motions
 	RA	79.17281563
 	Dec	45.99609237
-	Distance<pc> 13.159                 # ± 0.015
+	Distance<pc>	13.159              # ± 0.015
 }
 
 "Capella Aa:Alhajot Aa:ALF Aur Aa:13 Aur Aa:Gliese 194 A:ADS 3841 A"
@@ -924,7 +924,7 @@ Barycenter 1024444766 "Mintaka C:DEL Ori C:DEL2 Ori:34 Ori C:WDS J05320-0018C"
 #   https://scixplorer.org/abs/2025A%26A...704A.204O/abstract
 Modify 26311
 {
-	Distance<pc> 384                    # ± 8
+	Distance<pc>	384                 # ± 8
 
 	#SemiAxes<rS>	[ 33.61 33.61 22.29 ]
 	Radius<rS>	33.61                   # ± 1.8; equatorial
@@ -1088,7 +1088,7 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 {
 	RA	88.79304406
 	Dec	7.40710187
-	Distance<pc> 172                    # +13-11
+	Distance<pc>	172                 # +13-11
 
 	Radius<rS>	782                     # ± 55, from angular diameter
 	SpectralType	"M2Iab"
@@ -1501,7 +1501,7 @@ Barycenter 39953 "Regor:GAM2 Vel:GAM Vel A:WDS J08095-4720A"
 {
 	RA	122.38308575
 	Dec	-47.33653997
-	Distance<pc> 336                    # ± 1
+	Distance<pc>	336                 # ± 1
 }
 
 "Regor A:GAM2 Vel A:GAM Vel Aa"
@@ -1564,7 +1564,7 @@ Barycenter 1065348140 "GAM1 Vel:GAM Vel B:WDS J08095-4720B"
 {
 	RA	122.37211545208517
 	Dec	-47.3452393935982
-	Distance<pc> 336
+	Distance<pc>	336
 }
 
 # Radius and Temperature from Gaia DR3
@@ -2218,7 +2218,7 @@ Barycenter 68702 "Hadar:Agena:BET Cen:WDS J14038-6022AB"
 {
 	RA	210.95547135                    # mass ratio = ((12.02 ± 0.13):(10.58 ± 0.18)):6.03
 	Dec	-60.37317105
-	Distance<pc> 110.6                  # ± 0.5
+	Distance<pc>	110.6               # ± 0.5
 }
 
 Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
@@ -2497,7 +2497,7 @@ Barycenter 78820 "Acrab:Graffias:Akrab:BET1 Sco:BET Sco AB:8 Sco AB:ADS 9913 AB:
 {
 	RA	241.35926902768
 	Dec	-19.80555058043
-	Distance<pc> 143                    # ± 3
+	Distance<pc>	143                 # ± 3
 }
 
 Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:WDS J16054-1948A"
@@ -2606,7 +2606,7 @@ Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS
 {
 	RA	241.36061531561
 	Dec	-19.80197081548
-	Distance<pc> 143
+	Distance<pc>	143
 }
 
 "Acrab C:Graffias C:Akrab C:BET Sco C:8 Sco C"
@@ -2700,7 +2700,7 @@ Barycenter 80763
 {
 	RA	247.35185531                    # J2016 from SIMBAD
 	Dec	-26.43210617
-	Distance<pc> 170                    # +35–25
+	Distance<pc>	170                 # +35–25
 }
 
 # Radius and Temperature from Ohnaka et al. (2013), A&A 555, id.A24
@@ -2858,7 +2858,7 @@ Barycenter 85927
 {
 	RA	263.40211965
 	Dec	-37.10396044
-	Distance<pc> 112                    # ± 5
+	Distance<pc>	112                 # ± 5
 }
 
 # Inner orbit from Southworth & Bowman (2022), MNRAS 513 (3), p.3191-3209
@@ -2971,7 +2971,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 {
 	RA	263.73411480
 	Dec	12.55905265
-	Distance<pc> 14.80                  # ± 0.13
+	Distance<pc>	14.80               # ± 0.13
 }
 
 # AppMag (V-band) and rotation pole position angle from Monnier et al. (2010), AJ 725 (1), pp. 1192-1201
@@ -3037,7 +3037,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 {
 	RA	264.32974139
 	Dec	-42.99784186
-	Distance<pc> 101.0                  # parallax = 9.90 ± 0.26 mas
+	Distance<pc>	101.0               # parallax = 9.90 ± 0.26 mas
 
 	#SemiAxes<rS>	[ 35.5 35.5 26.3 ]
 	Radius<rS>	35.5                    # +1.5−2.3; equatorial
@@ -3060,7 +3060,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 	# Separation = 0.538 ± 0.003 arcsec, position angle = 274.3 ± 0.13° (Hipparcos)
 	RA	264.32953763
 	Dec	-42.99783065
-	Distance<pc> 101.0
+	Distance<pc>	101.0
 
 	SpectralType	"A3III"
 	Extinction	0.0155                  # E(B-V) = 0.005
@@ -3084,7 +3084,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 {
 	RA	276.04278105
 	Dec	-34.38516849
-	Distance<pc> 43.94                  # parallax = 22.76 ± 0.24 mas
+	Distance<pc>	43.94               # parallax = 22.76 ± 0.24 mas
 
 	#SemiAxes<rS>	[ 8.80 8.80 6.01 ]
 	Radius<rS>	8.80                    # equatorial
@@ -3111,7 +3111,7 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 	# Separation = 2.06 ± 0.01 arcsec, position angle = 142 ± 1° (1992-06-18)
 	RA	276.04320794
 	Dec	-34.38561941
-	Distance<pc> 43.94
+	Distance<pc>	43.94
 
 	Radius<rS>	0.93                    # from temperature and luminosity = 10^(-0.05) lSun
 	SpectralType	"K6.5"
@@ -3132,7 +3132,7 @@ Barycenter 92855
 {
 	RA	283.81643546
 	Dec	-26.29696158
-	Distance<pc> 67
+	Distance<pc>	67
 }
 
 "Nunki A:SIG Sgr A:34 Sgr A"
