@@ -106,9 +106,9 @@
 #   https://scixplorer.org/abs/2020MNRAS.492.2709P/abstract
 Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:WDS J00084+2905A"
 {
-	RA 2.096534
-	Dec 29.090828
-	Distance 97.015764
+	RA	2.096534
+	Dec	29.090828
+	Distance	97.015764
 }
 
 # Rotation period from Kochukhov et al. (2021), MNRAS 506 (4), pp.5328-5344
@@ -117,11 +117,11 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:WDS J00084+2905
 #   https://scixplorer.org/abs/2021MNRAS.506.5328K/abstract
 "Alpheratz A:Sirrah A:ALF And A:21 And A:DEL Peg A:ADS 94 Aa:WDS J00084+2905Aa"
 {
-	Radius<rS> 2.7                      # ± 0.4; from luminosity and temperature
-	SpectralType "B8IV-VHgMn"
-	AppMag 2.221
-	BoloCorrection -0.60
-	Temperature 13800                   # ± 125
+	Radius<rS>	2.7                     # ± 0.4; from luminosity and temperature
+	SpectralType	"B8IV-VHgMn"
+	AppMag	2.221
+	BoloCorrection	-0.60
+	Temperature	13800                   # ± 125
 
 	OrbitBarycenter "ALF And"
 	EllipticalOrbit                     # complete orbit
@@ -144,11 +144,11 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:WDS J00084+2905
 
 "Alpheratz B:Sirrah B:ALF And B:21 And B:DEL Peg B:ADS 94 Ab:WDS J00084+2905Ab"
 {
-	Radius<rS> 1.65                     # ± 0.3; from luminosity and temperature
-	SpectralType "A7V"
-	AppMag 4.211
-	BoloCorrection 0.02
-	Temperature 8500
+	Radius<rS>	1.65                    # ± 0.3; from luminosity and temperature
+	SpectralType	"A7V"
+	AppMag	4.211
+	BoloCorrection	0.02
+	Temperature	8500
 
 	OrbitBarycenter "ALF And"
 	EllipticalOrbit                     # complete orbit
@@ -168,9 +168,9 @@ Barycenter 677 "Alpheratz:Sirrah:ALF And:21 And:DEL Peg:ADS 94 A:WDS J00084+2905
 #   Table 3, Modified von Zeipel Model (β-free)
 Modify 746
 {
-	#SemiAxes<rS> [ 3.79 3.79 3.06 ]
-	Radius<rS> 3.79                     # +0.10−0.09; equatorial
-	SemiAxes [ 1 0.807 1 ]              # polar radius = 3.06 +0.08−0.07 rSun
+	#SemiAxes<rS>	[ 3.79 3.79 3.06 ]
+	Radius<rS>	3.79                    # +0.10−0.09; equatorial
+	SemiAxes	[ 1 0.807 1 ]           # polar radius = 3.06 +0.08−0.07 rSun
 
 	UniformRotation
 	{
@@ -188,18 +188,18 @@ Modify 746
 #   https://ui.adsabs.harvard.edu/abs/2005A%26A...442..365J/abstract
 Barycenter 2081
 {
-	RA 6.57215550145885
-	Dec -42.30782032569077
-	Distance 81.706
+	RA	6.57215550145885
+	Dec	-42.30782032569077
+	Distance	81.706
 }
 
 # Radius and Temperature from Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
 "Ankaa A:ALF Phe A"
 {
-	Radius<rS> 13.39                    # ± 0.29
-	SpectralType "K0.5IIIb"
-	AppMag 2.377                        # assumed to contribute virtually all of system's light
-	Temperature 4770                    # ± 250
+	Radius<rS>	13.39                   # ± 0.29
+	SpectralType	"K0.5IIIb"
+	AppMag	2.377                       # assumed to contribute virtually all of system's light
+	Temperature	4770                    # ± 250
 
 	OrbitBarycenter "ALF Phe"
 	EllipticalOrbit                     # complete orbit
@@ -227,11 +227,11 @@ Barycenter 2081
 #   https://ui.adsabs.harvard.edu/abs/2013A%26A...556A..43T/abstract
 Modify 3419
 {
-	Radius<rS> 16.75
-	SpectralType "K0III"
-	AppMag 2.01
-	Extinction 0.07
-	Temperature 4894
+	Radius<rS>	16.75
+	SpectralType	"K0III"
+	AppMag	2.01
+	Extinction	0.07
+	Temperature	4894
 
 	UniformRotation
 	{
@@ -249,9 +249,9 @@ Modify 3419
 #   https://scixplorer.org/abs/2025ApJ...995..191A/abstract
 Modify 4427
 {
-	#SemiAxes<rS> [ 10.9 10.9 7.9 ]
-	Radius<rS> 10.9                     # +0.8-0.6; equatorial
-	SemiAxes [ 1 0.725 1 ]              # polar radius = 7.9 ± 0.4 rSun
+	#SemiAxes<rS>	[ 10.9 10.9 7.9 ]
+	Radius<rS>	10.9                    # +0.8-0.6; equatorial
+	SemiAxes	[ 1 0.725 1 ]           # polar radius = 7.9 ± 0.4 rSun
 
 	UniformRotation
 	{
@@ -270,9 +270,9 @@ Modify 4427
 #   https://scixplorer.org/abs/2022A%26A...667A.111K/abstract
 Barycenter 7588
 {
-	RA 24.42852283
-	Dec -57.23675281
-	Distance 139.443
+	RA	24.42852283
+	Dec	-57.23675281
+	Distance	139.443
 }
 
 # Dimensions and rotation from Domiciano de Souza et al. (2014), A&A 569, id.A10
@@ -281,12 +281,12 @@ Barycenter 7588
 #   https://scixplorer.org/abs/2014A%26A...569A..10D/abstract
 "Achernar A:ALF Eri A"
 {
-	#SemiAxes<rS> [ 9.16 9.16 6.78 ]
-	Radius<rS> 9.16                     # +0.23-0.23; equatorial
-	SemiAxes [ 1 0.740 1 ]              # equatorial radius 35.2% greater than polar
-	SpectralType "B3Vpe"
-	AppMag 0.46
-	Temperature 15539                   # ± 438; effective
+	#SemiAxes<rS>	[ 9.16 9.16 6.78 ]
+	Radius<rS>	9.16                    # +0.23-0.23; equatorial
+	SemiAxes	[ 1 0.740 1 ]           # equatorial radius 35.2% greater than polar
+	SpectralType	"B3Vpe"
+	AppMag	0.46
+	Temperature	15539                   # ± 438; effective
 
 	OrbitBarycenter "ALF Eri"
 	EllipticalOrbit                     # complete orbit
@@ -309,10 +309,10 @@ Barycenter 7588
 
 "Achernar B:ALF Eri B"
 {
-	Radius<rS> 1.70                     # ± 0.08
-	SpectralType "A2V"                  # A1V-A3V
-	AppMag 5.09                         # from flux in the V filter
-	Temperature 9064                    # ± 624
+	Radius<rS>	1.70                    # ± 0.08
+	SpectralType	"A2V"               # A1V-A3V
+	AppMag	5.09                        # from flux in the V filter
+	Temperature	9064                    # ± 624
 
 	OrbitBarycenter "ALF Eri"
 	EllipticalOrbit                     # complete orbit
@@ -335,14 +335,14 @@ Barycenter 7588
 #   https://ui.adsabs.harvard.edu/abs/2003AJ....126.2502M
 9640 "Almach A:Almaak A:Alamak A:GAM1 And:GAM And A:57 And A:ADS 1630 A:WDS J02039+4220A"
 {
-	RA 30.97505563
-	Dec 42.32950931
-	Distance 354.904
+	RA	30.97505563
+	Dec	42.32950931
+	Distance	354.904
 
-	Radius<rS> 91.42                    # from angular diameter = 7.814 ± 0.078 mas
-	SpectralType "K3IIb"
-	AppMag 2.10
-	Temperature 4253                    # ± 52
+	Radius<rS>	91.42                   # from angular diameter = 7.814 ± 0.078 mas
+	SpectralType	"K3IIb"
+	AppMag	2.10
+	Temperature	4253                    # ± 52
 }
 
 # Position from Gaia DR3
@@ -357,9 +357,9 @@ Barycenter 7588
 # Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413 find that B is an eclipsing binary.
 Barycenter 2023112837 "Almach BC:Almaak BC:Alamak BC:GAM2 And:GAM And BC:57 And BC:ADS 1630 BC:WDS J02039+4220BC"
 {
-	RA 30.97825852213
-	Dec 42.33069921796
-	Distance 354.904
+	RA	30.97825852213
+	Dec	42.33069921796
+	Distance	354.904
 }
 
 Barycenter "Almach B:Almaak B:Alamak B:GAM2 And A:GAM And B:57 And B:ADS 1630 B:WDS J02039+4220B"
@@ -379,8 +379,8 @@ Barycenter "Almach B:Almaak B:Alamak B:GAM2 And A:GAM And B:57 And B:ADS 1630 B:
 
 "Almach Ba:Almaak Ba:Alamak Ba:GAM2 And Aa:GAM And Ba:57 And Ba"
 {
-	SpectralType "B9V"
-	AppMag 5.4                          # ± 0.3
+	SpectralType	"B9V"
+	AppMag	5.4                         # ± 0.3
 
 	OrbitBarycenter "GAM And B"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -397,8 +397,8 @@ Barycenter "Almach B:Almaak B:Alamak B:GAM2 And A:GAM And B:57 And B:ADS 1630 B:
 
 "Almach Bb:Almaak Bb:Alamak Bb:GAM2 And Ab:GAM And Bb:57 And Bb"
 {
-	SpectralType "A3V"
-	AppMag 6.7                          # ± 0.4
+	SpectralType	"A3V"
+	AppMag	6.7                         # ± 0.4
 
 	OrbitBarycenter "GAM And B"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -416,8 +416,8 @@ Barycenter "Almach B:Almaak B:Alamak B:GAM2 And A:GAM And B:57 And B:ADS 1630 B:
 # SpectralType and AppMag from BSC
 "Almach C:Almaak C:Alamak C:GAM2 And B:GAM And C:57 And C:ADS 1630 C:WDS J02039+4220C"
 {
-	SpectralType "A0V"
-	AppMag 6.3
+	SpectralType	"A0V"
+	AppMag	6.3
 
 	OrbitBarycenter "GAM And BC"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -449,14 +449,14 @@ Barycenter "Almach B:Almaak B:Alamak B:GAM2 And A:GAM And B:57 And B:ADS 1630 B:
 #   https://scixplorer.org/abs/2015A%26A...580A..31H/abstract
 21421 "Aldebaran A:ALF Tau A:87 Tau A:GJ 9159 A"
 {
-	RA 68.98045690
-	Dec 16.50846265
-	Distance 69.024                     # from Gaia DR3 parallax of component B
+	RA	68.98045690
+	Dec	16.50846265
+	Distance	69.024                  # from Gaia DR3 parallax of component B
 
-	Radius<rS> 44.2                     # ± 0.9, from angular diameter
-	SpectralType "K5III"
-	AppMag 0.86                         # SIMBAD
-	Temperature 3934                    # ± 41
+	Radius<rS>	44.2                    # ± 0.9, from angular diameter
+	SpectralType	"K5III"
+	AppMag	0.86                        # SIMBAD
+	Temperature	3934                    # ± 41
 
 	UniformRotation
 	{
@@ -467,23 +467,23 @@ Barycenter "Almach B:Almaak B:Alamak B:GAM2 And A:GAM And B:57 And B:ADS 1630 B:
 # Physical parameters from TICv8 (TIC 673648676)
 "Aldebaran B:ALF Tau B:87 Tau B:GJ 9159 B"
 {
-	RA 68.98880121373
-	Dec 16.50504495132
-	Distance 69.024
+	RA	68.98880121373
+	Dec	16.50504495132
+	Distance	69.024
 
-	Radius<rS> 0.347                    # ± 0.039
-	SpectralType "M2.5V"
-	AppMag 13.214                       # ± 0.047
-	Temperature 3398.0                  # ± 89.5
+	Radius<rS>	0.347                   # ± 0.039
+	SpectralType	"M2.5V"
+	AppMag	13.214                      # ± 0.047
+	Temperature	3398.0                  # ± 89.5
 }
 
 # 24436 BET Ori / Rigel
 # TODO: Update barycentre positions
 Barycenter "Rigel:BET Ori:19 Ori:ADS 3823 ABC"
 {
-	RA 78.63417149                      # mass ratio = 23:((~3.3:~2.4):~3.38)
-	Dec -8.20232156
-	Distance 862.848
+	RA	78.63417149                     # mass ratio = 23:((~3.3:~2.4):~3.38)
+	Dec	-8.20232156
+	Distance	862.848
 }
 
 # Moravveji et al. (2012), ApJ 747 (2), article id. 108
@@ -493,16 +493,16 @@ Barycenter "Rigel:BET Ori:19 Ori:ADS 3823 ABC"
 #   https://scixplorer.org/abs/2012ApJ...747..108M/abstract
 24436 "Rigel A:BET Ori A:19 Ori A:ADS 3823 A"
 {
-	RA 78.63447295
-	Dec -8.20163614
-	Distance 862.848
+	RA	78.63447295
+	Dec	-8.20163614
+	Distance	862.848
 
-	Radius<rS> 78.9                     # ± 7.4
-	SpectralType "B8Ia"
-	AppMag 0.12
-	Extinction 0.155                    # E(B-V) = 0.05
-	BoloCorrection -0.78
-	Temperature 12100                   # ± 150
+	Radius<rS>	78.9                    # ± 7.4
+	SpectralType	"B8Ia"
+	AppMag	0.12
+	Extinction	0.155                   # E(B-V) = 0.05
+	BoloCorrection	-0.78
+	Temperature	12100                   # ± 150
 
 	UniformRotation
 	{
@@ -515,9 +515,9 @@ Barycenter "Rigel:BET Ori:19 Ori:ADS 3823 ABC"
 # Individual stellar parameters from MSC
 Barycenter "Rigel BC:BET Ori BC:19 Ori BC:ADS 3823 BC"
 {
-	RA 78.63340885                      # mass ratio (~3.3:~2.4):~3.38
-	Dec -8.20405555
-	Distance 862.848
+	RA	78.63340885                     # mass ratio (~3.3:~2.4):~3.38
+	Dec	-8.20405555
+	Distance	862.848
 }
 
 # SpectralType and orbit from Sanford (1942), ApJ 95, p.421
@@ -525,16 +525,16 @@ Barycenter "Rigel BC:BET Ori BC:19 Ori BC:ADS 3823 BC"
 #   https://scixplorer.org/abs/1942ApJ....95..421S/abstract
 Barycenter "Rigel B:BET Ori B:19 Ori B:ADS 3823 B"
 {
-	RA 78.6334024172966
-	Dec -8.2040666584455
-	Distance 862.848
+	RA	78.6334024172966
+	Dec	-8.2040666584455
+	Distance	862.848
 }
 
 "Rigel Ba:BET Ori Ba:19 Ori Ba"
 {
-	SpectralType "B9"
-	AppMag 7.60
-	Extinction 0.155
+	SpectralType	"B9"
+	AppMag	7.60
+	Extinction	0.155
 
 	OrbitBarycenter "BET Ori B"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -558,9 +558,9 @@ Barycenter "Rigel B:BET Ori B:19 Ori B:ADS 3823 B"
 
 "Rigel Bb:BET Ori Bb:19 Ori Bb"
 {
-	SpectralType "B9"
-	AbsMag 0.50                         # assumed from spectral type
-	Extinction 0.155
+	SpectralType	"B9"
+	AbsMag	0.50                        # assumed from spectral type
+	Extinction	0.155
 
 	OrbitBarycenter "BET Ori B"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -590,13 +590,13 @@ Barycenter "Rigel B:BET Ori B:19 Ori B:ADS 3823 B"
 "Rigel C:BET Ori C:19 Ori C:ADS 3823 C"
 {
 	# Separation = 0.124 arcsec, position angle = 29.8° (2005.8662)
-	RA 78.63341971
-	Dec -8.20403677
-	Distance 862.848
+	RA	78.63341971
+	Dec	-8.20403677
+	Distance	862.848
 
-	SpectralType "B9V"
-	AppMag 7.60
-	Extinction 0.155
+	SpectralType	"B9V"
+	AppMag	7.60
+	Extinction	0.155
 }
 
 # 24608 ALF Aur / Capella
@@ -609,18 +609,18 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 {
 	# Coordinates from the Hipparcos catalog (1997) propagated to epoch J2016,
 	# using the barycenter position corrections and (corrected) proper motions
-	RA 79.17281563
-	Dec 45.99609237
+	RA	79.17281563
+	Dec	45.99609237
 	Distance<pc> 13.159                 # ± 0.015
 }
 
 "Capella Aa:Alhajot Aa:ALF Aur Aa:13 Aur Aa:Gliese 194 A:ADS 3841 A"
 {
-	Radius<rS> 11.98                    # ± 0.57
-	SpectralType "G8III"
-	AbsMag 0.296                        # ± 0.016
-	BoloCorrection -0.304               # ± 0.055
-	Temperature 4970                    # ± 50
+	Radius<rS>	11.98                   # ± 0.57
+	SpectralType	"G8III"
+	AbsMag	0.296                       # ± 0.016
+	BoloCorrection	-0.304              # ± 0.055
+	Temperature	4970                    # ± 50
 
 	OrbitBarycenter "ALF Aur"
 	EllipticalOrbit                     # complete orbit
@@ -643,11 +643,11 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 
 "Capella Ab:Alhajot Ab:ALF Aur Ab:13 Aur Ab:Gliese 194 B:ADS 3841 P"
 {
-	Radius<rS> 8.83                     # ± 0.33
-	SpectralType "G0III"
-	AbsMag 0.167                        # ± 0.015
-	BoloCorrection -0.089               # ± 0.051
-	Temperature 5730                    # ± 60
+	Radius<rS>	8.83                    # ± 0.33
+	SpectralType	"G0III"
+	AbsMag	0.167                       # ± 0.015
+	BoloCorrection	-0.089              # ± 0.051
+	Temperature	5730                    # ± 60
 
 	OrbitBarycenter "ALF Aur"
 	EllipticalOrbit                     # complete orbit
@@ -671,9 +671,9 @@ Barycenter 24608 "Capella:Alhajot:ALF Aur:13 Aur:Gliese 194:ADS 3841 AP"
 # SpectralType and AppMag from WDS
 Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 {
-	RA 79.35006555                      # mass ratio = 0.57:0.53
-	Dec 45.83733609
-	Distance 43.5                       # from weighted Gaia DR3 parallaxes
+	RA	79.35006555                     # mass ratio = 0.57:0.53
+	Dec	45.83733609
+	Distance	43.5                    # from weighted Gaia DR3 parallaxes
 }
 
 # Radius, BoloCorrection and Temperature from Leggett et al. (1996), ApJS 104, p.117
@@ -681,11 +681,11 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 #   https://ui.adsabs.harvard.edu/abs/1996ApJS..104..117L/abstract
 "Capella H:ALF Aur H:13 Aur H:Gliese 195 A:LTT 11622:ADS 3841 H"
 {
-	Radius<m> 3.73e8                    # ± 0.19; from luminosity and temperature
-	SpectralType "M2.5V"
-	AppMag 9.99
-	BoloCorrection -1.56
-	Temperature 3700                    # ± 150
+	Radius<m>	3.73e8                  # ± 0.19; from luminosity and temperature
+	SpectralType	"M2.5V"
+	AppMag	9.99
+	BoloCorrection	-1.56
+	Temperature	3700                    # ± 150
 
 	OrbitBarycenter "ALF Aur HL"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -702,8 +702,8 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 
 "Capella L:ALF Aur L:13 Aur L:Gliese 195 B:ADS 3841 L"
 {
-	SpectralType "M5"
-	AppMag 13.5
+	SpectralType	"M5"
+	AppMag	13.5
 
 	OrbitBarycenter "ALF Aur HL"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -733,10 +733,10 @@ Barycenter "Capella HL:ALF Aur HL:13 Aur HL:Gliese 195:ADS 3841 HL"
 #   https://scixplorer.org/abs/2020A%26A...644A.104S/abstract
 Modify 25428
 {
-	Radius<rS> 4.79                     # ± 0.13, from angular diameter
-	AppMag 1.65
-	Extinction 0.1333                   # E(B-V) = 0.043
-	Temperature 14159                   # ± 177
+	Radius<rS>	4.79                    # ± 0.13, from angular diameter
+	AppMag	1.65
+	Extinction	0.1333                  # E(B-V) = 0.043
+	Temperature	14159                   # ± 177
 
 	UniformRotation
 	{
@@ -753,9 +753,9 @@ Modify 25428
 # Positions from Gaia DR3
 Barycenter 25930 "Mintaka A:DEL Ori A:34 Ori A:WDS J05320-0018A"
 {
-	RA 83.00165624929525
-	Dec -0.2990788925812489
-	Distance 1242.750                   # from Gaia DR3 parallax of component C
+	RA	83.00165624929525
+	Dec	-0.2990788925812489
+	Distance	1242.750                # from Gaia DR3 parallax of component C
 }
 
 Barycenter 1024454766 "Mintaka Aa:DEL Ori Aa:34 Ori Aa:WDS J05320-0018Aa"
@@ -776,11 +776,11 @@ Barycenter 1024454766 "Mintaka Aa:DEL Ori Aa:34 Ori Aa:WDS J05320-0018Aa"
 
 "Mintaka Aa1:DEL Ori Aa1:34 Ori Aa1"
 {
-	Radius<rS> 13.119         # ± 1.0
-	SpectralType "O9.5II"
-	AppMag 2.55
-	Extinction 0.13
-	Temperature 31385         # ± 1000
+	Radius<rS>	13.119                  # ± 1.0
+	SpectralType	"O9.5II"
+	AppMag	2.55
+	Extinction	0.13
+	Temperature	31385                   # ± 1000
 
 	OrbitBarycenter "DEL Ori Aa"
 	EllipticalOrbit                     # complete orbit
@@ -805,11 +805,11 @@ Barycenter 1024454766 "Mintaka Aa:DEL Ori Aa:34 Ori Aa:WDS J05320-0018Aa"
 
 "Mintaka Aa2:DEL Ori Aa2:34 Ori Aa2"
 {
-	Radius<rS> 4.168          # ± 0.5
-	SpectralType "B2V"
-	AppMag 5.5
-	Extinction 0.13
-	Temperature 24515         # ± 1000
+	Radius<rS>	4.168                   # ± 0.5
+	SpectralType	"B2V"
+	AppMag	5.5
+	Extinction	0.13
+	Temperature	24515                   # ± 1000
 
 	OrbitBarycenter "DEL Ori Aa"
 	EllipticalOrbit                     # complete orbit
@@ -834,11 +834,11 @@ Barycenter 1024454766 "Mintaka Aa:DEL Ori Aa:34 Ori Aa:WDS J05320-0018Aa"
 
 2024454766 "Mintaka Ab:DEL Ori Ab:34 Ori Ab:WDS J05320-0018Ab"
 {
-	Radius<rS> 12.045         # ± 1.0
-	SpectralType "B0IV"
-	AppMag 3.83
-	Extinction 0.13
-	Temperature 27906         # ± 1000
+	Radius<rS>	12.045         # ± 1.0
+	SpectralType	"B0IV"
+	AppMag	3.83
+	Extinction	0.13
+	Temperature	27906         # ± 1000
 
 	OrbitBarycenter "DEL Ori A"
 	EllipticalOrbit                     # complete orbit
@@ -865,17 +865,17 @@ Barycenter 1024454766 "Mintaka Aa:DEL Ori Aa:34 Ori Aa:WDS J05320-0018Aa"
 #   https://ui.adsabs.harvard.edu/abs/2010MNRAS.401.2739L/abstract
 Barycenter 1024444766 "Mintaka C:DEL Ori C:DEL2 Ori:34 Ori C:WDS J05320-0018C"
 {
-	RA 83.00170015961477
-	Dec -0.2845483128275813
-	Distance 1242.750
+	RA	83.00170015961477
+	Dec	-0.2845483128275813
+	Distance	1242.750
 }
 
 "Mintaka Ca:DEL Ori Ca:DEL2 Ori A:34 Ori Ca"
 {
-	SpectralType "B3V"
-	AppMag 6.62
-	Extinction 0.13
-	Temperature 20000
+	SpectralType	"B3V"
+	AppMag	6.62
+	Extinction	0.13
+	Temperature	20000
 
 	OrbitBarycenter "DEL Ori C"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -899,10 +899,10 @@ Barycenter 1024444766 "Mintaka C:DEL Ori C:DEL2 Ori:34 Ori C:WDS J05320-0018C"
 
 "Mintaka Cb:DEL Ori Cb:DEL2 Ori B:34 Ori Cb"
 {
-	SpectralType "A0V"
-	AppMag 9.8
-	Extinction 0.13
-	Temperature 10000
+	SpectralType	"A0V"
+	AppMag	9.8
+	Extinction	0.13
+	Temperature	10000
 
 	OrbitBarycenter "DEL Ori C"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -926,12 +926,12 @@ Modify 26311
 {
 	Distance<pc> 384                    # ± 8
 
-	#SemiAxes<rS> [ 33.61 33.61 22.29 ]
-	Radius<rS> 33.61                    # ± 1.8; equatorial
-	SemiAxes [ 1 0.6632 1 ]             # polar radius = 22.29 ± 1.2 rSun
-	AppMag 1.679
-	Extinction 0.155
-	Temperature 24985                   # ± 1000; effective
+	#SemiAxes<rS>	[ 33.61 33.61 22.29 ]
+	Radius<rS>	33.61                   # ± 1.8; equatorial
+	SemiAxes	[ 1 0.6632 1 ]          # polar radius = 22.29 ± 1.2 rSun
+	AppMag	1.679
+	Extinction	0.155
+	Temperature	24985                   # ± 1000; effective
 
 	UniformRotation
 	{
@@ -949,9 +949,9 @@ Modify 26311
 # A-B orbit from ORB6 (Izm2019)
 Barycenter 26727 "Alnitak:ZET Ori:50 Ori:ADS 4263 AB:WDS J05407-0157AB"
 {
-	RA 85.18977448                      # mass ratio ((33 ± 10):(14 ± 3)):16.66
-	Dec -1.94278839
-	Distance 1260.410                   # from Gaia DR3 parallax of component C
+	RA	85.18977448                     # mass ratio ((33 ± 10):(14 ± 3)):16.66
+	Dec	-1.94278839
+	Distance	1260.410                # from Gaia DR3 parallax of component C
 }
 
 Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
@@ -979,11 +979,11 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 #   https://scixplorer.org/abs/2015A%26A...582A.110B/abstract
 "Alnitak Aa:ZET Ori Aa:50 Ori Aa"
 {
-	Radius<rS> 22.8                     # ± 1.3, from angular diameter (Gaia distance)
-	SpectralType "O9.5Iab"
-	AppMag 2.08
-	Extinction 0.19
-	Temperature 29500
+	Radius<rS>	22.8                    # ± 1.3, from angular diameter (Gaia distance)
+	SpectralType	"O9.5Iab"
+	AppMag	2.08
+	Extinction	0.19
+	Temperature	29500
 
 	OrbitBarycenter "ZET Ori A"
 	EllipticalOrbit                     # complete orbit
@@ -1010,11 +1010,11 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 #   https://scixplorer.org/abs/2018A%26A...618A.153M/abstract
 "Alnitak Ab:ZET Ori Ab:50 Ori Ab"
 {
-	Radius 13000000                     # from angular diameter = 0.45 ± 0.12 mas
-	SpectralType "B5II"
-	AppMag 4.28
-	Extinction 0.19
-	Temperature 15500
+	Radius	13000000                    # from angular diameter = 0.45 ± 0.12 mas
+	SpectralType	"B5II"
+	AppMag	4.28
+	Extinction	0.19
+	Temperature	15500
 
 	OrbitBarycenter "ZET Ori A"
 	EllipticalOrbit                     # complete orbit
@@ -1032,9 +1032,9 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 # Mass from MSC
 2011884771 "Alnitak B:ZET Ori B:50 Ori B:ADS 4263 B:HD 37743:WDS J05407-0157B"
 {
-	SpectralType "B0III"
-	AppMag 4.01
-	Extinction 0.19
+	SpectralType	"B0III"
+	AppMag	4.01
+	Extinction	0.19
 
 	OrbitBarycenter "ZET Ori"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -1052,13 +1052,13 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 # AppMag from Høg et al. (2000), A&A 355, p.L27-L30
 1012074771 "Alnitak C:ZET Ori C:50 Ori C:ADS 4263 C:WDS J05407-0157C"
 {
-	RA 85.19237166328
-	Dec -1.92677060781
-	Distance 1260.410                   # parallax = 2.5877 ± 0.0387 mas
+	RA	85.19237166328
+	Dec	-1.92677060781
+	Distance	1260.410                # parallax = 2.5877 ± 0.0387 mas
 
-	SpectralType "A"
-	AppMag 9.553                        # ± 0.028
-	Extinction 0.19
+	SpectralType	"A"
+	AppMag	9.553                       # ± 0.028
+	Extinction	0.19
 }
 
 # 27366 KAP Ori / Saiph
@@ -1086,15 +1086,15 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 #   https://ui.adsabs.harvard.edu/abs/2018A%26A...609A..67K/abstract
 27989
 {
-	RA 88.79304406
-	Dec 7.40710187
+	RA	88.79304406
+	Dec	7.40710187
 	Distance<pc> 172                    # +13-11
 
-	Radius<rS> 782                      # ± 55, from angular diameter
-	SpectralType "M2Iab"
-	AppMag 0.51                         # +0.13-0.19 (adopted mean)
-	Extinction 0.62
-	Temperature 3649                    # ± 6 ± 48 (mean)
+	Radius<rS>	782                     # ± 55, from angular diameter
+	SpectralType	"M2Iab"
+	AppMag	0.51                        # +0.13-0.19 (adopted mean)
+	Extinction	0.62
+	Temperature	3649                    # ± 6 ± 48 (mean)
 
 	UniformRotation
 	{
@@ -1122,18 +1122,18 @@ Barycenter 1011884771 "Alnitak A:ZET Ori A:50 Ori A:ADS 4263 A:WDS J05407-0157A"
 #   https://ui.adsabs.harvard.edu/abs/1995AJ....110..376H/abstract
 Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 {
-	RA 89.8818244421
-	Dec 44.9474283491
-	Distance 81.113
+	RA	89.8818244421
+	Dec	44.9474283491
+	Distance	81.113
 }
 
 "Menkalinan A:BET Aur A:34 Aur A:GJ 3375 A:ADS 4556 Aa:WDS J05595+4457Aa"
 {
-	Radius<rS> 2.762                    # ± 0.017
-	SpectralType "A1IV"
-	AppMag 2.617                        # ± 0.031
-	BoloCorrection -0.15
-	Temperature 9350                    # 200
+	Radius<rS>	2.762                   # ± 0.017
+	SpectralType	"A1IV"
+	AppMag	2.617                       # ± 0.031
+	BoloCorrection	-0.15
+	Temperature	9350                    # 200
 
 	OrbitBarycenter "BET Aur"
 	EllipticalOrbit                     # complete orbit
@@ -1158,11 +1158,11 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 
 "Menkalinan B:BET Aur B:34 Aur B:GJ 3375 B:ADS 4556 Ab:WDS J05595+4457Ab"
 {
-	Radius<rS> 2.568                    # ± 0.017
-	SpectralType "A1IV"
-	AppMag 2.668                        # ± 0.031
-	BoloCorrection -0.13
-	Temperature 9200                    # 200
+	Radius<rS>	2.568                   # ± 0.017
+	SpectralType	"A1IV"
+	AppMag	2.668                       # ± 0.031
+	BoloCorrection	-0.13
+	Temperature	9200                    # 200
 
 	OrbitBarycenter "BET Aur"
 	EllipticalOrbit                     # complete orbit
@@ -1197,8 +1197,8 @@ Barycenter 28360 "Menkalinan:BET Aur:34 Aur:GJ 3375:ADS 4556 A:WDS J05595+4457A"
 #   https://scixplorer.org/abs/2015A%26A...574A..20F/abstract
 Modify 30324
 {
-	Radius<rS> 8.44                     # ± 0.56, from angular diameter
-	Temperature 24700                   # ± 300
+	Radius<rS>	8.44                    # ± 0.56, from angular diameter
+	Temperature	24700                   # ± 300
 
 	UniformRotation
 	{
@@ -1215,10 +1215,10 @@ Modify 30324
 #   https://scixplorer.org/abs/2021A%26A...654A..19D/abstract
 Modify 30438
 {
-	Radius<rS> 73.2                     # ± 3.9, from angular diameter
-	AppMag -0.74                        # SIMBAD
-	Extinction 0.26
-	Temperature 7661                    # ± 81
+	Radius<rS>	73.2                    # ± 3.9, from angular diameter
+	AppMag	-0.74                       # SIMBAD
+	Extinction	0.26
+	Temperature	7661                    # ± 81
 }
 
 # 31681 GAM Gem / Alhena
@@ -1238,8 +1238,8 @@ Modify 30438
 #   https://scixplorer.org/abs/2023Galax..11...93S/abstract
 Modify 33579
 {
-	Radius<rS> 10.7                     # ± 0.7, from angular diameter
-	Temperature 22500                   # ± 300
+	Radius<rS>	10.7                    # ± 0.7, from angular diameter
+	Temperature	22500                   # ± 300
 
 	UniformRotation
 	{
@@ -1264,9 +1264,9 @@ Modify 33579
 # AB barycenter
 Barycenter 36850 "Castor A-B:ALF Gem:66 Gem:Gliese 278 A-B"
 {
-	RA 113.65135657
-	Dec 31.88240645
-	Distance 49.153                     # 66.356 ± 0.041 mas
+	RA	113.65135657
+	Dec	31.88240645
+	Distance	49.153                  # 66.356 ± 0.041 mas
 }
 
 Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
@@ -1286,10 +1286,10 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 
 "Castor Aa:ALF Gem Aa:ALF2 Gem A:66 Gem Aa:Gliese 278 Aa"
 {
-	Radius<rS> 2.089                    # ± 0.005, from angular diameter
-	SpectralType "A1V"
-	AppMag 1.93                         # ± 0.02; transformed from Hipparcos (Hp) magnitude
-	Temperature 9420                    # ± 150
+	Radius<rS>	2.089                   # ± 0.005, from angular diameter
+	SpectralType	"A1V"
+	AppMag	1.93                        # ± 0.02; transformed from Hipparcos (Hp) magnitude
+	Temperature	9420                    # ± 150
 
 	OrbitBarycenter "ALF Gem A"
 	EllipticalOrbit                     # complete orbit
@@ -1306,8 +1306,8 @@ Barycenter 1024072457 "Castor A:ALF Gem A:ALF2 Gem:66 Gem A:Gliese 278 A"
 
 "Castor Ab:ALF Gem Ab:ALF2 Gem B:66 Gem Ab:Gliese 278 Ab"
 {
-	SpectralType "M3V"                  # assumed from mass M_Ab = 0.3859 ± 0.0018 MSol
-	AbsMag 11.15                        # for assumed spectral type
+	SpectralType	"M3V"               # assumed from mass M_Ab = 0.3859 ± 0.0018 MSol
+	AbsMag	11.15                       # for assumed spectral type
 
 	OrbitBarycenter "ALF Gem A"
 	EllipticalOrbit                     # complete orbit
@@ -1339,10 +1339,10 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 
 "Castor Ba:ALF Gem Ba:ALF1 Gem A:66 Gem Ba:Gliese 278 Ba"
 {
-	Radius<rS> 1.648                    # ± 0.011, from angular diameter
-	SpectralType "A5Vm"
-	AppMag 2.93                         # ± 0.02; transformed from Hipparcos (Hp) magnitude
-	Temperature 8240                    # ± 150
+	Radius<rS>	1.648                   # ± 0.011, from angular diameter
+	SpectralType	"A5Vm"
+	AppMag	2.93                        # ± 0.02; transformed from Hipparcos (Hp) magnitude
+	Temperature	8240                    # ± 150
 
 	OrbitBarycenter "ALF Gem B"
 	EllipticalOrbit                     # complete orbit
@@ -1358,8 +1358,8 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 
 "Castor Bb:ALF Gem Bb:ALF1 Gem B:66 Gem Bb:Gliese 278 Bb"
 {
-	SpectralType "M3V"                  # assumed from mass M_Bb = 0.3865 ± 0.0020 MSol
-	AbsMag 11.15                        # for assumed spectral type
+	SpectralType	"M3V"               # assumed from mass M_Bb = 0.3865 ± 0.0020 MSol
+	AbsMag	11.15                       # for assumed spectral type
 
 	OrbitBarycenter "ALF Gem B"
 	EllipticalOrbit                     # complete orbit
@@ -1381,18 +1381,18 @@ Barycenter 2024072457 "Castor B:ALF Gem B:ALF1 Gem:66 Gem B:Gliese 278 B"
 #   https://ui.adsabs.harvard.edu/abs/2019ApJ...873...69K/abstract
 Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 {
-	RA 113.65497694202988
-	Dec 31.869063238548993
-	Distance 49.157                     # with a zero-point correction of +0.039 mas
+	RA	113.65497694202988
+	Dec	31.869063238548993
+	Distance	49.157                  # with a zero-point correction of +0.039 mas
 }
 
 "Castor Ca:YY Gem A:Gliese 278 Ca"
 {
-	Radius<rS> 0.6191                   # ± 0.0057; the mean component
-	SpectralType "M1Ve"
-	AbsMag 8.950                        # ± 0.029; the mean component
-	BoloCorrection -1.381               # Mbol = 7.569 ± 0.020; the mean component
-	Temperature 3820                    # ± 100; the mean component
+	Radius<rS>	0.6191                  # ± 0.0057; the mean component
+	SpectralType	"M1Ve"
+	AbsMag	8.950                       # ± 0.029; the mean component
+	BoloCorrection	-1.381              # Mbol = 7.569 ± 0.020; the mean component
+	Temperature	3820                    # ± 100; the mean component
 
 	OrbitBarycenter "YY Gem"
 	EllipticalOrbit                     # complete orbit
@@ -1414,11 +1414,11 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 
 "Castor Cb:YY Gem B:Gliese 278 Cb"
 {
-	Radius<rS> 0.6191                   # ± 0.0057; the mean component
-	SpectralType "M1Ve"
-	AbsMag 8.950                        # ± 0.029; the mean component
-	BoloCorrection -1.381               # Mbol = 7.569 ± 0.020; the mean component
-	Temperature 3820                    # ± 100; the mean component
+	Radius<rS>	0.6191                  # ± 0.0057; the mean component
+	SpectralType	"M1Ve"
+	AbsMag	8.950                       # ± 0.029; the mean component
+	BoloCorrection	-1.381              # Mbol = 7.569 ± 0.020; the mean component
+	Temperature	3820                    # ± 100; the mean component
 
 	OrbitBarycenter "YY Gem"
 	EllipticalOrbit                     # complete orbit
@@ -1451,8 +1451,8 @@ Barycenter 1019182453 "Castor C:YY Gem:Gliese 278 C"
 #   https://scixplorer.org/abs/2021A%26A...646A.130A/abstract
 Modify 37826
 {
-	Radius<rS> 8.97                     # ± 0.03, from angular diameter
-	Temperature 4810                    # ± 14
+	Radius<rS>	8.97                    # ± 0.03, from angular diameter
+	Temperature	4810                    # ± 14
 
 	UniformRotation
 	{
@@ -1475,11 +1475,11 @@ Modify 37826
 #   https://scixplorer.org/abs/2018MNRAS.473.5532R/abstract
 Modify 39429
 {
-	#SemiAxes<rS> [ 13.72 13.72 11.25 ]
-	Radius<rS> 13.72                    # ± 0.49; equatorial
-	SemiAxes [ 1 0.8200 1 ]             # polar radius = 11.25 ± 0.19 rSun
-	AppMag 2.25
-	Extinction 0.12
+	#SemiAxes<rS>	[ 13.72 13.72 11.25 ]
+	Radius<rS>	13.72                   # ± 0.49; equatorial
+	SemiAxes	[ 1 0.8200 1 ]          # polar radius = 11.25 ± 0.19 rSun
+	AppMag	2.25
+	Extinction	0.12
 
 	UniformRotation
 	{
@@ -1499,18 +1499,18 @@ Modify 39429
 #   https://ui.adsabs.harvard.edu/abs/2007MNRAS.377..415N/abstract
 Barycenter 39953 "Regor:GAM2 Vel:GAM Vel A:WDS J08095-4720A"
 {
-	RA 122.38308575
-	Dec -47.33653997
+	RA	122.38308575
+	Dec	-47.33653997
 	Distance<pc> 336                    # ± 1
 }
 
 "Regor A:GAM2 Vel A:GAM Vel Aa"
 {
-	Radius<rS> 13.5                     # ± 1.0
-	SpectralType "O7.5II-III"
-	AbsMag -5.60                        # ± 0.10; corrected for updated extinction
-	Extinction 0.06                     # E(B-V) = 0.02 ± 0.02
-	Temperature 35000                   # ± 300
+	Radius<rS>	13.5                    # ± 1.0
+	SpectralType	"O7.5II-III"
+	AbsMag	-5.60                       # ± 0.10; corrected for updated extinction
+	Extinction	0.06                    # E(B-V) = 0.02 ± 0.02
+	Temperature	35000                   # ± 300
 
 	OrbitBarycenter "GAM2 Vel"
 	EllipticalOrbit                     # complete orbit
@@ -1534,11 +1534,11 @@ Barycenter 39953 "Regor:GAM2 Vel:GAM Vel A:WDS J08095-4720A"
 
 "Regor B:GAM2 Vel B:GAM Vel Ab:WR 11"
 {
-	Radius<rS> 3.4                      # ± 0.5
-	SpectralType "WC8"
-	AbsMag -4.20                        # ± 0.17; corrected for updated extinction
-	Extinction 0.06                     # E(B-V) = 0.02 ± 0.02
-	Temperature 57100                   # ± 1700
+	Radius<rS>	3.4                     # ± 0.5
+	SpectralType	"WC8"
+	AbsMag	-4.20                       # ± 0.17; corrected for updated extinction
+	Extinction	0.06                    # E(B-V) = 0.02 ± 0.02
+	Temperature	57100                   # ± 1700
 
 	OrbitBarycenter "GAM2 Vel"
 	EllipticalOrbit                     # complete orbit
@@ -1562,8 +1562,8 @@ Barycenter 39953 "Regor:GAM2 Vel:GAM Vel A:WDS J08095-4720A"
 #   https://ui.adsabs.harvard.edu/abs/1985RMxAA..10..267L/abstract
 Barycenter 1065348140 "GAM1 Vel:GAM Vel B:WDS J08095-4720B"
 {
-	RA 122.37211545208517
-	Dec -47.3452393935982
+	RA	122.37211545208517
+	Dec	-47.3452393935982
 	Distance<pc> 336
 }
 
@@ -1574,11 +1574,11 @@ Barycenter 1065348140 "GAM1 Vel:GAM Vel B:WDS J08095-4720B"
 #   https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..538J/abstract
 "GAM1 Vel A:GAM Vel Ba"
 {
-	Radius<rS> 9.6057                   # +0.3865-0.3854 (GSP-Phot)
-	SpectralType "B2III"
-	AppMag 4.27
-	Extinction 0.09
-	Temperature 20144.3360              # +135.615-136.816 (GSP-Phot)
+	Radius<rS>	9.6057                  # +0.3865-0.3854 (GSP-Phot)
+	SpectralType	"B2III"
+	AppMag	4.27
+	Extinction	0.09
+	Temperature	20144.3360              # +135.615-136.816 (GSP-Phot)
 
 	OrbitBarycenter "GAM1 Vel"
 	EllipticalOrbit                     # ascending node ambiguous
@@ -1603,9 +1603,9 @@ Barycenter 1065348140 "GAM1 Vel:GAM Vel B:WDS J08095-4720B"
 # Mass calculated from spectroscopic orbit parameters, primary mass and inclination
 "GAM1 Vel B:GAM Vel Bb"
 {
-	SpectralType "F"                    # assumed from mass
-	AbsMag 2.76                         # assumed from mass
-	Extinction 0.09
+	SpectralType	"F"                 # assumed from mass
+	AbsMag	2.76                        # assumed from mass
+	Extinction	0.09
 
 	OrbitBarycenter "GAM1 Vel"
 	EllipticalOrbit                     # ascending node ambiguous
@@ -1646,9 +1646,9 @@ Barycenter 1065348140 "GAM1 Vel:GAM Vel B:WDS J08095-4720B"
 # TODO: Update positions
 Barycenter "Regulus:Kabeleced:Cor Leonis:Kalb:ALF Leo:32 Leo:GJ 9316:ADS 7654 ABC"
 {
-	RA 152.08388483                     # mass ratio = ((3.7 ± 1.4):(0.31 ± 0.10)):(0.8:0.2)
-	Dec 11.97320806
-	Distance 79.032                     # from weighted Gaia DR3 parallaxes of components B and C
+	RA	152.08388483                    # mass ratio = ((3.7 ± 1.4):(0.31 ± 0.10)):(0.8:0.2)
+	Dec	11.97320806
+	Distance	79.032                  # from weighted Gaia DR3 parallaxes of components B and C
 }
 
 # Gies et al. (2020), ApJ 902 (1), id.25
@@ -1657,21 +1657,21 @@ Barycenter "Regulus:Kabeleced:Cor Leonis:Kalb:ALF Leo:32 Leo:GJ 9316:ADS 7654 AB
 #   https://scixplorer.org/abs/2020ApJ...902...25G/abstract
 Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:GJ 9316 A:ADS 7654 A"
 {
-	RA 152.09183241
-	Dec 11.96723362
-	Distance 79.032
+	RA	152.09183241
+	Dec	11.96723362
+	Distance	79.032
 }
 
 # Dimensions, AppMag (V-band) and rotation from Che et al. (2011), ApJ 732 (2), 68
 #   Table 4, Modified von Zeipel Model (β-free)
 "Regulus Aa:Kabeleced Aa:Cor Leonis Aa:Kalb Aa:ALF Leo Aa:32 Leo Aa:GJ 9316 Aa"
 {
-	#SemiAxes<rS> [ 4.21 4.21 3.22 ]
-	Radius<rS> 4.21                     # +0.07−0.06; equatorial
-	SemiAxes [ 1 0.765 1 ]              # polar radius = 3.22 +0.05−0.04 rSun
-	SpectralType "B8IVn"
-	AppMag 1.391
-	Temperature 12200                   # effective
+	#SemiAxes<rS>	[ 4.21 4.21 3.22 ]
+	Radius<rS>	4.21                    # +0.07−0.06; equatorial
+	SemiAxes	[ 1 0.765 1 ]           # polar radius = 3.22 +0.05−0.04 rSun
+	SpectralType	"B8IVn"
+	AppMag	1.391
+	Temperature	12200                   # effective
 
 	OrbitBarycenter "ALF Leo A"
 	EllipticalOrbit                     # assume alignment with rotation axis
@@ -1694,10 +1694,10 @@ Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:G
 
 "Regulus Ab:Kabeleced Ab:Cor Leonis Ab:Kalb Ab:ALF Leo Ab:32 Leo Ab:GJ 9316 Ab"
 {
-	Radius<rS> 0.061
-	SpectralType "D"
-	AppMag 9.5
-	Temperature 20000
+	Radius<rS>	0.061
+	SpectralType	"D"
+	AppMag	9.5
+	Temperature	20000
 
 	OrbitBarycenter "ALF Leo A"
 	EllipticalOrbit                     # assume alignment with rotation axis
@@ -1724,32 +1724,32 @@ Barycenter 49669 "Regulus A:Kabeleced A:Cor Leonis A:Kalb A:ALF Leo A:32 Leo A:G
 # AppMag from WDS
 Barycenter "Regulus BC:Kabeleced BC:Cor Leonis BC:Kalb BC:ALF Leo BC:32 Leo BC:GJ 9316 BC:ADS 7654 BC"
 {
-	RA 152.05224475                     # mass ratio = 0.8:0.2
-	Dec 11.99698803
-	Distance 79.032
+	RA	152.05224475                    # mass ratio = 0.8:0.2
+	Dec	11.99698803
+	Distance	79.032
 }
 
 # Radius and Temperature from Gaia DR3
 1001340833 "Regulus B:Kabeleced B:Cor Leonis B:Kalb B:ALF Leo B:32 Leo B:GJ 9316 B:ADS 7654 B"
 {
-	RA 152.05212685266
-	Dec 11.99699713801
-	Distance 79.032
+	RA	152.05212685266
+	Dec	11.99699713801
+	Distance	79.032
 
-	Radius<rS> 0.7815                   # +0.0050-0.0012 (GSP-Phot)
-	SpectralType "K2V"
-	AppMag 8.24
-	Temperature 4968.2993               # +1.0557-2.5820 (GSP-Phot)
+	Radius<rS>	0.7815                  # +0.0050-0.0012 (GSP-Phot)
+	SpectralType	"K2V"
+	AppMag	8.24
+	Temperature	4968.2993               # +1.0557-2.5820 (GSP-Phot)
 }
 
 "Regulus C:Kabeleced C:Cor Leonis C:Kalb C:ALF Leo C:32 Leo C:GJ 9316 C:ADS 7654 C"
 {
-	RA 152.05271632176
-	Dec 11.99695158200
-	Distance 79.032
+	RA	152.05271632176
+	Dec	11.99695158200
+	Distance	79.032
 
-	SpectralType "M4V"
-	AppMag 13.2
+	SpectralType	"M4V"
+	AppMag	13.2
 }
 
 # 50583 GAM Leo / Algieba
@@ -1761,8 +1761,8 @@ Barycenter "Regulus BC:Kabeleced BC:Cor Leonis BC:Kalb BC:ALF Leo BC:32 Leo BC:G
 #   https://scixplorer.org/abs/2024ApJ...966...28A/abstract
 Modify 53910
 {
-	Radius<rS> 2.81                     # ± 0.11 ± 0.13, from angular diameter
-	Temperature 9700
+	Radius<rS>	2.81                    # ± 0.11 ± 0.13, from angular diameter
+	Temperature	9700
 }
 
 # 54061 ALF UMa / Dubhe
@@ -1778,9 +1778,9 @@ Modify 53910
 #   Table 5 (ELR Gravity Darkening Law)
 Modify 58001
 {
-	#SemiAxes<rS> [ 3.385 3.385 2.186 ]
-	Radius<rS> 3.385                    # +0.204-0.257; equatorial
-	SemiAxes [ 1 0.6458 1 ]             # polar radius = 2.186 +0.083-0.110 rSun
+	#SemiAxes<rS>	[ 3.385 3.385 2.186 ]
+	Radius<rS>	3.385                   # +0.204-0.257; equatorial
+	SemiAxes	[ 1 0.6458 1 ]          # polar radius = 2.186 +0.083-0.110 rSun
 
 	UniformRotation
 	{
@@ -1796,24 +1796,24 @@ Modify 58001
 #   https://arxiv.org/abs/2603.11194
 Barycenter 60718 "Acrux:ALF Cru"
 {
-	RA 186.650276                       # mass ratio = 24.1:22.2
-	Dec -63.099348
-	Distance 347.109                    # from Gaia DR3 parallax of component C
+	RA	186.650276                      # mass ratio = 24.1:22.2
+	Dec	-63.099348
+	Distance	347.109                 # from Gaia DR3 parallax of component C
 }
 
 Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A:26 Cru:HD 108248"
 {
-	RA 186.649219
-	Dec -63.099157
-	Distance 347.109                    # ALF Cru C's distance
+	RA	186.649219
+	Dec	-63.099157
+	Distance	347.109                 # ALF Cru C's distance
 }
 
 "Acrux Aa:ALF Cru Aa"
 {
-	Radius<rS> 6.8                      # from isochrone
-	SpectralType "B0.5IV"
-	AppMag 1.38                         # from H-band magnitude = 2.07 ± 0.31, assuming V_T-H color of A subsystem
-	Temperature 28950
+	Radius<rS>	6.8                     # from isochrone
+	SpectralType	"B0.5IV"
+	AppMag	1.38                        # from H-band magnitude = 2.07 ± 0.31, assuming V_T-H color of A subsystem
+	Temperature	28950
 
 	OrbitBarycenter "ALF1 Cru"
 	EllipticalOrbit                     # complete orbit
@@ -1830,10 +1830,10 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A:26 Cru:HD 108248"
 
 "Acrux Ab:ALF Cru Ab"
 {
-	Radius<rS> 3.2                      # from isochrone
-	SpectralType "B"                    # assumed from mass M = 6.8 ± 0.3 MSol
-	AppMag 3.62                         # from H-band magnitude = 4.31 ± 0.31, assuming V_T-H color of A subsystem
-	Temperature 19750
+	Radius<rS>	3.2                     # from isochrone
+	SpectralType	"B"                 # assumed from mass M = 6.8 ± 0.3 MSol
+	AppMag	3.62                        # from H-band magnitude = 4.31 ± 0.31, assuming V_T-H color of A subsystem
+	Temperature	19750
 
 	OrbitBarycenter "ALF1 Cru"
 	EllipticalOrbit                     # complete orbit
@@ -1850,17 +1850,17 @@ Barycenter 1034648979 "Acrux A:ALF1 Cru:ALF Cru A:26 Cru:HD 108248"
 
 Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:27 Cru:HD 108249"
 {
-	RA 186.651424
-	Dec -63.099556
-	Distance 347.109                    # from Gaia DR3 parallax of component C
+	RA	186.651424
+	Dec	-63.099556
+	Distance	347.109                 # from Gaia DR3 parallax of component C
 }
 
 "Acrux Ba:ALF Cru Ba"
 {
-	Radius<rS> 5.4                      # from isochrone
-	SpectralType "B1V"
-	AppMag 2.03                         # from H-band magnitude = 2.72 ± 0.30, assuming V_T-H color of B subsystem
-	Temperature 26950
+	Radius<rS>	5.4                     # from isochrone
+	SpectralType	"B1V"
+	AppMag	2.03                        # from H-band magnitude = 2.72 ± 0.30, assuming V_T-H color of B subsystem
+	Temperature	26950
 
 	OrbitBarycenter "ALF2 Cru"
 	EllipticalOrbit                     # mirror-ambiguous orbit, poorly-constrained; 405 days period solution
@@ -1877,10 +1877,10 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:27 Cru:HD 108249"
 
 "Acrux Bb:ALF Cru Bb"
 {
-	Radius<rS> 4.4                      # from isochrone
-	SpectralType "B"                    # assumed from mass
-	AppMag 2.66                         # from H-band magnitude = 3.35 ± 0.30, assuming V_T-H color of B subsystem
-	Temperature 24350
+	Radius<rS>	4.4                     # from isochrone
+	SpectralType	"B"                 # assumed from mass
+	AppMag	2.66                        # from H-band magnitude = 3.35 ± 0.30, assuming V_T-H color of B subsystem
+	Temperature	24350
 
 	OrbitBarycenter "ALF2 Cru"
 	EllipticalOrbit                     # mirror-ambiguous orbit, poorly-constrained; 405 days period solution
@@ -1900,17 +1900,17 @@ Barycenter 1034658979 "Acrux B:ALF2 Cru:ALF Cru B:27 Cru:HD 108249"
 #   https://scixplorer.org/abs/1979RMxAA...4..297H/abstract
 Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 {
-	RA 186.62829003965
-	Dec -63.12229647433
-	Distance 347.109
+	RA	186.62829003965
+	Dec	-63.12229647433
+	Distance	347.109
 }
 
 "Acrux Ca:ALF Cru Ca"
 {
-	Radius<rS> 2.5                      # from isochrone
-	SpectralType "B4V"
-	AppMag 4.799                        # ± 0.009
-	Temperature 15900
+	Radius<rS>	2.5                     # from isochrone
+	SpectralType	"B4V"
+	AppMag	4.799                       # ± 0.009
+	Temperature	15900
 
 	OrbitBarycenter "ALF Cru C"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -1926,8 +1926,8 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 # Assume minimum mass = true mass
 "Acrux Cb:ALF Cru Cb"
 {
-	SpectralType "K"                    # assumed from mass
-	AbsMag 8.16                         # assumed from mass
+	SpectralType	"K"                 # assumed from mass
+	AbsMag	8.16                        # assumed from mass
 
 	OrbitBarycenter "ALF Cru C"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -1943,12 +1943,12 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 # Position from Gaia DR3 (source_id = 6053807844566359680)
 "Acrux D:ALF Cru D"
 {
-	RA 186.62971953849
-	Dec -63.12184605983
-	Distance 347.109                    # from Gaia DR3 parallax of component C
+	RA	186.62971953849
+	Dec	-63.12184605983
+	Distance	347.109                 # from Gaia DR3 parallax of component C
 
-	SpectralType "M0V"
-	AppMag 15.0
+	SpectralType	"M0V"
+	AppMag	15.0
 }
 
 # 61084 GAM Cru / Gacrux
@@ -1965,15 +1965,15 @@ Barycenter 1034668979 "Acrux C:ALF Cru C:25 Cru:HD 108250"
 #   https://ui.adsabs.harvard.edu/abs/1999A%26A...341..121S/abstract
 Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # traditional star name (not IAU WGSN-approved)
 {
-	RA 190.37799302256
-	Dec -48.95978360110
-	Distance 130.150
+	RA	190.37799302256
+	Dec	-48.95978360110
+	Distance	130.150
 }
 
 1027248240 "Muhlifain A:GAM Cen A:WDS J12415-4858A"
 {
-	SpectralType "A0IV"
-	AppMag 2.84                         # ± 0.01
+	SpectralType	"A0IV"
+	AppMag	2.84                        # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -1990,8 +1990,8 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # traditional star name 
 
 2027248240 "Muhlifain B:GAM Cen B:WDS J12415-4858B"
 {
-	SpectralType "A1IV"
-	AppMag 2.94                         # ± 0.01
+	SpectralType	"A1IV"
+	AppMag	2.94                        # ± 0.01
 
 	OrbitBarycenter "GAM Cen"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -2016,9 +2016,9 @@ Barycenter 61932 "Muhlifain:GAM Cen:WDS J12415-4858AB"  # traditional star name 
 #   https://scixplorer.org/abs/1998A%26A...329..137A/abstract
 Barycenter 62434
 {
-	RA 191.92990816
-	Dec -59.68884391
-	Distance 278.528
+	RA	191.92990816
+	Dec	-59.68884391
+	Distance	278.528
 }
 
 # Cotton et al. (2022), Nature Astronomy 6, p.154-164
@@ -2027,10 +2027,10 @@ Barycenter 62434
 #   https://scixplorer.org/abs/2022NatAs...6..154C/abstract
 "Mimosa Aa:BET Cru Aa"
 {
-	Radius<rS> 8.1                      # 7.3-8.9 Rsun
-	SpectralType "B0.5III"
-	AppMag 1.25
-	Temperature 27000
+	Radius<rS>	8.1                     # 7.3-8.9 Rsun
+	SpectralType	"B0.5III"
+	AppMag	1.25
+	Temperature	27000
 
 	OrbitBarycenter "BET Cru"
 	EllipticalOrbit                     # complete orbit
@@ -2053,8 +2053,8 @@ Barycenter 62434
 
 "Mimosa Ab:BET Cru Ab"
 {
-	SpectralType "A5V"                  # from mass
-	AbsMag 2.01                         # for assumed spectral type
+	SpectralType	"A5V"               # from mass
+	AbsMag	2.01                        # for assumed spectral type
 
 	OrbitBarycenter "BET Cru"
 	EllipticalOrbit                     # complete orbit
@@ -2082,14 +2082,14 @@ Barycenter 62434
 "BET Cru D:CXOU J124743.8-594121"
 {
 	# Separation = 4176.1 ± 3.1 mas, position angle = 121.84 ± 0.05°
-	RA 191.93186077
-	Dec -59.68974437
-	Distance 278.528
+	RA	191.93186077
+	Dec	-59.68974437
+	Distance	278.528
 
-	Radius<rS> 1.005
-	SpectralType "K8"                   # from temperature
-	AbsMag 7.13
-	Temperature 4041
+	Radius<rS>	1.005
+	SpectralType	"K8"                # from temperature
+	AbsMag	7.13
+	Temperature	4041
 }
 
 # 62956 EPS UMa / Alioth
@@ -2128,18 +2128,18 @@ Modify 62956
 #   https://scixplorer.org/abs/2019NatAs...3..636B/abstract
 Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:WDS J13252-1110A"
 {
-	RA 201.29824737
-	Dec -11.16131947
-	Distance 249.745
+	RA	201.29824737
+	Dec	-11.16131947
+	Distance	249.745
 }
 
 "Spica A:Azimech A:ALF Vir A:67 Vir A:WDS J13252-1110Aa"
 {
-	Radius<rS> 7.95                     # fractional equatorial radius (of semi-major axis) = 0.282 ± 0.09
-	SemiAxes [ 1 0.887 1 ]              # fractional polar radius = 0.250 ± 0.08
-	SpectralType "B1III/IV"
-	AppMag 1.13
-	Temperature 25300                   # ± 500
+	Radius<rS>	7.95                    # fractional equatorial radius (of semi-major axis) = 0.282 ± 0.09
+	SemiAxes	[ 1 0.887 1 ]           # fractional polar radius = 0.250 ± 0.08
+	SpectralType	"B1III/IV"
+	AppMag	1.13
+	Temperature	25300                   # ± 500
 
 	OrbitBarycenter "ALF Vir"
 	EllipticalOrbit                     # complete orbit
@@ -2162,11 +2162,11 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:WDS J13252-1110A"
 
 "Spica B:Azimech B:ALF Vir B:67 Vir B:WDS J13252-1110Ab"
 {
-	Radius<rS> 3.78                     # fractional equatorial radius (of semi-major axis) = 0.134 ± 0.04
-	SemiAxes [ 1 0.985 1 ]              # fractional polar radius = 0.132 ± 0.05
-	SpectralType "B2V"
-	AppMag 3.13                         # ΔV = 2.0 ± 0.2
-	Temperature 20900                   # ± 800
+	Radius<rS>	3.78                    # fractional equatorial radius (of semi-major axis) = 0.134 ± 0.04
+	SemiAxes	[ 1 0.985 1 ]           # fractional polar radius = 0.132 ± 0.05
+	SpectralType	"B2V"
+	AppMag	3.13                        # ΔV = 2.0 ± 0.2
+	Temperature	20900                   # ± 800
 
 	OrbitBarycenter "ALF Vir"
 	EllipticalOrbit                     # complete orbit
@@ -2193,8 +2193,8 @@ Barycenter 65474 "Spica:Azimech:ALF Vir:67 Vir:WDS J13252-1110A"
 # Parameters from Lazzarotto et al. (2026)
 Modify 67301
 {
-	Radius<rS> 2.891                    # ± 0.057; equatorial
-	SemiAxes [ 1 0.921 1 ]
+	Radius<rS>	2.891                   # ± 0.057; equatorial
+	SemiAxes	[ 1 0.921 1 ]
 
 	UniformRotation
 	{
@@ -2216,8 +2216,8 @@ Modify 67301
 #   https://scixplorer.org/abs/2011A%26A...536L...6A/abstract
 Barycenter 68702 "Hadar:Agena:BET Cen:WDS J14038-6022AB"
 {
-	RA 210.95547135                     # mass ratio = ((12.02 ± 0.13):(10.58 ± 0.18)):6.03
-	Dec -60.37317105
+	RA	210.95547135                    # mass ratio = ((12.02 ± 0.13):(10.58 ± 0.18)):6.03
+	Dec	-60.37317105
 	Distance<pc> 110.6                  # ± 0.5
 }
 
@@ -2238,10 +2238,10 @@ Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 
 "Hadar Aa:Agena Aa:BET Cen Aa"
 {
-	SpectralType "B1III"
-	AbsMag -4.03                        # ± 0.10
-	Extinction 0.10
-	Temperature 25000
+	SpectralType	"B1III"
+	AbsMag	-4.03                       # ± 0.10
+	Extinction	0.10
+	Temperature	25000
 
 	OrbitBarycenter "BET Cen A"
 	EllipticalOrbit                     # complete orbit
@@ -2269,10 +2269,10 @@ Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 #   Magnetic component is the secondary
 "Hadar Ab:Agena Ab:BET Cen Ab"
 {
-	SpectralType "B1III"
-	AbsMag -3.88                        # ± 0.10
-	Extinction 0.10
-	Temperature 25000
+	SpectralType	"B1III"
+	AbsMag	-3.88                       # ± 0.10
+	Extinction	0.10
+	Temperature	25000
 
 	OrbitBarycenter "BET Cen A"
 	EllipticalOrbit                     # complete orbit
@@ -2296,9 +2296,9 @@ Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 # AppMag and mass from MSC
 2039199005 "Hadar B:Agena B:BET Cen B:WDS J14038-6022B"
 {
-	SpectralType "B"                    # from mass
-	AppMag 4.03
-	Extinction 0.10
+	SpectralType	"B"                 # from mass
+	AppMag	4.03
+	Extinction	0.10
 
 	OrbitBarycenter "BET Cen"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -2326,8 +2326,8 @@ Barycenter "Hadar A:Agena A:BET Cen A:WDS J14038-6022A"
 #   https://scixplorer.org/abs/2006PASP..118.1112G/abstract
 Modify 69673
 {
-	Radius<rS> 25.5                     # ± 0.2, from angular diameter (literature, weighted mean)
-	Temperature 4286                    # ± 30
+	Radius<rS>	25.5                    # ± 0.2, from angular diameter (literature, weighted mean)
+	Temperature	4286                    # ± 30
 
 	UniformRotation
 	{
@@ -2349,12 +2349,12 @@ Modify 69673
 #   https://ui.adsabs.harvard.edu/abs/2016A%26A...595A.132Z/abstract
 Modify 71352
 {
-	#SemiAxes<rS> [ 6.2 6.2 4.9 ]
-	Radius<rS> 6.2                      # ± 1.5; equatorial
-	SemiAxes [ 1 0.79 1 ]               # polar radius = 4.9 ± 1.1 rSun
-	AppMag 2.31
-	Extinction 0.074                    # E(B-V) = 0.024 ± 0.004
-	Temperature 24470                   # ± 1000; parent non-rotating counterpart
+	#SemiAxes<rS>	[ 6.2 6.2 4.9 ]
+	Radius<rS>	6.2                     # ± 1.5; equatorial
+	SemiAxes	[ 1 0.79 1 ]            # polar radius = 4.9 ± 1.1 rSun
+	AppMag	2.31
+	Extinction	0.074                   # E(B-V) = 0.024 ± 0.004
+	Temperature	24470                   # ± 1000; parent non-rotating counterpart
 
 	UniformRotation
 	{
@@ -2372,14 +2372,14 @@ Modify 71352
 # AppMag from Høg et al. (2000), A&A 355, p.L27-L30
 72105 "Izar:EPS Boo A:36 Boo A"
 {
-	RA 221.24648617077
-	Dec 27.07431575777
-	Distance 235.889
+	RA	221.24648617077
+	Dec	27.07431575777
+	Distance	235.889
 
-	Radius<rS> 37.61                    # +1.29-1.38
-	SpectralType "K0II-III"
-	AppMag 2.578                        # ± 0.009
-	Temperature 4755                    # ± 66
+	Radius<rS>	37.61                   # +1.29-1.38
+	SpectralType	"K0II-III"
+	AppMag	2.578                       # ± 0.009
+	Temperature	4755                    # ± 66
 }
 
 # Radius and Temperature from Stassun et al. (2019), AJ 158 (4), article id. 138
@@ -2388,14 +2388,14 @@ Modify 71352
 #   https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract
 1012502019 "Pulcherrima:EPS Boo B:36 Boo B"
 {
-	RA 221.24624024277
-	Dec 27.07508559649
-	Distance 235.889                    # from Gaia DR3 parallax of component A
+	RA	221.24624024277
+	Dec	27.07508559649
+	Distance	235.889                 # from Gaia DR3 parallax of component A
 
-	Radius<rS> 2.747                    # ± 0.171
-	SpectralType "A0V"
-	AppMag 4.808                        # ± 0.009
-	Temperature 9009.0                  # ± 374.6
+	Radius<rS>	2.747                   # ± 0.171
+	SpectralType	"A0V"
+	AppMag	4.808                       # ± 0.009
+	Temperature	9009.0                  # ± 374.6
 }
 
 # 72607 BET UMi / Kochab
@@ -2420,18 +2420,18 @@ Modify 71352
 #   https://ui.adsabs.harvard.edu/abs/2016A%26A...586A.104S/abstract
 Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 {
-	RA 233.67254376294
-	Dec 26.71429517475
-	Distance 77.214
+	RA	233.67254376294
+	Dec	26.71429517475
+	Distance	77.214
 }
 
 "Alphecca A:Gemma A:ALF CrB A:5 CrB A"
 {
-	Radius<rS> 2.93                     # ± 0.05
-	SpectralType "A0V"
-	AbsMag 0.43                         # ± 0.01
-	BoloCorrection -0.22                # Mbol = 0.21 ± 0.02
-	Temperature 9460                    # ± 150
+	Radius<rS>	2.93                    # ± 0.05
+	SpectralType	"A0V"
+	AbsMag	0.43                        # ± 0.01
+	BoloCorrection	-0.22               # Mbol = 0.21 ± 0.02
+	Temperature	9460                    # ± 150
 
 	OrbitBarycenter "ALF CrB"
 	EllipticalOrbit                     # complete orbit
@@ -2456,11 +2456,11 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 
 "Alphecca B:Gemma B:ALF CrB B:5 CrB B"
 {
-	Radius<rS> 0.85                     # ± 0.03
-	SpectralType "G5V"
-	AbsMag 5.47                         # ± 0.04
-	BoloCorrection -0.18                # Mbol = 5.29 ± 0.04
-	Temperature 5520                    # ± 80
+	Radius<rS>	0.85                    # ± 0.03
+	SpectralType	"G5V"
+	AbsMag	5.47                        # ± 0.04
+	BoloCorrection	-0.18               # Mbol = 5.29 ± 0.04
+	Temperature	5520                    # ± 80
 
 	OrbitBarycenter "ALF CrB"
 	EllipticalOrbit                     # complete orbit
@@ -2495,8 +2495,8 @@ Barycenter 76267 "Alphecca:Gemma:ALF CrB:5 CrB"
 #   https://scixplorer.org/abs/2010A%26A...509A..21C/abstract
 Barycenter 78820 "Acrab:Graffias:Akrab:BET1 Sco:BET Sco AB:8 Sco AB:ADS 9913 AB:WDS J16054-1948AB"
 {
-	RA 241.35926902768
-	Dec -19.80555058043
+	RA	241.35926902768
+	Dec	-19.80555058043
 	Distance<pc> 143                    # ± 3
 }
 
@@ -2517,12 +2517,12 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:WDS J16054-1
 
 "Acrab Aa:Graffias Aa:Akrab Aa:BET Sco Aa:8 Sco Aa"
 {
-	Radius<rS> 6.8                      # ± 0.4, from angular diameter
-	SpectralType "B0.5IV-V"
-	AppMag 2.91                         # scaled by the observed combined magnitude
-	Extinction 0.55                     # ± 0.03
-	BoloCorrection -2.7                 # ± 0.2
-	Temperature 28000                   # ± 2000
+	Radius<rS>	6.8                     # ± 0.4, from angular diameter
+	SpectralType	"B0.5IV-V"
+	AppMag	2.91                        # scaled by the observed combined magnitude
+	Extinction	0.55                    # ± 0.03
+	BoloCorrection	-2.7                # ± 0.2
+	Temperature	28000                   # ± 2000
 
 	OrbitBarycenter "BET Sco A"
 	EllipticalOrbit                     # complete orbit
@@ -2545,12 +2545,12 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:WDS J16054-1
 
 "Acrab Ab:Graffias Ab:Akrab Ab:BET Sco Ab:8 Sco Ab"
 {
-	Radius<rS> 4.2                      # ± 0.3, from angular diameter
-	SpectralType "B1.5V"
-	AppMag 4.23                         # scaled by the observed combined magnitude
-	Extinction 0.55                     # ± 0.03
-	BoloCorrection -2.5                 # ± 0.2
-	Temperature 26400                   # ± 2000
+	Radius<rS>	4.2                     # ± 0.3, from angular diameter
+	SpectralType	"B1.5V"
+	AppMag	4.23                        # scaled by the observed combined magnitude
+	Extinction	0.55                    # ± 0.03
+	BoloCorrection	-2.5                # ± 0.2
+	Temperature	26400                   # ± 2000
 
 	OrbitBarycenter "BET Sco A"
 	EllipticalOrbit                     # complete orbit
@@ -2577,9 +2577,9 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:WDS J16054-1
 #   (6-7 mSun)
 "Acrab B:Graffias B:Akrab B:BET Sco B:8 Sco B:ADS 9913 B:WDS J16054-1948B"
 {
-	SpectralType "B"                    # from mass
-	AppMag 5.9                          # ± 0.2
-	Extinction 0.55
+	SpectralType	"B"                 # from mass
+	AppMag	5.9                         # ± 0.2
+	Extinction	0.55
 
 	OrbitBarycenter "BET1 Sco"
 	EllipticalOrbit                     # complete orbit
@@ -2604,19 +2604,19 @@ Barycenter "Acrab A:Graffias A:Akrab A:BET Sco A:8 Sco A:ADS 9913 A:WDS J16054-1
 #   https://scixplorer.org/abs/1977AJ.....82..495E/abstract
 Barycenter 78821 "Acrab CE:Graffias CE:Akrab CE:BET2 Sco:BET Sco CE:8 Sco CE:ADS 9913 C:WDS J16054-1948C"
 {
-	RA 241.36061531561
-	Dec -19.80197081548
+	RA	241.36061531561
+	Dec	-19.80197081548
 	Distance<pc> 143
 }
 
 "Acrab C:Graffias C:Akrab C:BET Sco C:8 Sco C"
 {
-	Radius<rS> 2.9                      # ± 0.5, from angular diameter
-	SpectralType "B2V"
-	AppMag 5.07
-	Extinction 0.58                     # ± 0.03
-	BoloCorrection -2.3                 # ± 0.2
-	Temperature 24000                   # ± 500
+	Radius<rS>	2.9                     # ± 0.5, from angular diameter
+	SpectralType	"B2V"
+	AppMag	5.07
+	Extinction	0.58                    # ± 0.03
+	BoloCorrection	-2.3                # ± 0.2
+	Temperature	24000                   # ± 500
 
 	OrbitBarycenter "BET2 Sco"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -2648,12 +2648,12 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 
 "Acrab Ea:Graffias Ea:Akrab Ea:BET Sco Ea:8 Sco Ea"
 {
-	Radius<rS> 2.4                      # ± 0.1, from luminosity and temperature
-	SpectralType "B8pMn"
-	AppMag 7.66                         # from total m_V = 7.17 and assumed magnitude difference = 0.60
-	Extinction 0.58                     # ± 0.03
-	BoloCorrection -0.9                 # ± 0.2
-	Temperature 13000                   # ± 800
+	Radius<rS>	2.4                     # ± 0.1, from luminosity and temperature
+	SpectralType	"B8pMn"
+	AppMag	7.66                        # from total m_V = 7.17 and assumed magnitude difference = 0.60
+	Extinction	0.58                    # ± 0.03
+	BoloCorrection	-0.9                # ± 0.2
+	Temperature	13000                   # ± 800
 
 	OrbitBarycenter "BET Sco E"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -2671,9 +2671,9 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 # Mass calculated from C-E mass ratio and masses of C, Ea
 "Acrab Eb:Graffias Eb:Akrab Eb:BET Sco Eb:8 Sco Eb"
 {
-	SpectralType "B9.5"                 # from mass
-	AppMag 8.26                         # from total m_V = 7.17 and assumed magnitude difference = 0.60
-	Extinction 0.58
+	SpectralType	"B9.5"              # from mass
+	AppMag	8.26                        # from total m_V = 7.17 and assumed magnitude difference = 0.60
+	Extinction	0.58
 
 	OrbitBarycenter "BET Sco E"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -2698,8 +2698,8 @@ Barycenter "Acrab E:Graffias E:Akrab E:BET Sco E:8 Sco E"
 #   https://scixplorer.org/abs/2005SerAJ.170...73P/abstract
 Barycenter 80763
 {
-	RA 247.35185531                     # J2016 from SIMBAD
-	Dec -26.43210617
+	RA	247.35185531                    # J2016 from SIMBAD
+	Dec	-26.43210617
 	Distance<pc> 170                    # +35–25
 }
 
@@ -2710,11 +2710,11 @@ Barycenter 80763
 # AppMag from Ducati (2002), VizieR On-line Data Catalog: II/237
 "Antares A:ALF Sco A:21 Sco A:HD 148478:WDS J16294-2626A"
 {
-	Radius<rS> 683                      # weighted mean angular diameter of two epochs = 37.35 mas
-	SpectralType "M1.5Iab"
-	AppMag 0.91                         # variable star; V = 0.6–1.6
-	Extinction 0.47                     # E(B-V) = 0.15 ± 0.03
-	Temperature 3660                    # ± 120
+	Radius<rS>	683                     # weighted mean angular diameter of two epochs = 37.35 mas
+	SpectralType	"M1.5Iab"
+	AppMag	0.91                        # variable star; V = 0.6–1.6
+	Extinction	0.47                    # E(B-V) = 0.15 ± 0.03
+	Temperature	3660                    # ± 120
 
 	OrbitBarycenter "ALF Sco"
 	EllipticalOrbit                     # complete orbit
@@ -2740,11 +2740,11 @@ Barycenter 80763
 # AppMag from BSC
 "Antares B:ALF Sco B:21 Sco B:HD 148479:WDS J16294-2626B"
 {
-	Radius<rS> 4.8                      # ± 1.1
-	SpectralType "B2.5V"
-	AppMag 5.2                          # V-band magnitude of component A = 0.96, magnitude difference = 4.2
-	Extinction 0.47                     # E(B-V) = 0.15 ± 0.03
-	Temperature 18200
+	Radius<rS>	4.8                     # ± 1.1
+	SpectralType	"B2.5V"
+	AppMag	5.2                         # V-band magnitude of component A = 0.96, magnitude difference = 4.2
+	Extinction	0.47                    # E(B-V) = 0.15 ± 0.03
+	Temperature	18200
 
 	OrbitBarycenter "ALF Sco"
 	EllipticalOrbit                     # complete orbit
@@ -2765,14 +2765,14 @@ Barycenter 80763
 # Radius and Temperature from Rudrasingam et al. (2026), MNRAS 547 (4), id.stag413
 82396 "Larawag A:EPS Sco A:26 Sco A:GJ 9579 A"
 {
-	RA 252.53759534
-	Dec -34.29436623
-	Distance 64.684                     # from Gaia DR3 parallax of component B
+	RA	252.53759534
+	Dec	-34.29436623
+	Distance	64.684                  # from Gaia DR3 parallax of component B
 
-	Radius<rS> 12.91                    # ± 0.25
-	SpectralType "K1III"
-	AppMag 2.29
-	Temperature 4489                    # ± 40
+	Radius<rS>	12.91                   # ± 0.25
+	SpectralType	"K1III"
+	AppMag	2.29
+	Temperature	4489                    # ± 40
 }
 
 # Radius and Temperature from Hardegree-Ullman et al. (2023), AJ 165 (6), id.267
@@ -2781,14 +2781,14 @@ Barycenter 80763
 #   https://ui.adsabs.harvard.edu/abs/2023AJ....165..267H/abstract
 "Larawag B:EPS Sco B:26 Sco B:GJ 9579 B"
 {
-	RA 252.54143433525937
-	Dec -34.2968858125456
-	Distance 64.684
+	RA	252.54143433525937
+	Dec	-34.2968858125456
+	Distance	64.684
 
-	Radius<rS> 0.288                    # ± 0.019
-	SpectralType "M3"                   # from temperature
-	AppMag 13.380                       # converted from G-band
-	Temperature 3359                    # ± 112
+	Radius<rS>	0.288                   # ± 0.019
+	SpectralType	"M3"                # from temperature
+	AppMag	13.380                      # converted from G-band
+	Temperature	3359                    # ± 112
 }
 
 # 84012 ETA Oph / Sabik
@@ -2799,17 +2799,17 @@ Barycenter 80763
 # Individual AppMag from Fabricius & Makarov (2000), A&A 356, p.141-145
 Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:WDS J17104-1544A"
 {
-	RA 257.59471400
-	Dec -15.72446589
-	Distance 88.365
+	RA	257.59471400
+	Dec	-15.72446589
+	Distance	88.365
 }
 
 1013336232 "Sabik A:ETA Oph A:35 Oph A:ADS 10374 A:WDS J17104-1544Aa"
 {
-	Radius<rS> 2.5                      # +0.4−0.4
-	SpectralType "A2V"
-	AppMag 2.97                         # ± 0.01
-	Temperature 9000                    # +1250−750
+	Radius<rS>	2.5                     # +0.4−0.4
+	SpectralType	"A2V"
+	AppMag	2.97                        # ± 0.01
+	Temperature	9000                    # +1250−750
 	
 	OrbitBarycenter "ETA Oph"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -2826,10 +2826,10 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:WDS J17104-1544A"
 
 2013336232 "Sabik B:ETA Oph B:35 Oph B:ADS 10374 B:WDS J17104-1544Ab"
 {
-	Radius<rS> 2.0                      # +0.3−0.2
-	SpectralType "A2V"
-	AppMag 3.44                         # ± 0.01
-	Temperature 8700                    # +450−450
+	Radius<rS>	2.0                     # +0.3−0.2
+	SpectralType	"A2V"
+	AppMag	3.44                        # ± 0.01
+	Temperature	8700                    # +450−450
 	
 	OrbitBarycenter "ETA Oph"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -2856,8 +2856,8 @@ Barycenter 84012 "Sabik:ETA Oph:35 Oph:ADS 10374 AB:WDS J17104-1544A"
 #   https://scixplorer.org/abs/2013A%26A...557A...1H/abstract
 Barycenter 85927
 {
-	RA 263.40211965
-	Dec -37.10396044
+	RA	263.40211965
+	Dec	-37.10396044
 	Distance<pc> 112                    # ± 5
 }
 
@@ -2886,10 +2886,10 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 #   https://scixplorer.org/abs/2004A%26A...427..593U/abstract
 "Shaula Aa:LAM Sco Aa:35 Sco Aa"
 {
-	Radius<rS> 5.2                      # ± 1.7, from mass and temperature (using Tango et al. 2006 parameters)
-	SpectralType "B1.5IV"
-	AppMag 2.09                         # from m_V = 1.62 and V-band magnitude difference =  0.66 ± 0.10
-	Temperature 25000                   # ± 1000
+	Radius<rS>	5.2                     # ± 1.7, from mass and temperature (using Tango et al. 2006 parameters)
+	SpectralType	"B1.5IV"
+	AppMag	2.09                        # from m_V = 1.62 and V-band magnitude difference =  0.66 ± 0.10
+	Temperature	25000                   # ± 1000
 
 	OrbitBarycenter "LAM Sco A"
 	EllipticalOrbit                     # eclipsing binary orbit
@@ -2916,10 +2916,10 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 #   https://scixplorer.org/abs/2006MmSAI..77..278B/abstract
 "Shaula Ab:LAM Sco Ab:35 Sco Ab"
 {
-	Radius<rS> 1.7                      # ± 0.1
-	SpectralType "A"
-	AbsMag 1.5                          # from luminosity and temperature
-	Temperature 10500                   # ± 500
+	Radius<rS>	1.7                     # ± 0.1
+	SpectralType	"A"
+	AbsMag	1.5                         # from luminosity and temperature
+	Temperature	10500                   # ± 500
 
 	OrbitBarycenter "LAM Sco A"
 	EllipticalOrbit                     # eclipsing binary orbit
@@ -2943,10 +2943,10 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 
 "Shaula B:LAM Sco B:35 Sco B"
 {
-	Radius<rS> 5.3                      # ± 1.3, from mass and temperature (using Tango et al. 2006 parameters)
-	SpectralType "B2IV"
-	AppMag 2.75                         # from m_V = 1.62 and V-band magnitude difference =  0.66 ± 0.10
-	Temperature 21000                   # ± 1000
+	Radius<rS>	5.3                     # ± 1.3, from mass and temperature (using Tango et al. 2006 parameters)
+	SpectralType	"B2IV"
+	AppMag	2.75                        # from m_V = 1.62 and V-band magnitude difference =  0.66 ± 0.10
+	Temperature	21000                   # ± 1000
 
 	OrbitBarycenter "LAM Sco"
 	EllipticalOrbit                     # complete orbit
@@ -2969,8 +2969,8 @@ Barycenter "Shaula A:LAM Sco A:35 Sco A"
 # Dimensions, rotation of A and Temperature of B from Lazzarotto et al. (2026)
 Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+1234AB"
 {
-	RA 263.73411480
-	Dec 12.55905265
+	RA	263.73411480
+	Dec	12.55905265
 	Distance<pc> 14.80                  # ± 0.13
 }
 
@@ -2980,10 +2980,10 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 #   https://scixplorer.org/abs/2010ApJ...725.1192M/abstract
 "Rasalhague A:Ras Alhague A:ALF Oph A:55 Oph A:Gliese 681 A:WDS J17349+1234A"
 {
-	Radius<rS> 2.858                    # ± 0.009; equatorial
-	SemiAxes [ 1 0.833 1 ]              # polar radius = 2.388 ± 0.013 rSun
-	SpectralType "A5IVnn"
-	AppMag 2.086                        # ± 0.003
+	Radius<rS>	2.858                   # ± 0.009; equatorial
+	SemiAxes	[ 1 0.833 1 ]           # polar radius = 2.388 ± 0.013 rSun
+	SpectralType	"A5IVnn"
+	AppMag	2.086                       # ± 0.003
 
 	OrbitBarycenter "ALF Oph"
 	EllipticalOrbit                     # complete orbit
@@ -3010,10 +3010,10 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 #   https://scixplorer.org/abs/2011ApJ...726..104H/abstract
 "Rasalhague B:Ras Alhague B:ALF Oph B:55 Oph B:Gliese 681 B:WDS J17349+1234B"
 {
-	Radius<rS> 0.74                     # from temperature and luminosity = 0.25 lSun
-	SpectralType "K6V"                  # K5V-K7V
-	AbsMag 6.82                         # from luminosity and temperature
-	Temperature 4750
+	Radius<rS>	0.74                    # from temperature and luminosity = 0.25 lSun
+	SpectralType	"K6V"               # K5V-K7V
+	AbsMag	6.82                        # from luminosity and temperature
+	Temperature	4750
 
 	OrbitBarycenter "ALF Oph"
 	EllipticalOrbit                     # complete orbit
@@ -3035,17 +3035,17 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 #   https://scixplorer.org/abs/2022MNRAS.513.1129L/abstract
 86228 "Sargas A:TET Sco A"
 {
-	RA 264.32974139
-	Dec -42.99784186
+	RA	264.32974139
+	Dec	-42.99784186
 	Distance<pc> 101.0                  # parallax = 9.90 ± 0.26 mas
 
-	#SemiAxes<rS> [ 35.5 35.5 26.3 ]
-	Radius<rS> 35.5                     # +1.5−2.3; equatorial
-	SemiAxes [ 1 0.741 1 ]              # polar radius = 26.3 ± 0.9 rSun
-	SpectralType "F1III"
-	AppMag 1.92
-	Extinction 0.0155                   # E(B-V) = 0.005
-	Temperature 6294                    # +224−111; effective
+	#SemiAxes<rS>	[ 35.5 35.5 26.3 ]
+	Radius<rS>	35.5                    # +1.5−2.3; equatorial
+	SemiAxes	[ 1 0.741 1 ]           # polar radius = 26.3 ± 0.9 rSun
+	SpectralType	"F1III"
+	AppMag	1.92
+	Extinction	0.0155                  # E(B-V) = 0.005
+	Temperature	6294                    # +224−111; effective
 
 	UniformRotation
 	{
@@ -3058,13 +3058,13 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 2076797892 "Sargas B:TET Sco B"
 {
 	# Separation = 0.538 ± 0.003 arcsec, position angle = 274.3 ± 0.13° (Hipparcos)
-	RA 264.32953763
-	Dec -42.99783065
+	RA	264.32953763
+	Dec	-42.99783065
 	Distance<pc> 101.0
 
-	SpectralType "A3III"
-	Extinction 0.0155                   # E(B-V) = 0.005
-	AppMag 5.26
+	SpectralType	"A3III"
+	Extinction	0.0155                  # E(B-V) = 0.005
+	AppMag	5.26
 }
 
 # 86670 KAP Sco / Girtab
@@ -3082,17 +3082,17 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 #   https://scixplorer.org/abs/2008MNRAS.389..869E/abstract
 90185 "Kaus Australis A:EPS Sgr A:20 Sgr A"
 {
-	RA 276.04278105
-	Dec -34.38516849
+	RA	276.04278105
+	Dec	-34.38516849
 	Distance<pc> 43.94                  # parallax = 22.76 ± 0.24 mas
 
-	#SemiAxes<rS> [ 8.80 8.80 6.01 ]
-	Radius<rS> 8.80                     # equatorial
-	SemiAxes [ 1 0.683 1 ]              # polar radius = 6.01 rSun
-	SpectralType "B9.5III"
-	AppMag 1.85
-	Extinction 0.0248                   # E(B-V) = 0.008
-	Temperature 9950                    # effective
+	#SemiAxes<rS>	[ 8.80 8.80 6.01 ]
+	Radius<rS>	8.80                    # equatorial
+	SemiAxes	[ 1 0.683 1 ]           # polar radius = 6.01 rSun
+	SpectralType	"B9.5III"
+	AppMag	1.85
+	Extinction	0.0248                  # E(B-V) = 0.008
+	Temperature	9950                    # effective
 
 	UniformRotation
 	{
@@ -3109,15 +3109,15 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 "Kaus Australis B:EPS Sgr B:20 Sgr B"
 {
 	# Separation = 2.06 ± 0.01 arcsec, position angle = 142 ± 1° (1992-06-18)
-	RA 276.04320794
-	Dec -34.38561941
+	RA	276.04320794
+	Dec	-34.38561941
 	Distance<pc> 43.94
 
-	Radius<rS> 0.93                     # from temperature and luminosity = 10^(-0.05) lSun
-	SpectralType "K6.5"
-	AppMag 7.7
-	Extinction 0.0248                   # E(B-V) = 0.008
-	Temperature 5808
+	Radius<rS>	0.93                    # from temperature and luminosity = 10^(-0.05) lSun
+	SpectralType	"K6.5"
+	AppMag	7.7
+	Extinction	0.0248                  # E(B-V) = 0.008
+	Temperature	5808
 }
 
 # 92855 SIG Sgr / Nunki
@@ -3130,17 +3130,17 @@ Barycenter 86032 "Rasalhague:Ras Alhague:ALF Oph:55 Oph:Gliese 681:WDS J17349+12
 #   https://scixplorer.org/abs/2025RNAAS...9...71W/abstract
 Barycenter 92855
 {
-	RA 283.81643546
-	Dec -26.29696158
+	RA	283.81643546
+	Dec	-26.29696158
 	Distance<pc> 67
 }
 
 "Nunki A:SIG Sgr A:34 Sgr A"
 {
-	Radius<rS> 4.1                      # from isochrone
-	SpectralType "B2.5V"
-	AppMag 2.752                        # total system m_V = 2.067 ± 0.005 from Tycho-2 catalogue
-	Temperature 18900
+	Radius<rS>	4.1                     # from isochrone
+	SpectralType	"B2.5V"
+	AppMag	2.752                       # total system m_V = 2.067 ± 0.005 from Tycho-2 catalogue
+	Temperature	18900
 
 	OrbitBarycenter "SIG Sgr"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -3157,10 +3157,10 @@ Barycenter 92855
 
 "Nunki B:SIG Sgr B:34 Sgr B"
 {
-	Radius<rS> 3.9                      # from isochrone
-	SpectralType "B2.5V"
-	AppMag 2.892                        # total system m_V = 2.067 ± 0.005 from Tycho-2 catalogue
-	Temperature 18600                   # "The secondary is cooler than the primary by only about 300 K."
+	Radius<rS>	3.9                     # from isochrone
+	SpectralType	"B2.5V"
+	AppMag	2.892                       # total system m_V = 2.067 ± 0.005 from Tycho-2 catalogue
+	Temperature	18600                   # "The secondary is cooler than the primary by only about 300 K."
 
 	OrbitBarycenter "SIG Sgr"
 	EllipticalOrbit                     # mirror-ambiguous orbit
@@ -3187,9 +3187,9 @@ Barycenter 92855
 #   https://ui.adsabs.harvard.edu/abs/2024A%26A...685A.119G/abstract
 Barycenter 100751
 {
-	RA 306.41196027
-	Dec -56.73547204
-	Distance 178.814
+	RA	306.41196027
+	Dec	-56.73547204
+	Distance	178.814
 }
 
 # Radius and Temperature from Jerzykiewicz & Molenda-Żakowicz (2000), Acta Astronomica 50, pp.369-380
@@ -3199,10 +3199,10 @@ Barycenter 100751
 # SpectralType and AppMag from BSC
 "Peacock A:ALF Pav A"
 {
-	Radius<rS> 4.83                     # log R/RSun = 0.684 ± 0.032, from angular diameter
-	SpectralType "B2IV"
-	AppMag 1.94                         # assumed to contribute virtually all of system's light
-	Temperature 17865                   # log Teff (K) = 4.252 ± 0.016
+	Radius<rS>	4.83                    # log R/RSun = 0.684 ± 0.032, from angular diameter
+	SpectralType	"B2IV"
+	AppMag	1.94                        # assumed to contribute virtually all of system's light
+	Temperature	17865                   # log Teff (K) = 4.252 ± 0.016
 
 	OrbitBarycenter "ALF Pav"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -3218,8 +3218,8 @@ Barycenter 100751
 
 "Peacock B:ALF Pav B"
 {
-	SpectralType "B"                    # assumed from mass
-	AbsMag -0.55                        # for assumed spectral type
+	SpectralType	"B"                 # assumed from mass
+	AbsMag	-0.55                       # for assumed spectral type
 
 	OrbitBarycenter "ALF Pav"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -3249,12 +3249,12 @@ Barycenter 100751
 #   https://ui.adsabs.harvard.edu/abs/2010A%26A...521A...5C/abstract
 Modify 102098
 {
-	Radius<rS> 116.87                   # +14.28-18.84 rSun, from angular diameter
-	SemiAxes [ 1 0.92 1 ]               # 2% angular diameter variation, true oblateness = ~8%
-	AppMag 1.25
-	Extinction 0.11
-	BoloCorrection -0.11
-	Temperature 8700                    # ± 150
+	Radius<rS>	116.87                  # +14.28-18.84 rSun, from angular diameter
+	SemiAxes	[ 1 0.92 1 ]            # 2% angular diameter variation, true oblateness = ~8%
+	AppMag	1.25
+	Extinction	0.11
+	BoloCorrection	-0.11
+	Temperature	8700                    # ± 150
 
 	UniformRotation
 	{
@@ -3272,9 +3272,9 @@ Modify 102098
 #   https://scixplorer.org/abs/2021A%26A...647A.160H/abstract
 Barycenter 102488
 {
-	RA 311.55475901193
-	Dec 33.97170031236
-	Distance 71.551                     # from Gaia DR3 parallax of component C
+	RA	311.55475901193
+	Dec	33.97170031236
+	Distance	71.551                  # from Gaia DR3 parallax of component C
 }
 
 # Radius and temperature from Baines et al. (2021), AJ 162 (5), id.198
@@ -3284,10 +3284,10 @@ Barycenter 102488
 #   https://scixplorer.org/abs/2015ApJ...810..117G/abstract
 "Aljanah Aa:EPS Cyg Aa:53 Cyg Aa:GJ 9707 Aa"
 {
-	Radius<rS> 12.41                    # +0.29-0.30
-	SpectralType "K0III"
-	AppMag 2.480
-	Temperature 4659                    # ± 35
+	Radius<rS>	12.41                   # +0.29-0.30
+	SpectralType	"K0III"
+	AppMag	2.480
+	Temperature	4659                    # ± 35
 	
 	OrbitBarycenter "EPS Cyg"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -3308,8 +3308,8 @@ Barycenter 102488
 # Assume minimum mass = true mass
 "Aljanah Ab:EPS Cyg Ab:53 Cyg Ab:GJ 9707 Ab"
 {
-	SpectralType "M3.5V"                # Mamajek
-	AbsMag 12.10                        # Mamajek
+	SpectralType	"M3.5V"             # Mamajek
+	AbsMag	12.10                       # Mamajek
 	
 	OrbitBarycenter "EPS Cyg"
 	EllipticalOrbit                     # radial velocity-only orbit
@@ -3331,14 +3331,14 @@ Barycenter 102488
 #   https://scixplorer.org/abs/2018MNRAS.479.1332M/abstract
 "EPS Cyg C:53 Cyg C:GJ 9707 C"
 {
-	RA 311.52860950906
-	Dec 33.96987103069
-	Distance 71.551                     # Gaia DR3 parallax = 45.5839 ± 0.0163 mas
+	RA	311.52860950906
+	Dec	33.96987103069
+	Distance	71.551                  # Gaia DR3 parallax = 45.5839 ± 0.0163 mas
 
-	Radius<rS> 0.3387                   # +0.0026-0.0007 (GSP-Phot)
-	SpectralType "M4V"
-	AppMag 14.29                        # SIMBAD
-	Temperature 3214.8390               # +3.6483-0.4799 (GSP-Phot)
+	Radius<rS>	0.3387                  # +0.0026-0.0007 (GSP-Phot)
+	SpectralType	"M4V"
+	AppMag	14.29                       # SIMBAD
+	Temperature	3214.8390               # +3.6483-0.4799 (GSP-Phot)
 }
 
 # 105199 ALF Cep / Alderamin
@@ -3353,10 +3353,10 @@ Barycenter 102488
 #   https://scixplorer.org/abs/2006ApJ...637..494V/abstract
 Modify 105199
 {
-	#SemiAxes<rS> [ 2.740 2.740 2.162 ]
-	Radius<rS> 2.740                    # ± 0.044; equatorial
-	SemiAxes [ 1 0.7891 1 ]             # polar radius = 2.162 ± 0.036 rSun
-	Temperature 7510                    # ± 160; effective
+	#SemiAxes<rS>	[ 2.740 2.740 2.162 ]
+	Radius<rS>	2.740                   # ± 0.044; equatorial
+	SemiAxes	[ 1 0.7891 1 ]          # polar radius = 2.162 ± 0.036 rSun
+	Temperature	7510                    # ± 160; effective
 
 	UniformRotation
 	{
