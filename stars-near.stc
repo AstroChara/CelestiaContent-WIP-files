@@ -4440,23 +4440,25 @@ Modify 113368 # Fomalhaut / Alf PsA
 # Mu Her
 
 
-# Radius and temperature (lit. weighted mean) from Boyajian et al. (2013), AJ 771 (1), id. 40
-# Rotation period from Montesinos et al. (2016), A&A 593, id.A51
+# Radius from Baines et al. (2025), AJ 169 (6), id.293
+#   "Vintage NPOI: New and Updated Angular Diameters for 145 Stars"
+#   https://iopscience.iop.org/article/10.3847/1538-3881/adc930
+#   https://scixplorer.org/abs/2025AJ....169..293B/abstract
+# Temperature is weighted average of Teffs from Freckelton et al. (2026), MNRAS 549 (4), id.stag1070
+#   "gr8stars II: judgement day for spectroscopic parameter model systematics"
+#   https://academic.oup.com/mnras/article/549/4/stag1070/8703211
+#   https://scixplorer.org/abs/2026MNRAS.549g1070F/abstract
 61317 # Chara / Bet CVn / HD 109358    # It's me!
 {
 	RA	188.43142838
 	Dec	41.35877669
 	Distance	27.6341    # Gaia DR3: 118.026606 +/- 0.153031
 
-	Radius<rS>	1.0999
+	Radius<rS>	1.02
 	SpectralType	"G0V"
 	AppMag	4.25
-	Temperature	5700
+	Temperature	5867
 
-	UniformRotation
-	{
-	    Period<d>	15.11
-	}
 	InfoURL "https://en.wikipedia.org/wiki/Beta_Canum_Venaticorum"
 }
 
